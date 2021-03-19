@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name OSM_env01)(type Legacy)(uri ${KIPRJMOD}/OSM_env01.lib)(options "")(descr ""))
+  (lib (name Devtank)(type Legacy)(uri ${KIPRJMOD}/../common/Devtank_Schema_Lib/Devtank.lib)(options "")(descr ""))
+  (lib (name OSM_env01-rescue)(type Legacy)(uri ${KIPRJMOD}/OSM_env01-rescue.lib)(options "")(descr ""))
+)

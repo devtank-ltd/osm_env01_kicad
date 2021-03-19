@@ -1,0 +1,24 @@
+*********************************
+OpenSmartMonitor ENV-01 revA Mods
+*********************************
+
+Schematic
+~DNF: Q5, R87-R90
+~Led THTx3 connections are opposite so cut tracks before fitting and reconnect.
+~Fit 100k to tp55 and other side to gnd.
+~Short cct pin 4-5 of u9.
+~Cut track between tp19 and c25.
+~add 20nf cap to tp37 and otherside to gnd.
+~add 20nf across r33.
+~swap r35 for 39k.
+~Swap Tx/RX on the Smog Sensor
+~Boot button fix (swap r70 for 0R) and remove c3.
+~Add USB GPIO support for boot lines
+~Replace anlogue switch for electric and particulate switching
+~add switch/gnd to gpio to measure microphone refernce
+
+PCB
+~Check all chips have a ref for pin 1 add refernce for light chip also
+~Make 5V track to SP05BAHT chip smaller
+~Add ground pads for debug
+~Make test points slightly bigger
