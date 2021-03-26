@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 8
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -536,4 +536,100 @@ Text Label 7825 3975 2    50   ~ 0
 ESP_RES1
 Text Label 7825 4075 2    50   ~ 0
 ESP_RES2
+$Comp
+L Connector:USB_B_Micro J?
+U 1 1 6097E54E
+P 1900 5925
+AR Path="/6097E54E" Ref="J?"  Part="1" 
+AR Path="/5F4610BE/6097E54E" Ref="J?"  Part="1" 
+F 0 "J?" H 1957 6392 50  0000 C CNN
+F 1 "USB_B_Micro" H 1957 6301 50  0000 C CNN
+F 2 "Devtank_PCB_lib:MOLEX_105017-0001_USB_B" H 2050 5875 50  0001 C CNN
+F 3 "~" H 2050 5875 50  0001 C CNN
+	1    1900 5925
+	1    0    0    -1  
+$EndComp
+Text Label 2425 5725 2    50   ~ 0
+5V_IN
+Text Label 2525 5925 2    50   ~ 0
+USB_D+
+Text Label 2525 6025 2    50   ~ 0
+USB_D-
+NoConn ~ 2200 6125
+$Comp
+L OSM_env01-rescue:SP0503BAHT-ESD_Protection-ESP32-EVB_Rev_D-rescue D?
+U 1 1 6097E558
+P 2925 6375
+AR Path="/6097E558" Ref="D?"  Part="1" 
+AR Path="/5F4610BE/6097E558" Ref="D?"  Part="1" 
+F 0 "D?" H 3130 6421 50  0000 L CNN
+F 1 "SP0503BAHT" H 3130 6330 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-143" H 3150 6325 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 3050 6500 50  0001 C CNN
+	1    2925 6375
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 5725 2825 6175
+Wire Wire Line
+	2925 6175 2925 5925
+Wire Wire Line
+	2200 5925 2925 5925
+Wire Wire Line
+	3025 6175 3025 6025
+Wire Wire Line
+	2200 6025 3025 6025
+Wire Wire Line
+	2925 6575 2925 6625
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
+U 1 1 6097E564
+P 2925 6625
+AR Path="/6097E564" Ref="#PWR?"  Part="1" 
+AR Path="/5F4610BE/6097E564" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2925 6375 50  0001 C CNN
+F 1 "GND" H 2930 6452 50  0000 C CNN
+F 2 "" H 2925 6625 60  0000 C CNN
+F 3 "" H 2925 6625 60  0000 C CNN
+	1    2925 6625
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
+U 1 1 6097E56A
+P 1900 6400
+AR Path="/6097E56A" Ref="#PWR?"  Part="1" 
+AR Path="/5F4610BE/6097E56A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1900 6150 50  0001 C CNN
+F 1 "GND" H 1905 6227 50  0000 C CNN
+F 2 "" H 1900 6400 60  0000 C CNN
+F 3 "" H 1900 6400 60  0000 C CNN
+	1    1900 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 6097E570
+P 2825 5725
+AR Path="/6097E570" Ref="TP?"  Part="1" 
+AR Path="/5F4610BE/6097E570" Ref="TP?"  Part="1" 
+F 0 "TP?" V 3020 5797 50  0000 C CNN
+F 1 "Test_Point" V 2929 5797 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3025 5725 50  0001 C CNN
+F 3 "~" H 3025 5725 50  0001 C CNN
+	1    2825 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 6325 1900 6375
+Wire Wire Line
+	1800 6325 1800 6375
+Wire Wire Line
+	1800 6375 1900 6375
+Connection ~ 1900 6375
+Wire Wire Line
+	1900 6375 1900 6400
+Wire Wire Line
+	2200 5725 2825 5725
+Connection ~ 2825 5725
 $EndSCHEMATC

@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 4 8
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -18,10 +18,10 @@ Wire Wire Line
 Wire Wire Line
 	5425 3900 5750 3900
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R34
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 5E1A0EBB
 P 5275 3900
-F 0 "R34" V 5125 3900 50  0000 C CNN
+F 0 "R?" V 5125 3900 50  0000 C CNN
 F 1 "DNF" V 5200 3900 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5205 3900 50  0001 C CNN
 F 3 "" H 5275 3900 50  0001 C CNN
@@ -31,10 +31,10 @@ $EndComp
 Wire Wire Line
 	7050 4950 7025 4950
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R36
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 5E1A0EFD
 P 7200 4950
-F 0 "R36" V 7050 4925 50  0000 C CNN
+F 0 "R?" V 7050 4925 50  0000 C CNN
 F 1 "100R" V 7125 4950 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7130 4950 50  0001 C CNN
 F 3 "" H 7200 4950 50  0001 C CNN
@@ -52,10 +52,10 @@ Wire Wire Line
 Wire Wire Line
 	5125 4150 4850 4150
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R31
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 5E1A0F57
 P 3375 4750
-F 0 "R31" V 3168 4750 50  0000 C CNN
+F 0 "R?" V 3168 4750 50  0000 C CNN
 F 1 "1K" V 3259 4750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3305 4750 50  0001 C CNN
 F 3 "" H 3375 4750 50  0001 C CNN
@@ -63,10 +63,10 @@ F 3 "" H 3375 4750 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R35
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 5E1A0F5D
 P 5275 4150
-F 0 "R35" V 5125 4150 50  0000 C CNN
+F 0 "R?" V 5125 4150 50  0000 C CNN
 F 1 "20k" V 5200 4150 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5205 4150 50  0001 C CNN
 F 3 "" H 5275 4150 50  0001 C CNN
@@ -78,10 +78,10 @@ Wire Wire Line
 Wire Wire Line
 	5150 5325 5150 5150
 $Comp
-L power:GND #PWR0149
+L power:GND #PWR?
 U 1 1 5E1A0F6C
 P 5150 5325
-F 0 "#PWR0149" H 5150 5075 50  0001 C CNN
+F 0 "#PWR?" H 5150 5075 50  0001 C CNN
 F 1 "GND" H 5155 5152 50  0000 C CNN
 F 2 "" H 5150 5325 50  0001 C CNN
 F 3 "" H 5150 5325 50  0001 C CNN
@@ -94,10 +94,10 @@ Connection ~ 3600 4950
 Wire Wire Line
 	3600 5350 3600 5325
 $Comp
-L power:GND #PWR0150
+L power:GND #PWR?
 U 1 1 5E1A0F76
 P 3600 5350
-F 0 "#PWR0150" H 3600 5100 50  0001 C CNN
+F 0 "#PWR?" H 3600 5100 50  0001 C CNN
 F 1 "GND" H 3605 5177 50  0000 C CNN
 F 2 "" H 3600 5350 50  0001 C CNN
 F 3 "" H 3600 5350 50  0001 C CNN
@@ -107,10 +107,10 @@ $EndComp
 Wire Wire Line
 	3600 4725 3600 4950
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R33
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 5E1A0F7D
 P 3600 5175
-F 0 "R33" H 3530 5129 50  0000 R CNN
+F 0 "R?" H 3530 5129 50  0000 R CNN
 F 1 "10K" H 3530 5220 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 5175 50  0001 C CNN
 F 3 "" H 3600 5175 50  0001 C CNN
@@ -118,10 +118,10 @@ F 3 "" H 3600 5175 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R32
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 5E1A0F83
 P 3600 4575
-F 0 "R32" H 3530 4529 50  0000 R CNN
+F 0 "R?" H 3530 4529 50  0000 R CNN
 F 1 "10K" H 3530 4620 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3530 4575 50  0001 C CNN
 F 3 "" H 3600 4575 50  0001 C CNN
@@ -129,10 +129,10 @@ F 3 "" H 3600 4575 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0151
+L power:GND #PWR?
 U 1 1 5E1A0F89
 P 2575 5375
-F 0 "#PWR0151" H 2575 5125 50  0001 C CNN
+F 0 "#PWR?" H 2575 5125 50  0001 C CNN
 F 1 "GND" H 2580 5202 50  0000 C CNN
 F 2 "" H 2575 5375 50  0001 C CNN
 F 3 "" H 2575 5375 50  0001 C CNN
@@ -142,10 +142,10 @@ $EndComp
 Wire Wire Line
 	3150 4750 3225 4750
 $Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C34
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
 U 1 1 5E1A0F91
 P 3000 4750
-F 0 "C34" V 2748 4750 50  0000 C CNN
+F 0 "C?" V 2748 4750 50  0000 C CNN
 F 1 "10uF" V 2839 4750 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3038 4600 50  0001 C CNN
 F 3 "" H 3000 4750 50  0001 C CNN
@@ -160,10 +160,10 @@ Wire Wire Line
 Wire Wire Line
 	2575 4400 2575 4275
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R30
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 5E1A0F9B
 P 2575 4550
-F 0 "R30" H 2645 4596 50  0000 L CNN
+F 0 "R?" H 2645 4596 50  0000 L CNN
 F 1 "2.2K" H 2645 4505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 2505 4550 50  0001 C CNN
 F 3 "" H 2575 4550 50  0001 C CNN
@@ -175,10 +175,10 @@ Wire Wire Line
 Wire Wire Line
 	2575 4800 2575 4750
 $Comp
-L OSM_env01-rescue:Microphone_Condenser-device-ESP32-EVB_Rev_D-rescue Mic1
+L OSM_env01-rescue:Microphone_Condenser-device-ESP32-EVB_Rev_D-rescue Mic?
 U 1 1 5E1A0FA3
 P 2575 5000
-F 0 "Mic1" V 2325 5000 50  0000 L CNN
+F 0 "Mic?" V 2325 5000 50  0000 L CNN
 F 1 "DNF" V 2400 4650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1210_3225Metric" V 2575 5100 50  0001 C CNN
 F 3 "" V 2575 5100 50  0001 C CNN
@@ -186,10 +186,10 @@ F 3 "" V 2575 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L OSM_env01-rescue:LMV324-linear-ESP32-EVB_Rev_D-rescue U11
+L OSM_env01-rescue:LMV324-linear-ESP32-EVB_Rev_D-rescue U?
 U 1 1 5E1A9DFD
 P 5250 4850
-F 0 "U11" H 5250 5025 50  0000 L CNN
+F 0 "U?" H 5250 5025 50  0000 L CNN
 F 1 "LMV324" H 5250 5100 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 5200 4950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 5300 5050 50  0001 C CNN
@@ -197,10 +197,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 5300 5050 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L OSM_env01-rescue:LMV324-linear-ESP32-EVB_Rev_D-rescue U11
+L OSM_env01-rescue:LMV324-linear-ESP32-EVB_Rev_D-rescue U?
 U 2 1 5E1BC702
 P 6500 4950
-F 0 "U11" H 6450 5125 50  0000 L CNN
+F 0 "U?" H 6450 5125 50  0000 L CNN
 F 1 "LMV324" H 6450 5200 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 6450 5050 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lmv324.pdf" H 6550 5150 50  0001 C CNN
@@ -210,10 +210,10 @@ $EndComp
 Text HLabel 7350 4950 2    50   Input ~ 0
 Audio
 $Comp
-L power:+3V3 #PWR09
+L power:+3V3 #PWR?
 U 1 1 5E1E12E8
 P 6425 1400
-F 0 "#PWR09" H 6425 1250 50  0001 C CNN
+F 0 "#PWR?" H 6425 1250 50  0001 C CNN
 F 1 "+3V3" H 6275 1475 50  0000 C CNN
 F 2 "" H 6425 1400 50  0001 C CNN
 F 3 "" H 6425 1400 50  0001 C CNN
@@ -226,7 +226,7 @@ U 1 1 5E3B4FEF
 P 4850 3550
 AR Path="/5E3B4FEF" Ref="TP?"  Part="1" 
 AR Path="/5E19E083/5E3B4FEF" Ref="TP37"  Part="1" 
-F 0 "TP37" H 4750 3875 50  0000 C CNN
+F 0 "TP?" H 4750 3875 50  0000 C CNN
 F 1 "Test_Point" H 4850 3775 50  0000 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5050 3550 50  0001 C CNN
 F 3 "~" H 5050 3550 50  0001 C CNN
@@ -239,7 +239,7 @@ U 1 1 5E3B7A56
 P 5750 3550
 AR Path="/5E3B7A56" Ref="TP?"  Part="1" 
 AR Path="/5E19E083/5E3B7A56" Ref="TP38"  Part="1" 
-F 0 "TP38" V 5945 3622 50  0000 C CNN
+F 0 "TP?" V 5945 3622 50  0000 C CNN
 F 1 "Test_Point" V 5854 3622 50  0000 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 3550 50  0001 C CNN
 F 3 "~" H 5950 3550 50  0001 C CNN
