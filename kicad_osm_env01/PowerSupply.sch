@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 9
+Sheet 2 9
 Title ""
 Date ""
 Rev ""
@@ -93,7 +93,7 @@ Wire Wire Line
 Wire Wire Line
 	3575 1225 5075 1225
 Wire Wire Line
-	1175 1625 1575 1625
+	1175 1625 1300 1625
 Wire Wire Line
 	3575 2825 3575 3525
 Wire Wire Line
@@ -524,8 +524,6 @@ F 6 "Value3" H 1575 2425 60  0001 C CNN "Fieldname3"
 	1    1575 2425
 	0    1    -1   0   
 $EndComp
-Text Label 1175 1625 0    50   ~ 0
-5V_IN
 Wire Wire Line
 	1575 1625 1575 2325
 $Comp
@@ -1262,8 +1260,6 @@ Wire Wire Line
 Wire Wire Line
 	9300 5100 9650 5100
 Connection ~ 9300 5100
-Text Label 9650 5100 2    50   ~ 0
-BAT_MON
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 607F8DE1
@@ -1448,4 +1444,27 @@ Wire Notes Line
 	7425 3825 7425 6500
 Wire Notes Line
 	6650 4525 6675 550 
+Text HLabel 1225 1725 0    50   Input ~ 0
+5Vin
+Wire Wire Line
+	1225 1725 1300 1725
+Wire Wire Line
+	1300 1725 1300 1625
+Connection ~ 1300 1625
+Wire Wire Line
+	1300 1625 1575 1625
+Text HLabel 4100 5500 2    50   Input ~ 0
+5Vout
+Text HLabel 6500 5825 2    50   Input ~ 0
+3.3Vout
+Wire Wire Line
+	4100 5500 4050 5500
+Wire Wire Line
+	4050 5500 4050 5825
+Text HLabel 9475 4975 2    50   Input ~ 0
+BatMon
+Wire Wire Line
+	9475 4975 9300 4975
+Wire Wire Line
+	9300 4975 9300 5100
 $EndSCHEMATC

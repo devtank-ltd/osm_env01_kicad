@@ -97,7 +97,7 @@ Text Label 3800 13225 0    50   ~ 0
 PULSE1_EXT
 Text Label 3800 13425 0    50   ~ 0
 PULSE2_EXT
-Text Notes 8725 3100 0    50   ~ 0
+Text Notes 17975 2900 0    50   ~ 0
 \n
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP8
@@ -477,30 +477,37 @@ Wire Wire Line
 Wire Wire Line
 	1425 13975 1275 13975
 $Sheet
-S 1050 975  1675 1175
+S 1050 975  925  575 
 U 60688D25
 F0 "PowerSupply" 50
 F1 "PowerSupply.sch" 50
+F2 "5Vin" I L 1050 1250 50 
+F3 "5Vout" I R 1975 1125 50 
+F4 "3.3Vout" I R 1975 1250 50 
+F5 "BatMon" I R 1975 1375 50 
 $EndSheet
 $Sheet
-S 3850 1000 1300 1400
+S 3825 900  1125 950 
 U 60880AD8
 F0 "LORA" 50
 F1 "LORA.sch" 50
-$EndSheet
-$Sheet
-S 6250 1025 2600 2050
-U 608F4675
-F0 "Sensors_AND_IO" 50
-F1 "Sensors_AND_IO.sch" 50
+F2 "LORA_RX" I L 3825 1450 50 
+F3 "LORA_TX" I L 3825 1575 50 
+F4 "LORA_CTS" I R 4950 1125 50 
+F5 "LORA_NRST" I L 3825 1125 50 
 $EndSheet
 Text Notes 750  14525 0    118  ~ 0
 Optional module
 $Sheet
-S 10275 1250 1700 1550
+S 6575 1075 1150 675 
 U 609D4B87
 F0 "RS485_Comms" 50
 F1 "RS485_Comms.sch" 50
+F2 "RS485-" I L 6575 1350 50 
+F3 "RS485+" I L 6575 1225 50 
+F4 "DE_485" I L 6575 1600 50 
+F5 "RS485_TX" I R 7725 1350 50 
+F6 "RS485_RX" I R 7725 1475 50 
 $EndSheet
 Text Notes 5850 14000 0    118  ~ 0
 Easy access gnd\npins for debug\n
@@ -1195,12 +1202,11 @@ F14 "PB6" I R 15150 5325 50
 F15 "PB5" I R 15150 5200 50 
 F16 "PB4" I R 15150 5075 50 
 F17 "PB3" I R 15150 4950 50 
-F18 "PA15" I L 14000 6350 50 
-F19 "PA14" I L 14000 6225 50 
-F20 "PA9" I L 14000 5850 50 
-F21 "PA8" I L 14000 5725 50 
-F22 "PA10" I L 14000 5975 50 
-F23 "PA13" I L 14000 6100 50 
+F18 "PA14" I L 14000 6225 50 
+F19 "PA9" I L 14000 5850 50 
+F20 "PA8" I L 14000 5725 50 
+F21 "PA10" I L 14000 5975 50 
+F22 "PA13" I L 14000 6100 50 
 $EndSheet
 Text Label 7475 5825 2    50   ~ 0
 ESP_SDA
@@ -1225,8 +1231,6 @@ Text Label 13050 4850 0    50   ~ 0
 LIGHT_INT
 NoConn ~ 6725 6325
 NoConn ~ 6725 6225
-NoConn ~ 6725 5525
-NoConn ~ 6725 5425
 NoConn ~ 6725 5225
 NoConn ~ 6725 5125
 Text Label 13050 4500 0    50   ~ 0
@@ -1564,25 +1568,10 @@ Text Label 1050 13475 0    50   ~ 0
 STM_MISO
 Text Label 1050 13175 0    50   ~ 0
 STM_SDA
-Text Label 13050 5725 0    50   ~ 0
+Text Label 7650 7125 0    50   ~ 0
 CS
-Text Label 13050 6350 0    50   ~ 0
+Text Label 7475 7300 0    50   ~ 0
 extra_gpio
-Wire Wire Line
-	14000 6350 13950 6350
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
-U 1 1 611289C8
-P 13800 6350
-F 0 "R?" V 13775 5275 50  0000 C CNN
-F 1 "0R" V 13775 5525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 6350 50  0001 C CNN
-F 3 "" H 13800 6350 50  0001 C CNN
-	1    13800 6350
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	13650 6350 13050 6350
 Wire Wire Line
 	14000 5725 13950 5725
 $Comp
@@ -1603,9 +1592,9 @@ STM2_TX
 Text Label 13050 5100 0    50   ~ 0
 STM2_RX
 Text Label 1050 13275 0    50   ~ 0
-STM2_TX
+extra_TX
 Text Label 1050 13375 0    50   ~ 0
-STM2_RX
+extra_RX
 Wire Wire Line
 	4400 13625 4400 13725
 Wire Wire Line
@@ -1638,8 +1627,8 @@ NoConn ~ 6725 6425
 NoConn ~ 6725 6725
 NoConn ~ 6725 6825
 Wire Wire Line
-	6725 6925 7325 6925
-Text Label 7325 6925 2    50   ~ 0
+	7275 7500 7875 7500
+Text Label 7875 7500 2    50   ~ 0
 STM_WAKEUP
 Text Label 3375 9350 2    60   ~ 0
 ESP_EN
@@ -1648,4 +1637,186 @@ Text Label 3050 9500 0    50   ~ 0
 STM_BOOT0
 Text Notes 15950 5950 0    50   ~ 0
 add status led
+Text Label 7125 10025 2    50   ~ 0
+STM_SCL
+Text Label 15150 2325 0    50   ~ 0
+STM2_TX
+Text Label 15150 2175 0    50   ~ 0
+STM2_RX
+Wire Wire Line
+	3825 1575 3425 1575
+Text Label 3425 1575 0    50   ~ 0
+LORA_TX
+Text Label 3425 1450 0    50   ~ 0
+LORA_RX
+Wire Wire Line
+	3825 1450 3425 1450
+Text Label 3425 1125 0    50   ~ 0
+LORA_NRST
+Wire Wire Line
+	3825 1125 3425 1125
+Text Label 5350 1125 2    50   ~ 0
+LORA_CTS
+Wire Wire Line
+	4950 1125 5350 1125
+Text Label 3425 9650 2    50   ~ 0
+LORA_NRST
+Wire Wire Line
+	1050 1250 725  1250
+Text Label 725  1250 0    50   ~ 0
+5V_IN
+$Comp
+L power:+3V3 #PWR?
+U 1 1 607B31BD
+P 2525 925
+F 0 "#PWR?" H 2525 775 50  0001 C CNN
+F 1 "+3V3" H 2540 1098 50  0000 C CNN
+F 2 "" H 2525 925 50  0001 C CNN
+F 3 "" H 2525 925 50  0001 C CNN
+	1    2525 925 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 607B37D8
+P 2250 925
+F 0 "#PWR?" H 2250 775 50  0001 C CNN
+F 1 "+5V" H 2265 1098 50  0000 C CNN
+F 2 "" H 2250 925 50  0001 C CNN
+F 3 "" H 2250 925 50  0001 C CNN
+	1    2250 925 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1975 1375 2575 1375
+Text Label 2575 1375 2    50   ~ 0
+BAT_MON
+Wire Wire Line
+	1975 1125 2250 1125
+Wire Wire Line
+	2250 1125 2250 925 
+Wire Wire Line
+	1975 1250 2525 1250
+Wire Wire Line
+	2525 1250 2525 925 
+Text Label 5975 1225 0    50   ~ 0
+RS485+
+Wire Wire Line
+	5975 1225 6575 1225
+Text Label 5975 1350 0    50   ~ 0
+RS485-
+Wire Wire Line
+	5975 1350 6575 1350
+Wire Wire Line
+	5975 1600 6575 1600
+Text Label 5975 1600 0    50   ~ 0
+DE_485
+Wire Wire Line
+	6725 5525 6775 5525
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 6089B2FF
+P 6925 5525
+F 0 "R?" V 6900 4825 50  0000 C CNN
+F 1 "0R" V 6900 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5525 50  0001 C CNN
+F 3 "" H 6925 5525 50  0001 C CNN
+	1    6925 5525
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6725 5425 6775 5425
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 6089B306
+P 6925 5425
+F 0 "R?" V 6900 4725 50  0000 C CNN
+F 1 "0R" V 6900 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5425 50  0001 C CNN
+F 3 "" H 6925 5425 50  0001 C CNN
+	1    6925 5425
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7075 5425 7475 5425
+Text Label 7475 5425 2    50   ~ 0
+RS485_TX
+Wire Wire Line
+	7075 5525 7475 5525
+Text Label 7475 5525 2    50   ~ 0
+RS485_RX
+Wire Wire Line
+	7725 1350 8125 1350
+Text Label 8125 1350 2    50   ~ 0
+RS485_TX
+Wire Wire Line
+	7725 1475 8125 1475
+Text Label 8125 1475 2    50   ~ 0
+RS485_RX
+Text Label 13050 5725 0    60   ~ 0
+HPM_EN
+Text Notes 8050 7375 0    50   ~ 0
+7 gpio\n3 gpi\n
+$Sheet
+S 15500 825  1525 1650
+U 608F4675
+F0 "Sensors_AND_IO" 50
+F1 "Sensors_AND_IO.sch" 50
+F2 "HPM_RX" I L 15500 2175 50 
+F3 "HPM_TX" I L 15500 2325 50 
+F4 "HPM_EN" I L 15500 1000 50 
+F5 "TEMP_INT" I R 17025 1000 50 
+F6 "SCL" I L 15500 1800 50 
+F7 "SDA" I L 15500 1650 50 
+F8 "LIGHT_INT" I R 17025 1150 50 
+F9 "AUDIO_OP" I R 17025 1650 50 
+F10 "PULSE1_EXT" I L 15500 1150 50 
+F11 "PULSE2_EXT" I L 15500 1300 50 
+F12 "PULSE_IN1" I R 17025 1800 50 
+F13 "PULSE_IN2" I R 17025 1950 50 
+$EndSheet
+Wire Wire Line
+	15500 2175 15150 2175
+Wire Wire Line
+	15500 2325 15150 2325
+Wire Wire Line
+	15500 1650 14900 1650
+Wire Wire Line
+	15500 1800 14900 1800
+Text Label 14900 1800 0    50   ~ 0
+STM_SCL
+Text Label 14900 1650 0    50   ~ 0
+STM_SDA
+Wire Wire Line
+	15500 1150 14900 1150
+Text Label 14900 1150 0    50   ~ 0
+PULSE1_EXT
+Text Label 14900 1300 0    50   ~ 0
+PULSE2_EXT
+Wire Wire Line
+	14900 1300 15500 1300
+Wire Wire Line
+	15500 1000 14900 1000
+Text Label 14900 1000 0    50   ~ 0
+HPM_EN
+Wire Wire Line
+	17025 1150 17625 1150
+Text Label 17625 1150 2    50   ~ 0
+LIGHT_INT
+Wire Wire Line
+	17025 1000 17625 1000
+Text Label 17625 1000 2    50   ~ 0
+TEMP_INT
+Text Label 17625 1650 2    50   ~ 0
+AUDIO_OP
+Wire Wire Line
+	17625 1650 17025 1650
+Wire Wire Line
+	17025 1950 17625 1950
+Text Label 17625 1950 2    50   ~ 0
+PULSE_IN2
+Text Label 17600 1800 2    50   ~ 0
+PULSE_IN1
+Wire Wire Line
+	17025 1800 17600 1800
 $EndSCHEMATC

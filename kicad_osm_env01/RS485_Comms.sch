@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -211,23 +211,19 @@ Connection ~ 6500 3650
 Wire Wire Line
 	6500 3650 6500 3600
 Wire Wire Line
-	6500 4100 7025 4100
+	6500 4100 6950 4100
 Connection ~ 6500 4100
 Wire Wire Line
 	6500 4100 6500 4050
-Text Notes 6750 3775 0    50   ~ 0
+Text Notes 7650 3700 0    50   ~ 0
 black wire
-Text Notes 6775 4200 0    50   ~ 0
+Text Notes 7675 4125 0    50   ~ 0
 red wire
 Wire Wire Line
 	6250 2825 6500 2825
 Connection ~ 6250 2825
-Text Label 7025 4100 2    50   ~ 0
-RS485+
 Wire Wire Line
-	6500 3650 7025 3650
-Text Label 7025 3650 2    50   ~ 0
-RS485-
+	6500 3650 6950 3650
 Wire Wire Line
 	4425 3825 5025 3825
 Wire Wire Line
@@ -276,9 +272,7 @@ F 3 "~" H 4950 3925 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4750 3925 5025 3925
-Text Label 4750 3925 0    50   ~ 0
-DE_485
+	4750 3925 4975 3925
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 609E7D9A
@@ -293,9 +287,7 @@ F 3 "~" H 4750 4175 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4550 4175 5025 4175
-Text Label 4550 4175 0    50   ~ 0
-Electric_TX
+	4550 4175 4875 4175
 Connection ~ 4900 3625
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
@@ -311,7 +303,50 @@ F 3 "~" H 4650 3625 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	4450 3625 4900 3625
-Text Label 4450 3625 0    50   ~ 0
-Electric_RX
+	4450 3625 4775 3625
+Text HLabel 7125 3750 2    50   Input ~ 0
+RS485-
+Text HLabel 7125 4200 2    50   Input ~ 0
+RS485+
+Wire Wire Line
+	7125 3750 6950 3750
+Wire Wire Line
+	6950 3750 6950 3650
+Connection ~ 6950 3650
+Wire Wire Line
+	6950 3650 7025 3650
+Wire Wire Line
+	7125 4200 6950 4200
+Wire Wire Line
+	6950 4200 6950 4100
+Connection ~ 6950 4100
+Wire Wire Line
+	6950 4100 7025 4100
+Text HLabel 4925 4025 0    50   Input ~ 0
+DE_485
+Wire Wire Line
+	4925 4025 4975 4025
+Wire Wire Line
+	4975 4025 4975 3925
+Connection ~ 4975 3925
+Wire Wire Line
+	4975 3925 5025 3925
+Text HLabel 4825 4275 0    50   Input ~ 0
+RS485_TX
+Text HLabel 4725 3525 0    50   Input ~ 0
+RS485_RX
+Wire Wire Line
+	4725 3525 4775 3525
+Wire Wire Line
+	4775 3525 4775 3625
+Connection ~ 4775 3625
+Wire Wire Line
+	4775 3625 4900 3625
+Wire Wire Line
+	4825 4275 4875 4275
+Wire Wire Line
+	4875 4275 4875 4175
+Connection ~ 4875 4175
+Wire Wire Line
+	4875 4175 5025 4175
 $EndSCHEMATC

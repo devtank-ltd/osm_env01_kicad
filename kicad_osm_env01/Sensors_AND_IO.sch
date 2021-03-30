@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 9
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -53,16 +53,10 @@ F3 "IO2_GPIOEXT" B L 1800 3350 50
 F4 "IO1_GPIOINT" O R 3200 3200 50 
 F5 "IO2_GPIOINT" O R 3200 3350 50 
 $EndSheet
-Text Label 900  1700 0    50   ~ 0
-PULSE_IN1
-Text Label 1325 3200 0    50   ~ 0
-PULSE1_EXT
 Wire Wire Line
-	1325 3200 1800 3200
-Text Label 1325 3350 0    50   ~ 0
-PULSE2_EXT
+	1325 3200 1375 3200
 Wire Wire Line
-	1325 3350 1800 3350
+	1325 3350 1375 3350
 Wire Wire Line
 	3200 3200 3600 3200
 Text Label 3600 3200 2    50   ~ 0
@@ -184,8 +178,6 @@ F 3 "" H 3375 1225 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3375 1725 3375 1600
-Text Label 2575 1725 0    50   ~ 0
-PULSE_IN2
 Wire Wire Line
 	2575 1725 3375 1725
 $Comp
@@ -224,65 +216,27 @@ Wire Wire Line
 Text Notes 8900 4150 0    118  ~ 0
 Light Sensor\n
 $Sheet
-S 9175 4925 725  975 
+S 8775 4875 725  975 
 U 60959880
 F0 "sheet6095987A" 50
 F1 "Sound.sch" 50
-F2 "Gate" I L 9175 5175 50 
-F3 "Audio" I L 9175 5375 50 
-F4 "Envelope" I L 9175 5575 50 
+F2 "Audio" I R 9500 5350 50 
 $EndSheet
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 60959886
-P 8575 5575
-AR Path="/60959886" Ref="TP?"  Part="1" 
-AR Path="/608F4675/60959886" Ref="TP?"  Part="1" 
-F 0 "TP?" V 8575 6300 50  0000 C CNN
-F 1 "Test_Point" V 8575 5950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8775 5575 50  0001 C CNN
-F 3 "~" H 8775 5575 50  0001 C CNN
-	1    8575 5575
-	0    -1   -1   0   
-$EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 6095988C
-P 8575 5375
+P 10100 5350
 AR Path="/6095988C" Ref="TP?"  Part="1" 
 AR Path="/608F4675/6095988C" Ref="TP?"  Part="1" 
-F 0 "TP?" V 8575 6100 50  0000 C CNN
-F 1 "Test_Point" V 8575 5750 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8775 5375 50  0001 C CNN
-F 3 "~" H 8775 5375 50  0001 C CNN
-	1    8575 5375
-	0    -1   -1   0   
+F 0 "TP?" V 10100 6075 50  0000 C CNN
+F 1 "Test_Point" V 10100 5725 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10300 5350 50  0001 C CNN
+F 3 "~" H 10300 5350 50  0001 C CNN
+	1    10100 5350
+	0    1    -1   0   
 $EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 60959892
-P 8575 5175
-AR Path="/60959892" Ref="TP?"  Part="1" 
-AR Path="/608F4675/60959892" Ref="TP?"  Part="1" 
-F 0 "TP?" V 8575 5900 50  0000 C CNN
-F 1 "Test_Point" V 8575 5550 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8775 5175 50  0001 C CNN
-F 3 "~" H 8775 5175 50  0001 C CNN
-	1    8575 5175
-	0    -1   -1   0   
-$EndComp
-Text Label 8575 5575 0    50   ~ 0
-AUDIO_Envelope
 Wire Wire Line
-	8575 5575 9175 5575
-Wire Wire Line
-	8575 5175 9175 5175
-Text Label 8575 5175 0    50   ~ 0
-AUDIO_GATE
-Wire Wire Line
-	8575 5375 9175 5375
-Text Label 8575 5375 0    50   ~ 0
-AUDIO_OP
+	10100 5350 10050 5350
 $Comp
 L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 6095989E
@@ -374,10 +328,8 @@ Wire Wire Line
 	8900 3475 8975 3475
 Wire Wire Line
 	7975 3725 7975 3650
-Text Label 10400 3300 2    50   ~ 0
-LIGHT_INT
 Wire Wire Line
-	10000 3300 10400 3300
+	10000 3300 10350 3300
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
 U 1 1 609598CB
@@ -419,10 +371,6 @@ F 3 "~" H 10600 3300 50  0001 C CNN
 	1    10400 3300
 	0    1    1    0   
 $EndComp
-Text Label 10575 3475 2    50   ~ 0
-SCL
-Text Label 10550 3125 2    50   ~ 0
-SDA
 $Comp
 L OSM_env01-rescue:TSL2561-Devtank-ESP32-EVB_Rev_D-rescue U?
 U 1 1 609598E0
@@ -439,7 +387,7 @@ $EndComp
 Wire Wire Line
 	10000 3125 10550 3125
 Wire Wire Line
-	10000 3475 10575 3475
+	10000 3600 10575 3600
 Wire Wire Line
 	8775 2775 8775 2975
 Connection ~ 8775 2975
@@ -462,203 +410,193 @@ Wire Wire Line
 	8375 2975 8475 2975
 Wire Wire Line
 	7975 3300 8975 3300
-Text Notes 8525 6350 0    118  ~ 0
+Text Notes 8125 6300 0    118  ~ 0
 Sound Level Meter\n
 $Comp
 L OSM_env01-rescue:HDC2080-Devtank-ESP32-EVB_Rev_D-rescue U?
 U 1 1 609598F4
-P 9375 1175
+P 8950 1200
 AR Path="/5F6F7717/609598F4" Ref="U?"  Part="1" 
 AR Path="/609598F4" Ref="U?"  Part="1" 
 AR Path="/608F4675/609598F4" Ref="U?"  Part="1" 
-F 0 "U?" H 9387 1615 50  0000 C CNN
-F 1 "HDC2080" H 9387 1524 50  0000 C CNN
-F 2 "Devtank_PCB_lib:HDC2080DMBR" H 9400 825 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 9175 1500 50  0001 C CNN
-	1    9375 1175
+F 0 "U?" H 8962 1640 50  0000 C CNN
+F 1 "HDC2080" H 8962 1549 50  0000 C CNN
+F 2 "Devtank_PCB_lib:HDC2080DMBR" H 8975 850 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 8750 1525 50  0001 C CNN
+	1    8950 1200
 	1    0    0    -1  
 $EndComp
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
 U 1 1 609598FA
-P 10375 1325
+P 10475 1350
 AR Path="/5F6F7717/609598FA" Ref="C?"  Part="1" 
 AR Path="/609598FA" Ref="C?"  Part="1" 
 AR Path="/608F4675/609598FA" Ref="C?"  Part="1" 
-F 0 "C?" H 10175 1300 50  0000 C CNN
-F 1 "100nF" H 10125 1400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 10413 1175 50  0001 C CNN
-F 3 "" H 10375 1325 50  0001 C CNN
-	1    10375 1325
+F 0 "C?" H 10275 1325 50  0000 C CNN
+F 1 "100nF" H 10225 1425 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 10513 1200 50  0001 C CNN
+F 3 "" H 10475 1350 50  0001 C CNN
+	1    10475 1350
 	-1   0    0    1   
 $EndComp
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 60959900
-P 8750 1425
+P 8325 1450
 AR Path="/5F6F7717/60959900" Ref="#PWR?"  Part="1" 
 AR Path="/60959900" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/60959900" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8750 1175 50  0001 C CNN
-F 1 "GND" H 8755 1252 50  0000 C CNN
-F 2 "" H 8750 1425 60  0000 C CNN
-F 3 "" H 8750 1425 60  0000 C CNN
-	1    8750 1425
+F 0 "#PWR?" H 8325 1200 50  0001 C CNN
+F 1 "GND" H 8330 1277 50  0000 C CNN
+F 2 "" H 8325 1450 60  0000 C CNN
+F 3 "" H 8325 1450 60  0000 C CNN
+	1    8325 1450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8750 1175 8875 1175
-Text Notes 8700 1950 0    118  ~ 0
+	8325 1200 8450 1200
+Text Notes 8275 1975 0    118  ~ 0
 Temp and Humidity\n
-Text Label 10675 1000 2    50   ~ 0
-SCL
-Text Label 8075 1000 0    50   ~ 0
-SDA
-Wire Wire Line
-	9900 1175 10375 1175
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 6095990B
-P 10375 1525
+P 10475 1550
 AR Path="/5F6F7717/6095990B" Ref="#PWR?"  Part="1" 
 AR Path="/6095990B" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/6095990B" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10375 1275 50  0001 C CNN
-F 1 "GND" H 10380 1352 50  0000 C CNN
-F 2 "" H 10375 1525 60  0000 C CNN
-F 3 "" H 10375 1525 60  0000 C CNN
-	1    10375 1525
+F 0 "#PWR?" H 10475 1300 50  0001 C CNN
+F 1 "GND" H 10480 1377 50  0000 C CNN
+F 2 "" H 10475 1550 60  0000 C CNN
+F 3 "" H 10475 1550 60  0000 C CNN
+	1    10475 1550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10375 1525 10375 1475
+	10475 1550 10475 1500
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60959912
-P 10575 1175
+P 10675 1200
 AR Path="/5F6F7717/60959912" Ref="#PWR?"  Part="1" 
 AR Path="/60959912" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/60959912" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 10575 1025 50  0001 C CNN
-F 1 "+3V3" V 10590 1303 50  0000 L CNN
-F 2 "" H 10575 1175 50  0001 C CNN
-F 3 "" H 10575 1175 50  0001 C CNN
-	1    10575 1175
+F 0 "#PWR?" H 10675 1050 50  0001 C CNN
+F 1 "+3V3" V 10690 1328 50  0000 L CNN
+F 2 "" H 10675 1200 50  0001 C CNN
+F 3 "" H 10675 1200 50  0001 C CNN
+	1    10675 1200
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	10375 1175 10575 1175
-Connection ~ 10375 1175
-Text Label 10250 1350 2    50   ~ 0
-TEMP_INT
-Wire Wire Line
-	9900 1350 10250 1350
+	10475 1200 10675 1200
+Connection ~ 10475 1200
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 6095991C
-P 10250 1350
+P 9575 1475
 AR Path="/5F6F7717/6095991C" Ref="TP?"  Part="1" 
 AR Path="/6095991C" Ref="TP?"  Part="1" 
 AR Path="/608F4675/6095991C" Ref="TP?"  Part="1" 
-F 0 "TP?" H 10600 1500 50  0000 C CNN
-F 1 "Test_Point" H 10500 1575 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10450 1350 50  0001 C CNN
-F 3 "~" H 10450 1350 50  0001 C CNN
-	1    10250 1350
+F 0 "TP?" H 9925 1625 50  0000 C CNN
+F 1 "Test_Point" H 9825 1700 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9775 1475 50  0001 C CNN
+F 3 "~" H 9775 1475 50  0001 C CNN
+	1    9575 1475
 	-1   0    0    1   
 $EndComp
 $Comp
 L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 60959922
-P 8250 1350
+P 7825 1375
 AR Path="/5F6F7717/60959922" Ref="R?"  Part="1" 
 AR Path="/60959922" Ref="R?"  Part="1" 
 AR Path="/608F4675/60959922" Ref="R?"  Part="1" 
-F 0 "R?" H 8320 1396 50  0000 L CNN
-F 1 "0R" H 8320 1305 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 1350 50  0001 C CNN
-F 3 "" H 8250 1350 50  0001 C CNN
-	1    8250 1350
+F 0 "R?" H 7895 1421 50  0000 L CNN
+F 1 "0R" H 7895 1330 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7755 1375 50  0001 C CNN
+F 3 "" H 7825 1375 50  0001 C CNN
+	1    7825 1375
 	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60959928
-P 8075 1350
+P 7650 1375
 AR Path="/5F6F7717/60959928" Ref="#PWR?"  Part="1" 
 AR Path="/60959928" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/60959928" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8075 1200 50  0001 C CNN
-F 1 "+3V3" H 8090 1523 50  0000 C CNN
-F 2 "" H 8075 1350 50  0001 C CNN
-F 3 "" H 8075 1350 50  0001 C CNN
-	1    8075 1350
+F 0 "#PWR?" H 7650 1225 50  0001 C CNN
+F 1 "+3V3" H 7665 1548 50  0000 C CNN
+F 2 "" H 7650 1375 50  0001 C CNN
+F 3 "" H 7650 1375 50  0001 C CNN
+	1    7650 1375
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	8100 1350 8075 1350
+	7675 1375 7650 1375
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 6095992F
-P 8025 1525
+P 7600 1550
 AR Path="/5F6F7717/6095992F" Ref="#PWR?"  Part="1" 
 AR Path="/6095992F" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/6095992F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8025 1275 50  0001 C CNN
-F 1 "GND" H 8030 1352 50  0000 C CNN
-F 2 "" H 8025 1525 60  0000 C CNN
-F 3 "" H 8025 1525 60  0000 C CNN
-	1    8025 1525
+F 0 "#PWR?" H 7600 1300 50  0001 C CNN
+F 1 "GND" H 7605 1377 50  0000 C CNN
+F 2 "" H 7600 1550 60  0000 C CNN
+F 3 "" H 7600 1550 60  0000 C CNN
+	1    7600 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8025 1525 8100 1525
+	7600 1550 7675 1550
 $Comp
 L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 60959936
-P 8250 1525
+P 7825 1550
 AR Path="/5F6F7717/60959936" Ref="R?"  Part="1" 
 AR Path="/60959936" Ref="R?"  Part="1" 
 AR Path="/608F4675/60959936" Ref="R?"  Part="1" 
-F 0 "R?" H 8320 1571 50  0000 L CNN
-F 1 "DNF" H 8320 1480 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8180 1525 50  0001 C CNN
-F 3 "" H 8250 1525 50  0001 C CNN
-	1    8250 1525
+F 0 "R?" H 7895 1596 50  0000 L CNN
+F 1 "DNF" H 7895 1505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7755 1550 50  0001 C CNN
+F 3 "" H 7825 1550 50  0001 C CNN
+	1    7825 1550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	8750 1175 8750 1425
+	8325 1200 8325 1450
 Wire Wire Line
-	8875 1350 8575 1350
+	8450 1375 8150 1375
 Wire Wire Line
-	8400 1525 8500 1525
+	7975 1550 8075 1550
 Wire Wire Line
-	8500 1525 8500 1350
-Connection ~ 8500 1350
+	8075 1550 8075 1375
+Connection ~ 8075 1375
 Wire Wire Line
-	8500 1350 8400 1350
+	8075 1375 7975 1375
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60959942
-P 8575 1350
+P 8150 1375
 AR Path="/5F6F7717/60959942" Ref="TP?"  Part="1" 
 AR Path="/60959942" Ref="TP?"  Part="1" 
 AR Path="/608F4675/60959942" Ref="TP?"  Part="1" 
-F 0 "TP?" H 8575 1575 50  0000 C CNN
-F 1 "Test_Point" H 8575 1650 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8775 1350 50  0001 C CNN
-F 3 "~" H 8775 1350 50  0001 C CNN
-	1    8575 1350
+F 0 "TP?" H 8150 1600 50  0000 C CNN
+F 1 "Test_Point" H 8150 1675 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8350 1375 50  0001 C CNN
+F 3 "~" H 8350 1375 50  0001 C CNN
+	1    8150 1375
 	1    0    0    -1  
 $EndComp
-Connection ~ 8575 1350
+Connection ~ 8150 1375
 Wire Wire Line
-	8575 1350 8500 1350
+	8150 1375 8075 1375
 Wire Wire Line
-	9900 1000 10675 1000
+	9475 1025 10250 1025
 Wire Wire Line
-	8075 1000 8875 1000
+	7650 1025 8450 1025
 $Comp
 L OSM_env01-rescue:Conn_01x08-Connector-ESP32-EVB_Rev_D-rescue J?
 U 1 1 609BB471
@@ -693,13 +631,9 @@ Wire Wire Line
 Wire Wire Line
 	2125 7175 2225 7175
 Wire Wire Line
-	2225 6975 1900 6975
+	2225 6975 2075 6975
 Wire Wire Line
-	2225 7075 1900 7075
-Text Label 1925 7075 0    50   ~ 0
-HMP_TX
-Text Label 1925 6975 0    50   ~ 0
-HMP_RX
+	2225 7075 2025 7075
 Text Notes 2900 5625 0    118  ~ 0
 Particulate Sensor\n
 $Comp
@@ -886,8 +820,6 @@ F 3 "" H 4275 6875 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4725 6875
-Text Label 3525 6875 0    50   ~ 0
-SW_SEL
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 609BB4E3
@@ -919,7 +851,7 @@ F 3 "~" H 6475 6275 50  0001 C CNN
 $EndComp
 Connection ~ 6275 6275
 Wire Wire Line
-	3525 6875 3825 6875
+	3800 6875 3825 6875
 Wire Wire Line
 	4225 6775 4225 6625
 Wire Wire Line
@@ -1014,4 +946,147 @@ Wire Notes Line
 	7200 4400 11150 4425
 Wire Notes Line
 	525  5250 7175 5250
+Text HLabel 1800 6900 0    50   Input ~ 0
+HPM_RX
+Text HLabel 1800 7150 0    50   Input ~ 0
+HPM_TX
+Wire Wire Line
+	1800 6900 2075 6900
+Wire Wire Line
+	2075 6900 2075 6975
+Connection ~ 2075 6975
+Wire Wire Line
+	2075 6975 1900 6975
+Wire Wire Line
+	1800 7150 2025 7150
+Wire Wire Line
+	2025 7150 2025 7075
+Connection ~ 2025 7075
+Wire Wire Line
+	2025 7075 1900 7075
+Text HLabel 3800 6875 0    50   Input ~ 0
+HPM_EN
+Text HLabel 9725 1375 2    50   Input ~ 0
+TEMP_INT
+Wire Wire Line
+	9575 1475 9575 1375
+Wire Wire Line
+	9575 1375 9475 1375
+Wire Wire Line
+	9575 1375 9725 1375
+Connection ~ 9575 1375
+Wire Wire Line
+	9475 1200 10475 1200
+Text HLabel 10250 1025 2    50   Input ~ 0
+SCL
+Text HLabel 7650 1025 0    50   Input ~ 0
+SDA
+Text HLabel 10550 3125 2    50   Input ~ 0
+SDA
+Text HLabel 10575 3600 2    50   Input ~ 0
+SCL
+Text HLabel 10500 3400 2    50   Input ~ 0
+LIGHT_INT
+Wire Wire Line
+	10000 3600 10000 3475
+Wire Wire Line
+	10500 3400 10350 3400
+Wire Wire Line
+	10350 3400 10350 3300
+Connection ~ 10350 3300
+Wire Wire Line
+	10350 3300 10400 3300
+Text HLabel 10200 5450 2    50   Input ~ 0
+AUDIO_OP
+Wire Wire Line
+	10200 5450 10050 5450
+Wire Wire Line
+	10050 5450 10050 5350
+Connection ~ 10050 5350
+Wire Wire Line
+	10050 5350 9500 5350
+Text HLabel 1225 3050 0    50   Input ~ 0
+PULSE1_EXT
+Wire Wire Line
+	1225 3050 1375 3050
+Text HLabel 1225 3525 0    50   Input ~ 0
+PULSE2_EXT
+Wire Wire Line
+	1225 3525 1375 3525
+Wire Wire Line
+	1375 3525 1375 3350
+Connection ~ 1375 3350
+Wire Wire Line
+	1375 3350 1800 3350
+Wire Wire Line
+	1375 3200 1375 3050
+Connection ~ 1375 3200
+Wire Wire Line
+	1375 3200 1800 3200
+Text HLabel 900  1700 0    50   Input ~ 0
+PULSE_IN1
+Text HLabel 2575 1725 0    50   Input ~ 0
+PULSE_IN2
+$Comp
+L device:R R?
+U 1 1 60C1B2C9
+P -1000 6400
+F 0 "R?" V -1207 6400 50  0000 C CNN
+F 1 "R" V -1116 6400 50  0000 C CNN
+F 2 "" V -1070 6400 50  0001 C CNN
+F 3 "" H -1000 6400 50  0001 C CNN
+	1    -1000 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 60C1BD95
+P -725 6550
+F 0 "C?" H -610 6596 50  0000 L CNN
+F 1 "C" H -610 6505 50  0000 L CNN
+F 2 "" H -687 6400 50  0001 C CNN
+F 3 "" H -725 6550 50  0001 C CNN
+	1    -725 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 60C1C734
+P -275 6400
+F 0 "R?" V -482 6400 50  0000 C CNN
+F 1 "DNF" V -391 6400 50  0000 C CNN
+F 2 "" V -345 6400 50  0001 C CNN
+F 3 "" H -275 6400 50  0001 C CNN
+	1    -275 6400
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R?
+U 1 1 60C1D103
+P -275 7100
+F 0 "R?" V -482 7100 50  0000 C CNN
+F 1 "0R" V -391 7100 50  0000 C CNN
+F 2 "" V -345 7100 50  0001 C CNN
+F 3 "" H -275 7100 50  0001 C CNN
+	1    -275 7100
+	0    1    1    0   
+$EndComp
+$Comp
+L OSM_env01:GND #PWR?
+U 1 1 60C1FCBC
+P -725 6775
+F 0 "#PWR?" H -725 6525 50  0001 C CNN
+F 1 "GND" H -720 6602 50  0000 C CNN
+F 2 "" H -725 6775 60  0000 C CNN
+F 3 "" H -725 6775 60  0000 C CNN
+	1    -725 6775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	-725 6775 -725 6700
+Wire Wire Line
+	-850 6400 -725 6400
+Connection ~ -725 6400
+Wire Wire Line
+	-725 6400 -425 6400
 $EndSCHEMATC

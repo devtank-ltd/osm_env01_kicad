@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 9
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -29,7 +29,7 @@ F 3 "http://www.wireless-solutions.de/images/stories/downloads/Radio%20Modules/i
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3300 3425 2950 3425
+	3300 3425 3250 3425
 Wire Wire Line
 	3300 3650 2950 3650
 Wire Wire Line
@@ -38,8 +38,6 @@ Text Label 2950 3850 0    50   ~ 0
 LORA_TX
 Text Label 2950 3650 0    50   ~ 0
 LORA_RX
-Text Label 2950 3425 0    50   ~ 0
-LORA_CTS
 Wire Wire Line
 	4000 2800 4275 2800
 $Comp
@@ -331,7 +329,6 @@ NoConn ~ 9025 3975
 NoConn ~ 9025 3850
 NoConn ~ 9025 3550
 NoConn ~ 9025 3425
-NoConn ~ 9025 3300
 NoConn ~ 7275 3550
 $Comp
 L Devtank:RAK4270 U?
@@ -355,10 +352,41 @@ NoConn ~ 7275 3425
 NoConn ~ 7275 3300
 Wire Wire Line
 	7275 3675 6900 3675
-Text Label 6900 3675 0    50   ~ 0
-LORA_RX
 Wire Wire Line
 	7275 3800 6900 3800
-Text Label 6900 3800 0    50   ~ 0
+Text HLabel 6900 3675 0    50   Input ~ 0
+LORA_RX
+Text HLabel 6900 3800 0    50   Input ~ 0
 LORA_TX
+Text HLabel 3175 3350 0    50   Input ~ 0
+LORA_CTS
+Wire Wire Line
+	3175 3350 3250 3350
+Wire Wire Line
+	3250 3350 3250 3425
+Connection ~ 3250 3425
+Wire Wire Line
+	3250 3425 2950 3425
+Text HLabel 9400 3300 2    50   Input ~ 0
+LORA_NRST
+Wire Wire Line
+	9400 3300 9300 3300
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 606B4551
+P 9300 3400
+AR Path="/606B4551" Ref="TP?"  Part="1" 
+AR Path="/60880AD8/606B4551" Ref="TP?"  Part="1" 
+F 0 "TP?" V 9300 4150 50  0000 C CNN
+F 1 "Test_Point" V 9300 3775 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9500 3400 50  0001 C CNN
+F 3 "~" H 9500 3400 50  0001 C CNN
+	1    9300 3400
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	9300 3400 9300 3300
+Connection ~ 9300 3300
+Wire Wire Line
+	9300 3300 9025 3300
 $EndSCHEMATC

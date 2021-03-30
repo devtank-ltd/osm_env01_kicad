@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 9
+Sheet 5 9
 Title ""
 Date ""
 Rev ""
@@ -420,10 +420,6 @@ Text HLabel 8675 3325 2    50   Input ~ 0
 PB3
 Wire Wire Line
 	8675 3325 8575 3325
-Text HLabel 8675 3425 2    50   Input ~ 0
-PA15
-Wire Wire Line
-	8675 3425 8575 3425
 Text HLabel 8675 3525 2    50   Input ~ 0
 PA14
 Wire Wire Line
@@ -444,4 +440,49 @@ Text HLabel 8675 3625 2    50   Input ~ 0
 PA13
 Wire Wire Line
 	8675 3625 8575 3625
+Wire Wire Line
+	10100 3425 10400 3425
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
+U 1 1 60BF8FB6
+P 10400 3425
+AR Path="/60BF8FB6" Ref="#PWR?"  Part="1" 
+AR Path="/60917DD5/60BF8FB6" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 10400 3175 50  0001 C CNN
+F 1 "GND" H 10405 3252 50  0000 C CNN
+F 2 "" H 10400 3425 60  0000 C CNN
+F 3 "" H 10400 3425 60  0000 C CNN
+	1    10400 3425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9800 3425 9650 3425
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60BF8FBD
+P 9500 3425
+AR Path="/60BF8FBD" Ref="R?"  Part="1" 
+AR Path="/60917DD5/60BF8FBD" Ref="R?"  Part="1" 
+F 0 "R?" V 9293 3425 50  0000 C CNN
+F 1 "330R" V 9384 3425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9430 3425 50  0001 C CNN
+F 3 "" H 9500 3425 50  0001 C CNN
+	1    9500 3425
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	8575 3425 9350 3425
+$Comp
+L device:LED D?
+U 1 1 60C00D45
+P 9950 3425
+F 0 "D?" H 9943 3170 50  0000 C CNN
+F 1 "STM_STATUS" H 9943 3261 50  0000 C CNN
+F 2 "" H 9950 3425 50  0001 C CNN
+F 3 "~" H 9950 3425 50  0001 C CNN
+	1    9950 3425
+	-1   0    0    1   
+$EndComp
+Text Notes 10100 3925 0    50   ~ 0
+check led polarity\n
 $EndSCHEMATC
