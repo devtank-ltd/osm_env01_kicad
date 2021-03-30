@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 8
+Sheet 1 9
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -13,17 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L OSM_env01-rescue:ESP-WROOM-32-ESP32-EVB_Rev_D U3
-U 1 1 5DCB1347
-P 4825 5325
-F 0 "U3" H 4812 7114 60  0000 C CNN
-F 1 "ESP-WROOM-32" H 4812 7008 60  0000 C CNN
-F 2 "Devtank_PCB_lib:ESP32-WROOM-32U" H 3925 5525 60  0001 C CNN
-F 3 "" H 3925 5525 60  0001 C CNN
-	1    4825 5325
-	1    0    0    -1  
-$EndComp
 $Comp
 L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R15
 U 1 1 5E2C21F3
@@ -46,48 +35,6 @@ F 3 "" H 6625 8825 50  0001 C CNN
 	1    6625 8825
 	1    0    0    -1  
 $EndComp
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR0120
-U 1 1 5E4264F5
-P 2750 4425
-F 0 "#PWR0120" H 2750 4175 50  0001 C CNN
-F 1 "GND" H 2755 4252 50  0000 C CNN
-F 2 "" H 2750 4425 60  0000 C CNN
-F 3 "" H 2750 4425 60  0000 C CNN
-	1    2750 4425
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	2750 4425 3025 4425
-$Comp
-L OSM_env01-rescue:R-ESP32-EVB_Rev_D R6
-U 1 1 5E590699
-P 2275 4450
-F 0 "R6" V 2375 4625 50  0000 C CNN
-F 1 "12K" V 2275 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2275 4380 30  0001 C CNN
-F 3 "" V 2275 4450 30  0000 C CNN
-F 4 "Value 1" H 2275 4450 60  0001 C CNN "Fieldname 1"
-F 5 "Value2" H 2275 4450 60  0001 C CNN "Fieldname2"
-F 6 "Value3" H 2275 4450 60  0001 C CNN "Fieldname3"
-	1    2275 4450
-	0    -1   -1   0   
-$EndComp
-$Sheet
-S 2000 7975 975  1200
-U 5F4610BE
-F0 "USB_debug" 50
-F1 "USB_debug.sch" 50
-F2 "RS232_RX" I R 2975 8150 50 
-F3 "RS232_TX" I R 2975 8300 50 
-F4 "D+" B L 2000 8300 50 
-F5 "D-" B L 2000 8400 50 
-F6 "VBUS" I L 2000 8200 50 
-F7 "RS232_RTS" I R 2975 8450 50 
-F8 "RS232_CTS" I R 2975 8600 50 
-F9 "EN" I R 2975 8900 50 
-F10 "IO0" I R 2975 9050 50 
-$EndSheet
 Wire Wire Line
 	2000 8200 1675 8200
 Text Label 1675 8200 0    50   ~ 0
@@ -100,42 +47,6 @@ Wire Wire Line
 	2000 8400 1675 8400
 Text Label 1675 8400 0    50   ~ 0
 USB_D-
-Text Label 7475 5925 2    50   ~ 0
-SCL
-Text Label 7475 5825 2    50   ~ 0
-SDA
-Wire Wire Line
-	7075 5925 7475 5925
-Wire Wire Line
-	7075 5825 7475 5825
-Text Label 7475 5525 2    50   ~ 0
-MULTI_RX
-Text Label 7475 5425 2    50   ~ 0
-MULTI_TX
-Wire Wire Line
-	7075 5425 7475 5425
-Wire Wire Line
-	7075 5525 7475 5525
-Wire Wire Line
-	7075 6425 7475 6425
-Text Label 7675 6725 2    50   ~ 0
-PULSE_IN2
-Wire Wire Line
-	7075 6725 7675 6725
-Text Label 7475 6425 2    50   ~ 0
-PULSE_IN1
-Text Label 7475 5725 2    50   ~ 0
-LORA_RX
-Wire Wire Line
-	7075 5725 7475 5725
-Text Label 7475 5625 2    50   ~ 0
-LORA_TX
-Wire Wire Line
-	7075 5625 7475 5625
-Wire Wire Line
-	7075 6025 7475 6025
-Text Label 7475 6025 2    50   ~ 0
-LORA_CTS
 $Comp
 L OSM_env01-rescue:Conn_01x08-Connector-ESP32-EVB_Rev_D-rescue J2
 U 1 1 5E1CC832
@@ -147,7 +58,7 @@ F 3 "~" H 4600 13225 50  0001 C CNN
 	1    4600 13225
 	1    0    0    -1  
 $EndComp
-Text Notes 3700 14150 0    118  ~ 0
+Text Notes 2975 14125 0    118  ~ 0
 Main Connector
 Text Label 3800 12925 0    50   ~ 0
 RS485+
@@ -157,7 +68,6 @@ Text Label 3800 13025 0    50   ~ 0
 RS485-
 Wire Wire Line
 	4400 13225 3800 13225
-NoConn ~ 4400 13625
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR07
 U 1 1 5EEBB9FF
@@ -187,68 +97,8 @@ Text Label 3800 13225 0    50   ~ 0
 PULSE1_EXT
 Text Label 3800 13425 0    50   ~ 0
 PULSE2_EXT
-$Comp
-L power:+3V3 #PWR01
-U 1 1 5E1EB494
-P 2275 4275
-F 0 "#PWR01" H 2275 4125 50  0001 C CNN
-F 1 "+3V3" H 2290 4448 50  0000 C CNN
-F 2 "" H 2275 4275 50  0001 C CNN
-F 3 "" H 2275 4275 50  0001 C CNN
-	1    2275 4275
-	1    0    0    -1  
-$EndComp
-Text Label 7475 3925 2    50   ~ 0
-RS232_RX
-Text Label 7475 4125 2    50   ~ 0
-RS232_TX
-$Comp
-L OSM_env01-rescue:LED-device-ESP32-EVB_Rev_D-rescue ESP_STATUS1
-U 1 1 5E12813A
-P 8850 6525
-F 0 "ESP_STATUS1" H 8843 6741 50  0000 C CNN
-F 1 "LED" H 8843 6650 50  0000 C CNN
-F 2 "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z5.0mm" H 8850 6525 50  0001 C CNN
-F 3 "~" H 8850 6525 50  0001 C CNN
-	1    8850 6525
-	-1   0    0    1   
-$EndComp
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R26
-U 1 1 5E1287DA
-P 8400 6525
-F 0 "R26" V 8193 6525 50  0000 C CNN
-F 1 "330R" V 8284 6525 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 8330 6525 50  0001 C CNN
-F 3 "" H 8400 6525 50  0001 C CNN
-	1    8400 6525
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8700 6525 8550 6525
-Text Notes 7325 4650 0    50   ~ 0
-gpio6-11 used for spi
-Wire Wire Line
-	2275 4625 1750 4625
-Text Label 1850 4625 0    60   ~ 0
-ESP_EN
-Text Label 7475 6125 2    50   ~ 0
-DE_485
-Wire Wire Line
-	7475 6125 7075 6125
 Text Notes 8725 3100 0    50   ~ 0
 \n
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP1
-U 1 1 5E8D5E8B
-P 1750 4625
-F 0 "TP1" V 1825 5125 50  0000 C CNN
-F 1 "Test_Point" V 1750 5000 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1950 4625 50  0001 C CNN
-F 3 "~" H 1950 4625 50  0001 C CNN
-	1    1750 4625
-	0    -1   -1   0   
-$EndComp
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP8
 U 1 1 5EC4796F
@@ -260,279 +110,24 @@ F 3 "~" H 1875 8200 50  0001 C CNN
 	1    1675 8200
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	7075 3825 7475 3825
-Text Label 7475 3825 2    50   ~ 0
-ESP_IO0
-Wire Wire Line
-	10675 4275 10100 4275
-Text Label 10675 4275 2    60   ~ 0
-ESP_EN
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5E4FB209
-P 9475 4275
-F 0 "SW2" H 9475 4510 50  0000 C CNN
-F 1 "SW_SPST" H 9475 4419 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 9475 4275 50  0001 C CNN
-F 3 "" H 9475 4275 50  0001 C CNN
-	1    9475 4275
-	1    0    0    -1  
-$EndComp
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR03
-U 1 1 5E4FB20F
-P 9050 4400
-F 0 "#PWR03" H 9050 4150 50  0001 C CNN
-F 1 "GND" H 9055 4227 50  0000 C CNN
-F 2 "" H 9050 4400 60  0000 C CNN
-F 3 "" H 9050 4400 60  0000 C CNN
-	1    9050 4400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 4400 9050 4275
-Text Label 10625 5200 2    60   ~ 0
-ESP_IO0
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5E564E5F
-P 9425 5200
-F 0 "SW1" H 9425 5435 50  0000 C CNN
-F 1 "SW_SPST" H 9425 5344 50  0000 C CNN
-F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 9425 5200 50  0001 C CNN
-F 3 "" H 9425 5200 50  0001 C CNN
-	1    9425 5200
-	1    0    0    -1  
-$EndComp
-Text Notes 10800 4300 0    50   ~ 0
-Reset\n
-Text Notes 10775 5225 0    50   ~ 0
-Boot
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C27
-U 1 1 5E5CFFBB
-P 9425 4500
-F 0 "C27" H 9540 4591 50  0000 L CNN
-F 1 "1nF" H 9540 4500 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9463 4350 50  0001 C CNN
-F 3 "" H 9425 4500 50  0001 C CNN
-F 4 "10%" H 9425 4500 50  0001 C CNN "Tolerance"
-F 5 "50V" H 9540 4409 50  0000 L CNN "Voltage"
-	1    9425 4500
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9275 4500 9175 4500
-Wire Wire Line
-	9175 4500 9175 4275
-Wire Wire Line
-	9175 4275 9050 4275
-Wire Wire Line
-	9275 4275 9175 4275
-Connection ~ 9175 4275
-Wire Wire Line
-	9575 4500 9800 4500
-Wire Wire Line
-	9800 4500 9800 4275
-Wire Wire Line
-	9800 4275 9675 4275
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR02
-U 1 1 5E6F5804
-P 9000 5325
-F 0 "#PWR02" H 9000 5075 50  0001 C CNN
-F 1 "GND" H 9005 5152 50  0000 C CNN
-F 2 "" H 9000 5325 60  0000 C CNN
-F 3 "" H 9000 5325 60  0000 C CNN
-	1    9000 5325
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 5325 9000 5200
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C28
-U 1 1 5E7DEDD2
-P 1750 3675
-F 0 "C28" H 1865 3766 50  0000 L CNN
-F 1 "100nF" H 1865 3675 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1788 3525 50  0001 C CNN
-F 3 "" H 1750 3675 50  0001 C CNN
-F 4 "6.3V" H 1865 3584 50  0000 L CNN "Voltage"
-F 5 "20%" H 1750 3675 50  0001 C CNN "Tolerance "
-	1    1750 3675
-	1    0    0    -1  
-$EndComp
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C29
-U 1 1 5E7DF2AA
-P 2225 3675
-F 0 "C29" H 2340 3766 50  0000 L CNN
-F 1 "1uF" H 2340 3675 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2263 3525 50  0001 C CNN
-F 3 "" H 2225 3675 50  0001 C CNN
-F 4 "10%" H 2225 3675 50  0001 C CNN "Tolerance"
-F 5 "10V" H 2340 3584 50  0000 L CNN "Voltage"
-	1    2225 3675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1750 3525 2075 3525
-Wire Wire Line
-	1750 3825 2075 3825
-$Comp
-L power:+3V3 #PWR020
-U 1 1 5E850BFC
-P 2075 3525
-F 0 "#PWR020" H 2075 3375 50  0001 C CNN
-F 1 "+3V3" H 2090 3698 50  0000 C CNN
-F 2 "" H 2075 3525 50  0001 C CNN
-F 3 "" H 2075 3525 50  0001 C CNN
-	1    2075 3525
-	1    0    0    -1  
-$EndComp
-Connection ~ 2075 3525
-Wire Wire Line
-	2075 3525 2225 3525
-Wire Wire Line
-	2900 3525 2900 3825
-Wire Wire Line
-	2900 3825 3025 3825
-Connection ~ 2225 3525
-Wire Wire Line
-	3025 4125 2950 4125
-Wire Wire Line
-	2950 4125 2950 4025
-Wire Wire Line
-	2950 3925 3025 3925
-Wire Wire Line
-	3025 4025 2950 4025
-Connection ~ 2950 4025
-Wire Wire Line
-	2950 4025 2950 3925
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR023
-U 1 1 5E8ED5DC
-P 2825 4025
-F 0 "#PWR023" H 2825 3775 50  0001 C CNN
-F 1 "GND" H 2830 3852 50  0000 C CNN
-F 2 "" H 2825 4025 60  0000 C CNN
-F 3 "" H 2825 4025 60  0000 C CNN
-	1    2825 4025
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2825 4025 2950 4025
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR021
-U 1 1 5E916224
-P 2075 3825
-F 0 "#PWR021" H 2075 3575 50  0001 C CNN
-F 1 "GND" H 2080 3652 50  0000 C CNN
-F 2 "" H 2075 3825 60  0000 C CNN
-F 3 "" H 2075 3825 60  0000 C CNN
-	1    2075 3825
-	1    0    0    -1  
-$EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP2
-U 1 1 5E968136
-P 2825 4025
-F 0 "TP2" V 2975 4275 50  0000 C CNN
-F 1 "Test_Point" V 2900 4150 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3025 4025 50  0001 C CNN
-F 3 "~" H 3025 4025 50  0001 C CNN
-	1    2825 4025
-	0    -1   -1   0   
-$EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP3
-U 1 1 5E991E8D
-P 2900 3525
-F 0 "TP3" H 3025 3625 50  0000 C CNN
-F 1 "Test_Point" H 3150 3550 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3100 3525 50  0001 C CNN
-F 3 "~" H 3100 3525 50  0001 C CNN
-	1    2900 3525
-	1    0    0    -1  
-$EndComp
-Connection ~ 2075 3825
-Wire Wire Line
-	2075 3825 2225 3825
-Wire Wire Line
-	2225 3525 2900 3525
-Connection ~ 2900 3525
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C30
-U 1 1 5EA38480
-P 2275 4825
-F 0 "C30" H 2390 4916 50  0000 L CNN
-F 1 "1nF" H 2390 4825 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2313 4675 50  0001 C CNN
-F 3 "" H 2275 4825 50  0001 C CNN
-F 4 "50V" H 2390 4734 50  0000 L CNN "Voltage"
-F 5 "10%" H 2275 4825 50  0001 C CNN "Tolerance "
-	1    2275 4825
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2275 4625 2275 4600
-Wire Wire Line
-	2275 4625 3025 4625
-Wire Wire Line
-	2275 4675 2275 4625
-Connection ~ 2275 4625
-Wire Wire Line
-	2275 4300 2275 4275
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR022
-U 1 1 5EC69FC8
-P 2275 5000
-F 0 "#PWR022" H 2275 4750 50  0001 C CNN
-F 1 "GND" H 2280 4827 50  0000 C CNN
-F 2 "" H 2275 5000 60  0000 C CNN
-F 3 "" H 2275 5000 60  0000 C CNN
-	1    2275 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2275 5000 2275 4975
-Text Notes 2050 9950 0    50   ~ 0
+Text Notes 2100 10950 0    50   ~ 0
 DTR\n1\n0\n1\n0
-Text Notes 2250 9950 0    50   ~ 0
+Text Notes 2300 10950 0    50   ~ 0
 RTS-->\n1\n0\n0\n1
-Text Notes 2575 9950 0    50   ~ 0
+Text Notes 2625 10950 0    50   ~ 0
 EN\n1\n1\n0\n1
-Text Notes 2750 9950 0    50   ~ 0
+Text Notes 2800 10950 0    50   ~ 0
 IO0\n1\n1\n1\n0
 Wire Notes Line
-	2025 9550 2025 9975
+	2075 10550 2075 10975
 Wire Notes Line
-	2025 9975 2900 9975
+	2075 10975 2950 10975
 Wire Notes Line
-	2900 9975 2900 9550
+	2950 10975 2950 10550
 Wire Notes Line
-	2900 9550 2025 9550
+	2950 10550 2075 10550
 Wire Notes Line
-	2025 9635 2895 9635
-Wire Wire Line
-	7675 6625 7075 6625
-Text Label 7675 6625 2    50   ~ 0
-AUDIO_OP
-NoConn ~ 6725 4025
-NoConn ~ 6725 4425
-NoConn ~ 6725 4525
-NoConn ~ 6725 4825
-NoConn ~ 6725 4925
-NoConn ~ 6725 5025
-Text Label 7675 6825 2    50   ~ 0
-AUDIO_GATE
-Wire Wire Line
-	7675 6825 7075 6825
-Wire Wire Line
-	7675 6925 7075 6925
-Text Label 7675 6925 2    50   ~ 0
-AUDIO_Envelope
+	2075 10635 2945 10635
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP16
 U 1 1 5E3658D8
@@ -607,307 +202,6 @@ Wire Wire Line
 	2975 8150 3375 8150
 Text Label 3375 8150 2    50   ~ 0
 RS232_RX
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R8
-U 1 1 5EAA6A1D
-P 6925 3825
-F 0 "R8" V 6718 3825 50  0000 C CNN
-F 1 "0R" V 6809 3825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 3825 50  0001 C CNN
-F 3 "" H 6925 3825 50  0001 C CNN
-	1    6925 3825
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 3825 6775 3825
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R24
-U 1 1 5EBB7A75
-P 6925 6425
-F 0 "R24" V 6925 5725 50  0000 C CNN
-F 1 "0R" V 6925 5550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6425 50  0001 C CNN
-F 3 "" H 6925 6425 50  0001 C CNN
-	1    6925 6425
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 6425 6775 6425
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R55
-U 1 1 5EC15B95
-P 6925 6125
-F 0 "R55" V 6925 5425 50  0000 C CNN
-F 1 "0R" V 6925 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6125 50  0001 C CNN
-F 3 "" H 6925 6125 50  0001 C CNN
-	1    6925 6125
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 6125 6775 6125
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R57
-U 1 1 5EC34D8A
-P 6925 5425
-F 0 "R57" V 6900 4725 50  0000 C CNN
-F 1 "0R" V 6900 4550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5425 50  0001 C CNN
-F 3 "" H 6925 5425 50  0001 C CNN
-	1    6925 5425
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5425 6775 5425
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R58
-U 1 1 5EC54517
-P 6925 5525
-F 0 "R58" V 6900 4825 50  0000 C CNN
-F 1 "0R" V 6900 4650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5525 50  0001 C CNN
-F 3 "" H 6925 5525 50  0001 C CNN
-	1    6925 5525
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5525 6775 5525
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R59
-U 1 1 5EC5451E
-P 6925 5625
-F 0 "R59" V 6900 4925 50  0000 C CNN
-F 1 "0R" V 6900 4750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5625 50  0001 C CNN
-F 3 "" H 6925 5625 50  0001 C CNN
-	1    6925 5625
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5625 6775 5625
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R60
-U 1 1 5ECD5C94
-P 6925 5725
-F 0 "R60" V 6900 5025 50  0000 C CNN
-F 1 "0R" V 6900 4850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5725 50  0001 C CNN
-F 3 "" H 6925 5725 50  0001 C CNN
-	1    6925 5725
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5725 6775 5725
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R65
-U 1 1 5ED1FE89
-P 6925 6725
-F 0 "R65" V 6900 5875 50  0000 C CNN
-F 1 "0R" V 6900 5725 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6725 50  0001 C CNN
-F 3 "" H 6925 6725 50  0001 C CNN
-	1    6925 6725
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 6725 6775 6725
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R66
-U 1 1 5ED1FE97
-P 6925 6625
-F 0 "R66" V 6900 5775 50  0000 C CNN
-F 1 "0R" V 6900 5625 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6625 50  0001 C CNN
-F 3 "" H 6925 6625 50  0001 C CNN
-	1    6925 6625
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 6625 6775 6625
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R67
-U 1 1 5ED1FE9E
-P 6925 6925
-F 0 "R67" V 6900 6075 50  0000 C CNN
-F 1 "0R" V 6900 5925 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6925 50  0001 C CNN
-F 3 "" H 6925 6925 50  0001 C CNN
-	1    6925 6925
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 6925 6775 6925
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R63
-U 1 1 5EDDCB6C
-P 6925 6025
-F 0 "R63" V 6925 5325 50  0000 C CNN
-F 1 "0R" V 6925 5150 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6025 50  0001 C CNN
-F 3 "" H 6925 6025 50  0001 C CNN
-	1    6925 6025
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 6025 6775 6025
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R64
-U 1 1 5EDDCB73
-P 6925 6825
-F 0 "R64" V 6900 5975 50  0000 C CNN
-F 1 "0R" V 6900 5825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6825 50  0001 C CNN
-F 3 "" H 6925 6825 50  0001 C CNN
-	1    6925 6825
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 6825 6775 6825
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R61
-U 1 1 5EDFF3C2
-P 6925 5825
-F 0 "R61" V 6925 5125 50  0000 C CNN
-F 1 "0R" V 6925 4950 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5825 50  0001 C CNN
-F 3 "" H 6925 5825 50  0001 C CNN
-	1    6925 5825
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5825 6775 5825
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R62
-U 1 1 5EDFF3C9
-P 6925 5925
-F 0 "R62" V 6925 5225 50  0000 C CNN
-F 1 "0R" V 6925 5050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5925 50  0001 C CNN
-F 3 "" H 6925 5925 50  0001 C CNN
-	1    6925 5925
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5925 6775 5925
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R71
-U 1 1 5EF3F3D6
-P 9950 4275
-F 0 "R71" V 9743 4275 50  0000 C CNN
-F 1 "470R" V 9834 4275 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9880 4275 50  0001 C CNN
-F 3 "" H 9950 4275 50  0001 C CNN
-	1    9950 4275
-	0    1    1    0   
-$EndComp
-Connection ~ 9800 4275
-Wire Wire Line
-	6725 4125 7475 4125
-Wire Wire Line
-	6725 3925 7475 3925
-Text Label 7475 4225 2    50   ~ 0
-LIGHT_INT
-Wire Wire Line
-	7075 4225 7475 4225
-Text Label 7475 6225 2    50   ~ 0
-TEMP_INT
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R56
-U 1 1 5E3A0FC8
-P 6925 4225
-F 0 "R56" V 7025 4225 50  0000 C CNN
-F 1 "0R" V 7100 4250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 4225 50  0001 C CNN
-F 3 "" H 6925 4225 50  0001 C CNN
-	1    6925 4225
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 4225 6775 4225
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C12
-U 1 1 5E239FF8
-P 850 3675
-F 0 "C12" H 965 3766 50  0000 L CNN
-F 1 "DNF" H 965 3675 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 888 3525 50  0001 C CNN
-F 3 "" H 850 3675 50  0001 C CNN
-F 4 "20%" H 850 3675 50  0001 C CNN "Tolerance "
-	1    850  3675
-	1    0    0    -1  
-$EndComp
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C13
-U 1 1 5E23A000
-P 1325 3675
-F 0 "C13" H 1440 3766 50  0000 L CNN
-F 1 "DNF" H 1440 3675 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 1363 3525 50  0001 C CNN
-F 3 "" H 1325 3675 50  0001 C CNN
-F 4 "10%" H 1325 3675 50  0001 C CNN "Tolerance"
-	1    1325 3675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	850  3825 1325 3825
-Connection ~ 1750 3825
-Connection ~ 1325 3825
-Wire Wire Line
-	1325 3825 1750 3825
-Wire Wire Line
-	1750 3525 1325 3525
-Connection ~ 1750 3525
-Connection ~ 1325 3525
-Wire Wire Line
-	1325 3525 850  3525
-Wire Wire Line
-	6725 6325 6775 6325
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R69
-U 1 1 5ED1FEAC
-P 6925 6325
-F 0 "R69" V 6925 5625 50  0000 C CNN
-F 1 "0R" V 6925 5450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6325 50  0001 C CNN
-F 3 "" H 6925 6325 50  0001 C CNN
-	1    6925 6325
-	0    -1   1    0   
-$EndComp
-Text Label 7475 6325 2    50   ~ 0
-SW_SEL
-Wire Wire Line
-	7075 6325 7475 6325
-NoConn ~ 6725 4325
-Wire Wire Line
-	6725 6225 6775 6225
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R68
-U 1 1 5ED1FEA5
-P 6925 6225
-F 0 "R68" V 6925 5525 50  0000 C CNN
-F 1 "0R" V 6925 5350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6225 50  0001 C CNN
-F 3 "" H 6925 6225 50  0001 C CNN
-	1    6925 6225
-	0    -1   1    0   
-$EndComp
-NoConn ~ 6725 4725
-Wire Wire Line
-	7075 6225 7475 6225
-NoConn ~ 6725 4625
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR0108
-U 1 1 5E36C6CF
-P 9300 6525
-F 0 "#PWR0108" H 9300 6275 50  0001 C CNN
-F 1 "GND" H 9305 6352 50  0000 C CNN
-F 2 "" H 9300 6525 60  0000 C CNN
-F 3 "" H 9300 6525 60  0000 C CNN
-	1    9300 6525
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9000 6525 9300 6525
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C21
 U 1 1 5E40EAD0
@@ -984,38 +278,6 @@ Connection ~ 3200 13225
 Connection ~ 3200 13425
 Wire Wire Line
 	3500 13425 4400 13425
-Wire Wire Line
-	7075 5125 7475 5125
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R81
-U 1 1 5E32DF72
-P 6925 5125
-F 0 "R81" V 6718 5125 50  0000 C CNN
-F 1 "0R" V 6809 5125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5125 50  0001 C CNN
-F 3 "" H 6925 5125 50  0001 C CNN
-	1    6925 5125
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5125 6775 5125
-Wire Wire Line
-	7075 5225 7475 5225
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R82
-U 1 1 5E3D5255
-P 6925 5225
-F 0 "R82" V 6900 4525 50  0000 C CNN
-F 1 "0R" V 6900 4350 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5225 50  0001 C CNN
-F 3 "" H 6925 5225 50  0001 C CNN
-	1    6925 5225
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	6725 5225 6775 5225
-Text Label 7475 5225 2    50   ~ 0
-POWER_INT
 Text Notes 5950 9250 0    118  ~ 0
 I2C Pullup
 $Comp
@@ -1034,7 +296,7 @@ Wire Wire Line
 Wire Wire Line
 	5950 9000 6400 9000
 Text Label 6400 9000 2    50   ~ 0
-SDA
+ESP_SDA
 $Comp
 L power:+3V3 #PWR032
 U 1 1 5F274B74
@@ -1051,9 +313,7 @@ Wire Wire Line
 Wire Wire Line
 	6625 8975 7075 8975
 Text Label 7075 8975 2    50   ~ 0
-SCL
-Connection ~ 2825 4025
-NoConn ~ 6725 5325
+ESP_SCL
 Wire Wire Line
 	2975 8450 3375 8450
 Wire Wire Line
@@ -1064,54 +324,8 @@ Wire Wire Line
 	2975 8900 3375 8900
 Text Label 3350 9050 2    50   ~ 0
 ESP_IO0
-Text Label 3025 8900 0    60   ~ 0
+Text Label 3025 8900 0    50   ~ 0
 ESP_EN
-Text Label 7475 5125 2    50   ~ 0
-BAT_MON
-Wire Wire Line
-	6725 6525 8250 6525
-Wire Wire Line
-	9000 5200 9125 5200
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
-U 1 1 5F61481F
-P 9950 5200
-F 0 "R?" V 9743 5200 50  0000 C CNN
-F 1 "0R" V 9834 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9880 5200 50  0001 C CNN
-F 3 "" H 9950 5200 50  0001 C CNN
-	1    9950 5200
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9625 5200 9750 5200
-Wire Wire Line
-	10100 5200 10625 5200
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
-U 1 1 6077CDA9
-P 9375 5425
-F 0 "C?" H 9490 5516 50  0000 L CNN
-F 1 "DNF" H 9490 5425 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9413 5275 50  0001 C CNN
-F 3 "" H 9375 5425 50  0001 C CNN
-	1    9375 5425
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9225 5425 9125 5425
-Wire Wire Line
-	9125 5425 9125 5200
-Wire Wire Line
-	9525 5425 9750 5425
-Wire Wire Line
-	9750 5425 9750 5200
-Connection ~ 9125 5200
-Wire Wire Line
-	9125 5200 9225 5200
-Connection ~ 9750 5200
-Wire Wire Line
-	9750 5200 9800 5200
 $Comp
 L Connector:Test_Point TP?
 U 1 1 608677C1
@@ -1222,26 +436,14 @@ Wire Wire Line
 	1425 13075 1050 13075
 Wire Wire Line
 	1425 13175 1050 13175
-Text Label 1050 13075 0    50   ~ 0
-SCL
-Text Label 1050 13175 0    50   ~ 0
-SDA
 Wire Wire Line
 	1425 13275 1050 13275
 Wire Wire Line
 	1425 13375 1050 13375
-Text Label 1050 13275 0    50   ~ 0
-RX
-Text Label 1050 13375 0    50   ~ 0
-TX
 Wire Wire Line
 	1425 13475 1050 13475
 Wire Wire Line
 	1425 13575 1050 13575
-Text Label 1050 13475 0    50   ~ 0
-MISO
-Text Label 1050 13575 0    50   ~ 0
-MOSI
 $Comp
 L Connector:Conn_01x12 J?
 U 1 1 60CBF5A8
@@ -1255,8 +457,6 @@ F 3 "~" H 1625 13375 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1425 13675 1050 13675
-Text Label 1050 13675 0    50   ~ 0
-SCK
 Wire Wire Line
 	1425 13775 1050 13775
 Text Label 1050 13775 0    50   ~ 0
@@ -1275,12 +475,7 @@ $EndComp
 Wire Wire Line
 	1275 14075 1275 13975
 Wire Wire Line
-	1275 13875 1425 13875
-Wire Wire Line
 	1425 13975 1275 13975
-Connection ~ 1275 13975
-Wire Wire Line
-	1275 13975 1275 13875
 $Sheet
 S 1050 975  1675 1175
 U 60688D25
@@ -1309,17 +504,1148 @@ F1 "RS485_Comms.sch" 50
 $EndSheet
 Text Notes 5850 14000 0    118  ~ 0
 Easy access gnd\npins for debug\n
-Text Notes 1925 10175 0    79   ~ 0
+Text Notes 1975 11175 0    79   ~ 0
 Auto Programming
+Wire Wire Line
+	1425 13875 1050 13875
+Text Label 1050 13875 0    50   ~ 0
+extra_gpio
+Wire Wire Line
+	9750 5200 9800 5200
+Wire Wire Line
+	9125 5200 9225 5200
+Wire Wire Line
+	9750 5425 9750 5200
+Wire Wire Line
+	9525 5425 9750 5425
+Wire Wire Line
+	9125 5425 9125 5200
+Wire Wire Line
+	9225 5425 9125 5425
 $Comp
-L Devtank:STM32L412K8U6 U?
-U 1 1 60C00DE7
-P 15600 4750
-F 0 "U?" H 17000 5137 60  0000 C CNN
-F 1 "STM32L412K8U6" H 17000 5031 60  0000 C CNN
-F 2 "QFN32_5X5_STM" H 17000 4990 60  0001 C CNN
-F 3 "" H 15600 4750 60  0000 C CNN
-	1    15600 4750
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
+U 1 1 6077CDA9
+P 9375 5425
+F 0 "C?" H 9490 5516 50  0000 L CNN
+F 1 "DNF" H 9490 5425 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9413 5275 50  0001 C CNN
+F 3 "" H 9375 5425 50  0001 C CNN
+	1    9375 5425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	10100 5200 10625 5200
+Connection ~ 9750 5200
+Wire Wire Line
+	9625 5200 9750 5200
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 5F61481F
+P 9950 5200
+F 0 "R?" V 9743 5200 50  0000 C CNN
+F 1 "0R" V 9834 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9880 5200 50  0001 C CNN
+F 3 "" H 9950 5200 50  0001 C CNN
+	1    9950 5200
+	0    1    1    0   
+$EndComp
+Connection ~ 9125 5200
+Wire Wire Line
+	9000 5200 9125 5200
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R71
+U 1 1 5EF3F3D6
+P 9950 4275
+F 0 "R71" V 9743 4275 50  0000 C CNN
+F 1 "470R" V 9834 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9880 4275 50  0001 C CNN
+F 3 "" H 9950 4275 50  0001 C CNN
+	1    9950 4275
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	9000 5325 9000 5200
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR02
+U 1 1 5E6F5804
+P 9000 5325
+F 0 "#PWR02" H 9000 5075 50  0001 C CNN
+F 1 "GND" H 9005 5152 50  0000 C CNN
+F 2 "" H 9000 5325 60  0000 C CNN
+F 3 "" H 9000 5325 60  0000 C CNN
+	1    9000 5325
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9800 4275 9675 4275
+Connection ~ 9800 4275
+Wire Wire Line
+	9800 4500 9800 4275
+Wire Wire Line
+	9575 4500 9800 4500
+Wire Wire Line
+	9275 4275 9175 4275
+Wire Wire Line
+	9175 4275 9050 4275
+Connection ~ 9175 4275
+Wire Wire Line
+	9175 4500 9175 4275
+Wire Wire Line
+	9275 4500 9175 4500
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C27
+U 1 1 5E5CFFBB
+P 9425 4500
+F 0 "C27" H 9540 4591 50  0000 L CNN
+F 1 "1nF" H 9540 4500 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9463 4350 50  0001 C CNN
+F 3 "" H 9425 4500 50  0001 C CNN
+F 4 "10%" H 9425 4500 50  0001 C CNN "Tolerance"
+F 5 "50V" H 9540 4409 50  0000 L CNN "Voltage"
+	1    9425 4500
+	0    1    1    0   
+$EndComp
+Text Notes 10775 5225 0    50   ~ 0
+Boot
+Text Notes 10800 4300 0    50   ~ 0
+Reset\n
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5E564E5F
+P 9425 5200
+F 0 "SW1" H 9425 5435 50  0000 C CNN
+F 1 "SW_SPST" H 9425 5344 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 9425 5200 50  0001 C CNN
+F 3 "" H 9425 5200 50  0001 C CNN
+	1    9425 5200
+	1    0    0    -1  
+$EndComp
+Text Label 10625 5200 2    60   ~ 0
+ESP_IO0
+Wire Wire Line
+	9050 4400 9050 4275
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR03
+U 1 1 5E4FB20F
+P 9050 4400
+F 0 "#PWR03" H 9050 4150 50  0001 C CNN
+F 1 "GND" H 9055 4227 50  0000 C CNN
+F 2 "" H 9050 4400 60  0000 C CNN
+F 3 "" H 9050 4400 60  0000 C CNN
+	1    9050 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 5E4FB209
+P 9475 4275
+F 0 "SW2" H 9475 4510 50  0000 C CNN
+F 1 "SW_SPST" H 9475 4419 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_B3U-1000P" H 9475 4275 50  0001 C CNN
+F 3 "" H 9475 4275 50  0001 C CNN
+	1    9475 4275
+	1    0    0    -1  
+$EndComp
+Text Label 10675 4275 2    60   ~ 0
+ESP_EN
+Wire Wire Line
+	10675 4275 10100 4275
+Text Notes 7325 4650 0    50   ~ 0
+gpio6-11 used for spi
+NoConn ~ 6725 5325
+NoConn ~ 6725 4625
+NoConn ~ 6725 4725
+NoConn ~ 6725 4325
+Wire Wire Line
+	850  3825 1325 3825
+Connection ~ 1325 3825
+Wire Wire Line
+	1325 3525 850  3525
+Connection ~ 1325 3525
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C13
+U 1 1 5E23A000
+P 1325 3675
+F 0 "C13" H 1440 3766 50  0000 L CNN
+F 1 "DNF" H 1440 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1363 3525 50  0001 C CNN
+F 3 "" H 1325 3675 50  0001 C CNN
+F 4 "10%" H 1325 3675 50  0001 C CNN "Tolerance"
+	1    1325 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C12
+U 1 1 5E239FF8
+P 850 3675
+F 0 "C12" H 965 3766 50  0000 L CNN
+F 1 "DNF" H 965 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 888 3525 50  0001 C CNN
+F 3 "" H 850 3675 50  0001 C CNN
+F 4 "20%" H 850 3675 50  0001 C CNN "Tolerance "
+	1    850  3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6725 3825 6775 3825
+NoConn ~ 6725 5025
+NoConn ~ 6725 4925
+NoConn ~ 6725 4825
+NoConn ~ 6725 4525
+NoConn ~ 6725 4425
+NoConn ~ 6725 4025
+Wire Wire Line
+	2275 5000 2275 4975
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR022
+U 1 1 5EC69FC8
+P 2275 5000
+F 0 "#PWR022" H 2275 4750 50  0001 C CNN
+F 1 "GND" H 2280 4827 50  0000 C CNN
+F 2 "" H 2275 5000 60  0000 C CNN
+F 3 "" H 2275 5000 60  0000 C CNN
+	1    2275 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2275 4300 2275 4275
+Wire Wire Line
+	2275 4675 2275 4625
+Wire Wire Line
+	2275 4625 3025 4625
+Connection ~ 2275 4625
+Wire Wire Line
+	2275 4625 2275 4600
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C30
+U 1 1 5EA38480
+P 2275 4825
+F 0 "C30" H 2390 4916 50  0000 L CNN
+F 1 "1nF" H 2390 4825 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2313 4675 50  0001 C CNN
+F 3 "" H 2275 4825 50  0001 C CNN
+F 4 "50V" H 2390 4734 50  0000 L CNN "Voltage"
+F 5 "10%" H 2275 4825 50  0001 C CNN "Tolerance "
+	1    2275 4825
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP3
+U 1 1 5E991E8D
+P 2900 3525
+F 0 "TP3" H 3025 3625 50  0000 C CNN
+F 1 "Test_Point" H 3150 3550 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3100 3525 50  0001 C CNN
+F 3 "~" H 3100 3525 50  0001 C CNN
+	1    2900 3525
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP2
+U 1 1 5E968136
+P 2825 4025
+F 0 "TP2" V 2975 4275 50  0000 C CNN
+F 1 "Test_Point" V 2900 4150 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3025 4025 50  0001 C CNN
+F 3 "~" H 3025 4025 50  0001 C CNN
+	1    2825 4025
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2075 3825 2225 3825
+Connection ~ 2075 3825
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR021
+U 1 1 5E916224
+P 2075 3825
+F 0 "#PWR021" H 2075 3575 50  0001 C CNN
+F 1 "GND" H 2080 3652 50  0000 C CNN
+F 2 "" H 2075 3825 60  0000 C CNN
+F 3 "" H 2075 3825 60  0000 C CNN
+	1    2075 3825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2825 4025 2950 4025
+Connection ~ 2825 4025
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR023
+U 1 1 5E8ED5DC
+P 2825 4025
+F 0 "#PWR023" H 2825 3775 50  0001 C CNN
+F 1 "GND" H 2830 3852 50  0000 C CNN
+F 2 "" H 2825 4025 60  0000 C CNN
+F 3 "" H 2825 4025 60  0000 C CNN
+	1    2825 4025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2950 4025 2950 3925
+Connection ~ 2950 4025
+Wire Wire Line
+	3025 4025 2950 4025
+Wire Wire Line
+	2950 3925 3025 3925
+Wire Wire Line
+	2950 4125 2950 4025
+Wire Wire Line
+	3025 4125 2950 4125
+Wire Wire Line
+	2900 3825 3025 3825
+Connection ~ 2900 3525
+Wire Wire Line
+	2900 3525 2900 3825
+Connection ~ 2075 3525
+$Comp
+L power:+3V3 #PWR020
+U 1 1 5E850BFC
+P 2075 3525
+F 0 "#PWR020" H 2075 3375 50  0001 C CNN
+F 1 "+3V3" H 2090 3698 50  0000 C CNN
+F 2 "" H 2075 3525 50  0001 C CNN
+F 3 "" H 2075 3525 50  0001 C CNN
+	1    2075 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2225 3525 2900 3525
+Wire Wire Line
+	2075 3525 2225 3525
+Connection ~ 2225 3525
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C29
+U 1 1 5E7DF2AA
+P 2225 3675
+F 0 "C29" H 2340 3766 50  0000 L CNN
+F 1 "1uF" H 2340 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2263 3525 50  0001 C CNN
+F 3 "" H 2225 3675 50  0001 C CNN
+F 4 "10%" H 2225 3675 50  0001 C CNN "Tolerance"
+F 5 "10V" H 2340 3584 50  0000 L CNN "Voltage"
+	1    2225 3675
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1325 3825 1750 3825
+Wire Wire Line
+	1750 3825 2075 3825
+Connection ~ 1750 3825
+Wire Wire Line
+	1750 3525 1325 3525
+Wire Wire Line
+	1750 3525 2075 3525
+Connection ~ 1750 3525
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C28
+U 1 1 5E7DEDD2
+P 1750 3675
+F 0 "C28" H 1865 3766 50  0000 L CNN
+F 1 "100nF" H 1865 3675 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1788 3525 50  0001 C CNN
+F 3 "" H 1750 3675 50  0001 C CNN
+F 4 "6.3V" H 1865 3584 50  0000 L CNN "Voltage"
+F 5 "20%" H 1750 3675 50  0001 C CNN "Tolerance "
+	1    1750 3675
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP1
+U 1 1 5E8D5E8B
+P 1750 4625
+F 0 "TP1" V 1825 5125 50  0000 C CNN
+F 1 "Test_Point" V 1750 5000 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1950 4625 50  0001 C CNN
+F 3 "~" H 1950 4625 50  0001 C CNN
+	1    1750 4625
+	0    -1   -1   0   
+$EndComp
+Text Label 1850 4625 0    60   ~ 0
+ESP_EN
+Wire Wire Line
+	2275 4625 1750 4625
+$Comp
+L power:+3V3 #PWR01
+U 1 1 5E1EB494
+P 2275 4275
+F 0 "#PWR01" H 2275 4125 50  0001 C CNN
+F 1 "+3V3" H 2290 4448 50  0000 C CNN
+F 2 "" H 2275 4275 50  0001 C CNN
+F 3 "" H 2275 4275 50  0001 C CNN
+	1    2275 4275
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:R-ESP32-EVB_Rev_D R6
+U 1 1 5E590699
+P 2275 4450
+F 0 "R6" V 2375 4625 50  0000 C CNN
+F 1 "12K" V 2275 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2275 4380 30  0001 C CNN
+F 3 "" V 2275 4450 30  0000 C CNN
+F 4 "Value 1" H 2275 4450 60  0001 C CNN "Fieldname 1"
+F 5 "Value2" H 2275 4450 60  0001 C CNN "Fieldname2"
+F 6 "Value3" H 2275 4450 60  0001 C CNN "Fieldname3"
+	1    2275 4450
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2750 4425 3025 4425
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR0120
+U 1 1 5E4264F5
+P 2750 4425
+F 0 "#PWR0120" H 2750 4175 50  0001 C CNN
+F 1 "GND" H 2755 4252 50  0000 C CNN
+F 2 "" H 2750 4425 60  0000 C CNN
+F 3 "" H 2750 4425 60  0000 C CNN
+	1    2750 4425
+	0    1    1    0   
+$EndComp
+$Comp
+L OSM_env01-rescue:ESP-WROOM-32-ESP32-EVB_Rev_D U3
+U 1 1 5DCB1347
+P 4825 5325
+F 0 "U3" H 4812 7114 60  0000 C CNN
+F 1 "ESP-WROOM-32" H 4812 7008 60  0000 C CNN
+F 2 "Devtank_PCB_lib:ESP32-WROOM-32U" H 3925 5525 60  0001 C CNN
+F 3 "" H 3925 5525 60  0001 C CNN
+	1    4825 5325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6725 6525 8250 6525
+Wire Wire Line
+	9000 6525 9300 6525
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR0108
+U 1 1 5E36C6CF
+P 9300 6525
+F 0 "#PWR0108" H 9300 6275 50  0001 C CNN
+F 1 "GND" H 9305 6352 50  0000 C CNN
+F 2 "" H 9300 6525 60  0000 C CNN
+F 3 "" H 9300 6525 60  0000 C CNN
+	1    9300 6525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 6525 8550 6525
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R26
+U 1 1 5E1287DA
+P 8400 6525
+F 0 "R26" V 8193 6525 50  0000 C CNN
+F 1 "330R" V 8284 6525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 8330 6525 50  0001 C CNN
+F 3 "" H 8400 6525 50  0001 C CNN
+	1    8400 6525
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OSM_env01-rescue:LED-device-ESP32-EVB_Rev_D-rescue ESP_STATUS1
+U 1 1 5E12813A
+P 8850 6525
+F 0 "ESP_STATUS1" H 8843 6741 50  0000 C CNN
+F 1 "LED" H 8843 6650 50  0000 C CNN
+F 2 "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z5.0mm" H 8850 6525 50  0001 C CNN
+F 3 "~" H 8850 6525 50  0001 C CNN
+	1    8850 6525
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6725 5925 6775 5925
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R62
+U 1 1 5EDFF3C9
+P 6925 5925
+F 0 "R62" V 6925 5225 50  0000 C CNN
+F 1 "0R" V 6925 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5925 50  0001 C CNN
+F 3 "" H 6925 5925 50  0001 C CNN
+	1    6925 5925
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6725 5825 6775 5825
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R61
+U 1 1 5EDFF3C2
+P 6925 5825
+F 0 "R61" V 6925 5125 50  0000 C CNN
+F 1 "0R" V 6925 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5825 50  0001 C CNN
+F 3 "" H 6925 5825 50  0001 C CNN
+	1    6925 5825
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6725 6025 6775 6025
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R63
+U 1 1 5EDDCB6C
+P 6925 6025
+F 0 "R63" V 6925 5325 50  0000 C CNN
+F 1 "0R" V 6925 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6025 50  0001 C CNN
+F 3 "" H 6925 6025 50  0001 C CNN
+	1    6925 6025
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6725 5725 6775 5725
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R60
+U 1 1 5ECD5C94
+P 6925 5725
+F 0 "R60" V 6900 5025 50  0000 C CNN
+F 1 "0R" V 6900 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5725 50  0001 C CNN
+F 3 "" H 6925 5725 50  0001 C CNN
+	1    6925 5725
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6725 5625 6775 5625
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R59
+U 1 1 5EC5451E
+P 6925 5625
+F 0 "R59" V 6900 4925 50  0000 C CNN
+F 1 "0R" V 6900 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 5625 50  0001 C CNN
+F 3 "" H 6925 5625 50  0001 C CNN
+	1    6925 5625
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	6725 6125 6775 6125
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R55
+U 1 1 5EC15B95
+P 6925 6125
+F 0 "R55" V 6925 5425 50  0000 C CNN
+F 1 "0R" V 6925 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 6125 50  0001 C CNN
+F 3 "" H 6925 6125 50  0001 C CNN
+	1    6925 6125
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7475 6125 7075 6125
+Text Label 7475 6125 2    50   ~ 0
+DE_485
+Text Label 7475 6025 2    50   ~ 0
+LORA_CTS
+Wire Wire Line
+	7075 6025 7475 6025
+Wire Wire Line
+	7075 5625 7475 5625
+Text Label 7475 5625 2    50   ~ 0
+LORA_TX
+Wire Wire Line
+	7075 5725 7475 5725
+Text Label 7475 5725 2    50   ~ 0
+LORA_RX
+Wire Wire Line
+	7075 5825 7475 5825
+Wire Wire Line
+	7075 5925 7475 5925
+Wire Wire Line
+	6725 3925 7475 3925
+Wire Wire Line
+	6725 4125 7475 4125
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R8
+U 1 1 5EAA6A1D
+P 6925 3825
+F 0 "R8" V 6718 3825 50  0000 C CNN
+F 1 "0R" V 6809 3825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6855 3825 50  0001 C CNN
+F 3 "" H 6925 3825 50  0001 C CNN
+	1    6925 3825
+	0    -1   1    0   
+$EndComp
+Text Label 7475 3825 2    50   ~ 0
+ESP_IO0
+Wire Wire Line
+	7075 3825 7475 3825
+Text Label 7475 4125 2    50   ~ 0
+RS232_TX
+Text Label 7475 3925 2    50   ~ 0
+RS232_RX
+Wire Wire Line
+	15150 4700 15200 4700
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R24
+U 1 1 5EBB7A75
+P 15350 4700
+F 0 "R24" V 15325 3875 50  0000 C CNN
+F 1 "0R" V 15325 3700 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15280 4700 50  0001 C CNN
+F 3 "" H 15350 4700 50  0001 C CNN
+	1    15350 4700
+	0    -1   1    0   
+$EndComp
+Text Label 16075 4700 2    50   ~ 0
+PULSE_IN1
+Wire Wire Line
+	15500 4700 16075 4700
+Wire Wire Line
+	14000 5350 13950 5350
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R66
+U 1 1 5ED1FE97
+P 13800 5350
+F 0 "R66" V 13775 4300 50  0000 C CNN
+F 1 "0R" V 13775 4525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5350 50  0001 C CNN
+F 3 "" H 13800 5350 50  0001 C CNN
+	1    13800 5350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14000 6225 13950 6225
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R65
+U 1 1 5ED1FE89
+P 13800 6225
+F 0 "R65" V 13775 5175 50  0000 C CNN
+F 1 "0R" V 13775 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 6225 50  0001 C CNN
+F 3 "" H 13800 6225 50  0001 C CNN
+	1    13800 6225
+	0    1    1    0   
+$EndComp
+Text Label 13050 5350 0    50   ~ 0
+AUDIO_OP
+Wire Wire Line
+	13050 5350 13650 5350
+Wire Wire Line
+	13650 6225 13050 6225
+Text Label 13050 6225 0    50   ~ 0
+PULSE_IN2
+Wire Wire Line
+	13650 6100 13050 6100
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R68
+U 1 1 5ED1FEA5
+P 13800 6100
+F 0 "R68" V 13775 5050 50  0000 C CNN
+F 1 "0R" V 13775 5275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 6100 50  0001 C CNN
+F 3 "" H 13800 6100 50  0001 C CNN
+	1    13800 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14000 6100 13950 6100
+Text Label 13050 6100 0    50   ~ 0
+TEMP_INT
+Wire Wire Line
+	13650 5225 13050 5225
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R81
+U 1 1 5E32DF72
+P 13800 5225
+F 0 "R81" V 13775 4175 50  0000 C CNN
+F 1 "0R" V 13775 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5225 50  0001 C CNN
+F 3 "" H 13800 5225 50  0001 C CNN
+	1    13800 5225
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14025 5225 13950 5225
+Wire Wire Line
+	15500 4825 16075 4825
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R82
+U 1 1 5E3D5255
+P 15350 4825
+F 0 "R82" V 15325 4000 50  0000 C CNN
+F 1 "0R" V 15325 3825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15280 4825 50  0001 C CNN
+F 3 "" H 15350 4825 50  0001 C CNN
+	1    15350 4825
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	15150 4825 15200 4825
+Text Label 16075 4825 2    50   ~ 0
+POWER_INT
+Text Label 13050 5225 0    50   ~ 0
+BAT_MON
+$Sheet
+S 14000 4325 1150 2125
+U 60917DD5
+F0 "STM32L4" 50
+F1 "STM32L4.sch" 50
+F2 "STM_BOOT0" I L 14000 4500 50 
+F3 "PA0" I L 14000 4725 50 
+F4 "PA1" I L 14000 4850 50 
+F5 "PA2" I L 14000 4975 50 
+F6 "PA3" I L 14000 5100 50 
+F7 "PA4" I L 14000 5225 50 
+F8 "PA5" I L 14000 5350 50 
+F9 "PA6" I L 14000 5475 50 
+F10 "PA7" I L 14000 5600 50 
+F11 "PB0" I R 15150 4700 50 
+F12 "PB1" I R 15150 4825 50 
+F13 "PB7" I R 15150 5450 50 
+F14 "PB6" I R 15150 5325 50 
+F15 "PB5" I R 15150 5200 50 
+F16 "PB4" I R 15150 5075 50 
+F17 "PB3" I R 15150 4950 50 
+F18 "PA15" I L 14000 6350 50 
+F19 "PA14" I L 14000 6225 50 
+F20 "PA9" I L 14000 5850 50 
+F21 "PA8" I L 14000 5725 50 
+F22 "PA10" I L 14000 5975 50 
+F23 "PA13" I L 14000 6100 50 
+$EndSheet
+Text Label 7475 5825 2    50   ~ 0
+ESP_SDA
+Text Label 7475 5925 2    50   ~ 0
+ESP_SCL
+Wire Wire Line
+	14000 4850 13950 4850
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60B59AE8
+P 13800 4850
+F 0 "R?" V 13775 3775 50  0000 C CNN
+F 1 "0R" V 13775 4025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 4850 50  0001 C CNN
+F 3 "" H 13800 4850 50  0001 C CNN
+	1    13800 4850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 4850 13050 4850
+Text Label 13050 4850 0    50   ~ 0
+LIGHT_INT
+NoConn ~ 6725 6325
+NoConn ~ 6725 6225
+NoConn ~ 6725 5525
+NoConn ~ 6725 5425
+NoConn ~ 6725 5225
+NoConn ~ 6725 5125
+Text Label 13050 4500 0    50   ~ 0
+STM_BOOT0
+Wire Wire Line
+	14000 4500 13050 4500
+Wire Wire Line
+	14000 5975 13950 5975
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60C76DA4
+P 13800 5975
+F 0 "R?" V 13775 4900 50  0000 C CNN
+F 1 "0R" V 13775 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5975 50  0001 C CNN
+F 3 "" H 13800 5975 50  0001 C CNN
+	1    13800 5975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 5975 13050 5975
+Wire Wire Line
+	13650 5850 13050 5850
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60C76DAD
+P 13800 5850
+F 0 "R?" V 13775 4775 50  0000 C CNN
+F 1 "0R" V 13775 5025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5850 50  0001 C CNN
+F 3 "" H 13800 5850 50  0001 C CNN
+	1    13800 5850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14000 5850 13950 5850
+Text Label 13050 5850 0    50   ~ 0
+STM_SCL
+Text Label 13050 5975 0    50   ~ 0
+STM_SDA
+Wire Wire Line
+	13650 5600 13050 5600
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60CA37C8
+P 13800 5600
+F 0 "R?" V 13775 4525 50  0000 C CNN
+F 1 "0R" V 13775 4775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5600 50  0001 C CNN
+F 3 "" H 13800 5600 50  0001 C CNN
+	1    13800 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14000 5600 13950 5600
+Text Label 13050 5600 0    50   ~ 0
+ESP_SCL
+Wire Wire Line
+	14000 4725 13950 4725
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60CB594A
+P 13800 4725
+F 0 "R?" V 13775 3650 50  0000 C CNN
+F 1 "0R" V 13775 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 4725 50  0001 C CNN
+F 3 "" H 13800 4725 50  0001 C CNN
+	1    13800 4725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 4725 13050 4725
+Text Label 13050 4725 0    50   ~ 0
+STM_WAKEUP
+Wire Wire Line
+	15500 5325 16075 5325
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60CD8AEF
+P 15350 5325
+F 0 "R?" V 15325 4525 50  0000 C CNN
+F 1 "0R" V 15325 4325 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15280 5325 50  0001 C CNN
+F 3 "" H 15350 5325 50  0001 C CNN
+	1    15350 5325
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	15150 5325 15200 5325
+Text Label 16075 5325 2    50   ~ 0
+STM1_TX
+Wire Wire Line
+	15500 5450 16075 5450
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60CDF89E
+P 15350 5450
+F 0 "R?" V 15325 4650 50  0000 C CNN
+F 1 "0R" V 15325 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15280 5450 50  0001 C CNN
+F 3 "" H 15350 5450 50  0001 C CNN
+	1    15350 5450
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	15150 5450 15200 5450
+Text Label 16075 5450 2    50   ~ 0
+STM1_RX
+Wire Wire Line
+	13650 5475 13050 5475
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60CE7610
+P 13800 5475
+F 0 "R?" V 13775 4400 50  0000 C CNN
+F 1 "0R" V 13775 4650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5475 50  0001 C CNN
+F 3 "" H 13800 5475 50  0001 C CNN
+	1    13800 5475
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	14000 5475 13950 5475
+Wire Wire Line
+	15500 5200 16075 5200
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60D0079E
+P 15350 5200
+F 0 "R?" V 15325 4400 50  0000 C CNN
+F 1 "0R" V 15325 4200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15280 5200 50  0001 C CNN
+F 3 "" H 15350 5200 50  0001 C CNN
+	1    15350 5200
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	15150 5200 15200 5200
+Wire Wire Line
+	15500 4950 16075 4950
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60D152DF
+P 15350 4950
+F 0 "R?" V 15325 4150 50  0000 C CNN
+F 1 "0R" V 15325 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15280 4950 50  0001 C CNN
+F 3 "" H 15350 4950 50  0001 C CNN
+	1    15350 4950
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	15150 4950 15200 4950
+Wire Wire Line
+	15150 5075 15200 5075
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60D29512
+P 15350 5075
+F 0 "R?" V 15325 4275 50  0000 C CNN
+F 1 "0R" V 15325 4075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 15280 5075 50  0001 C CNN
+F 3 "" H 15350 5075 50  0001 C CNN
+	1    15350 5075
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	15500 5075 16075 5075
+Text Label 16075 5075 2    50   ~ 0
+ESP_SDA
+Wire Wire Line
+	14000 5100 13950 5100
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60EAD1D0
+P 13800 5100
+F 0 "R?" V 13775 4025 50  0000 C CNN
+F 1 "0R" V 13775 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5100 50  0001 C CNN
+F 3 "" H 13800 5100 50  0001 C CNN
+	1    13800 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 5100 13050 5100
+Wire Wire Line
+	14000 4975 13950 4975
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 60EAD1D9
+P 13800 4975
+F 0 "R?" V 13775 3900 50  0000 C CNN
+F 1 "0R" V 13775 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 4975 50  0001 C CNN
+F 3 "" H 13800 4975 50  0001 C CNN
+	1    13800 4975
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 4975 13050 4975
+$Sheet
+S 2000 7975 975  2175
+U 5F4610BE
+F0 "USB_debug" 50
+F1 "USB_debug.sch" 50
+F2 "RS232_RX" I R 2975 8150 50 
+F3 "RS232_TX" I R 2975 8300 50 
+F4 "D+" B L 2000 8300 50 
+F5 "D-" B L 2000 8400 50 
+F6 "VBUS" I L 2000 8200 50 
+F7 "RS232_RTS" I R 2975 8450 50 
+F8 "RS232_CTS" I R 2975 8600 50 
+F9 "EN" I R 2975 8900 50 
+F10 "IO0" I R 2975 9050 50 
+F11 "ESP_BOOT" I R 2975 9350 50 
+F12 "ESP_RESET" I R 2975 9500 50 
+F13 "ESP_RES1" I R 2975 9650 50 
+F14 "ESP_RES2" I R 2975 9800 50 
+$EndSheet
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60F20C38
+P 3425 9500
+F 0 "TP?" V 3425 10200 50  0000 C CNN
+F 1 "Test_Point" V 3425 9875 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3625 9500 50  0001 C CNN
+F 3 "~" H 3625 9500 50  0001 C CNN
+	1    3425 9500
+	0    1    1    0   
+$EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60F20C3E
+P 3425 9350
+F 0 "TP?" V 3425 10050 50  0000 C CNN
+F 1 "Test_Point" V 3425 9725 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3625 9350 50  0001 C CNN
+F 3 "~" H 3625 9350 50  0001 C CNN
+	1    3425 9350
+	0    1    1    0   
+$EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60F2A20A
+P 3425 9800
+F 0 "TP?" V 3425 10500 50  0000 C CNN
+F 1 "Test_Point" V 3425 10175 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3625 9800 50  0001 C CNN
+F 3 "~" H 3625 9800 50  0001 C CNN
+	1    3425 9800
+	0    1    1    0   
+$EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60F2A210
+P 3425 9650
+F 0 "TP?" V 3425 10350 50  0000 C CNN
+F 1 "Test_Point" V 3425 10025 50  0000 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3625 9650 50  0001 C CNN
+F 3 "~" H 3625 9650 50  0001 C CNN
+	1    3425 9650
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2975 9350 3425 9350
+Wire Wire Line
+	2975 9500 3425 9500
+Wire Wire Line
+	2975 9650 3425 9650
+Wire Wire Line
+	2975 9800 3425 9800
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 610BBE82
+P 6000 9900
+F 0 "R?" H 6070 9946 50  0000 L CNN
+F 1 "4.7K" H 6070 9855 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5930 9900 50  0001 C CNN
+F 3 "" H 6000 9900 50  0001 C CNN
+	1    6000 9900
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 610BBE88
+P 6675 9875
+F 0 "R?" H 6745 9921 50  0000 L CNN
+F 1 "4.7K" H 6745 9830 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6605 9875 50  0001 C CNN
+F 3 "" H 6675 9875 50  0001 C CNN
+	1    6675 9875
+	1    0    0    -1  
+$EndComp
+Text Notes 6000 10300 0    118  ~ 0
+I2C Pullup
+$Comp
+L power:+3V3 #PWR?
+U 1 1 610BBE8F
+P 6000 9725
+F 0 "#PWR?" H 6000 9575 50  0001 C CNN
+F 1 "+3V3" H 6015 9898 50  0000 C CNN
+F 2 "" H 6000 9725 50  0001 C CNN
+F 3 "" H 6000 9725 50  0001 C CNN
+	1    6000 9725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 9750 6000 9725
+Wire Wire Line
+	6000 10050 6450 10050
+Text Label 6450 10050 2    50   ~ 0
+STM_SDA
+$Comp
+L power:+3V3 #PWR?
+U 1 1 610BBE98
+P 6675 9700
+F 0 "#PWR?" H 6675 9550 50  0001 C CNN
+F 1 "+3V3" H 6690 9873 50  0000 C CNN
+F 2 "" H 6675 9700 50  0001 C CNN
+F 3 "" H 6675 9700 50  0001 C CNN
+	1    6675 9700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6675 9725 6675 9700
+Wire Wire Line
+	6675 10025 7125 10025
+Text Label 1050 13075 0    50   ~ 0
+STM_SCL
+Text Label 1050 13575 0    50   ~ 0
+STM_MOSI
+Text Label 1050 13675 0    50   ~ 0
+STM_SCK
+Text Label 1050 13475 0    50   ~ 0
+STM_MISO
+Text Label 1050 13175 0    50   ~ 0
+STM_SDA
+Text Label 13050 5725 0    50   ~ 0
+CS
+Text Label 13050 6350 0    50   ~ 0
+extra_gpio
+Wire Wire Line
+	14000 6350 13950 6350
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 611289C8
+P 13800 6350
+F 0 "R?" V 13775 5275 50  0000 C CNN
+F 1 "0R" V 13775 5525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 6350 50  0001 C CNN
+F 3 "" H 13800 6350 50  0001 C CNN
+	1    13800 6350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 6350 13050 6350
+Wire Wire Line
+	14000 5725 13950 5725
+$Comp
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+U 1 1 611289D0
+P 13800 5725
+F 0 "R?" V 13775 4650 50  0000 C CNN
+F 1 "0R" V 13775 4900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 13730 5725 50  0001 C CNN
+F 3 "" H 13800 5725 50  0001 C CNN
+	1    13800 5725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	13650 5725 13050 5725
+Text Label 13050 4975 0    50   ~ 0
+STM2_TX
+Text Label 13050 5100 0    50   ~ 0
+STM2_RX
+Text Label 1050 13275 0    50   ~ 0
+STM2_TX
+Text Label 1050 13375 0    50   ~ 0
+STM2_RX
+Wire Wire Line
+	4400 13625 4400 13725
+Wire Wire Line
+	4400 13725 4475 13725
+Wire Wire Line
+	4475 13725 4475 13825
+Wire Wire Line
+	4475 13825 4950 13825
+Wire Wire Line
+	4950 13825 4950 13725
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61210753
+P 4950 13725
+F 0 "#PWR?" H 4950 13575 50  0001 C CNN
+F 1 "+3V3" H 4965 13898 50  0000 C CNN
+F 2 "" H 4950 13725 50  0001 C CNN
+F 3 "" H 4950 13725 50  0001 C CNN
+	1    4950 13725
+	1    0    0    -1  
+$EndComp
+Text Label 16075 5200 2    50   ~ 0
+STM_MOSI
+Text Label 16075 4950 2    50   ~ 0
+STM_SCK
+Text Label 13050 5475 0    50   ~ 0
+STM_MISO
+NoConn ~ 6725 4225
+NoConn ~ 6725 6425
+NoConn ~ 6725 6725
+NoConn ~ 6725 6825
+Wire Wire Line
+	6725 6925 7325 6925
+Text Label 7325 6925 2    50   ~ 0
+STM_WAKEUP
+Text Label 3375 9350 2    60   ~ 0
+ESP_EN
+NoConn ~ 6725 6625
+Text Label 3050 9500 0    50   ~ 0
+STM_BOOT0
+Text Notes 15950 5950 0    50   ~ 0
+add status led
 $EndSCHEMATC

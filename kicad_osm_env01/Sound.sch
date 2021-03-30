@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 8
+Sheet 4 9
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -226,6 +226,7 @@ U 1 1 5E3B4FEF
 P 4850 3550
 AR Path="/5E3B4FEF" Ref="TP?"  Part="1" 
 AR Path="/5E19E083/5E3B4FEF" Ref="TP37"  Part="1" 
+AR Path="/608F4675/60959880/5E3B4FEF" Ref="TP?"  Part="1" 
 F 0 "TP?" H 4750 3875 50  0000 C CNN
 F 1 "Test_Point" H 4850 3775 50  0000 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5050 3550 50  0001 C CNN
@@ -239,6 +240,7 @@ U 1 1 5E3B7A56
 P 5750 3550
 AR Path="/5E3B7A56" Ref="TP?"  Part="1" 
 AR Path="/5E19E083/5E3B7A56" Ref="TP38"  Part="1" 
+AR Path="/608F4675/60959880/5E3B7A56" Ref="TP?"  Part="1" 
 F 0 "TP?" V 5945 3622 50  0000 C CNN
 F 1 "Test_Point" V 5854 3622 50  0000 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5950 3550 50  0001 C CNN
@@ -390,6 +392,7 @@ U 1 1 60641962
 P 5100 2075
 AR Path="/60641962" Ref="D?"  Part="1" 
 AR Path="/5E19E083/60641962" Ref="D?"  Part="1" 
+AR Path="/608F4675/60959880/60641962" Ref="D?"  Part="1" 
 F 0 "D?" V 5146 1988 50  0000 R CNN
 F 1 "LM4040DEX3-3.3+T" V 5075 2925 50  0000 R CNN
 F 2 "TO_SOT_Packages_SMD:SOT-23" H 5100 1875 50  0001 C CIN

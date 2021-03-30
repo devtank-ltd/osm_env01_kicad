@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 8
+Sheet 9 9
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -524,18 +524,10 @@ Wire Wire Line
 	7425 3975 7825 3975
 Wire Wire Line
 	7425 4075 7825 4075
-Text Label 7825 3775 2    50   ~ 0
-ESP_BOOT
-Text Label 7825 3875 2    50   ~ 0
-ESP_RESET
 Wire Wire Line
 	7425 3775 7825 3775
 Wire Wire Line
 	7425 3875 7825 3875
-Text Label 7825 3975 2    50   ~ 0
-ESP_RES1
-Text Label 7825 4075 2    50   ~ 0
-ESP_RES2
 $Comp
 L Connector:USB_B_Micro J?
 U 1 1 6097E54E
@@ -632,4 +624,12 @@ Wire Wire Line
 Wire Wire Line
 	2200 5725 2825 5725
 Connection ~ 2825 5725
+Text HLabel 7825 3775 2    50   Input ~ 0
+ESP_BOOT
+Text HLabel 7825 3875 2    50   Input ~ 0
+ESP_RESET
+Text HLabel 7825 3975 2    50   Input ~ 0
+ESP_RES1
+Text HLabel 7825 4075 2    50   Input ~ 0
+ESP_RES2
 $EndSCHEMATC
