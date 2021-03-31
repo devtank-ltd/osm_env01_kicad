@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 9 11
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -473,10 +473,10 @@ Wire Wire Line
 Wire Wire Line
 	6125 4075 7125 4075
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R78
 U 1 1 5F5D6C15
 P 7275 3975
-F 0 "R?" V 7325 4325 50  0000 C CNN
+F 0 "R78" V 7325 4325 50  0000 C CNN
 F 1 "330R" V 7325 4175 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7205 3975 50  0001 C CNN
 F 3 "" H 7275 3975 50  0001 C CNN
@@ -484,10 +484,10 @@ F 3 "" H 7275 3975 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R79
 U 1 1 5F5D6C1B
 P 7275 4075
-F 0 "R?" V 7325 4425 50  0000 C CNN
+F 0 "R79" V 7325 4425 50  0000 C CNN
 F 1 "330R" V 7325 4275 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7205 4075 50  0001 C CNN
 F 3 "" H 7275 4075 50  0001 C CNN
@@ -499,10 +499,10 @@ Wire Wire Line
 Wire Wire Line
 	6125 3875 7125 3875
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R76
 U 1 1 5F5D6C24
 P 7275 3775
-F 0 "R?" V 7350 4125 50  0000 C CNN
+F 0 "R76" V 7350 4125 50  0000 C CNN
 F 1 "0R" V 7350 3975 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7205 3775 50  0001 C CNN
 F 3 "" H 7275 3775 50  0001 C CNN
@@ -510,10 +510,10 @@ F 3 "" H 7275 3775 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
+L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R77
 U 1 1 5F5D6C2A
 P 7275 3875
-F 0 "R?" V 7325 4225 50  0000 C CNN
+F 0 "R77" V 7325 4225 50  0000 C CNN
 F 1 "0R" V 7325 4075 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7205 3875 50  0001 C CNN
 F 3 "" H 7275 3875 50  0001 C CNN
@@ -533,8 +533,8 @@ L Connector:USB_B_Micro J?
 U 1 1 6097E54E
 P 1900 5925
 AR Path="/6097E54E" Ref="J?"  Part="1" 
-AR Path="/5F4610BE/6097E54E" Ref="J?"  Part="1" 
-F 0 "J?" H 1957 6392 50  0000 C CNN
+AR Path="/5F4610BE/6097E54E" Ref="J3"  Part="1" 
+F 0 "J3" H 1957 6392 50  0000 C CNN
 F 1 "USB_B_Micro" H 1957 6301 50  0000 C CNN
 F 2 "Devtank_PCB_lib:MOLEX_105017-0001_USB_B" H 2050 5875 50  0001 C CNN
 F 3 "~" H 2050 5875 50  0001 C CNN
@@ -553,8 +553,8 @@ L OSM_env01-rescue:SP0503BAHT-ESD_Protection-ESP32-EVB_Rev_D-rescue D?
 U 1 1 6097E558
 P 2925 6375
 AR Path="/6097E558" Ref="D?"  Part="1" 
-AR Path="/5F4610BE/6097E558" Ref="D?"  Part="1" 
-F 0 "D?" H 3130 6421 50  0000 L CNN
+AR Path="/5F4610BE/6097E558" Ref="D5"  Part="1" 
+F 0 "D5" H 3130 6421 50  0000 L CNN
 F 1 "SP0503BAHT" H 3130 6330 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-143" H 3150 6325 50  0001 L CNN
 F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 3050 6500 50  0001 C CNN
@@ -578,8 +578,8 @@ L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 6097E564
 P 2925 6625
 AR Path="/6097E564" Ref="#PWR?"  Part="1" 
-AR Path="/5F4610BE/6097E564" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2925 6375 50  0001 C CNN
+AR Path="/5F4610BE/6097E564" Ref="#PWR059"  Part="1" 
+F 0 "#PWR059" H 2925 6375 50  0001 C CNN
 F 1 "GND" H 2930 6452 50  0000 C CNN
 F 2 "" H 2925 6625 60  0000 C CNN
 F 3 "" H 2925 6625 60  0000 C CNN
@@ -591,8 +591,8 @@ L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 6097E56A
 P 1900 6400
 AR Path="/6097E56A" Ref="#PWR?"  Part="1" 
-AR Path="/5F4610BE/6097E56A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1900 6150 50  0001 C CNN
+AR Path="/5F4610BE/6097E56A" Ref="#PWR058"  Part="1" 
+F 0 "#PWR058" H 1900 6150 50  0001 C CNN
 F 1 "GND" H 1905 6227 50  0000 C CNN
 F 2 "" H 1900 6400 60  0000 C CNN
 F 3 "" H 1900 6400 60  0000 C CNN
@@ -604,8 +604,8 @@ L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 6097E570
 P 2825 5725
 AR Path="/6097E570" Ref="TP?"  Part="1" 
-AR Path="/5F4610BE/6097E570" Ref="TP?"  Part="1" 
-F 0 "TP?" V 3020 5797 50  0000 C CNN
+AR Path="/5F4610BE/6097E570" Ref="TP41"  Part="1" 
+F 0 "TP41" V 3020 5797 50  0000 C CNN
 F 1 "Test_Point" V 2929 5797 50  0000 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3025 5725 50  0001 C CNN
 F 3 "~" H 3025 5725 50  0001 C CNN

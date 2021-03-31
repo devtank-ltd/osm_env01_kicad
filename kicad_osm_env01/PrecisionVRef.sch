@@ -1,0 +1,316 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 11 11
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L references:LM4040DBZ-3 D?
+U 1 1 6111148F
+P 6325 3925
+AR Path="/6111148F" Ref="D?"  Part="1" 
+AR Path="/5E19E083/6111148F" Ref="D?"  Part="1" 
+AR Path="/608F4675/60959880/6111148F" Ref="D?"  Part="1" 
+AR Path="/608F4675/61105411/6111148F" Ref="D?"  Part="1" 
+AR Path="/61323885/6111148F" Ref="D9"  Part="1" 
+F 0 "D9" V 6371 3838 50  0000 R CNN
+F 1 "LM4040DEX3-3.3+T" V 6300 4775 50  0000 R CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23" H 6325 3725 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 6325 3925 50  0001 C CIN
+	1    6325 3925
+	0    -1   -1   0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 61111495
+P 6625 3925
+AR Path="/608F4675/60959880/61111495" Ref="C?"  Part="1" 
+AR Path="/608F4675/61105411/61111495" Ref="C?"  Part="1" 
+AR Path="/61323885/61111495" Ref="C66"  Part="1" 
+F 0 "C66" H 6740 3971 50  0000 L CNN
+F 1 "100nF" H 6740 3880 50  0000 L CNN
+F 2 "" H 6663 3775 50  0001 C CNN
+F 3 "" H 6625 3925 50  0001 C CNN
+	1    6625 3925
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R?
+U 1 1 6111149B
+P 6325 3500
+AR Path="/608F4675/60959880/6111149B" Ref="R?"  Part="1" 
+AR Path="/608F4675/61105411/6111149B" Ref="R?"  Part="1" 
+AR Path="/61323885/6111149B" Ref="R121"  Part="1" 
+F 0 "R121" H 6395 3546 50  0000 L CNN
+F 1 "820R" H 6395 3455 50  0000 L CNN
+F 2 "" V 6255 3500 50  0001 C CNN
+F 3 "" H 6325 3500 50  0001 C CNN
+	1    6325 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Test_Point TP?
+U 1 1 611114A1
+P 6125 3725
+AR Path="/608F4675/60959880/611114A1" Ref="TP?"  Part="1" 
+AR Path="/608F4675/61105411/611114A1" Ref="TP?"  Part="1" 
+AR Path="/61323885/611114A1" Ref="TP58"  Part="1" 
+F 0 "TP58" V 6320 3797 50  0000 C CNN
+F 1 "Test_Point" V 6229 3797 50  0000 C CNN
+F 2 "" H 6325 3725 50  0001 C CNN
+F 3 "~" H 6325 3725 50  0001 C CNN
+	1    6125 3725
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 611114A7
+P 3275 3525
+AR Path="/608F4675/60959880/611114A7" Ref="#PWR?"  Part="1" 
+AR Path="/608F4675/61105411/611114A7" Ref="#PWR?"  Part="1" 
+AR Path="/61323885/611114A7" Ref="#PWR0124"  Part="1" 
+F 0 "#PWR0124" H 3275 3375 50  0001 C CNN
+F 1 "+5V" H 3290 3698 50  0000 C CNN
+F 2 "" H 3275 3525 50  0001 C CNN
+F 3 "" H 3275 3525 50  0001 C CNN
+	1    3275 3525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6325 3350 6325 3250
+Wire Wire Line
+	6325 3775 6325 3725
+Wire Wire Line
+	6125 3725 6325 3725
+Connection ~ 6325 3725
+Wire Wire Line
+	6325 3725 6325 3650
+Wire Wire Line
+	6625 3775 6625 3725
+Wire Wire Line
+	6625 3725 6325 3725
+Wire Wire Line
+	6325 4075 6325 4175
+Wire Wire Line
+	6325 4175 6625 4175
+Wire Wire Line
+	6625 4175 6625 4075
+$Comp
+L device:Ferrite_Bead L?
+U 1 1 611114BF
+P 3700 3800
+AR Path="/608F4675/60959880/611114BF" Ref="L?"  Part="1" 
+AR Path="/608F4675/61105411/611114BF" Ref="L?"  Part="1" 
+AR Path="/61323885/611114BF" Ref="L3"  Part="1" 
+F 0 "L3" V 3426 3800 50  0000 C CNN
+F 1 "Ferrite_Bead" V 3517 3800 50  0000 C CNN
+F 2 "" V 3630 3800 50  0001 C CNN
+F 3 "" H 3700 3800 50  0001 C CNN
+	1    3700 3800
+	0    -1   1    0   
+$EndComp
+$Comp
+L device:C C?
+U 1 1 611114C5
+P 4650 3950
+AR Path="/608F4675/60959880/611114C5" Ref="C?"  Part="1" 
+AR Path="/608F4675/61105411/611114C5" Ref="C?"  Part="1" 
+AR Path="/61323885/611114C5" Ref="C64"  Part="1" 
+F 0 "C64" H 4765 3996 50  0000 L CNN
+F 1 "10nF" H 4765 3905 50  0000 L CNN
+F 2 "" H 4688 3800 50  0001 C CNN
+F 3 "" H 4650 3950 50  0001 C CNN
+	1    4650 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3800 3275 3800
+Wire Wire Line
+	3275 3525 3275 3800
+Wire Wire Line
+	5125 4200 5125 4100
+Text Label 5450 3800 2    50   ~ 0
+5V_AN
+Wire Wire Line
+	6000 3250 6325 3250
+Text Label 6000 3250 0    50   ~ 0
+5V_AN
+$Comp
+L device:Ferrite_Bead L?
+U 1 1 611114DA
+P 7125 3725
+AR Path="/608F4675/60959880/611114DA" Ref="L?"  Part="1" 
+AR Path="/608F4675/61105411/611114DA" Ref="L?"  Part="1" 
+AR Path="/61323885/611114DA" Ref="L4"  Part="1" 
+F 0 "L4" V 6851 3725 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6942 3725 50  0000 C CNN
+F 2 "" V 7055 3725 50  0001 C CNN
+F 3 "" H 7125 3725 50  0001 C CNN
+	1    7125 3725
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	8600 3725 8925 3725
+Wire Wire Line
+	6625 3725 6975 3725
+Connection ~ 6625 3725
+Wire Wire Line
+	7275 3725 7675 3725
+Text HLabel 5450 3800 2    50   Input ~ 0
+5V_AN
+Text HLabel 8925 3725 2    50   Input ~ 0
+3V3_AN
+Text Notes 5125 2800 0    50   ~ 0
+R=Vs/I\n5-3.3/2mA=850mA\nR=820R
+$Comp
+L device:C C?
+U 1 1 61203E74
+P 5125 3950
+AR Path="/608F4675/60959880/61203E74" Ref="C?"  Part="1" 
+AR Path="/608F4675/61105411/61203E74" Ref="C?"  Part="1" 
+AR Path="/61323885/61203E74" Ref="C65"  Part="1" 
+F 0 "C65" H 5240 3996 50  0000 L CNN
+F 1 "100nF" H 5240 3905 50  0000 L CNN
+F 2 "" H 5163 3800 50  0001 C CNN
+F 3 "" H 5125 3950 50  0001 C CNN
+	1    5125 3950
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 61207EE6
+P 4200 3950
+AR Path="/608F4675/60959880/61207EE6" Ref="C?"  Part="1" 
+AR Path="/608F4675/61105411/61207EE6" Ref="C?"  Part="1" 
+AR Path="/61323885/61207EE6" Ref="C63"  Part="1" 
+F 0 "C63" H 4315 3996 50  0000 L CNN
+F 1 "10uF" H 4315 3905 50  0000 L CNN
+F 2 "" H 4238 3800 50  0001 C CNN
+F 3 "" H 4200 3950 50  0001 C CNN
+	1    4200 3950
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3850 3800 4200 3800
+Connection ~ 4200 3800
+Wire Wire Line
+	4200 3800 4650 3800
+Connection ~ 4650 3800
+Wire Wire Line
+	4650 3800 5125 3800
+Connection ~ 5125 3800
+Wire Wire Line
+	5125 3800 5450 3800
+Wire Wire Line
+	4200 4100 4650 4100
+Wire Wire Line
+	4650 4100 5125 4100
+Connection ~ 4650 4100
+Connection ~ 5125 4100
+$Comp
+L device:C C?
+U 1 1 61211492
+P 8125 3875
+AR Path="/608F4675/60959880/61211492" Ref="C?"  Part="1" 
+AR Path="/608F4675/61105411/61211492" Ref="C?"  Part="1" 
+AR Path="/61323885/61211492" Ref="C68"  Part="1" 
+F 0 "C68" H 8240 3921 50  0000 L CNN
+F 1 "10nF" H 8240 3830 50  0000 L CNN
+F 2 "" H 8163 3725 50  0001 C CNN
+F 3 "" H 8125 3875 50  0001 C CNN
+	1    8125 3875
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8600 4125 8600 4025
+$Comp
+L device:C C?
+U 1 1 6121149F
+P 8600 3875
+AR Path="/608F4675/60959880/6121149F" Ref="C?"  Part="1" 
+AR Path="/608F4675/61105411/6121149F" Ref="C?"  Part="1" 
+AR Path="/61323885/6121149F" Ref="C69"  Part="1" 
+F 0 "C69" H 8715 3921 50  0000 L CNN
+F 1 "100nF" H 8715 3830 50  0000 L CNN
+F 2 "" H 8638 3725 50  0001 C CNN
+F 3 "" H 8600 3875 50  0001 C CNN
+	1    8600 3875
+	-1   0    0    -1  
+$EndComp
+$Comp
+L device:C C?
+U 1 1 612114A5
+P 7675 3875
+AR Path="/608F4675/60959880/612114A5" Ref="C?"  Part="1" 
+AR Path="/608F4675/61105411/612114A5" Ref="C?"  Part="1" 
+AR Path="/61323885/612114A5" Ref="C67"  Part="1" 
+F 0 "C67" H 7790 3921 50  0000 L CNN
+F 1 "10uF" H 7790 3830 50  0000 L CNN
+F 2 "" H 7713 3725 50  0001 C CNN
+F 3 "" H 7675 3875 50  0001 C CNN
+	1    7675 3875
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7675 4025 8125 4025
+Wire Wire Line
+	8125 4025 8600 4025
+Connection ~ 8125 4025
+Connection ~ 8600 4025
+Wire Wire Line
+	7675 3725 8125 3725
+Connection ~ 7675 3725
+Connection ~ 8600 3725
+Connection ~ 8125 3725
+Wire Wire Line
+	8125 3725 8600 3725
+$Comp
+L power:GNDA #PWR?
+U 1 1 6121740B
+P 8600 4125
+AR Path="/608F4675/61105411/6121740B" Ref="#PWR?"  Part="1" 
+AR Path="/61323885/6121740B" Ref="#PWR0127"  Part="1" 
+F 0 "#PWR0127" H 8600 3875 50  0001 C CNN
+F 1 "GNDA" H 8605 3952 50  0000 C CNN
+F 2 "" H 8600 4125 50  0001 C CNN
+F 3 "" H 8600 4125 50  0001 C CNN
+	1    8600 4125
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 6121813D
+P 5125 4200
+AR Path="/608F4675/61105411/6121813D" Ref="#PWR?"  Part="1" 
+AR Path="/61323885/6121813D" Ref="#PWR0125"  Part="1" 
+F 0 "#PWR0125" H 5125 3950 50  0001 C CNN
+F 1 "GNDA" H 5130 4027 50  0000 C CNN
+F 2 "" H 5125 4200 50  0001 C CNN
+F 3 "" H 5125 4200 50  0001 C CNN
+	1    5125 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 612185AC
+P 6625 4175
+AR Path="/608F4675/61105411/612185AC" Ref="#PWR?"  Part="1" 
+AR Path="/61323885/612185AC" Ref="#PWR0126"  Part="1" 
+F 0 "#PWR0126" H 6625 3925 50  0001 C CNN
+F 1 "GNDA" H 6630 4002 50  0000 C CNN
+F 2 "" H 6625 4175 50  0001 C CNN
+F 3 "" H 6625 4175 50  0001 C CNN
+	1    6625 4175
+	1    0    0    -1  
+$EndComp
+Connection ~ 6625 4175
+$EndSCHEMATC
