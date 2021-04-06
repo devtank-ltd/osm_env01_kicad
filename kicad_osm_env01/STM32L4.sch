@@ -578,4 +578,18 @@ Wire Wire Line
 	3300 825  3300 725 
 Wire Wire Line
 	2775 825  3300 825 
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60C1B460
+P 3300 825
+AR Path="/60C1B460" Ref="TP?"  Part="1" 
+AR Path="/608F4675/60C1B460" Ref="TP?"  Part="1" 
+AR Path="/60917DD5/60C1B460" Ref="TP85"  Part="1" 
+F 0 "TP85" V 3300 1075 50  0000 C CNN
+F 1 "Test_Point" V 3300 1200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3500 825 50  0001 C CNN
+F 3 "~" H 3500 825 50  0001 C CNN
+	1    3300 825 
+	0    1    -1   0   
+$EndComp
 $EndSCHEMATC

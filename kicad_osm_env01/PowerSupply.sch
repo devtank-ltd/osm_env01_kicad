@@ -653,8 +653,6 @@ Wire Wire Line
 Wire Wire Line
 	1475 6175 1475 5825
 Wire Wire Line
-	1475 5825 1600 5825
-Wire Wire Line
 	3625 6200 3625 5825
 Wire Wire Line
 	3625 5825 3350 5825
@@ -869,20 +867,6 @@ F 3 "~" H 1375 1625 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP24
-U 1 1 607F8D01
-P 1600 5825
-F 0 "TP24" H 1500 6100 50  0000 C CNN
-F 1 "Test_Point" H 1600 6025 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1800 5825 50  0001 C CNN
-F 3 "~" H 1800 5825 50  0001 C CNN
-	1    1600 5825
-	1    0    0    -1  
-$EndComp
-Connection ~ 1600 5825
-Wire Wire Line
-	1600 5825 1775 5825
-$Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP25
 U 1 1 607F8D09
 P 4325 5825
@@ -896,17 +880,6 @@ $EndComp
 Connection ~ 4325 5825
 Wire Wire Line
 	4325 5825 4650 5825
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP26
-U 1 1 607F8D11
-P 6500 5825
-F 0 "TP26" H 6675 5850 50  0000 C CNN
-F 1 "Test_Point" H 6775 5950 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6700 5825 50  0001 C CNN
-F 3 "~" H 6700 5825 50  0001 C CNN
-	1    6500 5825
-	1    0    0    -1  
-$EndComp
 Connection ~ 5825 5825
 Wire Wire Line
 	4050 5825 4150 5825
@@ -987,7 +960,7 @@ F 3 "" H 6225 5825 50  0001 C CNN
 $EndComp
 Connection ~ 6225 5825
 Wire Wire Line
-	6225 5825 6500 5825
+	6225 5825 6450 5825
 $Comp
 L power:PWR_FLAG #FLG01
 U 1 1 607F8D45
@@ -1303,17 +1276,6 @@ F 3 "~" H 8575 5100 50  0001 C CNN
 	1    8375 5100
 	0    -1   -1   0   
 $EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP28
-U 1 1 607F8DF8
-P 9650 5100
-F 0 "TP28" V 9575 5375 50  0000 C CNN
-F 1 "Test_Point" V 9650 5475 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9850 5100 50  0001 C CNN
-F 3 "~" H 9850 5100 50  0001 C CNN
-	1    9650 5100
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9225 2075 9225 2525
 Wire Wire Line
@@ -1385,8 +1347,8 @@ $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP29
 U 1 1 607F8E24
 P 10700 1725
-F 0 "TP29" V 10895 1797 50  0000 C CNN
-F 1 "Test_Point" V 10804 1797 50  0000 C CNN
+F 0 "TP29" V 10700 2000 50  0000 C CNN
+F 1 "Test_Point" V 10804 1797 50  0001 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10900 1725 50  0001 C CNN
 F 3 "~" H 10900 1725 50  0001 C CNN
 	1    10700 1725
@@ -1467,4 +1429,64 @@ Wire Wire Line
 	9475 4975 9300 4975
 Wire Wire Line
 	9300 4975 9300 5100
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP79
+U 1 1 608245C5
+P 6350 2725
+F 0 "TP79" V 6350 3000 50  0000 C CNN
+F 1 "Test_Point" V 6454 2797 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6550 2725 50  0001 C CNN
+F 3 "~" H 6550 2725 50  0001 C CNN
+	1    6350 2725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1475 5825 1775 5825
+$Comp
+L OSM_env01:PWR_FLAG #FLG0104
+U 1 1 606ED67C
+P 3575 1075
+F 0 "#FLG0104" H 3575 1170 50  0001 C CNN
+F 1 "PWR_FLAG" H 3575 1298 50  0000 C CNN
+F 2 "" H 3575 1075 60  0000 C CNN
+F 3 "" H 3575 1075 60  0000 C CNN
+	1    3575 1075
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3575 1225 3575 1075
+Connection ~ 3575 1225
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60A59EE0
+P 6450 5825
+AR Path="/5F6F7717/60A59EE0" Ref="TP?"  Part="1" 
+AR Path="/60A59EE0" Ref="TP?"  Part="1" 
+AR Path="/608F4675/60A59EE0" Ref="TP?"  Part="1" 
+AR Path="/60688D25/60A59EE0" Ref="TP26"  Part="1" 
+F 0 "TP26" V 6450 6100 50  0000 C CNN
+F 1 "Test_Point" V 6525 6050 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6650 5825 50  0001 C CNN
+F 3 "~" H 6650 5825 50  0001 C CNN
+	1    6450 5825
+	1    0    0    -1  
+$EndComp
+Connection ~ 6450 5825
+Wire Wire Line
+	6450 5825 6500 5825
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60A6B22E
+P 9650 5100
+AR Path="/5F6F7717/60A6B22E" Ref="TP?"  Part="1" 
+AR Path="/60A6B22E" Ref="TP?"  Part="1" 
+AR Path="/608F4675/60A6B22E" Ref="TP?"  Part="1" 
+AR Path="/60688D25/60A6B22E" Ref="TP28"  Part="1" 
+F 0 "TP28" V 9650 5375 50  0000 C CNN
+F 1 "Test_Point" V 9725 5325 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9850 5100 50  0001 C CNN
+F 3 "~" H 9850 5100 50  0001 C CNN
+	1    9650 5100
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

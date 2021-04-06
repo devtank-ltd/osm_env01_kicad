@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 11
+Sheet 5 11
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -17,10 +17,6 @@ Text HLabel 7575 3175 2    60   Input ~ 0
 RS232_RX
 Text HLabel 7575 3275 2    60   Input ~ 0
 RS232_TX
-Text HLabel 3025 3875 0    60   BiDi ~ 0
-D+
-Text HLabel 3025 3975 0    60   BiDi ~ 0
-D-
 $Comp
 L OSM_env01-rescue:CP2102N-A01-GQFN24-silabs-Sensi_Board-rescue-ESP32-EVB_Rev_D-rescue U13
 U 1 1 5C2328D1
@@ -158,10 +154,6 @@ Wire Wire Line
 	3000 3775 3050 3775
 Wire Wire Line
 	3050 2875 2975 2875
-Wire Wire Line
-	3025 3875 4925 3875
-Wire Wire Line
-	3025 3975 4925 3975
 $Comp
 L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R20
 U 1 1 605DE563
@@ -632,4 +624,12 @@ Text HLabel 7825 3975 2    50   Input ~ 0
 ESP_RES1
 Text HLabel 7825 4075 2    50   Input ~ 0
 ESP_RES2
+Text Label 4550 3875 0    50   ~ 0
+USB_D+
+Text Label 4550 3975 0    50   ~ 0
+USB_D-
+Wire Wire Line
+	4925 3875 4550 3875
+Wire Wire Line
+	4925 3975 4550 3975
 $EndSCHEMATC

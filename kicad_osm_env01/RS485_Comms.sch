@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 11
+Sheet 4 11
 Title ""
 Date ""
 Rev ""
@@ -29,14 +29,14 @@ $EndComp
 $Comp
 L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
 U 1 1 609E7D1E
-P 4275 3825
+P 4150 3825
 AR Path="/609E7D1E" Ref="R?"  Part="1" 
 AR Path="/609D4B87/609E7D1E" Ref="R70"  Part="1" 
-F 0 "R70" V 4175 3825 50  0000 C CNN
-F 1 "10K" V 4100 3825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4205 3825 50  0001 C CNN
-F 3 "" H 4275 3825 50  0001 C CNN
-	1    4275 3825
+F 0 "R70" V 4050 3825 50  0000 C CNN
+F 1 "10K" V 3975 3825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4080 3825 50  0001 C CNN
+F 3 "" H 4150 3825 50  0001 C CNN
+	1    4150 3825
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -189,20 +189,20 @@ Wire Wire Line
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 609E7D6C
-P 4050 3850
+P 3925 3850
 AR Path="/609E7D6C" Ref="#PWR?"  Part="1" 
 AR Path="/609D4B87/609E7D6C" Ref="#PWR054"  Part="1" 
-F 0 "#PWR054" H 4050 3600 50  0001 C CNN
-F 1 "GND" H 3900 3775 50  0000 C CNN
-F 2 "" H 4050 3850 60  0000 C CNN
-F 3 "" H 4050 3850 60  0000 C CNN
-	1    4050 3850
+F 0 "#PWR054" H 3925 3600 50  0001 C CNN
+F 1 "GND" H 3775 3775 50  0000 C CNN
+F 2 "" H 3925 3850 60  0000 C CNN
+F 3 "" H 3925 3850 60  0000 C CNN
+	1    3925 3850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4050 3850 4050 3825
+	3925 3850 3925 3825
 Wire Wire Line
-	4050 3825 4125 3825
+	3925 3825 4000 3825
 Wire Wire Line
 	4900 3025 5650 3025
 Text Notes 4750 5250 0    118  ~ 0
@@ -225,8 +225,6 @@ Connection ~ 6250 2825
 Wire Wire Line
 	6500 3650 6950 3650
 Wire Wire Line
-	4425 3825 5025 3825
-Wire Wire Line
 	6250 3975 6300 3975
 Wire Wire Line
 	6300 3975 6300 4050
@@ -238,8 +236,8 @@ U 1 1 609E7D86
 P 7025 3650
 AR Path="/609E7D86" Ref="TP?"  Part="1" 
 AR Path="/609D4B87/609E7D86" Ref="TP39"  Part="1" 
-F 0 "TP39" V 6950 3925 50  0000 C CNN
-F 1 "Test_Point" V 7025 4025 50  0000 C CNN
+F 0 "TP39" V 7025 3925 50  0000 C CNN
+F 1 "Test_Point" V 7025 4025 50  0001 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7225 3650 50  0001 C CNN
 F 3 "~" H 7225 3650 50  0001 C CNN
 	1    7025 3650
@@ -251,8 +249,8 @@ U 1 1 609E7D8C
 P 7025 4100
 AR Path="/609E7D8C" Ref="TP?"  Part="1" 
 AR Path="/609D4B87/609E7D8C" Ref="TP40"  Part="1" 
-F 0 "TP40" V 6950 4375 50  0000 C CNN
-F 1 "Test_Point" V 7025 4475 50  0000 C CNN
+F 0 "TP40" V 7025 4375 50  0000 C CNN
+F 1 "Test_Point" V 7025 4475 50  0001 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7225 4100 50  0001 C CNN
 F 3 "~" H 7225 4100 50  0001 C CNN
 	1    7025 4100
@@ -264,46 +262,27 @@ U 1 1 609E7D92
 P 4750 3925
 AR Path="/609E7D92" Ref="TP?"  Part="1" 
 AR Path="/609D4B87/609E7D92" Ref="TP38"  Part="1" 
-F 0 "TP38" V 4700 3925 50  0000 C CNN
-F 1 "Test_Point" V 4625 4025 50  0000 C CNN
+F 0 "TP38" V 4750 4200 50  0000 C CNN
+F 1 "Test_Point" V 4675 4300 50  0001 C CNN
 F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4950 3925 50  0001 C CNN
 F 3 "~" H 4950 3925 50  0001 C CNN
 	1    4750 3925
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4750 3925 4975 3925
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 609E7D9A
-P 4550 4175
-AR Path="/609E7D9A" Ref="TP?"  Part="1" 
-AR Path="/609D4B87/609E7D9A" Ref="TP37"  Part="1" 
-F 0 "TP37" V 4575 4650 50  0000 C CNN
-F 1 "Test_Point" V 4475 4550 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4750 4175 50  0001 C CNN
-F 3 "~" H 4750 4175 50  0001 C CNN
-	1    4550 4175
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	4550 4175 4875 4175
 Connection ~ 4900 3625
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 609E7DA3
-P 4450 3625
+P 4650 3525
 AR Path="/609E7DA3" Ref="TP?"  Part="1" 
 AR Path="/609D4B87/609E7DA3" Ref="TP36"  Part="1" 
-F 0 "TP36" V 4645 3697 50  0000 C CNN
-F 1 "Test_Point" V 4554 3697 50  0000 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4650 3625 50  0001 C CNN
-F 3 "~" H 4650 3625 50  0001 C CNN
-	1    4450 3625
+F 0 "TP36" V 4650 3800 50  0000 C CNN
+F 1 "Test_Point" V 4775 3900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4850 3525 50  0001 C CNN
+F 3 "~" H 4850 3525 50  0001 C CNN
+	1    4650 3525
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	4450 3625 4775 3625
 Text HLabel 7125 3750 2    50   Input ~ 0
 RS485-
 Text HLabel 7125 4200 2    50   Input ~ 0
@@ -322,31 +301,52 @@ Wire Wire Line
 Connection ~ 6950 4100
 Wire Wire Line
 	6950 4100 7025 4100
-Text HLabel 4925 4025 0    50   Input ~ 0
+Text HLabel 4725 4025 0    50   Input ~ 0
 DE_485
-Wire Wire Line
-	4925 4025 4975 4025
-Wire Wire Line
-	4975 4025 4975 3925
-Connection ~ 4975 3925
-Wire Wire Line
-	4975 3925 5025 3925
-Text HLabel 4825 4275 0    50   Input ~ 0
-RS485_TX
-Text HLabel 4725 3525 0    50   Input ~ 0
+Text HLabel 4725 3625 0    50   Input ~ 0
 RS485_RX
 Wire Wire Line
-	4725 3525 4775 3525
+	4825 4275 4875 4275
+Wire Wire Line
+	4875 4275 4875 4175
+Wire Wire Line
+	4875 4175 5025 4175
+Wire Wire Line
+	4300 3825 5025 3825
+Wire Wire Line
+	4750 3925 4875 3925
+Wire Wire Line
+	4875 3925 4875 4025
+Wire Wire Line
+	4875 4025 4725 4025
+Connection ~ 4875 3925
+Wire Wire Line
+	4875 3925 5025 3925
+Text HLabel 4825 4275 0    50   Input ~ 0
+RS485_TX
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 609E7D9A
+P 4750 4175
+AR Path="/609E7D9A" Ref="TP?"  Part="1" 
+AR Path="/609D4B87/609E7D9A" Ref="TP37"  Part="1" 
+F 0 "TP37" V 4750 4450 50  0000 C CNN
+F 1 "Test_Point" V 4675 4550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4950 4175 50  0001 C CNN
+F 3 "~" H 4950 4175 50  0001 C CNN
+	1    4750 4175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4750 4175 4875 4175
+Connection ~ 4875 4175
+Wire Wire Line
+	4725 3625 4775 3625
+Wire Wire Line
+	4650 3525 4775 3525
 Wire Wire Line
 	4775 3525 4775 3625
 Connection ~ 4775 3625
 Wire Wire Line
 	4775 3625 4900 3625
-Wire Wire Line
-	4825 4275 4875 4275
-Wire Wire Line
-	4875 4275 4875 4175
-Connection ~ 4875 4175
-Wire Wire Line
-	4875 4175 5025 4175
 $EndSCHEMATC
