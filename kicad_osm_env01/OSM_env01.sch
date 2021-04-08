@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 11
+Sheet 1 12
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -322,9 +322,9 @@ $Comp
 L Connector:Test_Point TP9
 U 1 1 608677C1
 P 9275 10000
-F 0 "TP9" H 9333 10072 50  0000 L CNN
+F 0 "TP9" H 9200 10200 50  0000 L CNN
 F 1 "Test_Point" H 9333 10027 50  0001 L CNN
-F 2 "" H 9475 10000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9475 10000 50  0001 C CNN
 F 3 "~" H 9475 10000 50  0001 C CNN
 	1    9275 10000
 	1    0    0    -1  
@@ -333,9 +333,9 @@ $Comp
 L Connector:Test_Point TP10
 U 1 1 6086F915
 P 9550 10000
-F 0 "TP10" H 9608 10072 50  0000 L CNN
+F 0 "TP10" H 9450 10200 50  0000 L CNN
 F 1 "Test_Point" H 9608 10027 50  0001 L CNN
-F 2 "" H 9750 10000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9750 10000 50  0001 C CNN
 F 3 "~" H 9750 10000 50  0001 C CNN
 	1    9550 10000
 	1    0    0    -1  
@@ -344,9 +344,9 @@ $Comp
 L Connector:Test_Point TP17
 U 1 1 608A0166
 P 9825 10000
-F 0 "TP17" H 9883 10072 50  0000 L CNN
+F 0 "TP17" H 9725 10200 50  0000 L CNN
 F 1 "Test_Point" H 9883 10027 50  0001 L CNN
-F 2 "" H 10025 10000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10025 10000 50  0001 C CNN
 F 3 "~" H 10025 10000 50  0001 C CNN
 	1    9825 10000
 	1    0    0    -1  
@@ -355,9 +355,9 @@ $Comp
 L Connector:Test_Point TP18
 U 1 1 608D0934
 P 10100 10000
-F 0 "TP18" H 10158 10072 50  0000 L CNN
+F 0 "TP18" H 10000 10200 50  0000 L CNN
 F 1 "Test_Point" H 10158 10027 50  0001 L CNN
-F 2 "" H 10300 10000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10300 10000 50  0001 C CNN
 F 3 "~" H 10300 10000 50  0001 C CNN
 	1    10100 10000
 	1    0    0    -1  
@@ -499,7 +499,7 @@ F4 "DE_485" I L 6975 7600 50
 F5 "RS485_TX" I R 8125 7350 50 
 F6 "RS485_RX" I R 8125 7475 50 
 $EndSheet
-Text Notes 9075 9675 0    118  ~ 24
+Text Notes 9100 9225 0    118  ~ 24
 Easy access gnd\npins for debug\n
 Text Notes 1375 8350 0    79   ~ 0
 Auto Programming
@@ -2346,7 +2346,7 @@ U 1 1 60BE6129
 P 1525 3875
 F 0 "J6" H 1605 3867 50  0000 L CNN
 F 1 "Conn_01x06" H 1605 3776 50  0000 L CNN
-F 2 "" H 1525 3875 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1525 3875 50  0001 C CNN
 F 3 "~" H 1525 3875 50  0001 C CNN
 	1    1525 3875
 	1    0    0    -1  

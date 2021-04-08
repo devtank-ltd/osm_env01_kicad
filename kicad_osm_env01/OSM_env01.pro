@@ -1,4 +1,4 @@
-update=Fri 24 Jan 2020 14:14:26 GMT
+update=Tue 06 Apr 2021 16:53:23 BST
 version=1
 last_client=kicad
 [cvpcb]
@@ -22,7 +22,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=ESP32-EVB_Rev_D.net
+LastNetListRead=OSM_env01.net
 CopperLayerCount=4
 BoardThickness=1.6
 AllowMicroVias=0
@@ -84,7 +84,7 @@ OthersTextUpright=1
 SolderMaskClearance=0.06
 SolderMaskMinWidth=0.075
 SolderPasteClearance=0
-SolderPasteRatio=-0
+SolderPasteRatio=0
 [pcbnew/Layer.F.Cu]
 Name=F.Cu
 Type=0
