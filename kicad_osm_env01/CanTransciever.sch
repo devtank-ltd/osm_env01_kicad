@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 12
+Sheet 6 11
 Title ""
 Date ""
 Rev ""
@@ -118,7 +118,7 @@ U 1 1 60660D81
 P 7075 3625
 F 0 "JP3" V 6825 3375 50  0000 C CNN
 F 1 "Jumper_NC_Small" V 6900 3625 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal" H 7075 3625 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical" H 7075 3625 50  0001 C CNN
 F 3 "" H 7075 3625 50  0001 C CNN
 	1    7075 3625
 	0    1    1    0   
@@ -224,7 +224,7 @@ U 1 1 60661918
 P 5925 1300
 F 0 "JP2" H 5925 1539 50  0000 C CNN
 F 1 "Jumper_NC_Dual" H 5925 1448 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Horizontal" H 5925 1300 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" H 5925 1300 50  0001 C CNN
 F 3 "" H 5925 1300 50  0001 C CNN
 	1    5925 1300
 	1    0    0    -1  
@@ -290,8 +290,8 @@ L Devtank:MCP2551-I-P U8
 U 1 1 6066DC31
 P 5975 3875
 F 0 "U8" H 6225 3450 50  0000 C CNN
-F 1 "MCP2551-I-P" H 6450 3350 50  0000 C CNN
-F 2 "Housings_DIP:DIP-8_W7.62mm" H 5975 3375 50  0001 C CIN
+F 1 "MCP2551-I/SN " H 6450 3350 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5975 3375 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 5975 3875 50  0001 C CNN
 	1    5975 3875
 	1    0    0    -1  

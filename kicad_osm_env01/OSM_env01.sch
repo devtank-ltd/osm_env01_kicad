@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
-Sheet 1 12
+Sheet 1 11
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -39,17 +39,6 @@ Wire Wire Line
 	1400 5375 1075 5375
 Text Label 1075 5375 0    50   ~ 0
 5V_IN
-$Comp
-L OSM_env01-rescue:Conn_01x08-Connector-ESP32-EVB_Rev_D-rescue J2
-U 1 1 5E1CC832
-P 5125 9700
-F 0 "J2" H 5205 9692 50  0000 L CNN
-F 1 "Conn_01x08" H 5205 9601 50  0000 L CNN
-F 2 "Connector_JST:JST_EH_B8B-EH-A_1x08_P2.50mm_Vertical" H 5125 9700 50  0001 C CNN
-F 3 "~" H 5125 9700 50  0001 C CNN
-	1    5125 9700
-	1    0    0    -1  
-$EndComp
 Text Notes 3725 9000 0    118  ~ 24
 External Connector
 Text Label 4325 9400 0    50   ~ 0
@@ -63,16 +52,16 @@ Wire Wire Line
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR07
 U 1 1 5EEBB9FF
-P 4825 10175
-F 0 "#PWR07" H 4825 9925 50  0001 C CNN
-F 1 "GND" H 4830 10002 50  0000 C CNN
-F 2 "" H 4825 10175 60  0000 C CNN
-F 3 "" H 4825 10175 60  0000 C CNN
-	1    4825 10175
+P 4825 10425
+F 0 "#PWR07" H 4825 10175 50  0001 C CNN
+F 1 "GND" H 4830 10252 50  0000 C CNN
+F 2 "" H 4825 10425 60  0000 C CNN
+F 3 "" H 4825 10425 60  0000 C CNN
+	1    4825 10425
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4825 10175 4825 10000
+	4825 10425 4825 10300
 Wire Wire Line
 	4825 9600 4925 9600
 Wire Wire Line
@@ -440,7 +429,7 @@ U 1 1 60CBF5A8
 P 2200 9900
 F 0 "J1" H 2280 9892 50  0000 L CNN
 F 1 "Conn_01x12" H 2280 9801 50  0000 L CNN
-F 2 "" H 2200 9900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2200 9900 50  0001 C CNN
 F 3 "~" H 2200 9900 50  0001 C CNN
 	1    2200 9900
 	1    0    0    -1  
@@ -1252,24 +1241,16 @@ CS
 Text Label 14875 1625 2    50   ~ 0
 extra_gpio1
 Wire Wire Line
-	4925 10100 4925 10200
-Wire Wire Line
-	4925 10200 5000 10200
-Wire Wire Line
-	5000 10200 5000 10300
-Wire Wire Line
-	5000 10300 5475 10300
-Wire Wire Line
-	5475 10300 5475 10200
+	4425 10350 4425 10250
 $Comp
 L power:+3V3 #PWR011
 U 1 1 61210753
-P 5475 10200
-F 0 "#PWR011" H 5475 10050 50  0001 C CNN
-F 1 "+3V3" H 5490 10373 50  0000 C CNN
-F 2 "" H 5475 10200 50  0001 C CNN
-F 3 "" H 5475 10200 50  0001 C CNN
-	1    5475 10200
+P 4425 10250
+F 0 "#PWR011" H 4425 10100 50  0001 C CNN
+F 1 "+3V3" H 4440 10423 50  0000 C CNN
+F 2 "" H 4425 10250 50  0001 C CNN
+F 3 "" H 4425 10250 50  0001 C CNN
+	1    4425 10250
 	1    0    0    -1  
 $EndComp
 Text Label 2775 6525 2    60   ~ 0
@@ -1504,6 +1485,7 @@ F11 "MIC_SCK" I L 13350 7100 50
 F12 "MIC_WS" I L 13350 7250 50 
 F13 "MIC_GND" I R 14900 5775 50 
 F14 "CT+" I R 14900 6475 50 
+F15 "CT-" I R 14900 6625 50 
 $EndSheet
 Text Label 7275 3575 2    50   ~ 0
 MIC_SCK
@@ -2402,9 +2384,7 @@ ESP Programming \nheader\n
 Wire Wire Line
 	14900 6475 15200 6475
 Text Label 15200 6475 2    50   ~ 0
-CT_OP
-Text Label 14875 1500 2    50   ~ 0
-CT_OP
+CT+
 Text Notes 9550 3325 0    118  ~ 24
 ESP
 Wire Notes Line
@@ -2429,4 +2409,98 @@ Text Notes 9450 5225 0    118  ~ 24
 Power Supply and Battery\n
 Text Notes 9175 7300 0    118  ~ 24
 Precision Voltage Reference\n\n
+Text Label 5750 9500 2    50   ~ 0
+CT-
+Wire Wire Line
+	5750 9500 5425 9500
+Text Label 5750 9400 2    50   ~ 0
+CT+
+Wire Wire Line
+	5750 9400 5425 9400
+$Comp
+L OSM_env01:GND #PWR?
+U 1 1 60812B47
+P 5625 10425
+AR Path="/611AF79D/60812B47" Ref="#PWR?"  Part="1" 
+AR Path="/608F4675/60812B47" Ref="#PWR?"  Part="1" 
+AR Path="/60812B47" Ref="#PWR0142"  Part="1" 
+F 0 "#PWR0142" H 5625 10175 50  0001 C CNN
+F 1 "GND" H 5630 10252 50  0000 C CNN
+F 2 "" H 5625 10425 60  0000 C CNN
+F 3 "" H 5625 10425 60  0000 C CNN
+	1    5625 10425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5425 9600 5625 9600
+Wire Wire Line
+	5625 9600 5625 9900
+Wire Wire Line
+	14900 6625 15200 6625
+Text Label 15200 6625 2    50   ~ 0
+CT-
+Text Label 14875 1500 2    50   ~ 0
+CT+
+$Comp
+L Connector:Conn_02x10_Counter_Clockwise J2
+U 1 1 6088193B
+P 5125 9800
+F 0 "J2" H 5175 10417 50  0000 C CNN
+F 1 "Conn_02x10_Counter_Clockwise" H 5175 10326 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x10_P2.00mm_Vertical" H 5125 9800 50  0001 C CNN
+F 3 "~" H 5125 9800 50  0001 C CNN
+	1    5125 9800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0143
+U 1 1 6091E75E
+P 4175 10250
+F 0 "#PWR0143" H 4175 10100 50  0001 C CNN
+F 1 "+5V" H 4190 10423 50  0000 C CNN
+F 2 "" H 4175 10250 50  0001 C CNN
+F 3 "" H 4175 10250 50  0001 C CNN
+	1    4175 10250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4425 10350 4625 10350
+Wire Wire Line
+	4625 10350 4625 10100
+Wire Wire Line
+	4925 10100 4625 10100
+Wire Wire Line
+	4175 10400 4700 10400
+Wire Wire Line
+	4700 10400 4700 10200
+Wire Wire Line
+	4700 10200 4925 10200
+Wire Wire Line
+	4175 10250 4175 10400
+Wire Wire Line
+	4825 10300 4925 10300
+Connection ~ 4825 10300
+Wire Wire Line
+	4825 10300 4825 10000
+Wire Wire Line
+	5425 9700 5825 9700
+Text Label 5825 9700 2    50   ~ 0
+CAN_L
+Wire Wire Line
+	5425 9800 5825 9800
+Text Label 5825 9800 2    50   ~ 0
+CAN_H
+Wire Wire Line
+	5425 9900 5625 9900
+Connection ~ 5625 9900
+Wire Wire Line
+	5625 9900 5625 10000
+Wire Wire Line
+	5425 10000 5625 10000
+Connection ~ 5625 10000
+Wire Wire Line
+	5625 10000 5625 10425
+NoConn ~ 5425 10100
+NoConn ~ 5425 10200
+NoConn ~ 5425 10300
 $EndSCHEMATC

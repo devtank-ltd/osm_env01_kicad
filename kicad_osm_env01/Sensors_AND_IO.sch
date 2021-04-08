@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 12
+Sheet 7 11
 Title ""
 Date ""
 Rev ""
@@ -279,7 +279,7 @@ AR Path="/609598E0" Ref="U?"  Part="1"
 AR Path="/608F4675/609598E0" Ref="U12"  Part="1" 
 F 0 "U12" H 9487 3740 50  0000 C CNN
 F 1 "TSL2561" H 9487 3649 50  0000 C CNN
-F 2 "Devtank_PCB_lib:TSL2561T" H 9500 2950 50  0001 C CNN
+F 2 "Devtank_PCB_lib:TSL2561T_ALS" H 9500 2950 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 9275 3625 50  0001 C CNN
 	1    9475 3300
 	1    0    0    -1  
@@ -321,7 +321,7 @@ AR Path="/609598F4" Ref="U?"  Part="1"
 AR Path="/608F4675/609598F4" Ref="U11"  Part="1" 
 F 0 "U11" H 8962 1640 50  0000 C CNN
 F 1 "HDC2080" H 8962 1549 50  0000 C CNN
-F 2 "Devtank_PCB_lib:HDC2080DMBR" H 8975 850 50  0001 C CNN
+F 2 "Devtank_PCB_lib:HDC2080" H 8975 850 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 8750 1525 50  0001 C CNN
 	1    8950 1200
 	1    0    0    -1  
@@ -779,7 +779,7 @@ Wire Wire Line
 Text Notes 4850 800  0    118  ~ 0
 Microphone module\n
 Wire Wire Line
-	5850 1175 5850 1050
+	5850 1175 5850 1125
 $Comp
 L device:R R99
 U 1 1 60874EAF
@@ -877,8 +877,8 @@ L Devtank:ICS-43432 U10
 U 1 1 60824917
 P 5850 1975
 F 0 "U10" H 5325 2750 50  0000 C CNN
-F 1 "ICS-43432" H 5500 2650 50  0000 C CNN
-F 2 "" H 5850 1975 50  0001 L BNN
+F 1 "ICS-43434" H 5500 2650 50  0000 C CNN
+F 2 "Devtank_PCB_lib:MIC_ICS-43434" H 5850 1975 50  0001 L BNN
 F 3 "" H 5850 1975 50  0001 L BNN
 	1    5850 1975
 	1    0    0    -1  
@@ -1157,18 +1157,15 @@ AR Path="/611AF79D/611CCBE0" Ref="C?"  Part="1"
 AR Path="/608F4675/611CCBE0" Ref="C71"  Part="1" 
 F 0 "C71" H 6043 4571 50  0000 L CNN
 F 1 "10uF" H 6043 4480 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 5963 4375 50  0001 C CNN
+F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 5963 4375 50  0001 C CNN
 F 3 "" H 5925 4525 50  0001 C CNN
 	1    5925 4525
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6325 4225 6325 4325
-Connection ~ 5750 4325
 Wire Wire Line
-	5750 4325 5575 4325
-Wire Wire Line
-	5750 3900 5575 3900
+	5400 3900 5225 3900
 Wire Wire Line
 	5750 3950 5750 3900
 Wire Wire Line
@@ -1183,7 +1180,7 @@ AR Path="/611AF79D/611CCBED" Ref="R?"  Part="1"
 AR Path="/608F4675/611CCBED" Ref="R124"  Part="1" 
 F 0 "R124" H 5820 4146 50  0000 L CNN
 F 1 "Shunt" H 5820 4055 50  0000 L CNN
-F 2 "" V 5680 4100 50  0001 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5680 4100 50  0001 C CNN
 F 3 "" H 5750 4100 50  0001 C CNN
 	1    5750 4100
 	1    0    0    -1  
@@ -1203,7 +1200,7 @@ Wire Wire Line
 Connection ~ 6325 4700
 Wire Wire Line
 	6325 4700 6325 4675
-Text HLabel 5450 3900 0    50   Input ~ 0
+Text HLabel 5100 3900 0    50   Input ~ 0
 CT+
 Wire Wire Line
 	6450 1925 6675 1925
@@ -1221,89 +1218,47 @@ Connection ~ 1225 3475
 Wire Wire Line
 	1450 3325 1225 3325
 Connection ~ 1225 3325
-Text Notes 5175 3650 0    118  ~ 0
+Text Notes 4825 3650 0    118  ~ 0
 CT Clamp\n\n
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 612C306D
-P 5400 3750
+P 5050 3750
 AR Path="/5F6F7717/612C306D" Ref="TP?"  Part="1" 
 AR Path="/612C306D" Ref="TP?"  Part="1" 
 AR Path="/608F4675/612C306D" Ref="TP68"  Part="1" 
-F 0 "TP68" V 5400 4025 50  0000 C CNN
-F 1 "Test_Point" V 5475 3975 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5600 3750 50  0001 C CNN
-F 3 "~" H 5600 3750 50  0001 C CNN
-	1    5400 3750
+F 0 "TP68" V 5050 4025 50  0000 C CNN
+F 1 "Test_Point" V 5125 3975 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5250 3750 50  0001 C CNN
+F 3 "~" H 5250 3750 50  0001 C CNN
+	1    5050 3750
 	0    -1   1    0   
 $EndComp
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 612C3073
-P 5400 4475
+P 5050 4475
 AR Path="/5F6F7717/612C3073" Ref="TP?"  Part="1" 
 AR Path="/612C3073" Ref="TP?"  Part="1" 
 AR Path="/608F4675/612C3073" Ref="TP88"  Part="1" 
-F 0 "TP88" V 5400 4750 50  0000 C CNN
-F 1 "Test_Point" V 5475 4700 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5600 4475 50  0001 C CNN
-F 3 "~" H 5600 4475 50  0001 C CNN
-	1    5400 4475
+F 0 "TP88" V 5050 4750 50  0000 C CNN
+F 1 "Test_Point" V 5125 4700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5250 4475 50  0001 C CNN
+F 3 "~" H 5250 4475 50  0001 C CNN
+	1    5050 4475
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	5400 4475 5575 4475
+	5050 4475 5225 4475
 Wire Wire Line
-	5575 4475 5575 4325
-Connection ~ 5575 4325
+	5225 4475 5225 4325
 Wire Wire Line
-	5575 3900 5575 3750
+	5225 3900 5225 3750
 Wire Wire Line
-	5575 3750 5400 3750
-Connection ~ 5575 3900
+	5225 3750 5050 3750
+Connection ~ 5225 3900
 Wire Wire Line
-	5575 3900 5450 3900
-Text Label 5250 4325 0    50   ~ 0
-CT-
-Wire Wire Line
-	5250 4325 5575 4325
-Text Label 4575 4075 2    50   ~ 0
-CT-
-Wire Wire Line
-	4575 4075 4250 4075
-$Comp
-L Connector:Conn_01x04 J7
-U 1 1 612F7D00
-P 4050 4075
-F 0 "J7" H 3968 4392 50  0000 C CNN
-F 1 "Conn_01x04" H 3968 4301 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical" H 4050 4075 50  0001 C CNN
-F 3 "~" H 4050 4075 50  0001 C CNN
-	1    4050 4075
-	-1   0    0    -1  
-$EndComp
-Text Label 4575 3975 2    50   ~ 0
-CT+
-Wire Wire Line
-	4575 3975 4250 3975
-NoConn ~ 4250 4275
-$Comp
-L OSM_env01:GND #PWR?
-U 1 1 6130D84E
-P 4450 4350
-AR Path="/611AF79D/6130D84E" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/6130D84E" Ref="#PWR0142"  Part="1" 
-F 0 "#PWR0142" H 4450 4100 50  0001 C CNN
-F 1 "GND" H 4455 4177 50  0000 C CNN
-F 2 "" H 4450 4350 60  0000 C CNN
-F 3 "" H 4450 4350 60  0000 C CNN
-	1    4450 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 4175 4450 4175
-Wire Wire Line
-	4450 4175 4450 4350
+	5225 3900 5100 3900
 Text Notes 3575 5100 0    50   ~ 0
 bypass capacitor few hundred ohms\nhttps://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/interface-with-arduino
 Wire Wire Line
@@ -1326,7 +1281,7 @@ U 1 1 60765BD8
 P 5675 6025
 F 0 "C73" H 5790 6071 50  0000 L CNN
 F 1 "DNF" H 5790 5980 50  0000 L CNN
-F 2 "" H 5713 5875 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5713 5875 50  0001 C CNN
 F 3 "" H 5675 6025 50  0001 C CNN
 	1    5675 6025
 	1    0    0    -1  
@@ -1424,7 +1379,7 @@ U 1 1 6083B968
 P 6175 5875
 F 0 "TH3" H 6273 5921 50  0000 L CNN
 F 1 "Thermistor_NTC" H 6273 5830 50  0000 L CNN
-F 2 "" H 6175 5925 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 6175 5925 50  0001 C CNN
 F 3 "" H 6175 5925 50  0001 C CNN
 	1    6175 5875
 	0    -1   -1   0   
@@ -1457,9 +1412,72 @@ AR Path="/60688D25/60D2C5AD" Ref="D?"  Part="1"
 AR Path="/608F4675/60D2C5AD" Ref="D11"  Part="1" 
 F 0 "D11" V 4804 6529 50  0000 L CNN
 F 1 "D" V 4895 6529 50  0000 L CNN
-F 2 "" H 4850 6450 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-123" H 4850 6450 50  0001 C CNN
 F 3 "" H 4850 6450 50  0001 C CNN
 	1    4850 6450
 	0    1    1    0   
 $EndComp
+$Comp
+L device:R R?
+U 1 1 6073EBF7
+P 5400 4100
+AR Path="/611AF79D/6073EBF7" Ref="R?"  Part="1" 
+AR Path="/608F4675/6073EBF7" Ref="R88"  Part="1" 
+F 0 "R88" H 5470 4146 50  0000 L CNN
+F 1 "Shunt" H 5470 4055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 5330 4100 50  0001 C CNN
+F 3 "" H 5400 4100 50  0001 C CNN
+	1    5400 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5225 4325 5400 4325
+Connection ~ 5750 4325
+Wire Wire Line
+	5400 4250 5400 4325
+Connection ~ 5400 4325
+Wire Wire Line
+	5400 4325 5750 4325
+Wire Wire Line
+	5400 3950 5400 3900
+Wire Wire Line
+	5750 3900 5400 3900
+Connection ~ 5400 3900
+Text HLabel 5100 4325 0    50   Input ~ 0
+CT-
+Wire Wire Line
+	5225 4325 5100 4325
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
+U 1 1 60B4304E
+P 6175 1125
+AR Path="/608F4675/60959880/60B4304E" Ref="C?"  Part="1" 
+AR Path="/608F4675/60B4304E" Ref="C39"  Part="1" 
+F 0 "C39" H 6290 1171 50  0000 L CNN
+F 1 "100nF" H 6290 1080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6213 975 50  0001 C CNN
+F 3 "" H 6175 1125 50  0001 C CNN
+	1    6175 1125
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GNDA #PWR?
+U 1 1 60B43055
+P 6525 1125
+AR Path="/608F4675/60959880/60B43055" Ref="#PWR?"  Part="1" 
+AR Path="/608F4675/60B43055" Ref="#PWR066"  Part="1" 
+F 0 "#PWR066" H 6525 875 50  0001 C CNN
+F 1 "GNDA" H 6530 952 50  0000 C CNN
+F 2 "" H 6525 1125 50  0001 C CNN
+F 3 "" H 6525 1125 50  0001 C CNN
+	1    6525 1125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6025 1125 5850 1125
+Connection ~ 5850 1125
+Wire Wire Line
+	5850 1125 5850 1050
+Wire Wire Line
+	6325 1125 6525 1125
 $EndSCHEMATC

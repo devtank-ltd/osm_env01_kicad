@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 12
+Sheet 11 11
 Title ""
 Date ""
 Rev ""
@@ -61,7 +61,7 @@ Wire Wire Line
 	2725 3550 2725 3825
 Wire Wire Line
 	4575 4225 4575 4125
-Text Label 4900 3825 2    50   ~ 0
+Text Label 4500 3825 2    50   ~ 0
 5V_AN
 Wire Wire Line
 	8600 3675 8750 3675
@@ -108,8 +108,6 @@ Connection ~ 4100 3825
 Wire Wire Line
 	4100 3825 4575 3825
 Connection ~ 4575 3825
-Wire Wire Line
-	4575 3825 4900 3825
 Wire Wire Line
 	3650 4125 4100 4125
 Wire Wire Line
@@ -218,12 +216,6 @@ Wire Wire Line
 Connection ~ 8750 3675
 Wire Wire Line
 	8750 3675 8925 3675
-$Sheet
-S 8250 2950 825  350 
-U 6070F49D
-F0 "Sheet6070F49C" 50
-F1 "file6070F49C.sch" 50
-$EndSheet
 $Comp
 L power:GNDA #PWR?
 U 1 1 612185AC
@@ -334,9 +326,31 @@ AR Path="/608F4675/61105411/6111148F" Ref="D?"  Part="1"
 AR Path="/61323885/6111148F" Ref="D9"  Part="1" 
 F 0 "D9" V 6371 3788 50  0000 R CNN
 F 1 "LM4040DEX3-3.3+T" V 6300 4725 50  0000 R CNN
-F 2 "TO_SOT_Packages_SMD:SOT-23" H 6325 3675 50  0001 C CIN
+F 2 "Devtank_PCB_lib:SC-70-3_package" H 6325 3675 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 6325 3875 50  0001 C CIN
 	1    6325 3875
 	0    -1   -1   0   
 $EndComp
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60B8CF4B
+P 4800 3700
+AR Path="/60688D25/60B8CF4B" Ref="TP?"  Part="1" 
+AR Path="/61323885/60B8CF4B" Ref="TP89"  Part="1" 
+F 0 "TP89" V 4800 3975 50  0000 C CNN
+F 1 "Test_Point" V 4904 3772 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5000 3700 50  0001 C CNN
+F 3 "~" H 5000 3700 50  0001 C CNN
+	1    4800 3700
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4800 3700 4725 3700
+Wire Wire Line
+	4725 3700 4725 3825
+Connection ~ 4725 3825
+Wire Wire Line
+	4725 3825 4900 3825
+Wire Wire Line
+	4575 3825 4725 3825
 $EndSCHEMATC

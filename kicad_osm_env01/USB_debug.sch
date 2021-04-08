@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 12
+Sheet 5 11
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -528,7 +528,7 @@ AR Path="/6097E54E" Ref="J?"  Part="1"
 AR Path="/5F4610BE/6097E54E" Ref="J3"  Part="1" 
 F 0 "J3" H 1957 6392 50  0000 C CNN
 F 1 "USB_B_Micro" H 1957 6301 50  0000 C CNN
-F 2 "Devtank_PCB_lib:MOLEX_105017-0001_USB_B" H 2050 5875 50  0001 C CNN
+F 2 "Devtank_PCB_lib:MOLEX_105017-0001_Micro_USB_b" H 2050 5875 50  0001 C CNN
 F 3 "~" H 2050 5875 50  0001 C CNN
 	1    1900 5925
 	1    0    0    -1  

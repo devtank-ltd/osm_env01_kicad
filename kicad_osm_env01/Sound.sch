@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 12
+Sheet 9 11
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -256,7 +256,7 @@ U 1 1 60AFC19D
 P 1875 3700
 F 0 "SW4" V 1921 3612 50  0000 R CNN
 F 1 "SW_SPST" V 1830 3612 50  0000 R CNN
-F 2 "" H 1875 3700 50  0001 C CNN
+F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 1875 3700 50  0001 C CNN
 F 3 "" H 1875 3700 50  0001 C CNN
 	1    1875 3700
 	0    -1   -1   0   
@@ -362,7 +362,7 @@ U 1 1 61063A25
 P 5325 3550
 F 0 "U14" H 5150 3975 50  0000 C CNN
 F 1 "OPA1678IDG" H 5300 4075 50  0000 C CNN
-F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 5325 3550 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5325 3550 50  0001 C CNN
 F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf" H 5325 3550 50  0001 C CNN
 	1    5325 3550
 	1    0    0    1   
@@ -373,7 +373,7 @@ U 2 1 6106532E
 P 7700 3650
 F 0 "U14" H 7450 4250 50  0000 L CNN
 F 1 "OPA1678IDG" H 7450 4150 50  0000 L CNN
-F 2 "Package_SO:VSSOP-8_3.0x3.0mm_P0.65mm" H 7700 3650 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7700 3650 50  0001 C CNN
 F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pdf" H 7700 3650 50  0001 C CNN
 	2    7700 3650
 	1    0    0    -1  
@@ -670,8 +670,6 @@ Wire Wire Line
 	1125 975  1125 825 
 Connection ~ 5825 3550
 Wire Wire Line
-	1125 975  1375 975 
-Wire Wire Line
 	2075 825  2300 825 
 Text Label 1375 975  2    50   ~ 0
 5V_A
@@ -802,29 +800,25 @@ Connection ~ 1875 3450
 $Comp
 L Devtank:+3V3_A #PWR0133
 U 1 1 60D990F9
-P 1275 1775
-F 0 "#PWR0133" H 1275 1625 50  0001 C CNN
-F 1 "+3V3_A" H 1290 1948 50  0000 C CNN
-F 2 "" H 1275 1775 50  0000 C CNN
-F 3 "" H 1275 1775 50  0000 C CNN
-	1    1275 1775
+P 1375 1975
+F 0 "#PWR0133" H 1375 1825 50  0001 C CNN
+F 1 "+3V3_A" H 1390 2148 50  0000 C CNN
+F 2 "" H 1375 1975 50  0000 C CNN
+F 3 "" H 1375 1975 50  0000 C CNN
+	1    1375 1975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1275 1925 1275 1775
-Wire Wire Line
-	1275 1925 1525 1925
-Text Label 1525 1925 2    50   ~ 0
-5V_A
+	1375 2125 1375 1975
 $Comp
 L Connector:Test_Point TP87
 U 1 1 60D9B3F1
-P 1525 1925
-F 0 "TP87" V 1525 2100 50  0000 L CNN
-F 1 "Test_Point" H 1583 1952 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1725 1925 50  0001 C CNN
-F 3 "~" H 1725 1925 50  0001 C CNN
-	1    1525 1925
+P 1625 2125
+F 0 "TP87" V 1625 2300 50  0000 L CNN
+F 1 "Test_Point" H 1683 2152 50  0001 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1825 2125 50  0001 C CNN
+F 3 "~" H 1825 2125 50  0001 C CNN
+	1    1625 2125
 	0    1    1    0   
 $EndComp
 Wire Wire Line
@@ -843,4 +837,49 @@ F 3 "" H 725 825 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 1125 975 
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C74
+U 1 1 60B32488
+P 725 1125
+F 0 "C74" H 840 1171 50  0000 L CNN
+F 1 "100nF" H 840 1080 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 763 975 50  0001 C CNN
+F 3 "" H 725 1125 50  0001 C CNN
+	1    725  1125
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	725  1275 725  1375
+$Comp
+L power:GNDA #PWR0144
+U 1 1 60B3248F
+P 725 1375
+F 0 "#PWR0144" H 725 1125 50  0001 C CNN
+F 1 "GNDA" H 730 1202 50  0000 C CNN
+F 2 "" H 725 1375 50  0001 C CNN
+F 3 "" H 725 1375 50  0001 C CNN
+	1    725  1375
+	1    0    0    -1  
+$EndComp
+Connection ~ 725  975 
+Wire Wire Line
+	1125 975  1375 975 
+Wire Wire Line
+	975  1975 975  2125
+$Comp
+L power:PWR_FLAG #FLG03
+U 1 1 60BB7AEA
+P 975 1975
+F 0 "#FLG03" H 975 2050 50  0001 C CNN
+F 1 "PWR_FLAG" H 975 2148 50  0000 C CNN
+F 2 "" H 975 1975 50  0001 C CNN
+F 3 "" H 975 1975 50  0001 C CNN
+	1    975  1975
+	1    0    0    -1  
+$EndComp
+Connection ~ 1375 2125
+Wire Wire Line
+	1375 2125 1625 2125
+Wire Wire Line
+	975  2125 1375 2125
 $EndSCHEMATC

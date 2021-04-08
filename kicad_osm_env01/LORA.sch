@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 12
+Sheet 3 11
 Title ""
 Date ""
 Rev ""
@@ -334,7 +334,7 @@ AR Path="/608CFA5C" Ref="U?"  Part="1"
 AR Path="/60880AD8/608CFA5C" Ref="U6"  Part="1" 
 F 0 "U6" H 8625 4750 50  0000 C CNN
 F 1 "RAK4270" H 8750 4650 50  0000 C CNN
-F 2 "" H 7900 4175 50  0001 C CNN
+F 2 "Devtank_PCB_lib:RAK4270" H 7900 4175 50  0001 C CNN
 F 3 "" H 7900 4175 50  0001 C CNN
 	1    8150 3800
 	1    0    0    -1  
