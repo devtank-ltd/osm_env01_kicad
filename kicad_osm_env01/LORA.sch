@@ -194,7 +194,7 @@ AR Path="/608CFA0F" Ref="C?"  Part="1"
 AR Path="/60880AD8/608CFA0F" Ref="C26"  Part="1" 
 F 0 "C26" H 7965 2596 50  0000 L CNN
 F 1 "100nF" H 7965 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7888 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7888 2400 50  0001 C CNN
 F 3 "" H 7850 2550 50  0001 C CNN
 	1    7850 2550
 	-1   0    0    -1  
@@ -207,7 +207,7 @@ AR Path="/608CFA15" Ref="C?"  Part="1"
 AR Path="/60880AD8/608CFA15" Ref="C33"  Part="1" 
 F 0 "C33" H 7515 2596 50  0000 L CNN
 F 1 "100nF" H 7515 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7438 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 7438 2400 50  0001 C CNN
 F 3 "" H 7400 2550 50  0001 C CNN
 	1    7400 2550
 	-1   0    0    -1  
@@ -326,19 +326,6 @@ NoConn ~ 9025 3850
 NoConn ~ 9025 3550
 NoConn ~ 9025 3425
 NoConn ~ 7275 3550
-$Comp
-L Devtank:RAK4270 U?
-U 1 1 608CFA5C
-P 8150 3800
-AR Path="/608CFA5C" Ref="U?"  Part="1" 
-AR Path="/60880AD8/608CFA5C" Ref="U6"  Part="1" 
-F 0 "U6" H 8625 4750 50  0000 C CNN
-F 1 "RAK4270" H 8750 4650 50  0000 C CNN
-F 2 "Devtank_PCB_lib:RAK4270" H 7900 4175 50  0001 C CNN
-F 3 "" H 7900 4175 50  0001 C CNN
-	1    8150 3800
-	1    0    0    -1  
-$EndComp
 NoConn ~ 7275 4425
 NoConn ~ 7275 4300
 NoConn ~ 7275 4175
@@ -350,9 +337,9 @@ Wire Wire Line
 	7275 3675 6900 3675
 Wire Wire Line
 	7275 3800 6900 3800
-Text HLabel 6900 3675 0    50   Input ~ 0
-LORA_RX
 Text HLabel 6900 3800 0    50   Input ~ 0
+LORA_RX
+Text HLabel 6900 3675 0    50   Input ~ 0
 LORA_TX
 Text HLabel 3175 3350 0    50   Input ~ 0
 LORA_CTS
@@ -445,5 +432,16 @@ F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10100 3400 50  0001 C CNN
 F 3 "~" H 10100 3400 50  0001 C CNN
 	1    9900 3400
 	0    1    1    0   
+$EndComp
+$Comp
+L Devtank:RAK4270 U6
+U 1 1 6075834F
+P 8150 3800
+F 0 "U6" H 8150 4881 50  0000 C CNN
+F 1 "RAK4270" H 8150 4790 50  0000 C CNN
+F 2 "Devtank_PCB_lib:RAK4270" H 7900 4175 50  0001 C CNN
+F 3 "" H 7900 4175 50  0001 C CNN
+	1    8150 3800
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

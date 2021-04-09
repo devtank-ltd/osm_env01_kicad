@@ -1,4 +1,4 @@
--9206804668275611466
+-9206801430451020466
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -42959,6 +42959,13 @@ Through hole pin header THT 1x04 2.54mm single row
 4
 4
 Devtank_PCB_lib
+CP2102n_qfn-24_ep-2.6x2.6_thermalvias-0.3
+QFN, 24 Pin (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=278), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+39
+25
+Devtank_PCB_lib
 CSD18540Q5B
 SON, 8-Leads, Body 5x6x1mm, Pitch 1.27mm; (see Texas Instruments CSD18531Q5A http://www.ti.com/lit/ds/symlink/csd18531q5a.pdf)
 VSONP 1.27
@@ -43134,6 +43141,13 @@ HE700 Series DIP-14 W7.62mm
 8
 8
 Devtank_PCB_lib
+HPMA115S0_Particulate_sensor
+Mounting Hole 2.5mm, no annular
+mounting hole 2.5mm no annular
+0
+0
+0
+Devtank_PCB_lib
 HTSSOP-16_4.4x5mm_Pitch0.65mm
 FE Package; 16-Lead Plastic TSSOP (4.4mm); Exposed Pad Variation BB; (see Linear Technology 1956f.pdf)
 SSOP 0.65
@@ -43211,13 +43225,6 @@ jack stereo TRS
 5
 5
 Devtank_PCB_lib
-LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm
-
-LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm
-0
-2
-2
-Devtank_PCB_lib
 LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z5.0mm
 LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins
 LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins
@@ -43279,7 +43286,7 @@ MOLEX_105017-0001_Micro_USB_b
 
 0
 13
-13
+6
 Devtank_PCB_lib
 MOV_L10mm_D5mm_Vertical
 MOV_L10mm_D5mm_Vertical pin pitch=7.62mm, 1W, length*diameter=9.9*3.6mm^2
@@ -43665,6 +43672,13 @@ Through hole ice40 pin header
 0
 164
 161
+Devtank_PCB_lib
+molex_milligrid_87831-2019
+
+
+0
+20
+20
 Devtank_PCB_lib
 moto_board_4_pin_header
 Through hole straight pin header, 2x03, 2.54mm pitch, double rows

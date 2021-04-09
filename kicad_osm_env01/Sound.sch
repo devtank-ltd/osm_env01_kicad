@@ -771,17 +771,6 @@ Wire Wire Line
 	1850 825  2075 825 
 Connection ~ 2075 825 
 $Comp
-L Connector:Test_Point TP83
-U 1 1 60785772
-P 1375 975
-F 0 "TP83" V 1375 1150 50  0000 L CNN
-F 1 "Test_Point" H 1433 1002 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1575 975 50  0001 C CNN
-F 3 "~" H 1575 975 50  0001 C CNN
-	1    1375 975 
-	0    1    1    0   
-$EndComp
-$Comp
 L Connector:Test_Point TP84
 U 1 1 607878CE
 P 2300 825
@@ -810,17 +799,6 @@ F 3 "" H 1375 1975 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	1375 2125 1375 1975
-$Comp
-L Connector:Test_Point TP87
-U 1 1 60D9B3F1
-P 1625 2125
-F 0 "TP87" V 1625 2300 50  0000 L CNN
-F 1 "Test_Point" H 1683 2152 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 1825 2125 50  0001 C CNN
-F 3 "~" H 1825 2125 50  0001 C CNN
-	1    1625 2125
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	725  975  1125 975 
 Wire Wire Line
@@ -843,7 +821,7 @@ U 1 1 60B32488
 P 725 1125
 F 0 "C74" H 840 1171 50  0000 L CNN
 F 1 "100nF" H 840 1080 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 763 975 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 763 975 50  0001 C CNN
 F 3 "" H 725 1125 50  0001 C CNN
 	1    725  1125
 	1    0    0    1   
@@ -877,9 +855,8 @@ F 3 "" H 975 1975 50  0001 C CNN
 	1    975  1975
 	1    0    0    -1  
 $EndComp
-Connection ~ 1375 2125
-Wire Wire Line
-	1375 2125 1625 2125
 Wire Wire Line
 	975  2125 1375 2125
+Text Notes -975 4250 0    50   ~ 0
+Manual switch to gnd mic in order to find ref. This can also be done in software\n
 $EndSCHEMATC
