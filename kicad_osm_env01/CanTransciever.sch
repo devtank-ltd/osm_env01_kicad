@@ -286,7 +286,7 @@ CAN_L
 Text HLabel 7475 3525 2    50   Input ~ 0
 CAN_H
 $Comp
-L Devtank:MCP2551-I-P U8
+L OSM_env01-rescue:MCP2551-I-P-Devtank U8
 U 1 1 6066DC31
 P 5975 3875
 F 0 "U8" H 6225 3450 50  0000 C CNN

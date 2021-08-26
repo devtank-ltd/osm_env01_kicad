@@ -434,7 +434,7 @@ F 3 "~" H 10100 3400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Devtank:RAK4270 U6
+L OSM_env01-rescue:RAK4270-Devtank U6
 U 1 1 6075834F
 P 8150 3800
 F 0 "U6" H 8150 4881 50  0000 C CNN

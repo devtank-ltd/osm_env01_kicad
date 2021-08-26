@@ -183,7 +183,7 @@ Fast adc channels are PC0-PC3, PA0 and PA1 the rest are slow
 Text Label 5375 2825 0    50   ~ 0
 STM_BOOT0
 $Comp
-L Devtank:STM32L412K8U6 U?
+L OSM_env01-rescue:STM32L412K8U6-Devtank U?
 U 1 1 60931F7E
 P 5800 2175
 AR Path="/60931F7E" Ref="U?"  Part="1" 

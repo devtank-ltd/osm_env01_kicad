@@ -1891,7 +1891,7 @@ F2 "5V_AN" I R 10675 7600 50
 F3 "3V3_AN" I R 10675 7875 50 
 $EndSheet
 $Comp
-L Devtank:+3V3_A #PWR?
+L OSM_env01-rescue:+3V3_A-Devtank #PWR?
 U 1 1 6132388B
 P 11525 7450
 AR Path="/608F4675/6132388B" Ref="#PWR?"  Part="1" 

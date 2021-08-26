@@ -379,9 +379,11 @@ F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/OP249.pd
 	1    0    0    -1  
 $EndComp
 $Comp
-L Devtank:+3V3_A #PWR096
+L OSM_env01-rescue:+3V3_A-Devtank #PWR096
 U 1 1 611792E2
 P 2650 2975
+AR Path="/611792E2" Ref="#PWR096"  Part="1" 
+AR Path="/608F4675/60959880/611792E2" Ref="#PWR096"  Part="1" 
 F 0 "#PWR096" H 2650 2825 50  0001 C CNN
 F 1 "+3V3_A" H 2665 3148 50  0000 C CNN
 F 2 "" H 2650 2975 50  0000 C CNN
@@ -390,9 +392,11 @@ F 3 "" H 2650 2975 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Devtank:+3V3_A #PWR098
+L OSM_env01-rescue:+3V3_A-Devtank #PWR098
 U 1 1 6117A300
 P 3675 2950
+AR Path="/6117A300" Ref="#PWR098"  Part="1" 
+AR Path="/608F4675/60959880/6117A300" Ref="#PWR098"  Part="1" 
 F 0 "#PWR098" H 3675 2800 50  0001 C CNN
 F 1 "+3V3_A" H 3690 3123 50  0000 C CNN
 F 2 "" H 3675 2950 50  0000 C CNN
@@ -787,9 +791,11 @@ Wire Wire Line
 	1875 3450 1625 3450
 Connection ~ 1875 3450
 $Comp
-L Devtank:+3V3_A #PWR0133
+L OSM_env01-rescue:+3V3_A-Devtank #PWR0133
 U 1 1 60D990F9
 P 1375 1975
+AR Path="/60D990F9" Ref="#PWR0133"  Part="1" 
+AR Path="/608F4675/60959880/60D990F9" Ref="#PWR0133"  Part="1" 
 F 0 "#PWR0133" H 1375 1825 50  0001 C CNN
 F 1 "+3V3_A" H 1390 2148 50  0000 C CNN
 F 2 "" H 1375 1975 50  0000 C CNN
