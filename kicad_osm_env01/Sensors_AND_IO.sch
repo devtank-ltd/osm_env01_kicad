@@ -153,8 +153,6 @@ Wire Wire Line
 	1775 1050 1775 1125
 Wire Wire Line
 	3450 1075 3450 1150
-Text Notes 8900 4150 0    118  ~ 0
-Light Sensor\n
 $Sheet
 S 8600 4875 900  1000
 U 60959880
@@ -165,151 +163,6 @@ F3 "MIC_IN" I L 8600 5350 50
 $EndSheet
 Wire Wire Line
 	10100 5350 10050 5350
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
-U 1 1 6095989E
-P 7975 3125
-AR Path="/6095989E" Ref="R?"  Part="1" 
-AR Path="/608F4675/6095989E" Ref="R102"  Part="1" 
-F 0 "R102" H 8045 3171 50  0000 L CNN
-F 1 "DNF" H 8045 3080 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7905 3125 50  0001 C CNN
-F 3 "" H 7975 3125 50  0001 C CNN
-	1    7975 3125
-	1    0    0    -1  
-$EndComp
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
-U 1 1 609598A4
-P 7975 3500
-AR Path="/609598A4" Ref="R?"  Part="1" 
-AR Path="/608F4675/609598A4" Ref="R103"  Part="1" 
-F 0 "R103" H 8045 3546 50  0000 L CNN
-F 1 "0R" H 8045 3455 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7905 3500 50  0001 C CNN
-F 3 "" H 7975 3500 50  0001 C CNN
-	1    7975 3500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7975 3300 7975 3275
-Wire Wire Line
-	7975 3350 7975 3300
-Connection ~ 7975 3300
-$Comp
-L power:+3V3 #PWR?
-U 1 1 609598AD
-P 8775 2775
-AR Path="/609598AD" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/609598AD" Ref="#PWR089"  Part="1" 
-F 0 "#PWR089" H 8775 2625 50  0001 C CNN
-F 1 "+3V3" H 8790 2948 50  0000 C CNN
-F 2 "" H 8775 2775 50  0001 C CNN
-F 3 "" H 8775 2775 50  0001 C CNN
-	1    8775 2775
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 609598B3
-P 7975 2950
-AR Path="/609598B3" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/609598B3" Ref="#PWR085"  Part="1" 
-F 0 "#PWR085" H 7975 2800 50  0001 C CNN
-F 1 "+3V3" H 7990 3123 50  0000 C CNN
-F 2 "" H 7975 2950 50  0001 C CNN
-F 3 "" H 7975 2950 50  0001 C CNN
-	1    7975 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7975 2975 7975 2950
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
-U 1 1 609598BA
-P 7975 3725
-AR Path="/609598BA" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/609598BA" Ref="#PWR086"  Part="1" 
-F 0 "#PWR086" H 7975 3475 50  0001 C CNN
-F 1 "GND" H 7980 3552 50  0000 C CNN
-F 2 "" H 7975 3725 60  0000 C CNN
-F 3 "" H 7975 3725 60  0000 C CNN
-	1    7975 3725
-	1    0    0    -1  
-$EndComp
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
-U 1 1 609598C0
-P 8900 3725
-AR Path="/609598C0" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/609598C0" Ref="#PWR090"  Part="1" 
-F 0 "#PWR090" H 8900 3475 50  0001 C CNN
-F 1 "GND" H 8905 3552 50  0000 C CNN
-F 2 "" H 8900 3725 60  0000 C CNN
-F 3 "" H 8900 3725 60  0000 C CNN
-	1    8900 3725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8900 3725 8900 3475
-Wire Wire Line
-	8900 3475 8975 3475
-Wire Wire Line
-	7975 3725 7975 3650
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
-U 1 1 609598CB
-P 8625 2975
-AR Path="/609598CB" Ref="C?"  Part="1" 
-AR Path="/608F4675/609598CB" Ref="C44"  Part="1" 
-F 0 "C44" H 8750 3075 50  0000 L CNN
-F 1 "100nF" H 8750 3000 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 8663 2825 50  0001 C CNN
-F 3 "" H 8625 2975 50  0001 C CNN
-	1    8625 2975
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	8975 3125 8775 3125
-$Comp
-L OSM_env01-rescue:TSL2561-Devtank-ESP32-EVB_Rev_D-rescue U?
-U 1 1 609598E0
-P 9475 3300
-AR Path="/609598E0" Ref="U?"  Part="1" 
-AR Path="/608F4675/609598E0" Ref="U12"  Part="1" 
-F 0 "U12" H 9487 3740 50  0000 C CNN
-F 1 "TSL2561" H 9487 3649 50  0000 C CNN
-F 2 "Devtank_PCB_lib:TSL2561T_ALS" H 9500 2950 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/hdc1080.pdf" H 9275 3625 50  0001 C CNN
-	1    9475 3300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10000 3125 10550 3125
-Wire Wire Line
-	10000 3600 10575 3600
-Wire Wire Line
-	8775 2775 8775 2975
-Connection ~ 8775 2975
-Wire Wire Line
-	8775 2975 8775 3125
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
-U 1 1 609598EB
-P 8375 2975
-AR Path="/609598EB" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/609598EB" Ref="#PWR088"  Part="1" 
-F 0 "#PWR088" H 8375 2725 50  0001 C CNN
-F 1 "GND" H 8380 2802 50  0000 C CNN
-F 2 "" H 8375 2975 60  0000 C CNN
-F 3 "" H 8375 2975 60  0000 C CNN
-	1    8375 2975
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8375 2975 8475 2975
-Wire Wire Line
-	7975 3300 8975 3300
 Text Notes 8125 6300 0    118  ~ 0
 Sound Level Meter\n
 $Comp
@@ -751,12 +604,6 @@ Text HLabel 10250 1025 2    50   Input ~ 0
 SCL
 Text HLabel 7650 1025 0    50   Input ~ 0
 SDA
-Text HLabel 10550 3125 2    50   Input ~ 0
-SDA
-Text HLabel 10575 3600 2    50   Input ~ 0
-SCL
-Wire Wire Line
-	10000 3600 10000 3475
 Wire Wire Line
 	10200 5450 10050 5450
 Wire Wire Line
@@ -903,8 +750,6 @@ Wire Wire Line
 Text HLabel 8275 5350 0    50   Input ~ 0
 MIC_GND
 Wire Wire Line
-	10000 3300 10400 3300
-Wire Wire Line
 	8250 5475 8375 5475
 Wire Wire Line
 	8375 5475 8375 5350
@@ -1000,34 +845,6 @@ $EndComp
 Connection ~ 8225 1375
 Wire Wire Line
 	8225 1375 8450 1375
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 60A1D280
-P 10400 3300
-AR Path="/5F6F7717/60A1D280" Ref="TP?"  Part="1" 
-AR Path="/60A1D280" Ref="TP?"  Part="1" 
-AR Path="/608F4675/60A1D280" Ref="TP82"  Part="1" 
-F 0 "TP82" V 10400 3575 50  0000 C CNN
-F 1 "Test_Point" V 10475 3525 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10600 3300 50  0001 C CNN
-F 3 "~" H 10600 3300 50  0001 C CNN
-	1    10400 3300
-	0    1    1    0   
-$EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 60A24650
-P 7975 3300
-AR Path="/5F6F7717/60A24650" Ref="TP?"  Part="1" 
-AR Path="/60A24650" Ref="TP?"  Part="1" 
-AR Path="/608F4675/60A24650" Ref="TP49"  Part="1" 
-F 0 "TP49" V 7975 3575 50  0000 C CNN
-F 1 "Test_Point" V 8050 3525 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8175 3300 50  0001 C CNN
-F 3 "~" H 8175 3300 50  0001 C CNN
-	1    7975 3300
-	0    -1   1    0   
-$EndComp
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60A2CE09
@@ -1493,6 +1310,17 @@ F 1 "STX-3000" H 3933 4331 60  0000 C CNN
 F 2 "Devtank_PCB_lib:STX-3000" H 3775 4290 60  0001 C CNN
 F 3 "" H 4575 4050 60  0000 C CNN
 	1    4575 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Devtank:VEML7700-TT U3
+U 1 1 617460B6
+P 8600 3225
+F 0 "U3" H 9400 3612 60  0000 C CNN
+F 1 "VEML7700-TT" H 9400 3506 60  0000 C CNN
+F 2 "Devtank_PCB_lib:VEML7700-TT" H 9400 3465 60  0001 C CNN
+F 3 "" H 8600 3225 60  0000 C CNN
+	1    8600 3225
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

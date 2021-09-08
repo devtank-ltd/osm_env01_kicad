@@ -591,10 +591,10 @@ Connection ~ 5825 3550
 Text Label 5450 3250 2    50   ~ 0
 GND_A
 $Comp
-L linear:OPA330xxD U?
+L linear:OPA330xxD U12
 U 1 1 6144BDA6
 P 5325 3550
-F 0 "U?" H 5669 3596 50  0000 L CNN
+F 0 "U12" H 5669 3596 50  0000 L CNN
 F 1 "OPA172IDR" H 5669 3505 50  0000 L CNN
 F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 5225 3350 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa330.pdf" H 5475 3700 50  0001 C CNN

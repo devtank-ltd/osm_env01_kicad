@@ -1,4 +1,4 @@
--9206817585841367466
+-9206815954814871466
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -43546,6 +43546,13 @@ USB_A_Vertical female connector angled 73725-0110BLF
 0
 6
 5
+Devtank_PCB_lib
+VEML7700-TT
+
+
+0
+4
+4
 Devtank_PCB_lib
 VTX-214-030-1xx
 
