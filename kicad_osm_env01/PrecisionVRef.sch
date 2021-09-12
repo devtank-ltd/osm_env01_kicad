@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 11
+Sheet 10 11
 Title ""
 Date ""
 Rev ""
@@ -69,7 +69,7 @@ Text HLabel 4900 3825 2    50   Input ~ 0
 5V_AN
 Text HLabel 8925 3675 2    50   Input ~ 0
 3V3_AN
-Text Notes 5125 2800 0    50   ~ 0
+Text Notes 6250 4850 0    50   ~ 0
 R=Vs/I\n5-3.3/2mA=850mA\nR=820R
 $Comp
 L device:C C?
@@ -353,4 +353,8 @@ Wire Wire Line
 	4725 3825 4900 3825
 Wire Wire Line
 	4575 3825 4725 3825
+Text Notes 3575 3225 0    118  ~ 24
+5VA Ref\n\n
+Text Notes 7175 3200 0    118  ~ 24
+3V3A Ref\n\n
 $EndSCHEMATC

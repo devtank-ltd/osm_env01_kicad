@@ -20,7 +20,7 @@ P 5650 3925
 AR Path="/609E7D18" Ref="U?"  Part="1" 
 AR Path="/609D4B87/609E7D18" Ref="U7"  Part="1" 
 F 0 "U7" H 5225 4775 50  0000 C CNN
-F 1 "ISL83485" H 5350 4675 50  0000 C CNN
+F 1 "ST3485EBDR" H 5350 4675 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5525 3925 50  0001 C CIN
 F 3 "http://www.intersil.com/content/dam/Intersil/documents/isl8/isl83483-85-88-90-91.pdf" H 5525 3925 50  0001 C CNN
 	1    5650 3925
@@ -205,8 +205,6 @@ Wire Wire Line
 	3925 3825 4000 3825
 Wire Wire Line
 	4900 3025 5650 3025
-Text Notes 4750 5250 0    118  ~ 0
-Electricty Meter
 Connection ~ 6500 3650
 Wire Wire Line
 	6500 3650 6500 3600
@@ -215,10 +213,6 @@ Wire Wire Line
 Connection ~ 6500 4100
 Wire Wire Line
 	6500 4100 6500 4050
-Text Notes 7650 3700 0    50   ~ 0
-black wire
-Text Notes 7675 4125 0    50   ~ 0
-red wire
 Wire Wire Line
 	6250 2825 6500 2825
 Connection ~ 6250 2825
@@ -312,7 +306,7 @@ Wire Wire Line
 Wire Wire Line
 	4875 4175 5025 4175
 Wire Wire Line
-	4300 3825 5025 3825
+	4300 3825 4775 3825
 Wire Wire Line
 	4750 3925 4875 3925
 Wire Wire Line
@@ -349,4 +343,24 @@ Wire Wire Line
 Connection ~ 4775 3625
 Wire Wire Line
 	4775 3625 4900 3625
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 61C934C6
+P 4650 3750
+AR Path="/61C934C6" Ref="TP?"  Part="1" 
+AR Path="/609D4B87/61C934C6" Ref="TP20"  Part="1" 
+F 0 "TP20" V 4650 4025 50  0000 C CNN
+F 1 "Test_Point" V 4775 4125 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4850 3750 50  0001 C CNN
+F 3 "~" H 4850 3750 50  0001 C CNN
+	1    4650 3750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4650 3750 4775 3750
+Wire Wire Line
+	4775 3750 4775 3825
+Connection ~ 4775 3825
+Wire Wire Line
+	4775 3825 5025 3825
 $EndSCHEMATC
