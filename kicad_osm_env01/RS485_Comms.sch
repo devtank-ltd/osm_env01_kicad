@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 11
+Sheet 4 9
 Title ""
 Date ""
 Rev ""
@@ -232,7 +232,7 @@ AR Path="/609E7D86" Ref="TP?"  Part="1"
 AR Path="/609D4B87/609E7D86" Ref="TP39"  Part="1" 
 F 0 "TP39" V 7025 3925 50  0000 C CNN
 F 1 "Test_Point" V 7025 4025 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7225 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7225 3650 50  0001 C CNN
 F 3 "~" H 7225 3650 50  0001 C CNN
 	1    7025 3650
 	0    1    1    0   
@@ -245,7 +245,7 @@ AR Path="/609E7D8C" Ref="TP?"  Part="1"
 AR Path="/609D4B87/609E7D8C" Ref="TP40"  Part="1" 
 F 0 "TP40" V 7025 4375 50  0000 C CNN
 F 1 "Test_Point" V 7025 4475 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7225 4100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7225 4100 50  0001 C CNN
 F 3 "~" H 7225 4100 50  0001 C CNN
 	1    7025 4100
 	0    1    1    0   
@@ -258,7 +258,7 @@ AR Path="/609E7D92" Ref="TP?"  Part="1"
 AR Path="/609D4B87/609E7D92" Ref="TP38"  Part="1" 
 F 0 "TP38" V 4750 4200 50  0000 C CNN
 F 1 "Test_Point" V 4675 4300 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4950 3925 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 3925 50  0001 C CNN
 F 3 "~" H 4950 3925 50  0001 C CNN
 	1    4750 3925
 	0    -1   -1   0   
@@ -272,7 +272,7 @@ AR Path="/609E7DA3" Ref="TP?"  Part="1"
 AR Path="/609D4B87/609E7DA3" Ref="TP36"  Part="1" 
 F 0 "TP36" V 4650 3800 50  0000 C CNN
 F 1 "Test_Point" V 4775 3900 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4850 3525 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4850 3525 50  0001 C CNN
 F 3 "~" H 4850 3525 50  0001 C CNN
 	1    4650 3525
 	0    -1   -1   0   
@@ -326,7 +326,7 @@ AR Path="/609E7D9A" Ref="TP?"  Part="1"
 AR Path="/609D4B87/609E7D9A" Ref="TP37"  Part="1" 
 F 0 "TP37" V 4750 4450 50  0000 C CNN
 F 1 "Test_Point" V 4675 4550 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4950 4175 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4950 4175 50  0001 C CNN
 F 3 "~" H 4950 4175 50  0001 C CNN
 	1    4750 4175
 	0    -1   -1   0   
@@ -351,7 +351,7 @@ AR Path="/61C934C6" Ref="TP?"  Part="1"
 AR Path="/609D4B87/61C934C6" Ref="TP20"  Part="1" 
 F 0 "TP20" V 4650 4025 50  0000 C CNN
 F 1 "Test_Point" V 4775 4125 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4850 3750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4850 3750 50  0001 C CNN
 F 3 "~" H 4850 3750 50  0001 C CNN
 	1    4650 3750
 	0    -1   -1   0   

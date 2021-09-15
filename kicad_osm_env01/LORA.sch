@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 11
+Sheet 3 9
 Title ""
 Date ""
 Rev ""
@@ -64,7 +64,7 @@ AR Path="/608A2EB8" Ref="TP?"  Part="1"
 AR Path="/60880AD8/608A2EB8" Ref="TP31"  Part="1" 
 F 0 "TP31" V 2950 3700 50  0000 C CNN
 F 1 "Test_Point" V 2950 3800 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3150 3425 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3150 3425 50  0001 C CNN
 F 3 "~" H 3150 3425 50  0001 C CNN
 	1    2950 3425
 	0    -1   -1   0   
@@ -77,7 +77,7 @@ AR Path="/608A2EBE" Ref="TP?"  Part="1"
 AR Path="/60880AD8/608A2EBE" Ref="TP32"  Part="1" 
 F 0 "TP32" V 2950 3925 50  0000 C CNN
 F 1 "Test_Point" V 2950 4025 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3150 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3150 3650 50  0001 C CNN
 F 3 "~" H 3150 3650 50  0001 C CNN
 	1    2950 3650
 	0    -1   -1   0   
@@ -90,7 +90,7 @@ AR Path="/608A2EC4" Ref="TP?"  Part="1"
 AR Path="/60880AD8/608A2EC4" Ref="TP33"  Part="1" 
 F 0 "TP33" V 2950 4125 50  0000 C CNN
 F 1 "Test_Point" V 2950 4225 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3150 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3150 3850 50  0001 C CNN
 F 3 "~" H 3150 3850 50  0001 C CNN
 	1    2950 3850
 	0    -1   -1   0   
@@ -105,7 +105,7 @@ AR Path="/608A2ECB" Ref="TP?"  Part="1"
 AR Path="/60880AD8/608A2ECB" Ref="TP30"  Part="1" 
 F 0 "TP30" V 2950 3475 50  0000 C CNN
 F 1 "Test_Point" V 2950 3575 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3150 3200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3150 3200 50  0001 C CNN
 F 3 "~" H 3150 3200 50  0001 C CNN
 	1    2950 3200
 	0    -1   -1   0   
@@ -120,7 +120,7 @@ AR Path="/608A2ED2" Ref="TP?"  Part="1"
 AR Path="/60880AD8/608A2ED2" Ref="TP34"  Part="1" 
 F 0 "TP34" V 2950 4350 50  0000 C CNN
 F 1 "Test_Point" V 2950 4450 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3150 4075 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3150 4075 50  0001 C CNN
 F 3 "~" H 3150 4075 50  0001 C CNN
 	1    2950 4075
 	0    -1   -1   0   
@@ -331,15 +331,13 @@ NoConn ~ 7275 4300
 NoConn ~ 7275 4175
 NoConn ~ 7275 4050
 NoConn ~ 7275 3925
-NoConn ~ 7275 3425
-NoConn ~ 7275 3300
 Wire Wire Line
-	7275 3675 6900 3675
+	7275 3425 6900 3425
 Wire Wire Line
-	7275 3800 6900 3800
-Text HLabel 6900 3800 0    50   Input ~ 0
+	7275 3300 6900 3300
+Text HLabel 6900 3300 0    50   Input ~ 0
 LORA_RX
-Text HLabel 6900 3675 0    50   Input ~ 0
+Text HLabel 6900 3425 0    50   Input ~ 0
 LORA_TX
 Text HLabel 3175 3350 0    50   Input ~ 0
 LORA_CTS
@@ -369,7 +367,7 @@ U 1 1 606EC843
 P 9575 3525
 F 0 "C70" H 9690 3571 50  0000 L CNN
 F 1 "100nF" H 9690 3480 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9613 3375 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 9613 3375 50  0001 C CNN
 F 3 "" H 9575 3525 50  0001 C CNN
 	1    9575 3525
 	1    0    0    -1  
@@ -428,7 +426,7 @@ AR Path="/608F4675/60A76064" Ref="TP?"  Part="1"
 AR Path="/60880AD8/60A76064" Ref="TP35"  Part="1" 
 F 0 "TP35" V 9900 3675 50  0000 C CNN
 F 1 "Test_Point" V 9975 3625 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 10100 3400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 10100 3400 50  0001 C CNN
 F 3 "~" H 10100 3400 50  0001 C CNN
 	1    9900 3400
 	0    1    1    0   
@@ -439,9 +437,11 @@ U 1 1 6075834F
 P 8150 3800
 F 0 "U6" H 8650 4775 50  0000 C CNN
 F 1 "RAK4270" H 8775 4675 50  0000 C CNN
-F 2 "Devtank_PCB_lib:RAK4270" H 7900 4175 50  0001 C CNN
+F 2 "Devtank_PCB_lib:RAK4270_WisDuo_LPWAN_Module" H 7900 4175 50  0001 C CNN
 F 3 "" H 7900 4175 50  0001 C CNN
 	1    8150 3800
 	1    0    0    -1  
 $EndComp
+NoConn ~ 7275 3675
+NoConn ~ 7275 3800
 $EndSCHEMATC

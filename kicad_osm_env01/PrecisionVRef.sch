@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 10 11
+Sheet 9 10
 Title ""
 Date ""
 Rev ""
@@ -80,7 +80,7 @@ AR Path="/608F4675/61105411/61203E74" Ref="C?"  Part="1"
 AR Path="/61323885/61203E74" Ref="C65"  Part="1" 
 F 0 "C65" H 4690 4021 50  0000 L CNN
 F 1 "100nF" H 4690 3930 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4613 3825 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4613 3825 50  0001 C CNN
 F 3 "" H 4575 3975 50  0001 C CNN
 	1    4575 3975
 	-1   0    0    -1  
@@ -139,7 +139,7 @@ AR Path="/608F4675/61105411/6121149F" Ref="C?"  Part="1"
 AR Path="/61323885/6121149F" Ref="C69"  Part="1" 
 F 0 "C69" H 8715 3871 50  0000 L CNN
 F 1 "100nF" H 8715 3780 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8638 3675 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8638 3675 50  0001 C CNN
 F 3 "" H 8600 3825 50  0001 C CNN
 	1    8600 3825
 	-1   0    0    -1  
@@ -204,7 +204,7 @@ AR Path="/60688D25/6083B3A9" Ref="TP?"  Part="1"
 AR Path="/61323885/6083B3A9" Ref="TP86"  Part="1" 
 F 0 "TP86" V 8825 3825 50  0000 C CNN
 F 1 "Test_Point" V 8929 3622 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 9025 3550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 9025 3550 50  0001 C CNN
 F 3 "~" H 9025 3550 50  0001 C CNN
 	1    8825 3550
 	0    1    1    0   
@@ -282,7 +282,7 @@ AR Path="/608F4675/61105411/611114A1" Ref="TP?"  Part="1"
 AR Path="/61323885/611114A1" Ref="TP58"  Part="1" 
 F 0 "TP58" V 6125 3950 50  0000 C CNN
 F 1 "Test_Point" V 6229 3747 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6325 3675 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6325 3675 50  0001 C CNN
 F 3 "~" H 6325 3675 50  0001 C CNN
 	1    6125 3675
 	0    -1   -1   0   
@@ -310,7 +310,7 @@ AR Path="/608F4675/61105411/61111495" Ref="C?"  Part="1"
 AR Path="/61323885/61111495" Ref="C66"  Part="1" 
 F 0 "C66" H 6740 3921 50  0000 L CNN
 F 1 "100nF" H 6740 3830 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6663 3725 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6663 3725 50  0001 C CNN
 F 3 "" H 6625 3875 50  0001 C CNN
 	1    6625 3875
 	1    0    0    -1  
@@ -326,7 +326,7 @@ AR Path="/608F4675/61105411/6111148F" Ref="D?"  Part="1"
 AR Path="/61323885/6111148F" Ref="D9"  Part="1" 
 F 0 "D9" V 6371 3788 50  0000 R CNN
 F 1 "LM4040DEX3-3.3+T" V 6300 4725 50  0000 R CNN
-F 2 "Devtank_PCB_lib:SC-70-3_package" H 6325 3675 50  0001 C CIN
+F 2 "Devtank_PCB_lib:SC-70-3" H 6325 3675 50  0001 C CIN
 F 3 "http://www.ti.com/lit/ds/symlink/lm4040-n.pdf" H 6325 3875 50  0001 C CIN
 	1    6325 3875
 	0    -1   -1   0   
@@ -339,7 +339,7 @@ AR Path="/60688D25/60B8CF4B" Ref="TP?"  Part="1"
 AR Path="/61323885/60B8CF4B" Ref="TP89"  Part="1" 
 F 0 "TP89" V 4800 3975 50  0000 C CNN
 F 1 "Test_Point" V 4904 3772 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5000 3700 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5000 3700 50  0001 C CNN
 F 3 "~" H 5000 3700 50  0001 C CNN
 	1    4800 3700
 	0    1    1    0   

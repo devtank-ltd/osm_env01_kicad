@@ -157,7 +157,7 @@ AR Path="/5E19E083/5E3B4FEF" Ref="TP37"  Part="1"
 AR Path="/608F4675/60959880/5E3B4FEF" Ref="TP54"  Part="1" 
 F 0 "TP54" H 6150 3125 50  0000 C CNN
 F 1 "Test_Point" H 6150 3125 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6350 2900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6350 2900 50  0001 C CNN
 F 3 "~" H 6350 2900 50  0001 C CNN
 	1    6150 2900
 	1    0    0    -1  
@@ -171,7 +171,7 @@ AR Path="/5E19E083/5E3B7A56" Ref="TP38"  Part="1"
 AR Path="/608F4675/60959880/5E3B7A56" Ref="TP55"  Part="1" 
 F 0 "TP55" H 7050 3125 50  0000 C CNN
 F 1 "Test_Point" V 7154 2972 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7250 2900 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7250 2900 50  0001 C CNN
 F 3 "~" H 7250 2900 50  0001 C CNN
 	1    7050 2900
 	1    0    0    -1  
@@ -472,7 +472,7 @@ U 1 1 612E07DC
 P 8150 3825
 F 0 "TP57" H 8075 4050 50  0000 L CNN
 F 1 "Test_Point" H 8208 3852 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 8350 3825 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 8350 3825 50  0001 C CNN
 F 3 "~" H 8350 3825 50  0001 C CNN
 	1    8150 3825
 	1    0    0    -1  
@@ -501,7 +501,7 @@ U 1 1 607878CE
 P 2300 825
 F 0 "TP84" V 2300 1025 50  0000 L CNN
 F 1 "Test_Point" H 2358 852 50  0001 L CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 2500 825 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2500 825 50  0001 C CNN
 F 3 "~" H 2500 825 50  0001 C CNN
 	1    2300 825 
 	0    1    1    0   
@@ -592,7 +592,7 @@ U 1 1 6144BDA6
 P 6550 4200
 F 0 "U12" H 6894 4246 50  0000 L CNN
 F 1 "OPA172IDR" H 6894 4155 50  0000 L CNN
-F 2 "Housings_SOIC:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 6450 4000 50  0001 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6450 4000 50  0001 L CNN
 F 3 "http://www.ti.com/lit/ds/symlink/opa330.pdf" H 6700 4350 50  0001 C CNN
 	1    6550 4200
 	1    0    0    1   

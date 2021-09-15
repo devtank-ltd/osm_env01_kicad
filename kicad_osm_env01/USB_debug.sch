@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 11
+Sheet 5 9
 Title "Open Smart Monitor"
 Date ""
 Rev "A"
@@ -25,7 +25,7 @@ AR Path="/5C2328D1" Ref="U13"  Part="1"
 AR Path="/5F4610BE/5C2328D1" Ref="U13"  Part="1" 
 F 0 "U13" H 5200 2650 50  0000 C CNN
 F 1 "CP2102N-A01-GQFN24" H 5575 2550 50  0000 C CNN
-F 2 "Devtank_PCB_lib:CP2102n_qfn-24_ep-2.6x2.6_thermalvias-0.3" H 5375 2675 50  0001 L CNN
+F 2 "Devtank_PCB_lib:CP2102_QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias_0.3mmdrill" H 5375 2675 50  0001 L CNN
 F 3 "http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf" H 4975 2425 50  0001 C CNN
 F 4 "118-007" H 4925 3475 50  0001 C CNN "Devtank"
 	1    4925 3475
@@ -380,8 +380,6 @@ Wire Wire Line
 Wire Wire Line
 	6825 4075 7225 4075
 Wire Wire Line
-	8875 3775 9150 3775
-Wire Wire Line
 	6825 3875 7225 3875
 $Comp
 L Connector:USB_B_Micro J?
@@ -391,7 +389,7 @@ AR Path="/6097E54E" Ref="J?"  Part="1"
 AR Path="/5F4610BE/6097E54E" Ref="J3"  Part="1" 
 F 0 "J3" H 1082 7167 50  0000 C CNN
 F 1 "USB_B_Micro" H 1082 7076 50  0000 C CNN
-F 2 "Devtank_PCB_lib:MOLEX_105017-0001_Micro_USB_b" H 1175 6650 50  0001 C CNN
+F 2 "Devtank_PCB_lib:MOLEX_105017-0001_USB_B" H 1175 6650 50  0001 C CNN
 F 3 "~" H 1175 6650 50  0001 C CNN
 	1    1025 6700
 	1    0    0    -1  
@@ -403,19 +401,6 @@ USB_D+
 Text Label 1650 6800 2    50   ~ 0
 USB_D-
 NoConn ~ 1325 6900
-$Comp
-L OSM_env01-rescue:SP0503BAHT-ESD_Protection-ESP32-EVB_Rev_D-rescue D?
-U 1 1 6097E558
-P 2050 7150
-AR Path="/6097E558" Ref="D?"  Part="1" 
-AR Path="/5F4610BE/6097E558" Ref="D5"  Part="1" 
-F 0 "D5" H 2255 7196 50  0000 L CNN
-F 1 "SP0503BAHT" H 2255 7105 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-143" H 2275 7100 50  0001 L CNN
-F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2175 7275 50  0001 C CNN
-	1    2050 7150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1950 6500 1950 6950
 Wire Wire Line
@@ -571,7 +556,7 @@ U 1 1 61E66D05
 P 7700 3600
 F 0 "TP1" H 7750 3725 50  0000 L CNN
 F 1 "Test_Point" H 7758 3627 50  0001 L CNN
-F 2 "" H 7900 3600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7900 3600 50  0001 C CNN
 F 3 "~" H 7900 3600 50  0001 C CNN
 	1    7700 3600
 	1    0    0    -1  
@@ -581,20 +566,20 @@ Wire Wire Line
 Connection ~ 7700 3775
 Wire Wire Line
 	7700 3775 7975 3775
+Text Notes 1225 7725 0    50   ~ 0
+notes: use SP0504BAHTG, and SP0504BAJTG instead
 $Comp
-L Connector:Test_Point TP21
-U 1 1 61BAD885
-P 9150 3600
-F 0 "TP21" H 9225 3725 50  0000 L CNN
-F 1 "Test_Point" H 9208 3627 50  0001 L CNN
-F 2 "" H 9350 3600 50  0001 C CNN
-F 3 "~" H 9350 3600 50  0001 C CNN
-	1    9150 3600
+L ESD_Protection:SP0504BAHT D5
+U 1 1 6158731D
+P 2050 7150
+F 0 "D5" H 2355 7196 50  0000 L CNN
+F 1 "SP0504BAHT" H 2355 7105 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 2350 7100 50  0001 L CNN
+F 3 "http://www.littelfuse.com/~/media/files/littelfuse/technical%20resources/documents/data%20sheets/sp05xxba.pdf" H 2175 7275 50  0001 C CNN
+	1    2050 7150
 	1    0    0    -1  
 $EndComp
+NoConn ~ 2250 6950
 Wire Wire Line
-	9150 3600 9150 3775
-Connection ~ 9150 3775
-Wire Wire Line
-	9150 3775 9275 3775
+	8875 3775 9275 3775
 $EndSCHEMATC
