@@ -31,13 +31,9 @@ $EndComp
 Wire Wire Line
 	3300 3425 3250 3425
 Wire Wire Line
-	3300 3650 2950 3650
+	3300 3650 3025 3650
 Wire Wire Line
-	3300 3850 2950 3850
-Text Label 2950 3850 0    50   ~ 0
-LORA_TX
-Text Label 2950 3650 0    50   ~ 0
-LORA_RX
+	3300 3850 3025 3850
 Wire Wire Line
 	4000 2800 4275 2800
 $Comp
@@ -77,7 +73,7 @@ AR Path="/608A2EBE" Ref="TP?"  Part="1"
 AR Path="/60880AD8/608A2EBE" Ref="TP32"  Part="1" 
 F 0 "TP32" V 2950 3925 50  0000 C CNN
 F 1 "Test_Point" V 2950 4025 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3150 3650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3150 3650 50  0001 C CNN
 F 3 "~" H 3150 3650 50  0001 C CNN
 	1    2950 3650
 	0    -1   -1   0   
@@ -90,7 +86,7 @@ AR Path="/608A2EC4" Ref="TP?"  Part="1"
 AR Path="/60880AD8/608A2EC4" Ref="TP33"  Part="1" 
 F 0 "TP33" V 2950 4125 50  0000 C CNN
 F 1 "Test_Point" V 2950 4225 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 3150 3850 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 3150 3850 50  0001 C CNN
 F 3 "~" H 3150 3850 50  0001 C CNN
 	1    2950 3850
 	0    -1   -1   0   
@@ -220,7 +216,7 @@ AR Path="/608CFA1B" Ref="C?"  Part="1"
 AR Path="/60880AD8/608CFA1B" Ref="C34"  Part="1" 
 F 0 "C34" H 7065 2596 50  0000 L CNN
 F 1 "10uF" H 7065 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6988 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6988 2400 50  0001 C CNN
 F 3 "" H 6950 2550 50  0001 C CNN
 	1    6950 2550
 	-1   0    0    -1  
@@ -233,7 +229,7 @@ AR Path="/608CFA21" Ref="C?"  Part="1"
 AR Path="/60880AD8/608CFA21" Ref="C35"  Part="1" 
 F 0 "C35" H 6590 2596 50  0000 L CNN
 F 1 "10uF" H 6590 2505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 6513 2400 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 6513 2400 50  0001 C CNN
 F 3 "" H 6475 2550 50  0001 C CNN
 	1    6475 2550
 	-1   0    0    -1  
@@ -332,13 +328,9 @@ NoConn ~ 7275 4175
 NoConn ~ 7275 4050
 NoConn ~ 7275 3925
 Wire Wire Line
-	7275 3425 6900 3425
+	6825 3425 6450 3425
 Wire Wire Line
-	7275 3300 6900 3300
-Text HLabel 6900 3300 0    50   Input ~ 0
-LORA_RX
-Text HLabel 6900 3425 0    50   Input ~ 0
-LORA_TX
+	6825 3300 6450 3300
 Text HLabel 3175 3350 0    50   Input ~ 0
 LORA_CTS
 Wire Wire Line
@@ -442,6 +434,86 @@ F 3 "" H 7900 4175 50  0001 C CNN
 	1    8150 3800
 	1    0    0    -1  
 $EndComp
-NoConn ~ 7275 3675
-NoConn ~ 7275 3800
+$Comp
+L device:R R5
+U 1 1 614744DC
+P 6975 3300
+F 0 "R5" V 6925 3100 50  0000 C CNN
+F 1 "DNF" V 6925 3475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6905 3300 50  0001 C CNN
+F 3 "" H 6975 3300 50  0001 C CNN
+	1    6975 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R7
+U 1 1 61475AB7
+P 6975 3425
+F 0 "R7" V 6925 3225 50  0000 C CNN
+F 1 "DNF" V 6925 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6905 3425 50  0001 C CNN
+F 3 "" H 6975 3425 50  0001 C CNN
+	1    6975 3425
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7125 3300 7275 3300
+Wire Wire Line
+	7125 3425 7275 3425
+Wire Wire Line
+	6825 3800 6450 3800
+Wire Wire Line
+	6825 3675 6450 3675
+$Comp
+L device:R R14
+U 1 1 6147C07B
+P 6975 3675
+F 0 "R14" V 6925 3475 50  0000 C CNN
+F 1 "0R" V 6925 3850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6905 3675 50  0001 C CNN
+F 3 "" H 6975 3675 50  0001 C CNN
+	1    6975 3675
+	0    1    1    0   
+$EndComp
+$Comp
+L device:R R17
+U 1 1 6147C081
+P 6975 3800
+F 0 "R17" V 6925 3600 50  0000 C CNN
+F 1 "0R" V 6925 3975 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6905 3800 50  0001 C CNN
+F 3 "" H 6975 3800 50  0001 C CNN
+	1    6975 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7125 3675 7275 3675
+Wire Wire Line
+	7125 3800 7275 3800
+Text GLabel 6450 3300 0    50   Input ~ 0
+LORA_RX
+Text GLabel 6450 3425 0    50   Input ~ 0
+LORA_TX
+Text GLabel 6450 3675 0    50   Input ~ 0
+LORA_TX
+Text GLabel 6450 3800 0    50   Input ~ 0
+LORA_RX
+Text GLabel 2950 3750 0    50   Input ~ 0
+LORA_TX
+Text GLabel 2950 3550 0    50   Input ~ 0
+LORA_RX
+Wire Wire Line
+	2950 3550 3025 3550
+Wire Wire Line
+	3025 3550 3025 3650
+Connection ~ 3025 3650
+Wire Wire Line
+	3025 3650 2950 3650
+Wire Wire Line
+	2950 3750 3025 3750
+Wire Wire Line
+	3025 3750 3025 3850
+Connection ~ 3025 3850
+Wire Wire Line
+	3025 3850 2950 3850
 $EndSCHEMATC

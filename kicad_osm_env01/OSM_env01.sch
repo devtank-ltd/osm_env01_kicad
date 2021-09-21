@@ -236,39 +236,28 @@ Wire Wire Line
 Wire Wire Line
 	7250 9825 6875 9825
 Wire Wire Line
-	7250 9925 6875 9925
-$Comp
-L Connector:Conn_01x12 J1
-U 1 1 60CBF5A8
-P 7450 9725
-F 0 "J1" H 7400 10425 50  0000 L CNN
-F 1 "Conn_01x12" H 7530 9626 50  0001 L CNN
-F 2 "Devtank_PCB_lib:Milligrid_878311220_12way" H 7450 9725 50  0001 C CNN
-F 3 "~" H 7450 9725 50  0001 C CNN
-	1    7450 9725
-	1    0    0    -1  
-$EndComp
+	7750 9225 8125 9225
 Wire Wire Line
-	7250 10025 6875 10025
+	7750 9325 8125 9325
 Wire Wire Line
-	7250 10125 6875 10125
-Text Label 6875 10125 0    50   ~ 0
+	7750 9425 8125 9425
+Text Label 8125 9425 2    50   ~ 0
 CS
 $Comp
 L OSM_env01:GND #PWR08
 U 1 1 60DF2DDC
-P 7100 10425
-F 0 "#PWR08" H 7100 10175 50  0001 C CNN
-F 1 "GND" H 7105 10252 50  0000 C CNN
-F 2 "" H 7100 10425 60  0000 C CNN
-F 3 "" H 7100 10425 60  0000 C CNN
-	1    7100 10425
-	1    0    0    -1  
+P 7900 9925
+F 0 "#PWR08" H 7900 9675 50  0001 C CNN
+F 1 "GND" H 7905 9752 50  0000 C CNN
+F 2 "" H 7900 9925 60  0000 C CNN
+F 3 "" H 7900 9925 60  0000 C CNN
+	1    7900 9925
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	7100 10425 7100 10325
+	7900 9925 7900 9825
 Wire Wire Line
-	7250 10325 7100 10325
+	7750 9825 7900 9825
 $Sheet
 S 13275 5600 925  1025
 U 60688D25
@@ -286,15 +275,13 @@ S 14100 1400 1125 950
 U 60880AD8
 F0 "LORA" 50
 F1 "LORA.sch" 50
-F2 "LORA_RX" I L 14100 1950 50 
-F3 "LORA_TX" I L 14100 2075 50 
-F4 "LORA_CTS" I R 15225 1625 50 
-F5 "LORA_NRST" I L 14100 1625 50 
+F2 "LORA_CTS" I R 15225 1625 50 
+F3 "LORA_NRST" I L 14100 1625 50 
 $EndSheet
 Text Notes 6200 8325 0    118  ~ 24
 Optional module
 $Sheet
-S 14050 3150 1150 675 
+S 14050 3150 1150 825 
 U 609D4B87
 F0 "RS485_Comms" 50
 F1 "RS485_Comms.sch" 50
@@ -303,12 +290,13 @@ F3 "RS485+" I L 14050 3300 50
 F4 "DE_485" I L 14050 3675 50 
 F5 "RS485_TX" I R 15200 3425 50 
 F6 "RS485_RX" I R 15200 3550 50 
+F7 "RS485_RE" I L 14050 3800 50 
 $EndSheet
 Text Notes 9725 4800 0    118  ~ 24
 Easy access gnd\npins for debug\n
 Wire Wire Line
-	7250 10225 6875 10225
-Text Label 6875 10225 0    50   ~ 0
+	7750 9525 8125 9525
+Text Label 8125 9525 2    50   ~ 0
 ADC+GPIO
 Text Label 1275 4650 0    50   ~ 0
 LORA_CTS
@@ -437,9 +425,9 @@ Wire Wire Line
 	2875 7400 3325 7400
 Text Label 6875 9425 0    50   ~ 0
 STM_SCL
-Text Label 6875 9925 0    50   ~ 0
+Text Label 8125 9225 2    50   ~ 0
 STM_MOSI
-Text Label 6875 10025 0    50   ~ 0
+Text Label 8125 9325 2    50   ~ 0
 STM_SCK
 Text Label 6875 9825 0    50   ~ 0
 STM_MISO
@@ -451,14 +439,6 @@ Text Label 6550 2825 0    50   ~ 0
 HPM_TX
 Text Label 6550 2675 0    50   ~ 0
 HPM_RX
-Wire Wire Line
-	14100 2075 13700 2075
-Text Label 13700 2075 0    50   ~ 0
-LORA_TX
-Text Label 13700 1950 0    50   ~ 0
-LORA_RX
-Wire Wire Line
-	14100 1950 13700 1950
 Text Label 13700 1625 0    50   ~ 0
 LORA_NRST
 Wire Wire Line
@@ -703,9 +683,9 @@ F 3 "" H 3275 9100 50  0001 C CNN
 	1    3275 9100
 	1    0    0    -1  
 $EndComp
-Text Label 3200 9700 2    50   ~ 0
+Text Label 3250 9700 2    50   ~ 0
 CAN_L
-Text Label 3200 9800 2    50   ~ 0
+Text Label 3250 9800 2    50   ~ 0
 CAN_H
 Wire Wire Line
 	2800 9900 3000 9900
@@ -926,14 +906,10 @@ Wire Wire Line
 	3850 2400 4425 2400
 Wire Wire Line
 	3850 2000 4425 2000
-Text Label 4425 2000 2    50   ~ 0
-LORA_TX
-Text Label 4425 2150 2    50   ~ 0
-LORA_RX
 Wire Wire Line
 	3850 2150 4425 2150
 $Comp
-L Connector:Conn_02x07_Counter_Clockwise J2
+L Connector:Conn_02x07_Odd_Even J2
 U 1 1 61BD7603
 P 2500 9700
 F 0 "J2" H 2550 10150 50  0000 C CNN
@@ -1014,7 +990,6 @@ Wire Wire Line
 Connection ~ 3725 9500
 Wire Wire Line
 	3725 9500 3775 9500
-NoConn ~ 2800 9600
 Text Label 7975 6600 2    50   ~ 0
 STM_WAKEUP
 Text Label 7925 7050 2    50   ~ 0
@@ -1248,19 +1223,6 @@ Wire Notes Line
 	625  8000 11800 8000
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 61CAC829
-P 1275 4350
-AR Path="/60688D25/61CAC829" Ref="TP?"  Part="1" 
-AR Path="/61CAC829" Ref="TP16"  Part="1" 
-F 0 "TP16" V 1275 4625 50  0000 C CNN
-F 1 "Test_Point" V 1379 4422 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 4350 50  0001 C CNN
-F 3 "~" H 1475 4350 50  0001 C CNN
-	1    1275 4350
-	0    -1   1    0   
-$EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 61CAC82F
 P 1275 3450
 AR Path="/60688D25/61CAC82F" Ref="TP?"  Part="1" 
@@ -1379,4 +1341,36 @@ F 3 "~" H 1475 1850 50  0001 C CNN
 	1    1275 1850
 	0    -1   1    0   
 $EndComp
+Text GLabel 4425 2000 2    50   Input ~ 0
+LORA_TX
+Text GLabel 4425 2150 2    50   Input ~ 0
+LORA_RX
+$Comp
+L Connector:Conn_02x07_Odd_Even J?
+U 1 1 619137D5
+P 7450 9525
+F 0 "J?" H 7500 9950 50  0000 C CNN
+F 1 "Conn_02x07_Counter_Clockwise" H 7500 9951 50  0001 C CNN
+F 2 "" H 7450 9525 50  0001 C CNN
+F 3 "~" H 7450 9525 50  0001 C CNN
+	1    7450 9525
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 9625 7900 9625
+Connection ~ 7900 9825
+Wire Wire Line
+	7900 9625 7900 9725
+Wire Wire Line
+	7750 9725 7900 9725
+Connection ~ 7900 9725
+Wire Wire Line
+	7900 9725 7900 9825
+NoConn ~ 2800 9600
+Wire Wire Line
+	13450 3800 14050 3800
+Text Label 13450 3800 0    50   ~ 0
+RE_485
+Text Label 1275 4350 0    50   ~ 0
+RE_485
 $EndSCHEMATC

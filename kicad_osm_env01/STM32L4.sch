@@ -15,19 +15,6 @@ Comment4 ""
 $EndDescr
 $Comp
 L device:C C?
-U 1 1 60931F37
-P 675 1150
-AR Path="/60931F37" Ref="C?"  Part="1" 
-AR Path="/60917DD5/60931F37" Ref="C59"  Part="1" 
-F 0 "C59" H 790 1196 50  0000 L CNN
-F 1 "4.7uF" H 790 1105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 713 1000 50  0001 C CNN
-F 3 "" H 675 1150 50  0001 C CNN
-	1    675  1150
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:C C?
 U 1 1 60931F3D
 P 3425 1150
 AR Path="/60931F3D" Ref="C?"  Part="1" 
@@ -144,21 +131,6 @@ F 3 "" H 6300 1825 50  0001 C CNN
 	1    6300 1825
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+3V3 #PWR?
-U 1 1 60947709
-P 675 900
-AR Path="/60947709" Ref="#PWR?"  Part="1" 
-AR Path="/60917DD5/60947709" Ref="#PWR0111"  Part="1" 
-F 0 "#PWR0111" H 675 750 50  0001 C CNN
-F 1 "+3V3" H 690 1073 50  0000 C CNN
-F 2 "" H 675 900 50  0001 C CNN
-F 3 "" H 675 900 50  0001 C CNN
-	1    675  900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	675  1000 675  900 
 $Comp
 L power:+3V3 #PWR?
 U 1 1 60948D20
@@ -612,17 +584,6 @@ F 3 "~" H 9675 1425 50  0001 C CNN
 	1    9675 1425
 	0    -1   -1   0   
 $EndComp
-$Comp
-L device:R R6
-U 1 1 614C56B3
-P 9825 1800
-F 0 "R6" V 9750 1750 50  0000 L CNN
-F 1 "330R" V 9925 1725 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9755 1800 50  0001 C CNN
-F 3 "" H 9825 1800 50  0001 C CNN
-	1    9825 1800
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	9675 1275 9675 1100
 Wire Wire Line
@@ -792,8 +753,6 @@ F 3 "" H 2050 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 2050 1000
-Wire Wire Line
-	675  1000 1150 1000
 Connection ~ 1150 1000
 Wire Wire Line
 	1150 1000 1600 1000
@@ -802,16 +761,11 @@ Wire Wire Line
 	1600 1000 2050 1000
 Wire Wire Line
 	2525 1325 2050 1325
-Wire Wire Line
-	675  1325 675  1300
 Connection ~ 2525 1325
 Wire Wire Line
 	2525 1325 2525 1300
 Wire Wire Line
 	1150 1300 1150 1325
-Connection ~ 1150 1325
-Wire Wire Line
-	1150 1325 675  1325
 Wire Wire Line
 	1600 1300 1600 1325
 Connection ~ 1600 1325
@@ -949,7 +903,6 @@ Wire Wire Line
 Connection ~ 2525 1000
 Wire Wire Line
 	2525 1000 2925 1000
-Connection ~ 675  1000
 NoConn ~ 14475 1375
 NoConn ~ 14075 1375
 $Comp
@@ -1001,4 +954,116 @@ Wire Wire Line
 Connection ~ 5675 2325
 Wire Wire Line
 	5675 2325 6300 2325
+Text Notes 9500 2250 0    50   ~ 0
+I=vs-vf/R\n3.3-2/1.3k=1mA
+Connection ~ 1150 1325
+Wire Wire Line
+	675  1325 675  1300
+Wire Wire Line
+	675  1000 1150 1000
+Connection ~ 675  1000
+$Comp
+L device:C C?
+U 1 1 60931F37
+P 675 1150
+AR Path="/60931F37" Ref="C?"  Part="1" 
+AR Path="/60917DD5/60931F37" Ref="C59"  Part="1" 
+F 0 "C59" H 790 1196 50  0000 L CNN
+F 1 "4.7uF" H 790 1105 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 713 1000 50  0001 C CNN
+F 3 "" H 675 1150 50  0001 C CNN
+	1    675  1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	675  1000 675  900 
+$Comp
+L power:+3V3 #PWR?
+U 1 1 60947709
+P 675 900
+AR Path="/60947709" Ref="#PWR?"  Part="1" 
+AR Path="/60917DD5/60947709" Ref="#PWR0111"  Part="1" 
+F 0 "#PWR0111" H 675 750 50  0001 C CNN
+F 1 "+3V3" H 690 1073 50  0000 C CNN
+F 2 "" H 675 900 50  0001 C CNN
+F 3 "" H 675 900 50  0001 C CNN
+	1    675  900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R6
+U 1 1 614C56B3
+P 9825 1800
+F 0 "R6" V 9750 1750 50  0000 L CNN
+F 1 "1.3k" V 9925 1725 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9755 1800 50  0001 C CNN
+F 3 "" H 9825 1800 50  0001 C CNN
+	1    9825 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1150 1325 675  1325
+$Comp
+L device:C C?
+U 1 1 618D4BAE
+P 1250 5025
+AR Path="/618D4BAE" Ref="C?"  Part="1" 
+AR Path="/60917DD5/618D4BAE" Ref="C?"  Part="1" 
+F 0 "C?" V 1400 5025 50  0000 L CNN
+F 1 "100nF" V 1100 4900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1288 4875 50  0001 C CNN
+F 3 "" H 1250 5025 50  0001 C CNN
+	1    1250 5025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OSM_env01:GND #PWR?
+U 1 1 618EC5A0
+P 925 5100
+F 0 "#PWR?" H 925 4850 50  0001 C CNN
+F 1 "GND" H 930 4927 50  0000 C CNN
+F 2 "" H 925 5100 60  0000 C CNN
+F 3 "" H 925 5100 60  0000 C CNN
+	1    925  5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 618ECC9F
+P 1400 4775
+F 0 "#PWR?" H 1400 4625 50  0001 C CNN
+F 1 "+3V3" H 1415 4948 50  0000 C CNN
+F 2 "" H 1400 4775 50  0001 C CNN
+F 3 "" H 1400 4775 50  0001 C CNN
+	1    1400 4775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 5025 1400 4900
+Wire Wire Line
+	925  5100 925  5025
+Wire Wire Line
+	925  5025 1100 5025
+Wire Wire Line
+	1400 4900 1550 4900
+Wire Wire Line
+	2075 4600 2150 4600
+Connection ~ 1400 4900
+Wire Wire Line
+	1400 4900 1400 4775
+$Comp
+L device:R R?
+U 1 1 6197C87D
+P 1700 4900
+F 0 "R?" V 1493 4900 50  0000 C CNN
+F 1 "0R" V 1584 4900 50  0000 C CNN
+F 2 "" V 1630 4900 50  0001 C CNN
+F 3 "" H 1700 4900 50  0001 C CNN
+	1    1700 4900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1850 4900 2075 4900
+Wire Wire Line
+	2075 4600 2075 4900
 $EndSCHEMATC

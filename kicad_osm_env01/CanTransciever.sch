@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 11 9
+Sheet 9 9
 Title ""
 Date ""
 Rev ""
@@ -224,25 +224,23 @@ Wire Wire Line
 	7525 3625 7825 3625
 Wire Wire Line
 	6900 4025 6900 3950
-Text HLabel 3875 4100 0    50   Input ~ 0
+Text HLabel 3575 4000 0    50   Input ~ 0
 CAN_RS
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 61C968D6
-P 3900 4000
+P 3950 3825
 AR Path="/60688D25/61C968D6" Ref="TP?"  Part="1" 
 AR Path="/6064BC1D/61C968D6" Ref="TP22"  Part="1" 
-F 0 "TP22" V 3900 4275 50  0000 C CNN
-F 1 "Test_Point" V 4004 4072 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4100 4000 50  0001 C CNN
-F 3 "~" H 4100 4000 50  0001 C CNN
-	1    3900 4000
+F 0 "TP22" V 3950 4100 50  0000 C CNN
+F 1 "Test_Point" V 4054 3897 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4150 3825 50  0001 C CNN
+F 3 "~" H 4150 3825 50  0001 C CNN
+	1    3950 3825
 	0    -1   1    0   
 $EndComp
 Wire Wire Line
-	3900 4000 4075 4000
-Wire Wire Line
-	3875 4100 4075 4100
+	3950 3825 4075 3825
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 61C9CD32
@@ -436,9 +434,6 @@ Wire Wire Line
 	4650 3675 4700 3675
 Wire Wire Line
 	4700 3325 4700 3675
-Connection ~ 4075 4000
-Wire Wire Line
-	4075 4100 4075 4000
 Wire Wire Line
 	5500 3800 4700 3800
 Wire Wire Line
@@ -458,7 +453,7 @@ L device:D_TVS_x2_AAC D12
 U 1 1 6153CD89
 P 7525 3975
 F 0 "D12" H 7525 4191 50  0000 C CNN
-F 1 "D_TVS_x2_AAC" H 7525 4100 50  0000 C CNN
+F 1 "ESDCAN04-2BLY " H 7525 4100 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 7375 3975 50  0001 C CNN
 F 3 "https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode" H 7375 3975 50  0001 C CNN
 	1    7525 3975
@@ -555,4 +550,20 @@ F 3 "" H 7825 3975 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	7675 3975 7825 3975
+$Comp
+L device:R R?
+U 1 1 614A8ACA
+P 3925 4000
+F 0 "R?" V 3825 3950 50  0000 C CNN
+F 1 "0R" V 4025 3925 50  0000 C CNN
+F 2 "" V 3855 4000 50  0001 C CNN
+F 3 "" H 3925 4000 50  0001 C CNN
+	1    3925 4000
+	0    1    1    0   
+$EndComp
+Connection ~ 4075 4000
+Wire Wire Line
+	4075 4000 4075 3825
+Wire Wire Line
+	3575 4000 3775 4000
 $EndSCHEMATC
