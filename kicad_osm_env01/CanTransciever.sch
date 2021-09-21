@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 9 9
+Sheet 7 9
 Title ""
 Date ""
 Rev ""
@@ -551,10 +551,10 @@ $EndComp
 Wire Wire Line
 	7675 3975 7825 3975
 $Comp
-L device:R R?
+L device:R R38
 U 1 1 614A8ACA
 P 3925 4000
-F 0 "R?" V 3825 3950 50  0000 C CNN
+F 0 "R38" V 3825 3950 50  0000 C CNN
 F 1 "0R" V 4025 3925 50  0000 C CNN
 F 2 "" V 3855 4000 50  0001 C CNN
 F 3 "" H 3925 4000 50  0001 C CNN

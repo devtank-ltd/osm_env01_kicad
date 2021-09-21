@@ -275,8 +275,9 @@ S 14100 1400 1125 950
 U 60880AD8
 F0 "LORA" 50
 F1 "LORA.sch" 50
-F2 "LORA_CTS" I R 15225 1625 50 
-F3 "LORA_NRST" I L 14100 1625 50 
+F2 "LORA_NRST" I L 14100 1850 50 
+F3 "LORA_RX" I R 15225 1725 50 
+F4 "LORA_TX" I R 15225 2000 50 
 $EndSheet
 Text Notes 6200 8325 0    118  ~ 24
 Optional module
@@ -298,8 +299,6 @@ Wire Wire Line
 	7750 9525 8125 9525
 Text Label 8125 9525 2    50   ~ 0
 ADC+GPIO
-Text Label 1275 4650 0    50   ~ 0
-LORA_CTS
 Text Label 4425 1600 2    50   ~ 0
 RS232_TX
 Text Label 4425 1750 2    50   ~ 0
@@ -439,14 +438,10 @@ Text Label 6550 2825 0    50   ~ 0
 HPM_TX
 Text Label 6550 2675 0    50   ~ 0
 HPM_RX
-Text Label 13700 1625 0    50   ~ 0
+Text Label 13700 1850 0    50   ~ 0
 LORA_NRST
 Wire Wire Line
-	14100 1625 13700 1625
-Text Label 15625 1625 2    50   ~ 0
-LORA_CTS
-Wire Wire Line
-	15225 1625 15625 1625
+	14100 1850 13700 1850
 Wire Wire Line
 	13275 5875 12950 5875
 Text Label 12950 5875 0    50   ~ 0
@@ -543,25 +538,6 @@ Text Label 6575 3475 0    50   ~ 0
 MIC_WS
 Wire Wire Line
 	7150 3475 6575 3475
-$Sheet
-S 7150 1325 1550 2500
-U 608F4675
-F0 "Sensors_AND_IO" 50
-F1 "Sensors_AND_IO.sch" 50
-F2 "HPM_RX" I L 7150 2675 50 
-F3 "HPM_TX" I L 7150 2825 50 
-F4 "HPM_EN" I L 7150 1500 50 
-F5 "SCL" I L 7150 2300 50 
-F6 "SDA" I L 7150 2150 50 
-F7 "PULSE1_EXT" I L 7150 1650 50 
-F8 "PULSE2_EXT" I L 7150 1800 50 
-F9 "MIC_SD" I R 8700 3325 50 
-F10 "MIC_SCK" I L 7150 3325 50 
-F11 "MIC_WS" I L 7150 3475 50 
-F12 "CT+" I R 8700 2675 50 
-F13 "PULSE_IN1" I R 8700 1650 50 
-F14 "PULSE_IN2" I R 8700 1800 50 
-$EndSheet
 Text Label 1275 3300 0    60   ~ 0
 HPM_EN
 Wire Wire Line
@@ -570,8 +546,6 @@ Text Label 6875 9625 0    50   ~ 0
 STM1_TX
 Text Label 6875 9725 0    50   ~ 0
 STM1_RX
-Text Notes 14700 10250 0    50   ~ 0
-Parts to add:\n-Fiducial\n-Fix particulate in rush issue\n-lora rst not routed and rst through hardware rc
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 608D87A6
@@ -834,11 +808,11 @@ Text Label 4425 3350 2    50   ~ 0
 CAN_TX
 Wire Wire Line
 	3850 1200 4425 1200
-Text Label 4425 2400 2    50   ~ 0
+Text Label 4425 2550 2    50   ~ 0
 RS485_TX
 Wire Wire Line
 	3850 1350 4425 1350
-Text Label 4425 2550 2    50   ~ 0
+Text Label 4425 2400 2    50   ~ 0
 RS485_RX
 Wire Wire Line
 	1275 4500 1875 4500
@@ -1341,15 +1315,11 @@ F 3 "~" H 1475 1850 50  0001 C CNN
 	1    1275 1850
 	0    -1   1    0   
 $EndComp
-Text GLabel 4425 2000 2    50   Input ~ 0
-LORA_TX
-Text GLabel 4425 2150 2    50   Input ~ 0
-LORA_RX
 $Comp
-L Connector:Conn_02x07_Odd_Even J?
+L Connector:Conn_02x07_Odd_Even J1
 U 1 1 619137D5
 P 7450 9525
-F 0 "J?" H 7500 9950 50  0000 C CNN
+F 0 "J1" H 7500 9950 50  0000 C CNN
 F 1 "Conn_02x07_Counter_Clockwise" H 7500 9951 50  0001 C CNN
 F 2 "" H 7450 9525 50  0001 C CNN
 F 3 "~" H 7450 9525 50  0001 C CNN
@@ -1373,4 +1343,48 @@ Text Label 13450 3800 0    50   ~ 0
 RE_485
 Text Label 1275 4350 0    50   ~ 0
 RE_485
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 614D8D9C
+P 1275 4650
+AR Path="/60688D25/614D8D9C" Ref="TP?"  Part="1" 
+AR Path="/614D8D9C" Ref="TP16"  Part="1" 
+F 0 "TP16" V 1275 4925 50  0000 C CNN
+F 1 "Test_Point" V 1379 4722 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 4650 50  0001 C CNN
+F 3 "~" H 1475 4650 50  0001 C CNN
+	1    1275 4650
+	0    -1   1    0   
+$EndComp
+$Sheet
+S 7150 1325 1550 2500
+U 608F4675
+F0 "Sensors_AND_IO" 50
+F1 "Sensors_AND_IO.sch" 50
+F2 "HPM_RX" I L 7150 2675 50 
+F3 "HPM_TX" I L 7150 2825 50 
+F4 "HPM_EN" I L 7150 1500 50 
+F5 "SCL" I L 7150 2300 50 
+F6 "SDA" I L 7150 2150 50 
+F7 "PULSE1_EXT" I L 7150 1650 50 
+F8 "PULSE2_EXT" I L 7150 1800 50 
+F9 "MIC_SD" I R 8700 3325 50 
+F10 "MIC_SCK" I L 7150 3325 50 
+F11 "MIC_WS" I L 7150 3475 50 
+F12 "CT+" I R 8700 2675 50 
+F13 "PULSE_IN1" I R 8700 1650 50 
+F14 "PULSE_IN2" I R 8700 1800 50 
+$EndSheet
+Text Label 4425 2000 2    50   ~ 0
+LORA_TX
+Text Label 4425 2150 2    50   ~ 0
+LORA_RX
+Wire Wire Line
+	15225 2000 15800 2000
+Wire Wire Line
+	15225 1725 15800 1725
+Text Label 15800 2000 2    50   ~ 0
+LORA_TX
+Text Label 15800 1725 2    50   ~ 0
+LORA_RX
 $EndSCHEMATC

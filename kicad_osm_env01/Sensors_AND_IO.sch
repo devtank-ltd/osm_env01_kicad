@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 9
+Sheet 8 9
 Title ""
 Date ""
 Rev ""
@@ -285,237 +285,193 @@ Wire Wire Line
 $Comp
 L OSM_env01-rescue:Conn_01x08-Connector-ESP32-EVB_Rev_D-rescue J?
 U 1 1 609BB471
-P 2625 6700
+P 6425 6500
 AR Path="/609BB471" Ref="J?"  Part="1" 
 AR Path="/608F4675/609BB471" Ref="J4"  Part="1" 
-F 0 "J4" H 2575 7200 50  0000 L CNN
-F 1 "Conn_01x08" H 2705 6601 50  0001 L CNN
-F 2 "Connector_Molex:Molex_PicoBlade_53047-0810_1x08_P1.25mm_Vertical" H 2625 6700 50  0001 C CNN
-F 3 "~" H 2625 6700 50  0001 C CNN
-	1    2625 6700
+F 0 "J4" H 6375 6975 50  0000 L CNN
+F 1 "Conn_01x08" H 6505 6401 50  0001 L CNN
+F 2 "Connector_Molex:Molex_PicoBlade_53047-0810_1x08_P1.25mm_Vertical" H 6425 6500 50  0001 C CNN
+F 3 "~" H 6425 6500 50  0001 C CNN
+	1    6425 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 609BB477
-P 2325 7200
+P 6125 7000
 AR Path="/609BB477" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/609BB477" Ref="#PWR070"  Part="1" 
-F 0 "#PWR070" H 2325 6950 50  0001 C CNN
-F 1 "GND" H 2330 7027 50  0000 C CNN
-F 2 "" H 2325 7200 60  0000 C CNN
-F 3 "" H 2325 7200 60  0000 C CNN
-	1    2325 7200
+F 0 "#PWR070" H 6125 6750 50  0001 C CNN
+F 1 "GND" H 6130 6827 50  0000 C CNN
+F 2 "" H 6125 7000 60  0000 C CNN
+F 3 "" H 6125 7000 60  0000 C CNN
+	1    6125 7000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2425 6600
-NoConn ~ 2425 6700
-NoConn ~ 2425 6800
+NoConn ~ 6225 6400
+NoConn ~ 6225 6500
+NoConn ~ 6225 6600
 Wire Wire Line
-	2325 7200 2325 7100
+	6125 7000 6125 6900
 Wire Wire Line
-	2325 7100 2425 7100
+	6125 6900 6225 6900
 Wire Wire Line
-	2425 6900 2275 6900
+	6225 6700 6075 6700
 Wire Wire Line
-	2425 7000 2225 7000
-Text Notes 2600 5775 0    118  ~ 24
+	6225 6800 6025 6800
+Text Notes 5275 5825 0    118  ~ 24
 Particulate Sensor\n
-NoConn ~ 2425 6400
+NoConn ~ 6225 6200
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
 U 1 1 609BB494
-P 1225 6400
+P 5025 6200
 AR Path="/609BB494" Ref="C?"  Part="1" 
 AR Path="/608F4675/609BB494" Ref="C40"  Part="1" 
-F 0 "C40" H 1325 6450 50  0000 L CNN
-F 1 "10uF" H 1325 6350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1263 6250 50  0001 C CNN
-F 3 "" H 1225 6400 50  0001 C CNN
-	1    1225 6400
+F 0 "C40" H 5125 6250 50  0000 L CNN
+F 1 "10uF" H 5125 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5063 6050 50  0001 C CNN
+F 3 "" H 5025 6200 50  0001 C CNN
+	1    5025 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
 U 1 1 609BB49A
-P 1600 6400
+P 5400 6200
 AR Path="/609BB49A" Ref="C?"  Part="1" 
 AR Path="/608F4675/609BB49A" Ref="C41"  Part="1" 
-F 0 "C41" H 1700 6450 50  0000 L CNN
-F 1 "DNF" H 1700 6350 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1638 6250 50  0001 C CNN
-F 3 "" H 1600 6400 50  0001 C CNN
-	1    1600 6400
+F 0 "C41" H 5500 6250 50  0000 L CNN
+F 1 "DNF" H 5500 6150 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5438 6050 50  0001 C CNN
+F 3 "" H 5400 6200 50  0001 C CNN
+	1    5400 6200
 	1    0    0    -1  
 $EndComp
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
 U 1 1 609BB4A0
-P 1950 6400
+P 5750 6200
 AR Path="/609BB4A0" Ref="C?"  Part="1" 
 AR Path="/608F4675/609BB4A0" Ref="C42"  Part="1" 
-F 0 "C42" H 2065 6446 50  0000 L CNN
-F 1 "100nF" H 2065 6355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 1988 6250 50  0001 C CNN
-F 3 "" H 1950 6400 50  0001 C CNN
-	1    1950 6400
+F 0 "C42" H 5865 6246 50  0000 L CNN
+F 1 "100nF" H 5865 6155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5788 6050 50  0001 C CNN
+F 3 "" H 5750 6200 50  0001 C CNN
+	1    5750 6200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1225 6250 1600 6250
-Connection ~ 1600 6250
+	5025 6050 5400 6050
+Connection ~ 5400 6050
 Wire Wire Line
-	1600 6250 1950 6250
+	5400 6050 5750 6050
 Wire Wire Line
-	1950 6550 1600 6550
-Connection ~ 1600 6550
+	5750 6350 5400 6350
+Connection ~ 5400 6350
 Wire Wire Line
-	1600 6550 1300 6550
+	5400 6350 5100 6350
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 609BB4AC
-P 1300 6550
+P 5100 6350
 AR Path="/609BB4AC" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/609BB4AC" Ref="#PWR067"  Part="1" 
-F 0 "#PWR067" H 1300 6300 50  0001 C CNN
-F 1 "GND" H 1305 6377 50  0000 C CNN
-F 2 "" H 1300 6550 60  0000 C CNN
-F 3 "" H 1300 6550 60  0000 C CNN
-	1    1300 6550
+F 0 "#PWR067" H 5100 6100 50  0001 C CNN
+F 1 "GND" H 5105 6177 50  0000 C CNN
+F 2 "" H 5100 6350 60  0000 C CNN
+F 3 "" H 5100 6350 60  0000 C CNN
+	1    5100 6350
 	1    0    0    -1  
 $EndComp
-Connection ~ 1300 6550
+Connection ~ 5100 6350
 Wire Wire Line
-	1300 6550 1225 6550
+	5100 6350 5025 6350
 Wire Wire Line
-	1950 6250 2325 6250
+	5750 6050 6125 6050
 Wire Wire Line
-	2325 6250 2325 6500
+	6125 6050 6125 6300
 Wire Wire Line
-	2325 6500 2425 6500
-Connection ~ 1950 6250
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
-U 1 1 609BB4BF
-P 4125 7300
-AR Path="/609BB4BF" Ref="R?"  Part="1" 
-AR Path="/608F4675/609BB4BF" Ref="R95"  Part="1" 
-F 0 "R95" H 4195 7346 50  0000 L CNN
-F 1 "100K" H 4195 7255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4055 7300 50  0001 C CNN
-F 3 "" H 4125 7300 50  0001 C CNN
-	1    4125 7300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4750 7450 4750 7350
+	6125 6300 6225 6300
+Connection ~ 5750 6050
 $Comp
 L OSM_env01-rescue:NL17SZ14-Devtank-ESP32-EVB_Rev_D-rescue U?
 U 1 1 609BB4DB
-P 3675 7150
+P 1700 6850
 AR Path="/609BB4DB" Ref="U?"  Part="1" 
 AR Path="/608F4675/609BB4DB" Ref="U9"  Part="1" 
-F 0 "U9" H 3500 7350 50  0000 C CNN
-F 1 "M74VHC1GT14DFT2G" H 3225 6925 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 3675 7150 60  0001 C CNN
-F 3 "" H 3675 7150 60  0001 C CNN
-	1    3675 7150
-	1    0    0    -1  
-$EndComp
-Connection ~ 4125 7150
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
-U 1 1 609BB4E3
-P 4750 7450
-AR Path="/609BB4E3" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/609BB4E3" Ref="#PWR079"  Part="1" 
-F 0 "#PWR079" H 4750 7200 50  0001 C CNN
-F 1 "GND" H 4755 7277 50  0000 C CNN
-F 2 "" H 4750 7450 60  0000 C CNN
-F 3 "" H 4750 7450 60  0000 C CNN
-	1    4750 7450
+F 0 "U9" H 1525 7050 50  0000 C CNN
+F 1 "M74VHC1GT14DFT2G" H 1250 6625 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-353_SC-70-5" H 1700 6850 60  0001 C CNN
+F 3 "" H 1700 6850 60  0001 C CNN
+	1    1700 6850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3200 7150 3225 7150
+	1225 6850 1250 6850
 Wire Wire Line
-	3625 7050 3625 6900
+	1650 6750 1650 6600
 Wire Wire Line
-	3625 7250 3625 7400
+	1650 6950 1650 7100
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 609BB4F5
-P 3625 7400
+P 1650 7100
 AR Path="/609BB4F5" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/609BB4F5" Ref="#PWR074"  Part="1" 
-F 0 "#PWR074" H 3625 7150 50  0001 C CNN
-F 1 "GND" H 3630 7227 50  0000 C CNN
-F 2 "" H 3625 7400 60  0000 C CNN
-F 3 "" H 3625 7400 60  0000 C CNN
-	1    3625 7400
+F 0 "#PWR074" H 1650 6850 50  0001 C CNN
+F 1 "GND" H 1655 6927 50  0000 C CNN
+F 2 "" H 1650 7100 60  0000 C CNN
+F 3 "" H 1650 7100 60  0000 C CNN
+	1    1650 7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 609BB4FB
-P 3625 6800
+P 1650 6500
 AR Path="/609BB4FB" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/609BB4FB" Ref="#PWR073"  Part="1" 
-F 0 "#PWR073" H 3625 6650 50  0001 C CNN
-F 1 "+3V3" H 3500 6925 50  0000 C CNN
-F 2 "" H 3625 6800 50  0001 C CNN
-F 3 "" H 3625 6800 50  0001 C CNN
-	1    3625 6800
+F 0 "#PWR073" H 1650 6350 50  0001 C CNN
+F 1 "+3V3" H 1525 6625 50  0000 C CNN
+F 2 "" H 1650 6500 50  0001 C CNN
+F 3 "" H 1650 6500 50  0001 C CNN
+	1    1650 6500
 	1    0    0    -1  
 $EndComp
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
 U 1 1 609BB501
-P 3775 6900
+P 1800 6600
 AR Path="/609BB501" Ref="C?"  Part="1" 
 AR Path="/608F4675/609BB501" Ref="C43"  Part="1" 
-F 0 "C43" V 3523 6900 50  0000 C CNN
-F 1 "100nF" V 3600 6950 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3813 6750 50  0001 C CNN
-F 3 "" H 3775 6900 50  0001 C CNN
-	1    3775 6900
+F 0 "C43" V 1548 6600 50  0000 C CNN
+F 1 "100nF" V 1625 6650 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1838 6450 50  0001 C CNN
+F 3 "" H 1800 6600 50  0001 C CNN
+	1    1800 6600
 	0    1    1    0   
 $EndComp
-Connection ~ 3625 6900
+Connection ~ 1650 6600
 Wire Wire Line
-	3625 6900 3625 6800
+	1650 6600 1650 6500
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 609BB509
-P 4050 6900
+P 2075 6600
 AR Path="/609BB509" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/609BB509" Ref="#PWR075"  Part="1" 
-F 0 "#PWR075" H 4050 6650 50  0001 C CNN
-F 1 "GND" H 4200 6825 50  0000 C CNN
-F 2 "" H 4050 6900 60  0000 C CNN
-F 3 "" H 4050 6900 60  0000 C CNN
-	1    4050 6900
+F 0 "#PWR075" H 2075 6350 50  0001 C CNN
+F 1 "GND" H 2225 6525 50  0000 C CNN
+F 2 "" H 2075 6600 60  0000 C CNN
+F 3 "" H 2075 6600 60  0000 C CNN
+	1    2075 6600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3925 6900 4050 6900
-Text Label 675  6250 0    50   ~ 0
+	1950 6600 2075 6600
+Text Label 5025 6050 0    50   ~ 0
 5V_Particulate
-Wire Wire Line
-	675  6250 1225 6250
-$Comp
-L OSM_env01-rescue:2N7002-Transistor-ESP32-EVB_Rev_D-rescue Q?
-U 1 1 609BB515
-P 4650 7150
-AR Path="/609BB515" Ref="Q?"  Part="1" 
-AR Path="/608F4675/609BB515" Ref="Q5"  Part="1" 
-F 0 "Q5" H 4856 7196 50  0000 L CNN
-F 1 "FK3503010L" H 4856 7105 50  0000 L CNN
-F 2 "Devtank_PCB_lib:SMini3-F2-B" H 4850 7075 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N7002.pdf" H 4650 7150 50  0001 L CNN
-	1    4650 7150
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	3900 5225 3900 525 
 Wire Notes Line
@@ -524,25 +480,25 @@ Wire Notes Line
 	7200 3375 11150 3400
 Wire Notes Line
 	500  5550 7150 5550
-Text HLabel 2000 6825 0    50   Input ~ 0
+Text HLabel 5800 6625 0    50   Input ~ 0
 HPM_TX
-Text HLabel 2000 7075 0    50   Input ~ 0
+Text HLabel 5800 6875 0    50   Input ~ 0
 HPM_RX
 Wire Wire Line
-	2000 6825 2275 6825
+	5800 6625 6075 6625
 Wire Wire Line
-	2275 6825 2275 6900
-Connection ~ 2275 6900
+	6075 6625 6075 6700
+Connection ~ 6075 6700
 Wire Wire Line
-	2275 6900 2100 6900
+	6075 6700 5900 6700
 Wire Wire Line
-	2000 7075 2225 7075
+	5800 6875 6025 6875
 Wire Wire Line
-	2225 7075 2225 7000
-Connection ~ 2225 7000
+	6025 6875 6025 6800
+Connection ~ 6025 6800
 Wire Wire Line
-	2225 7000 2100 7000
-Text HLabel 3200 7150 0    50   Input ~ 0
+	6025 6800 5900 6800
+Text HLabel 1225 6850 0    50   Input ~ 0
 HPM_EN
 Wire Wire Line
 	9550 5350 9450 5350
@@ -738,29 +694,29 @@ Wire Wire Line
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60A3DEE7
-P 2100 6900
+P 5900 6700
 AR Path="/5F6F7717/60A3DEE7" Ref="TP?"  Part="1" 
 AR Path="/60A3DEE7" Ref="TP?"  Part="1" 
 AR Path="/608F4675/60A3DEE7" Ref="TP44"  Part="1" 
-F 0 "TP44" V 2100 7175 50  0000 C CNN
-F 1 "Test_Point" V 2175 7125 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2300 6900 50  0001 C CNN
-F 3 "~" H 2300 6900 50  0001 C CNN
-	1    2100 6900
+F 0 "TP44" V 5900 6975 50  0000 C CNN
+F 1 "Test_Point" V 5975 6925 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6100 6700 50  0001 C CNN
+F 3 "~" H 6100 6700 50  0001 C CNN
+	1    5900 6700
 	0    -1   1    0   
 $EndComp
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60A415D1
-P 2100 7000
+P 5900 6800
 AR Path="/5F6F7717/60A415D1" Ref="TP?"  Part="1" 
 AR Path="/60A415D1" Ref="TP?"  Part="1" 
 AR Path="/608F4675/60A415D1" Ref="TP45"  Part="1" 
-F 0 "TP45" V 2100 7275 50  0000 C CNN
-F 1 "Test_Point" V 2175 7225 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2300 7000 50  0001 C CNN
-F 3 "~" H 2300 7000 50  0001 C CNN
-	1    2100 7000
+F 0 "TP45" V 5900 7075 50  0000 C CNN
+F 1 "Test_Point" V 5975 7025 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6100 6800 50  0001 C CNN
+F 3 "~" H 6100 6800 50  0001 C CNN
+	1    5900 6800
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -933,157 +889,6 @@ Text Notes 3750 5375 0    50   ~ 0
 bypass capacitor few hundred ohms\nhttps://learn.openenergymonitor.org/electricity-monitoring/ct-sensors/interface-with-arduino
 Wire Notes Line
 	3900 3125 7200 3150
-Text Notes -1050 5950 0    50   ~ 0
-Inrush potential fixes\n-mosfet control timing\n-RC filter\n-resistors to limit current\n-Thermistor\n-super caps
-Wire Wire Line
-	4750 6875 4750 6900
-Wire Wire Line
-	5175 6500 5175 6450
-Wire Wire Line
-	4750 6500 5175 6500
-Wire Wire Line
-	4950 6150 5175 6150
-$Comp
-L device:C C73
-U 1 1 60765BD8
-P 5175 6300
-F 0 "C73" H 5290 6346 50  0000 L CNN
-F 1 "DNF" H 5290 6255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5213 6150 50  0001 C CNN
-F 3 "" H 5175 6300 50  0001 C CNN
-	1    5175 6300
-	1    0    0    -1  
-$EndComp
-Connection ~ 4750 6500
-Wire Wire Line
-	4750 6575 4750 6500
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 60A49311
-P 6150 6150
-AR Path="/5F6F7717/60A49311" Ref="TP?"  Part="1" 
-AR Path="/60A49311" Ref="TP?"  Part="1" 
-AR Path="/608F4675/60A49311" Ref="TP48"  Part="1" 
-F 0 "TP48" V 6150 6425 50  0000 C CNN
-F 1 "Test_Point" V 6225 6375 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6350 6150 50  0001 C CNN
-F 3 "~" H 6350 6150 50  0001 C CNN
-	1    6150 6150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6700 6350 6100 6350
-Text Label 6700 6350 2    50   ~ 0
-5V_Particulate
-Wire Wire Line
-	5825 6150 6100 6150
-Connection ~ 4250 6150
-Wire Wire Line
-	4250 6150 4250 6125
-$Comp
-L power:+5V #PWR?
-U 1 1 609BB4D3
-P 4250 6125
-AR Path="/609BB4D3" Ref="#PWR?"  Part="1" 
-AR Path="/608F4675/609BB4D3" Ref="#PWR078"  Part="1" 
-F 0 "#PWR078" H 4250 5975 50  0001 C CNN
-F 1 "+5V" H 4265 6298 50  0000 C CNN
-F 2 "" H 4250 6125 50  0001 C CNN
-F 3 "" H 4250 6125 50  0001 C CNN
-	1    4250 6125
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4250 6500 4250 6450
-Wire Wire Line
-	4750 6500 4750 6450
-Wire Wire Line
-	4250 6500 4350 6500
-Wire Wire Line
-	4250 6150 4550 6150
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
-U 1 1 609BB4C5
-P 4250 6300
-AR Path="/609BB4C5" Ref="R?"  Part="1" 
-AR Path="/608F4675/609BB4C5" Ref="R98"  Part="1" 
-F 0 "R98" H 4320 6346 50  0000 L CNN
-F 1 "100K" H 4320 6255 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 6300 50  0001 C CNN
-F 3 "" H 4250 6300 50  0001 C CNN
-	1    4250 6300
-	1    0    0    -1  
-$EndComp
-$Comp
-L OSM_env01-rescue:NTR2101P-Transistor-ESP32-EVB_Rev_D-rescue Q?
-U 1 1 609BB4B9
-P 4750 6250
-AR Path="/609BB4B9" Ref="Q?"  Part="1" 
-AR Path="/608F4675/609BB4B9" Ref="Q6"  Part="1" 
-F 0 "Q6" V 5100 6050 50  0000 L CNN
-F 1 "SSM3J328R" V 5000 6050 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4950 6175 50  0001 L CIN
-F 3 "http://www.onsemi.com/pub/Collateral/NTR2101P-D.PDF" H 4750 6250 50  0001 L CNN
-	1    4750 6250
-	0    1    -1   0   
-$EndComp
-$Comp
-L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R?
-U 1 1 607518CF
-P 4750 6725
-AR Path="/607518CF" Ref="R?"  Part="1" 
-AR Path="/608F4675/607518CF" Ref="R129"  Part="1" 
-F 0 "R129" H 4820 6771 50  0000 L CNN
-F 1 "0R" H 4820 6680 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4680 6725 50  0001 C CNN
-F 3 "" H 4750 6725 50  0001 C CNN
-	1    4750 6725
-	1    0    0    -1  
-$EndComp
-$Comp
-L device:Thermistor_NTC TH3
-U 1 1 6083B968
-P 5675 6150
-F 0 "TH3" V 5925 6425 50  0000 L CNN
-F 1 "Thermistor_NTC" V 5825 5975 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" H 5675 6200 50  0001 C CNN
-F 3 "" H 5675 6200 50  0001 C CNN
-	1    5675 6150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	5175 6150 5525 6150
-Connection ~ 5175 6150
-Wire Wire Line
-	4350 6575 4350 6500
-Connection ~ 4350 6500
-Wire Wire Line
-	4350 6500 4750 6500
-Wire Wire Line
-	4350 6875 4350 6900
-Wire Wire Line
-	4350 6900 4750 6900
-Connection ~ 4750 6900
-Wire Wire Line
-	4750 6900 4750 6950
-Wire Wire Line
-	4125 7150 4450 7150
-Wire Wire Line
-	4125 7450 4750 7450
-Connection ~ 4750 7450
-$Comp
-L device:D D?
-U 1 1 60D2C5AD
-P 4350 6725
-AR Path="/60688D25/60D2C5AD" Ref="D?"  Part="1" 
-AR Path="/608F4675/60D2C5AD" Ref="D11"  Part="1" 
-F 0 "D11" V 4304 6804 50  0000 L CNN
-F 1 "D" V 4395 6804 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" H 4350 6725 50  0001 C CNN
-F 3 "" H 4350 6725 50  0001 C CNN
-	1    4350 6725
-	0    1    1    0   
-$EndComp
 $Comp
 L device:R R?
 U 1 1 6073EBF7
@@ -1254,7 +1059,7 @@ L Devtank:HDC2080 U11
 U 1 1 6239ED76
 P 8750 5200
 F 0 "U11" H 8175 5900 60  0000 R CNN
-F 1 "HDC2080" H 8425 5800 60  0000 R CNN
+F 1 "HPP845E131R5" H 8425 5800 60  0000 R CNN
 F 2 "Devtank_PCB_lib:HDC2080D" H 8750 5140 60  0001 C CNN
 F 3 "" H 8750 5200 60  0000 C CNN
 	1    8750 5200
@@ -1365,12 +1170,6 @@ Wire Wire Line
 	5050 1725 4950 1725
 Text Notes 1600 675  0    118  ~ 24
 Pulse Inputs\n
-Connection ~ 1225 6250
-Wire Wire Line
-	6100 6350 6100 6150
-Connection ~ 6100 6150
-Wire Wire Line
-	6100 6150 6150 6150
 Wire Notes Line
 	3900 5250 3900 5550
 Wire Notes Line
@@ -1437,10 +1236,10 @@ F 3 "" H 6375 1200 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C?
+L device:C C49
 U 1 1 619BA90A
 P 1700 1700
-F 0 "C?" H 1815 1746 50  0000 L CNN
+F 0 "C49" H 1815 1746 50  0000 L CNN
 F 1 "10nF" H 1815 1655 50  0000 L CNN
 F 2 "" H 1738 1550 50  0001 C CNN
 F 3 "" H 1700 1700 50  0001 C CNN
@@ -1457,10 +1256,10 @@ Wire Wire Line
 Wire Wire Line
 	1350 1550 1700 1550
 $Comp
-L device:C C?
+L device:C C50
 U 1 1 619EFDCD
 P 3425 1700
-F 0 "C?" H 3540 1746 50  0000 L CNN
+F 0 "C50" H 3540 1746 50  0000 L CNN
 F 1 "10nF" H 3540 1655 50  0000 L CNN
 F 2 "" H 3463 1550 50  0001 C CNN
 F 3 "" H 3425 1700 50  0001 C CNN
@@ -1476,4 +1275,158 @@ Wire Wire Line
 Connection ~ 3075 1900
 Wire Wire Line
 	3075 1900 3075 1850
+$Comp
+L device:Thermistor_NTC TH3
+U 1 1 6083B968
+P 4150 6475
+F 0 "TH3" V 4275 6400 50  0000 L CNN
+F 1 "DNF" V 3950 6400 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P5.08mm_Vertical" H 4150 6525 50  0001 C CNN
+F 3 "" H 4150 6525 50  0001 C CNN
+	1    4150 6475
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4300 6475 4575 6475
+$Comp
+L Devtank:MIC94073YC6 U12
+U 1 1 616C2EF0
+P 3150 6725
+F 0 "U12" H 3162 7288 60  0000 C CNN
+F 1 "MIC94073YC6" H 3162 7182 60  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-363_SC-70-6" H 3200 7150 60  0001 C CNN
+F 3 "" H 2475 6900 60  0000 C CNN
+	1    3150 6725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4575 6050 4575 6475
+Wire Wire Line
+	2150 6850 2300 6850
+Wire Wire Line
+	3850 6475 3950 6475
+$Comp
+L OSM_env01:GND #PWR0133
+U 1 1 61719370
+P 3075 7575
+F 0 "#PWR0133" H 3075 7325 50  0001 C CNN
+F 1 "GND" H 3080 7402 50  0000 C CNN
+F 2 "" H 3075 7575 60  0000 C CNN
+F 3 "" H 3075 7575 60  0000 C CNN
+	1    3075 7575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3075 7425 3075 7500
+Wire Wire Line
+	3075 7500 3275 7500
+Wire Wire Line
+	3275 7500 3275 7425
+Connection ~ 3075 7500
+Wire Wire Line
+	3075 7500 3075 7575
+$Comp
+L device:R R39
+U 1 1 617259E9
+P 4175 6050
+F 0 "R39" V 3968 6050 50  0000 C CNN
+F 1 "0R" V 4059 6050 50  0000 C CNN
+F 2 "" V 4105 6050 50  0001 C CNN
+F 3 "" H 4175 6050 50  0001 C CNN
+	1    4175 6050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4325 6050 4575 6050
+Connection ~ 4575 6050
+Wire Wire Line
+	4025 6050 3950 6050
+Wire Wire Line
+	3950 6050 3950 6475
+Connection ~ 3950 6475
+Wire Wire Line
+	3950 6475 4000 6475
+$Comp
+L power:+3V3 #PWR0135
+U 1 1 6173B509
+P 2475 5950
+F 0 "#PWR0135" H 2475 5800 50  0001 C CNN
+F 1 "+3V3" H 2490 6123 50  0000 C CNN
+F 2 "" H 2475 5950 50  0001 C CNN
+F 3 "" H 2475 5950 50  0001 C CNN
+	1    2475 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C?
+U 1 1 6173D509
+P 2175 6025
+AR Path="/6173D509" Ref="C?"  Part="1" 
+AR Path="/608F4675/6173D509" Ref="C57"  Part="1" 
+F 0 "C57" V 1923 6025 50  0000 C CNN
+F 1 "100nF" V 2000 6075 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2213 5875 50  0001 C CNN
+F 3 "" H 2175 6025 50  0001 C CNN
+	1    2175 6025
+	0    -1   1    0   
+$EndComp
+$Comp
+L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
+U 1 1 6173D50F
+P 1900 6025
+AR Path="/6173D50F" Ref="#PWR?"  Part="1" 
+AR Path="/608F4675/6173D50F" Ref="#PWR0144"  Part="1" 
+F 0 "#PWR0144" H 1900 5775 50  0001 C CNN
+F 1 "GND" H 2050 5950 50  0000 C CNN
+F 2 "" H 1900 6025 60  0000 C CNN
+F 3 "" H 1900 6025 60  0000 C CNN
+	1    1900 6025
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	2025 6025 1900 6025
+Wire Wire Line
+	2475 6475 2475 6025
+Wire Wire Line
+	2325 6025 2475 6025
+Connection ~ 2475 6025
+Wire Wire Line
+	2475 6025 2475 5950
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 6176A132
+P 2300 6850
+AR Path="/5F6F7717/6176A132" Ref="TP?"  Part="1" 
+AR Path="/6176A132" Ref="TP?"  Part="1" 
+AR Path="/608F4675/6176A132" Ref="TP19"  Part="1" 
+F 0 "TP19" V 2300 7125 50  0000 C CNN
+F 1 "Test_Point" V 2375 7075 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 2500 6850 50  0001 C CNN
+F 3 "~" H 2500 6850 50  0001 C CNN
+	1    2300 6850
+	-1   0    0    1   
+$EndComp
+Connection ~ 2300 6850
+Wire Wire Line
+	2300 6850 2475 6850
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 60A49311
+P 4625 6050
+AR Path="/5F6F7717/60A49311" Ref="TP?"  Part="1" 
+AR Path="/60A49311" Ref="TP?"  Part="1" 
+AR Path="/608F4675/60A49311" Ref="TP48"  Part="1" 
+F 0 "TP48" H 4625 6275 50  0000 C CNN
+F 1 "Test_Point" V 4700 6275 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4825 6050 50  0001 C CNN
+F 3 "~" H 4825 6050 50  0001 C CNN
+	1    4625 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4625 6050 4575 6050
+Wire Wire Line
+	4625 6050 5025 6050
+Connection ~ 4625 6050
+Connection ~ 5025 6050
 $EndSCHEMATC
