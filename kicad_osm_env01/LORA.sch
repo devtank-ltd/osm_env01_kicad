@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "Open Smart Monitor"
+Date "2021-09-22"
+Rev "B"
+Comp "Devtank LTD"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -73,8 +73,6 @@ Wire Wire Line
 	5050 2375 4600 2375
 Connection ~ 4600 2375
 Wire Wire Line
-	4600 2375 4125 2375
-Wire Wire Line
 	5500 2675 5050 2675
 Connection ~ 5050 2675
 Wire Wire Line
@@ -132,36 +130,16 @@ Wire Wire Line
 Connection ~ 5725 4850
 Wire Wire Line
 	5725 4850 5825 4850
-$Comp
-L power:+3V3 #PWR?
-U 1 1 608CFA4E
-P 4125 2225
-AR Path="/608CFA4E" Ref="#PWR?"  Part="1" 
-AR Path="/60880AD8/608CFA4E" Ref="#PWR053"  Part="1" 
-F 0 "#PWR053" H 4125 2075 50  0001 C CNN
-F 1 "+3V3" H 4140 2398 50  0000 C CNN
-F 2 "" H 4125 2225 50  0001 C CNN
-F 3 "" H 4125 2225 50  0001 C CNN
-	1    4125 2225
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4125 2375 4125 2225
-Connection ~ 4125 2375
 NoConn ~ 6675 3950
 NoConn ~ 6675 3825
 NoConn ~ 6675 3525
 NoConn ~ 6675 3400
-NoConn ~ 4925 3525
 NoConn ~ 4925 4400
 NoConn ~ 4925 4275
 NoConn ~ 4925 4150
 NoConn ~ 4925 4025
-NoConn ~ 4925 3900
 Wire Wire Line
 	4475 3400 4100 3400
-Text HLabel 7650 3275 2    50   Input ~ 0
-LORA_NRST
 $Comp
 L device:R R123
 U 1 1 606EC59D
@@ -223,24 +201,19 @@ Wire Wire Line
 	7225 2925 7225 2825
 Wire Wire Line
 	7225 3275 7550 3275
-Wire Wire Line
-	7550 3375 7550 3275
-Connection ~ 7550 3275
-Wire Wire Line
-	7550 3275 7650 3275
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60A76064
-P 7550 3375
+P 7550 3275
 AR Path="/5F6F7717/60A76064" Ref="TP?"  Part="1" 
 AR Path="/60A76064" Ref="TP?"  Part="1" 
 AR Path="/608F4675/60A76064" Ref="TP?"  Part="1" 
 AR Path="/60880AD8/60A76064" Ref="TP35"  Part="1" 
-F 0 "TP35" V 7550 3650 50  0000 C CNN
-F 1 "Test_Point" V 7625 3600 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7750 3375 50  0001 C CNN
-F 3 "~" H 7750 3375 50  0001 C CNN
-	1    7550 3375
+F 0 "TP35" V 7550 3550 50  0000 C CNN
+F 1 "Test_Point" V 7625 3500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7750 3275 50  0001 C CNN
+F 3 "~" H 7750 3275 50  0001 C CNN
+	1    7550 3275
 	0    1    1    0   
 $EndComp
 $Comp
@@ -326,4 +299,75 @@ Connection ~ 4000 3275
 Wire Wire Line
 	4100 3400 3600 3400
 Connection ~ 4100 3400
+Wire Wire Line
+	4925 3525 4600 3525
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 619075D3
+P 4600 3525
+AR Path="/5F6F7717/619075D3" Ref="TP?"  Part="1" 
+AR Path="/619075D3" Ref="TP?"  Part="1" 
+AR Path="/608F4675/619075D3" Ref="TP?"  Part="1" 
+AR Path="/60880AD8/619075D3" Ref="TP24"  Part="1" 
+F 0 "TP24" V 4600 3800 50  0000 C CNN
+F 1 "Test_Point" V 4675 3750 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4800 3525 50  0001 C CNN
+F 3 "~" H 4800 3525 50  0001 C CNN
+	1    4600 3525
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	4925 3900 4600 3900
+$Comp
+L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
+U 1 1 6190A4E8
+P 4600 3900
+AR Path="/5F6F7717/6190A4E8" Ref="TP?"  Part="1" 
+AR Path="/6190A4E8" Ref="TP?"  Part="1" 
+AR Path="/608F4675/6190A4E8" Ref="TP?"  Part="1" 
+AR Path="/60880AD8/6190A4E8" Ref="TP30"  Part="1" 
+F 0 "TP30" V 4600 4175 50  0000 C CNN
+F 1 "Test_Point" V 4675 4125 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4800 3900 50  0001 C CNN
+F 3 "~" H 4800 3900 50  0001 C CNN
+	1    4600 3900
+	0    -1   1    0   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61A8FFEA
+P 3250 2125
+AR Path="/6064BC1D/61A8FFEA" Ref="#PWR?"  Part="1" 
+AR Path="/60880AD8/61A8FFEA" Ref="#PWR0135"  Part="1" 
+F 0 "#PWR0135" H 3250 1975 50  0001 C CNN
+F 1 "+3V3" H 3265 2298 50  0000 C CNN
+F 2 "" H 3250 2125 50  0001 C CNN
+F 3 "" H 3250 2125 50  0001 C CNN
+	1    3250 2125
+	1    0    0    -1  
+$EndComp
+Connection ~ 4125 2375
+Wire Wire Line
+	4125 2375 4600 2375
+$Comp
+L device:Ferrite_Bead L?
+U 1 1 61ACAEED
+P 3625 2375
+AR Path="/61ACAEED" Ref="L?"  Part="1" 
+AR Path="/60917DD5/61ACAEED" Ref="L?"  Part="1" 
+AR Path="/608F4675/61ACAEED" Ref="L?"  Part="1" 
+AR Path="/60880AD8/61ACAEED" Ref="L4"  Part="1" 
+F 0 "L4" V 3351 2375 50  0000 C CNN
+F 1 "2A/0.05DCR" V 3442 2375 50  0000 C CNN
+F 2 "Inductor_SMD:L_0402_1005Metric" V 3555 2375 50  0001 C CNN
+F 3 "" H 3625 2375 50  0001 C CNN
+	1    3625 2375
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3475 2375 3250 2375
+Wire Wire Line
+	3250 2125 3250 2375
+Wire Wire Line
+	3775 2375 4125 2375
 $EndSCHEMATC

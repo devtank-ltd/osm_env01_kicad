@@ -5,10 +5,10 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 1 9
 Title "Open Smart Monitor"
-Date ""
-Rev "A"
-Comp "Devtank Ltd"
-Comment1 "www.devtank.co.uk"
+Date "2021-09-22"
+Rev "B"
+Comp "Devtank LTD"
+Comment1 "AB"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -275,9 +275,8 @@ S 14100 1400 1125 950
 U 60880AD8
 F0 "LORA" 50
 F1 "LORA.sch" 50
-F2 "LORA_NRST" I L 14100 1850 50 
-F3 "LORA_RX" I R 15225 1725 50 
-F4 "LORA_TX" I R 15225 2000 50 
+F2 "LORA_RX" I R 15225 1725 50 
+F3 "LORA_TX" I R 15225 2000 50 
 $EndSheet
 Text Notes 6200 8325 0    118  ~ 24
 Optional module
@@ -438,10 +437,6 @@ Text Label 6550 2825 0    50   ~ 0
 HPM_TX
 Text Label 6550 2675 0    50   ~ 0
 HPM_RX
-Text Label 13700 1850 0    50   ~ 0
-LORA_NRST
-Wire Wire Line
-	14100 1850 13700 1850
 Wire Wire Line
 	13275 5875 12950 5875
 Text Label 12950 5875 0    50   ~ 0
@@ -524,9 +519,9 @@ Wire Wire Line
 	7150 1500 6550 1500
 Text Label 6550 1500 0    50   ~ 0
 HPM_EN
-Text Label 11000 1700 0    50   ~ 0
+Text Label 11000 1800 0    50   ~ 0
 CAN_L
-Text Label 11000 1925 0    50   ~ 0
+Text Label 11000 2025 0    50   ~ 0
 CAN_H
 Text Label 6550 3325 0    50   ~ 0
 MIC_SCK
@@ -896,28 +891,6 @@ $EndComp
 Wire Wire Line
 	2200 10000 2200 10425
 $Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C52
-U 1 1 61C1510C
-P 3525 9400
-F 0 "C52" H 3640 9446 50  0000 L CNN
-F 1 "100nF" H 3640 9355 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3563 9250 50  0001 C CNN
-F 3 "" H 3525 9400 50  0001 C CNN
-	1    3525 9400
-	0    -1   -1   0   
-$EndComp
-$Comp
-L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C53
-U 1 1 61C15112
-P 3925 9500
-F 0 "C53" H 4040 9546 50  0000 L CNN
-F 1 "100nF" H 4040 9455 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3963 9350 50  0001 C CNN
-F 3 "" H 3925 9500 50  0001 C CNN
-	1    3925 9500
-	0    -1   -1   0   
-$EndComp
-$Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR0104
 U 1 1 61C15118
 P 4450 9575
@@ -930,13 +903,9 @@ F 3 "" H 4450 9575 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	4450 9575 4450 9500
-Wire Wire Line
-	4075 9500 4200 9500
 Connection ~ 4200 9500
 Wire Wire Line
 	4200 9500 4450 9500
-Wire Wire Line
-	3675 9400 4200 9400
 Wire Wire Line
 	4200 9400 4200 9500
 Wire Wire Line
@@ -958,12 +927,8 @@ Wire Wire Line
 	3275 9100 3275 9400
 Connection ~ 3275 9400
 Wire Wire Line
-	3275 9400 3375 9400
-Wire Wire Line
 	3725 9500 3725 9100
 Connection ~ 3725 9500
-Wire Wire Line
-	3725 9500 3775 9500
 Text Label 7975 6600 2    50   ~ 0
 STM_WAKEUP
 Text Label 7925 7050 2    50   ~ 0
@@ -1144,7 +1109,7 @@ Wire Wire Line
 	3350 2800 3550 2800
 Wire Wire Line
 	3350 2950 3550 2950
-Text Label 11000 1525 0    50   ~ 0
+Text Label 11000 1575 0    50   ~ 0
 CAN_RS
 Text Label 1275 5100 0    50   ~ 0
 CAN_RS
@@ -1159,7 +1124,7 @@ CAN Transciever\n
 Text Notes 11050 2525 0    50   ~ 0
 Note: Low power mode selected through RS\n
 Wire Wire Line
-	11400 1525 11000 1525
+	11400 1575 11000 1575
 Text Label 12825 1925 2    50   ~ 0
 CAN_TX
 Wire Wire Line
@@ -1169,9 +1134,9 @@ CAN_RX
 Wire Wire Line
 	12425 1700 12825 1700
 Wire Wire Line
-	11400 1925 11000 1925
+	11400 2025 11000 2025
 Wire Wire Line
-	11400 1700 11000 1700
+	11400 1800 11000 1800
 $Sheet
 S 11400 1450 1025 725 
 U 6064BC1D
@@ -1179,9 +1144,9 @@ F0 "CanTransciever" 50
 F1 "CanTransciever.sch" 50
 F2 "CAN_RX" I R 12425 1700 50 
 F3 "CAN_TX" I R 12425 1925 50 
-F4 "CAN_L" I L 11400 1700 50 
-F5 "CAN_H" I L 11400 1925 50 
-F6 "CAN_RS" I L 11400 1525 50 
+F4 "CAN_L" I L 11400 1800 50 
+F5 "CAN_H" I L 11400 2025 50 
+F6 "CAN_RS" I L 11400 1575 50 
 $EndSheet
 Wire Notes Line
 	10900 4275 10925 525 
@@ -1316,7 +1281,7 @@ F 3 "~" H 1475 1850 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Connector:Conn_02x07_Odd_Even J1
+L Connector:Conn_02x07_Counter_Clockwise J1
 U 1 1 619137D5
 P 7450 9525
 F 0 "J1" H 7500 9950 50  0000 C CNN
@@ -1387,4 +1352,8 @@ Text Label 15800 2000 2    50   ~ 0
 LORA_TX
 Text Label 15800 1725 2    50   ~ 0
 LORA_RX
+Wire Wire Line
+	3275 9400 4200 9400
+Wire Wire Line
+	3725 9500 4200 9500
 $EndSCHEMATC

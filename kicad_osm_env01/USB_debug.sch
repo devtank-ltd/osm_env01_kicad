@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 9
 Title "Open Smart Monitor"
-Date ""
-Rev "A"
-Comp "Devtank Ltd"
-Comment1 "www.devtank.co.uk"
+Date "2021-09-22"
+Rev "B"
+Comp "Devtank LTD"
+Comment1 "AB"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -118,16 +118,14 @@ NoConn ~ 5525 3575
 $Comp
 L power:GND #PWR0131
 U 1 1 5CA85BC8
-P 2375 2875
-F 0 "#PWR0131" H 2375 2625 50  0001 C CNN
-F 1 "GND" H 2375 2725 50  0000 C CNN
-F 2 "" H 2375 2875 50  0001 C CNN
-F 3 "" H 2375 2875 50  0001 C CNN
-	1    2375 2875
-	0    1    1    0   
+P 2300 2875
+F 0 "#PWR0131" H 2300 2625 50  0001 C CNN
+F 1 "GND" H 2300 2725 50  0000 C CNN
+F 2 "" H 2300 2875 50  0001 C CNN
+F 3 "" H 2300 2875 50  0001 C CNN
+	1    2300 2875
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2450 2875 2375 2875
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C16
 U 1 1 5E444EC6
@@ -355,15 +353,15 @@ $EndComp
 $Comp
 L power:+3V3 #PWR?
 U 1 1 61E4E6DF
-P 8375 3425
+P 8100 2800
 AR Path="/61E4E6DF" Ref="#PWR?"  Part="1" 
 AR Path="/608F4675/61E4E6DF" Ref="#PWR?"  Part="1" 
 AR Path="/5F4610BE/61E4E6DF" Ref="#PWR0113"  Part="1" 
-F 0 "#PWR0113" H 8375 3275 50  0001 C CNN
-F 1 "+3V3" H 8250 3550 50  0000 C CNN
-F 2 "" H 8375 3425 50  0001 C CNN
-F 3 "" H 8375 3425 50  0001 C CNN
-	1    8375 3425
+F 0 "#PWR0113" H 8100 2650 50  0001 C CNN
+F 1 "+3V3" H 8075 2950 50  0000 C CNN
+F 2 "" H 8100 2800 50  0001 C CNN
+F 3 "" H 8100 2800 50  0001 C CNN
+	1    8100 2800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -381,8 +379,6 @@ F 3 "" H 8525 3525 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 8375 3525
-Wire Wire Line
-	8375 3525 8375 3425
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR?
 U 1 1 61E4E6ED
@@ -603,4 +599,67 @@ F 3 "" H 5625 1925 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 5625 1925
+$Comp
+L power:VDD #PWR0148
+U 1 1 618E8D17
+P 8375 2800
+F 0 "#PWR0148" H 8375 2650 50  0001 C CNN
+F 1 "VDD" H 8375 2950 50  0000 C CNN
+F 2 "" H 8375 2800 50  0001 C CNN
+F 3 "" H 8375 2800 50  0001 C CNN
+	1    8375 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R23
+U 1 1 618EA583
+P 8100 3000
+F 0 "R23" H 8170 3046 50  0000 L CNN
+F 1 "DNF" H 8170 2955 50  0000 L CNN
+F 2 "" V 8030 3000 50  0001 C CNN
+F 3 "" H 8100 3000 50  0001 C CNN
+	1    8100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R24
+U 1 1 618EB471
+P 8375 3000
+F 0 "R24" H 8445 3046 50  0000 L CNN
+F 1 "0R" H 8445 2955 50  0000 L CNN
+F 2 "" V 8305 3000 50  0001 C CNN
+F 3 "" H 8375 3000 50  0001 C CNN
+	1    8375 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2850 8100 2800
+Wire Wire Line
+	8375 2850 8375 2800
+Wire Wire Line
+	8375 3150 8375 3200
+Wire Wire Line
+	8100 3150 8100 3200
+Wire Wire Line
+	8100 3200 8375 3200
+Connection ~ 8375 3200
+Wire Wire Line
+	8375 3200 8375 3525
+Wire Wire Line
+	2300 2875 2450 2875
+$Comp
+L OSM_env01:PWR_FLAG #FLG0108
+U 1 1 61AE1271
+P 8825 3050
+F 0 "#FLG0108" H 8825 3145 50  0001 C CNN
+F 1 "PWR_FLAG" H 8825 3273 50  0000 C CNN
+F 2 "" H 8825 3050 60  0000 C CNN
+F 3 "" H 8825 3050 60  0000 C CNN
+	1    8825 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8375 3200 8825 3200
+Wire Wire Line
+	8825 3200 8825 3050
 $EndSCHEMATC

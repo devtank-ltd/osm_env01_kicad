@@ -5,10 +5,10 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 9 9
 Title "Open Smart Monitor"
-Date ""
-Rev "A"
-Comp "Devtank Ltd"
-Comment1 "www.devtank.co.uk"
+Date "2021-09-22"
+Rev "B"
+Comp "Devtank LTD"
+Comment1 "AB"
 Comment2 ""
 Comment3 ""
 Comment4 ""

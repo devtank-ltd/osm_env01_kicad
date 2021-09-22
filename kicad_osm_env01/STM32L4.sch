@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 9
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Open Smart Monitor"
+Date "2021-09-22"
+Rev "B"
+Comp "Devtank LTD"
+Comment1 "AB"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -180,19 +180,19 @@ Wire Wire Line
 	14350 5600 14775 5600
 Text Label 7125 1325 2    50   ~ 0
 STM_NRST
-Text Label 9750 10650 0    50   ~ 0
+Text Label 9750 10450 0    50   ~ 0
 STM_NRST
-Text Label 9750 10750 0    50   ~ 0
+Text Label 11250 10450 2    50   ~ 0
 SWD_IO
 Wire Wire Line
-	10250 10650 9750 10650
-Text Label 9750 10550 0    50   ~ 0
+	10250 10450 9750 10450
+Text Label 11250 10350 2    50   ~ 0
 SWCLK
 Wire Wire Line
-	10250 10550 9750 10550
+	10750 10350 11250 10350
 Wire Wire Line
-	10250 10750 9750 10750
-Text Notes 9825 9875 0    50   ~ 0
+	10750 10450 11250 10450
+Text Notes 9950 9850 0    50   ~ 0
 SWD Programming Header
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -285,17 +285,6 @@ F 1 "DNF" V 8100 1050 50  0000 L CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 7930 1125 50  0001 C CNN
 F 3 "" H 8000 1125 50  0001 C CNN
 	1    8000 1125
-	0    -1   -1   0   
-$EndComp
-$Comp
-L device:R R16
-U 1 1 6142BFB9
-P 8000 1375
-F 0 "R16" V 7900 1300 50  0000 L CNN
-F 1 "10k" V 7800 1300 50  0000 L CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 7930 1375 50  0001 C CNN
-F 3 "" H 8000 1375 50  0001 C CNN
-	1    8000 1375
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -855,18 +844,6 @@ Wire Wire Line
 Text HLabel 14825 7400 2    50   Input ~ 0
 GPIO15
 $Comp
-L Connector:Conn_01x06 J5
-U 1 1 61452AC8
-P 10450 10450
-F 0 "J5" H 10530 10442 50  0000 L CNN
-F 1 "Conn_01x06" H 10530 10351 50  0000 L CNN
-F 2 "Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical" H 10450 10450 50  0001 C CNN
-F 3 "~" H 10450 10450 50  0001 C CNN
-	1    10450 10450
-	1    0    0    -1  
-$EndComp
-NoConn ~ 10250 10450
-$Comp
 L power:+3V3 #PWR0120
 U 1 1 6147BC6E
 P 9975 10200
@@ -880,22 +857,18 @@ $EndComp
 $Comp
 L OSM_env01:GND #PWR0121
 U 1 1 6147C064
-P 10150 10875
-F 0 "#PWR0121" H 10150 10625 50  0001 C CNN
-F 1 "GND" H 10155 10702 50  0000 C CNN
-F 2 "" H 10150 10875 60  0000 C CNN
-F 3 "" H 10150 10875 60  0000 C CNN
-	1    10150 10875
+P 10850 10550
+F 0 "#PWR0121" H 10850 10300 50  0001 C CNN
+F 1 "GND" H 10855 10377 50  0000 C CNN
+F 2 "" H 10850 10550 60  0000 C CNN
+F 3 "" H 10850 10550 60  0000 C CNN
+	1    10850 10550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10250 10250 9975 10250
 Wire Wire Line
 	9975 10200 9975 10250
-Wire Wire Line
-	10150 10875 10150 10350
-Wire Wire Line
-	10150 10350 10250 10350
 Text HLabel 1675 4400 0    50   Input ~ 0
 BOOT0
 Wire Wire Line
@@ -1066,4 +1039,31 @@ Wire Wire Line
 	2075 4600 2075 4900
 Wire Wire Line
 	675  1000 1150 1000
+$Comp
+L Connector:Conn_02x03_Odd_Even J5
+U 1 1 6187503F
+P 10450 10350
+F 0 "J5" H 10500 10575 50  0000 C CNN
+F 1 "Conn_02x03_Odd_Even" H 10500 10576 50  0001 C CNN
+F 2 "" H 10450 10350 50  0001 C CNN
+F 3 "~" H 10450 10350 50  0001 C CNN
+	1    10450 10350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 10250 10850 10250
+Wire Wire Line
+	10850 10250 10850 10550
+NoConn ~ 10250 10350
+$Comp
+L device:R R16
+U 1 1 6142BFB9
+P 8000 1375
+F 0 "R16" V 7900 1300 50  0000 L CNN
+F 1 "10k" V 7800 1300 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 7930 1375 50  0001 C CNN
+F 3 "" H 8000 1375 50  0001 C CNN
+	1    8000 1375
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

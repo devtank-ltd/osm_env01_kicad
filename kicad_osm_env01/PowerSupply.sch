@@ -4,11 +4,11 @@ EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 9
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
+Title "Open Smart Monitor"
+Date "2021-09-22"
+Rev "B"
+Comp "Devtank LTD"
+Comment1 "AB"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -52,8 +52,8 @@ $Comp
 L OSM_env01-rescue:R-device-ESP32-EVB_Rev_D-rescue R47
 U 1 1 607F8C4F
 P 3150 6225
-F 0 "R47" H 2875 6275 50  0000 L CNN
-F 1 "36k" H 2875 6200 50  0000 L CNN
+F 0 "R47" H 2925 6275 50  0000 L CNN
+F 1 "36k" H 2925 6200 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 6225 50  0001 C CNN
 F 3 "" H 3150 6225 50  0001 C CNN
 F 4 "1%" H 3150 6225 50  0001 C CNN "Tolerance"
@@ -89,11 +89,11 @@ $Comp
 L OSM_env01-rescue:D_Schottky-device-ESP32-EVB_Rev_D-rescue D2
 U 1 1 607F8C65
 P 2800 5475
-F 0 "D2" H 2800 5691 50  0000 C CNN
-F 1 "RB160M-40TR" H 2800 5600 50  0000 C CNN
+F 0 "D2" H 3000 5300 50  0000 C CNN
+F 1 "RB160M-40TR" H 2775 5375 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 2800 5475 50  0001 C CNN
 F 3 "" H 2800 5475 50  0001 C CNN
-F 4 "2A" H 2825 5350 50  0000 C CNN "Current"
+F 4 "1A" H 2800 5600 50  0000 C CNN "Current"
 	1    2800 5475
 	-1   0    0    1   
 $EndComp
@@ -159,7 +159,7 @@ F 3 "" H 1275 6450 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4000 5475 4425 5475
+	4000 5475 4125 5475
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C6
 U 1 1 607F8CDD
@@ -181,44 +181,37 @@ Connection ~ 4425 5475
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP25
 U 1 1 607F8D09
-P 4700 5475
-F 0 "TP25" V 4700 5750 50  0000 C CNN
-F 1 "Test_Point" H 4725 5325 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4900 5475 50  0001 C CNN
-F 3 "~" H 4900 5475 50  0001 C CNN
-	1    4700 5475
-	1    0    0    -1  
+P 4125 5250
+F 0 "TP25" V 4125 5525 50  0000 C CNN
+F 1 "Test_Point" H 4150 5100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4325 5250 50  0001 C CNN
+F 3 "~" H 4325 5250 50  0001 C CNN
+	1    4125 5250
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4425 5475 4525 5475
-Wire Wire Line
-	4525 5425 4525 5475
-Connection ~ 4525 5475
-Wire Wire Line
-	4525 5475 4700 5475
+	4825 5425 4825 5475
 $Comp
 L power:+3V3 #PWR041
 U 1 1 607F8D3D
-P 7300 5475
-F 0 "#PWR041" H 7300 5325 50  0001 C CNN
-F 1 "+3V3" H 7315 5648 50  0000 C CNN
-F 2 "" H 7300 5475 50  0001 C CNN
-F 3 "" H 7300 5475 50  0001 C CNN
-	1    7300 5475
+P 7500 5475
+F 0 "#PWR041" H 7500 5325 50  0001 C CNN
+F 1 "+3V3" H 7515 5648 50  0000 C CNN
+F 2 "" H 7500 5475 50  0001 C CNN
+F 3 "" H 7500 5475 50  0001 C CNN
+	1    7500 5475
 	1    0    0    -1  
 $EndComp
-Connection ~ 7300 5475
-Wire Wire Line
-	7300 5475 7525 5475
+Connection ~ 7500 5475
 $Comp
 L power:+5V #PWR030
 U 1 1 607F8D54
-P 4525 5425
-F 0 "#PWR030" H 4525 5275 50  0001 C CNN
-F 1 "+5V" H 4540 5598 50  0000 C CNN
-F 2 "" H 4525 5425 50  0001 C CNN
-F 3 "" H 4525 5425 50  0001 C CNN
-	1    4525 5425
+P 4825 5425
+F 0 "#PWR030" H 4825 5275 50  0001 C CNN
+F 1 "+5V" H 4840 5598 50  0000 C CNN
+F 2 "" H 4825 5425 50  0001 C CNN
+F 3 "" H 4825 5425 50  0001 C CNN
+	1    4825 5425
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -499,11 +492,11 @@ $Comp
 L OSM_env01-rescue:D_Schottky-device-ESP32-EVB_Rev_D-rescue D4
 U 1 1 607F8E1E
 P 8775 3175
-F 0 "D4" H 8775 3391 50  0000 C CNN
-F 1 "RB160M-40TR" H 8775 3300 50  0000 C CNN
+F 0 "D4" H 8775 3100 50  0000 C CNN
+F 1 "RB160M-40TR" H 8900 3300 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 8775 3175 50  0001 C CNN
 F 3 "" H 8775 3175 50  0001 C CNN
-F 4 "2A" H 8800 3050 50  0000 C CNN "Current"
+F 4 "1A" H 8800 3050 50  0001 C CNN "Current"
 	1    8775 3175
 	0    1    1    0   
 $EndComp
@@ -554,17 +547,11 @@ BOOST_EN
 Wire Notes Line
 	525  4550 7425 4525
 Wire Notes Line
-	7425 3825 11200 3825
-Wire Notes Line
 	7425 4525 7450 550 
-Text HLabel 4375 5250 0    50   Input ~ 0
+Text HLabel 4225 5150 2    50   Input ~ 0
 5Vout
-Text HLabel 7575 5475 2    50   Input ~ 0
+Text HLabel 7775 5475 2    50   Input ~ 0
 3.3Vout
-Wire Wire Line
-	4375 5250 4425 5250
-Wire Wire Line
-	4425 5250 4425 5475
 Text HLabel 10075 4600 2    50   Input ~ 0
 BatMon
 Wire Wire Line
@@ -574,21 +561,18 @@ Wire Wire Line
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60A59EE0
-P 7525 5475
+P 7675 5575
 AR Path="/5F6F7717/60A59EE0" Ref="TP?"  Part="1" 
 AR Path="/60A59EE0" Ref="TP?"  Part="1" 
 AR Path="/608F4675/60A59EE0" Ref="TP?"  Part="1" 
 AR Path="/60688D25/60A59EE0" Ref="TP26"  Part="1" 
-F 0 "TP26" V 7525 5750 50  0000 C CNN
-F 1 "Test_Point" V 7600 5700 50  0001 C CNN
-F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7725 5475 50  0001 C CNN
-F 3 "~" H 7725 5475 50  0001 C CNN
-	1    7525 5475
-	1    0    0    -1  
+F 0 "TP26" V 7675 5850 50  0000 C CNN
+F 1 "Test_Point" V 7750 5800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 7875 5575 50  0001 C CNN
+F 3 "~" H 7875 5575 50  0001 C CNN
+	1    7675 5575
+	0    1    1    0   
 $EndComp
-Connection ~ 7525 5475
-Wire Wire Line
-	7525 5475 7575 5475
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60A6B22E
@@ -1051,7 +1035,7 @@ L device:D_Schottky D3
 U 1 1 607F8CF5
 P 6350 1900
 F 0 "D3" H 6400 2000 50  0000 R CNN
-F 1 "RB160M-40TR" H 6450 1800 50  0000 R CNN
+F 1 "RB160M-40TR" H 6625 1775 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-123" H 6350 1900 60  0001 C CNN
 F 3 "" H 6350 1900 60  0000 C CNN
 F 4 "SMA" H 6350 1900 60  0001 C CNN "Package"
@@ -1312,8 +1296,8 @@ $Comp
 L OSM_env01-rescue:MCP73833(MSOP10)-ESP32-EVB_Rev_D U2
 U 1 1 607F8B9E
 P 4550 2650
-F 0 "U2" H 4370 3110 60  0000 C CNN
-F 1 "MCP73833(MSOP10)" H 4610 2290 43  0000 C CNN
+F 0 "U2" H 4300 3225 60  0000 C CNN
+F 1 "MCP73833" H 4400 3125 43  0000 C CNN
 F 2 "Package_SO:MSOP-10_3x3mm_P0.5mm" H 4650 2650 60  0001 C CNN
 F 3 "" H 4650 2650 60  0001 C CNN
 F 4 "Value 1" H 4550 2650 60  0001 C CNN "Fieldname 1"
@@ -1514,7 +1498,7 @@ Battery Voltage Monitor\n\n\n
 Text Notes 11375 4775 0    118  ~ 24
 Voltage Rail Monitor\n\n\n
 Wire Notes Line
-	11100 4075 11100 6750
+	11075 3850 11075 6525
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP18
 U 1 1 6180ADF4
@@ -1558,8 +1542,6 @@ Connection ~ 4000 5475
 Wire Wire Line
 	3550 5850 3550 5475
 Connection ~ 3550 5475
-Wire Wire Line
-	3550 5475 3875 5475
 $Comp
 L device:R R20
 U 1 1 61550A8A
@@ -1643,12 +1625,12 @@ Wire Wire Line
 $Comp
 L device:CP C46
 U 1 1 61638EE1
-P 6900 5625
-F 0 "C46" H 7018 5671 50  0000 L CNN
-F 1 "10uF" H 7018 5580 50  0000 L CNN
-F 2 "" H 6938 5475 50  0001 C CNN
-F 3 "" H 6900 5625 50  0001 C CNN
-	1    6900 5625
+P 7300 5625
+F 0 "C46" H 7418 5671 50  0000 L CNN
+F 1 "DNF" H 7418 5580 50  0000 L CNN
+F 2 "" H 7338 5475 50  0001 C CNN
+F 3 "" H 7300 5625 50  0001 C CNN
+	1    7300 5625
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1656,7 +1638,7 @@ L device:C C32
 U 1 1 616392ED
 P 6525 5725
 F 0 "C32" H 6640 5771 50  0000 L CNN
-F 1 "100pF" H 6640 5680 50  0000 L CNN
+F 1 "DNF" H 6640 5680 50  0000 L CNN
 F 2 "" H 6563 5575 50  0001 C CNN
 F 3 "" H 6525 5725 50  0001 C CNN
 	1    6525 5725
@@ -1732,22 +1714,20 @@ Wire Wire Line
 	4925 6225 5325 6225
 Text Notes 5875 6225 0    50   ~ 0
 100pf used elsewhere\n
-Text Notes 3100 5200 0    118  ~ 24
+Text Notes 3050 4850 0    118  ~ 24
 5V and 3V3 Power Supplies\n\n\n
 Wire Wire Line
-	4925 5475 4700 5475
+	4925 5475 4825 5475
 Connection ~ 4925 5475
-Connection ~ 4700 5475
-Connection ~ 6900 5475
 $Comp
 L OSM_env01-rescue:D_Schottky-device-ESP32-EVB_Rev_D-rescue D9
 U 1 1 61835A37
 P 6025 4900
-F 0 "D9" H 6025 5116 50  0000 C CNN
+F 0 "D9" H 6025 4800 50  0000 C CNN
 F 1 "RB160M-40TR" H 6025 5025 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-123" H 6025 4900 50  0001 C CNN
 F 3 "" H 6025 4900 50  0001 C CNN
-F 4 "2A" H 6050 4775 50  0000 C CNN "Current"
+F 4 "1A" H 6050 4775 50  0001 C CNN "Current"
 	1    6025 4900
 	1    0    0    1   
 $EndComp
@@ -1769,13 +1749,14 @@ $Comp
 L device:D_Schottky D1
 U 1 1 614EE47C
 P 1300 1650
-F 0 "D1" H 1350 1750 50  0000 R CNN
-F 1 "RB160M-40TR" H 1400 1550 50  0000 R CNN
+F 0 "D1" H 1550 1475 50  0000 R CNN
+F 1 "RB160M-40TR" H 1550 1550 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-123" H 1300 1650 60  0001 C CNN
 F 3 "" H 1300 1650 60  0000 C CNN
 F 4 "SMA" H 1300 1650 60  0001 C CNN "Package"
 F 5 "Value2" H 1300 1650 60  0001 C CNN "Fieldname2"
 F 6 "Value3" H 1300 1650 60  0001 C CNN "Fieldname3"
+F 7 "1A" H 1300 1775 50  0000 C CNN "Current"
 	1    1300 1650
 	-1   0    0    1   
 $EndComp
@@ -1791,28 +1772,55 @@ F 3 "https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode" H 1450 2
 	1    1450 2375
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6900 5475 7300 5475
-Wire Wire Line
-	3875 5475 3875 5325
-$Comp
-L OSM_env01:PWR_FLAG #FLG0106
-U 1 1 61839B40
-P 3875 5325
-F 0 "#FLG0106" H 3875 5420 50  0001 C CNN
-F 1 "PWR_FLAG" H 3875 5548 50  0000 C CNN
-F 2 "" H 3875 5325 60  0000 C CNN
-F 3 "" H 3875 5325 60  0000 C CNN
-	1    3875 5325
-	1    0    0    -1  
-$EndComp
-Connection ~ 3875 5475
-Wire Wire Line
-	3875 5475 4000 5475
 Wire Notes Line
-	8050 3975 8050 6650
+	8225 3875 8225 6550
 Wire Wire Line
 	5150 3750 5150 3850
 Wire Wire Line
 	5150 3250 5150 3450
+Wire Wire Line
+	7500 5475 7675 5475
+Wire Wire Line
+	7675 5575 7675 5475
+Connection ~ 7675 5475
+Wire Wire Line
+	7675 5475 7775 5475
+Connection ~ 4825 5475
+Wire Wire Line
+	3550 5475 4000 5475
+Wire Wire Line
+	4425 5475 4825 5475
+Wire Wire Line
+	4225 5150 4125 5150
+Wire Wire Line
+	4125 5150 4125 5250
+Wire Wire Line
+	4125 5250 4125 5475
+Connection ~ 4125 5250
+Connection ~ 4125 5475
+Wire Wire Line
+	4125 5475 4425 5475
+$Comp
+L device:C C63
+U 1 1 615DB725
+P 6900 5625
+F 0 "C63" H 7015 5671 50  0000 L CNN
+F 1 "1uF" H 7015 5580 50  0000 L CNN
+F 2 "" H 6938 5475 50  0001 C CNN
+F 3 "" H 6900 5625 50  0001 C CNN
+	1    6900 5625
+	1    0    0    -1  
+$EndComp
+Connection ~ 7300 5475
+Wire Wire Line
+	7300 5475 7500 5475
+Wire Wire Line
+	6900 5475 7300 5475
+Connection ~ 6900 5475
+Wire Wire Line
+	7300 5775 7300 5875
+Wire Wire Line
+	7300 5875 6900 5875
+Wire Notes Line
+	7425 3825 16000 3825
 $EndSCHEMATC
