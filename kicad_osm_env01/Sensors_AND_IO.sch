@@ -20,7 +20,7 @@ P 1350 1275
 AR Path="/6092084A" Ref="R?"  Part="1" 
 AR Path="/608F4675/6092084A" Ref="R91"  Part="1" 
 F 0 "R91" H 1420 1321 50  0000 L CNN
-F 1 "10K" H 1420 1230 50  0000 L CNN
+F 1 "10k" H 1420 1230 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 1280 1275 50  0001 C CNN
 F 3 "" H 1350 1275 50  0001 C CNN
 	1    1350 1275
@@ -93,7 +93,7 @@ P 3075 1275
 AR Path="/6092088E" Ref="R?"  Part="1" 
 AR Path="/608F4675/6092088E" Ref="R93"  Part="1" 
 F 0 "R93" H 3145 1321 50  0000 L CNN
-F 1 "10K" H 3145 1230 50  0000 L CNN
+F 1 "10k" H 3145 1230 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3005 1275 50  0001 C CNN
 F 3 "" H 3075 1275 50  0001 C CNN
 	1    3075 1275
@@ -326,7 +326,7 @@ AR Path="/609BB494" Ref="C?"  Part="1"
 AR Path="/608F4675/609BB494" Ref="C40"  Part="1" 
 F 0 "C40" H 4700 6225 50  0000 L CNN
 F 1 "22uF" H 4700 6125 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4638 6025 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4638 6025 50  0001 C CNN
 F 3 "" H 4600 6175 50  0001 C CNN
 	1    4600 6175
 	1    0    0    -1  
@@ -339,7 +339,7 @@ AR Path="/609BB49A" Ref="C?"  Part="1"
 AR Path="/608F4675/609BB49A" Ref="C41"  Part="1" 
 F 0 "C41" H 5125 6225 50  0000 L CNN
 F 1 "100nF" H 5125 6125 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5063 6025 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5063 6025 50  0001 C CNN
 F 3 "" H 5025 6175 50  0001 C CNN
 	1    5025 6175
 	1    0    0    -1  
@@ -700,8 +700,6 @@ Wire Wire Line
 Wire Wire Line
 	5850 4075 5675 4075
 Wire Wire Line
-	6200 4125 6200 4075
-Wire Wire Line
 	6200 4500 6200 4425
 Wire Wire Line
 	6200 4500 6375 4500
@@ -767,28 +765,8 @@ F 3 "~" H 5700 3925 50  0001 C CNN
 	1    5500 3925
 	0    -1   1    0   
 $EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 612C3073
-P 5500 4650
-AR Path="/5F6F7717/612C3073" Ref="TP?"  Part="1" 
-AR Path="/612C3073" Ref="TP?"  Part="1" 
-AR Path="/608F4675/612C3073" Ref="TP88"  Part="1" 
-F 0 "TP88" V 5500 4925 50  0000 C CNN
-F 1 "Test_Point" V 5575 4875 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5700 4650 50  0001 C CNN
-F 3 "~" H 5700 4650 50  0001 C CNN
-	1    5500 4650
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	5500 4650 5675 4650
-Wire Wire Line
-	5675 4650 5675 4500
 Wire Wire Line
 	5675 4075 5675 3925
-Wire Wire Line
-	5675 3925 5500 3925
 Connection ~ 5675 4075
 Wire Wire Line
 	5675 4075 5575 4075
@@ -809,8 +787,6 @@ F 3 "" H 5850 4275 50  0001 C CNN
 	1    5850 4275
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5675 4500 5850 4500
 Connection ~ 6200 4500
 Wire Wire Line
 	5850 4425 5850 4500
@@ -819,9 +795,6 @@ Wire Wire Line
 	5850 4500 6200 4500
 Wire Wire Line
 	5850 4125 5850 4075
-Wire Wire Line
-	6200 4075 5850 4075
-Connection ~ 5850 4075
 $Comp
 L Devtank:STX-3000 J8
 U 1 1 6129B739
@@ -849,16 +822,11 @@ PULSE_IN1
 Text HLabel 2700 1550 0    50   Input ~ 0
 PULSE_IN2
 Wire Wire Line
-	5325 4500 5675 4500
-Wire Wire Line
-	5325 4300 5575 4300
-Wire Wire Line
 	5575 4300 5575 4075
 Connection ~ 5575 4075
 Wire Wire Line
 	5575 4075 5550 4075
 NoConn ~ 5325 4400
-Connection ~ 5675 4500
 $Comp
 L device:R R29
 U 1 1 622C1C38
@@ -950,12 +918,8 @@ F 3 "" H 9800 3100 60  0000 C CNN
 $EndComp
 Wire Wire Line
 	9800 3100 9800 3000
-Wire Wire Line
-	8625 2575 9000 2575
 Text HLabel 8625 2575 0    50   Input ~ 0
 SDA
-Wire Wire Line
-	9000 2350 8625 2350
 Text HLabel 8625 2350 0    50   Input ~ 0
 SCL
 $Comp
@@ -1005,15 +969,15 @@ Connection ~ 9800 1550
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 61DFE85D
-P 6775 4500
+P 6825 4500
 AR Path="/5F6F7717/61DFE85D" Ref="TP?"  Part="1" 
 AR Path="/61DFE85D" Ref="TP?"  Part="1" 
 AR Path="/608F4675/61DFE85D" Ref="TP56"  Part="1" 
-F 0 "TP56" V 6775 4775 50  0000 C CNN
-F 1 "Test_Point" V 6850 4725 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6975 4500 50  0001 C CNN
-F 3 "~" H 6975 4500 50  0001 C CNN
-	1    6775 4500
+F 0 "TP56" V 6825 4775 50  0000 C CNN
+F 1 "Test_Point" V 6900 4725 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 7025 4500 50  0001 C CNN
+F 3 "~" H 7025 4500 50  0001 C CNN
+	1    6825 4500
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1141,7 +1105,7 @@ U 1 1 619BA90A
 P 1700 1700
 F 0 "C49" H 1815 1746 50  0000 L CNN
 F 1 "10nF" H 1815 1655 50  0000 L CNN
-F 2 "" H 1738 1550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1738 1550 50  0001 C CNN
 F 3 "" H 1700 1700 50  0001 C CNN
 	1    1700 1700
 	1    0    0    -1  
@@ -1161,7 +1125,7 @@ U 1 1 619EFDCD
 P 3425 1700
 F 0 "C50" H 3540 1746 50  0000 L CNN
 F 1 "10nF" H 3540 1655 50  0000 L CNN
-F 2 "" H 3463 1550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 3463 1550 50  0001 C CNN
 F 3 "" H 3425 1700 50  0001 C CNN
 	1    3425 1700
 	1    0    0    -1  
@@ -1229,7 +1193,7 @@ U 1 1 617259E9
 P 3875 6025
 F 0 "R39" V 3775 6025 50  0000 C CNN
 F 1 "0R" V 3950 6025 50  0000 C CNN
-F 2 "" V 3805 6025 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3805 6025 50  0001 C CNN
 F 3 "" H 3875 6025 50  0001 C CNN
 	1    3875 6025
 	0    1    1    0   
@@ -1278,20 +1242,6 @@ Wire Wire Line
 	2025 6400 2175 6400
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
-U 1 1 6176A132
-P 1750 6700
-AR Path="/5F6F7717/6176A132" Ref="TP?"  Part="1" 
-AR Path="/6176A132" Ref="TP?"  Part="1" 
-AR Path="/608F4675/6176A132" Ref="TP19"  Part="1" 
-F 0 "TP19" V 1750 6975 50  0000 C CNN
-F 1 "Test_Point" V 1825 6925 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 1950 6700 50  0001 C CNN
-F 3 "~" H 1950 6700 50  0001 C CNN
-	1    1750 6700
-	0    -1   -1   0   
-$EndComp
-$Comp
-L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 60A49311
 P 4325 6025
 AR Path="/5F6F7717/60A49311" Ref="TP?"  Part="1" 
@@ -1337,23 +1287,14 @@ U 1 1 6193D602
 P 1900 6975
 F 0 "R40" H 1970 7021 50  0000 L CNN
 F 1 "100k" H 1970 6930 50  0000 L CNN
-F 2 "" V 1830 6975 50  0001 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1830 6975 50  0001 C CNN
 F 3 "" H 1900 6975 50  0001 C CNN
 	1    1900 6975
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1650 6825 1825 6825
 Connection ~ 1900 6825
 Wire Wire Line
 	1900 6825 2175 6825
-Wire Wire Line
-	1750 6700 1825 6700
-Wire Wire Line
-	1825 6700 1825 6825
-Connection ~ 1825 6825
-Wire Wire Line
-	1825 6825 1900 6825
 $Comp
 L OSM_env01:GND #PWR0149
 U 1 1 61972799
@@ -1418,4 +1359,23 @@ Wire Wire Line
 	6325 1200 6550 1200
 Wire Wire Line
 	5625 1200 6325 1200
+Wire Wire Line
+	8625 2350 9000 2350
+Wire Wire Line
+	9000 2575 8625 2575
+Wire Wire Line
+	6200 4125 6200 4075
+Wire Wire Line
+	6200 4075 5850 4075
+Connection ~ 5850 4075
+Wire Wire Line
+	5675 3925 5500 3925
+Wire Wire Line
+	5325 4300 5575 4300
+Wire Wire Line
+	6825 4500 6775 4500
+Wire Wire Line
+	5325 4500 5850 4500
+Wire Wire Line
+	1650 6825 1900 6825
 $EndSCHEMATC
