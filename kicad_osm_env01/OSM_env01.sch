@@ -19,24 +19,24 @@ Text Label 6150 5450 0    50   ~ 0
 5V_IN
 Text Notes 1975 8275 0    118  ~ 24
 External Connector
-Text Label 2525 9475 0    50   ~ 0
-RS485+
 Text Label 2525 9575 0    50   ~ 0
+RS485+
+Text Label 2525 9475 0    50   ~ 0
 RS485-
 $Comp
 L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR07
 U 1 1 5EEBB9FF
-P 3425 10425
-F 0 "#PWR07" H 3425 10175 50  0001 C CNN
-F 1 "GND" H 3430 10252 50  0000 C CNN
-F 2 "" H 3425 10425 60  0000 C CNN
-F 3 "" H 3425 10425 60  0000 C CNN
-	1    3425 10425
+P 3175 10425
+F 0 "#PWR07" H 3175 10175 50  0001 C CNN
+F 1 "GND" H 3180 10252 50  0000 C CNN
+F 2 "" H 3175 10425 60  0000 C CNN
+F 3 "" H 3175 10425 60  0000 C CNN
+	1    3175 10425
 	1    0    0    -1  
 $EndComp
-Text Label 2525 9875 0    50   ~ 0
+Text Label 2525 9800 0    50   ~ 0
 PULSE1_EXT
-Text Label 2525 9975 0    50   ~ 0
+Text Label 2525 9700 0    50   ~ 0
 PULSE2_EXT
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP8
@@ -44,7 +44,7 @@ U 1 1 5EC4796F
 P 6150 5450
 F 0 "TP8" V 6150 5700 50  0000 C CNN
 F 1 "Test_Point" V 6150 5825 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6350 5450 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6350 5450 50  0001 C CNN
 F 3 "~" H 6350 5450 50  0001 C CNN
 	1    6150 5450
 	0    -1   -1   0   
@@ -123,8 +123,6 @@ F 3 "" H 2100 9625 50  0001 C CNN
 	1    2100 9625
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	2525 9975 3125 9975
 Text Notes 1775 6725 0    118  ~ 24
 STM I2C Pullup
 $Comp
@@ -180,38 +178,34 @@ Wire Wire Line
 Wire Wire Line
 	6850 9325 6850 9125
 Wire Wire Line
-	7250 9425 6875 9425
+	7750 9725 8125 9725
 Wire Wire Line
-	7250 9525 6875 9525
-Wire Wire Line
-	7250 9625 6875 9625
-Wire Wire Line
-	7250 9725 6875 9725
-Wire Wire Line
-	7250 9825 6875 9825
-Wire Wire Line
-	7750 9225 8125 9225
+	7750 9525 8275 9525
 Wire Wire Line
 	7750 9325 8125 9325
 Wire Wire Line
-	7750 9425 8125 9425
-Text Label 8125 9425 2    50   ~ 0
+	7750 9225 8275 9225
+Wire Wire Line
+	7750 9825 8125 9825
+Wire Wire Line
+	7750 9625 8125 9625
+Wire Wire Line
+	7250 9725 6875 9725
+Wire Wire Line
+	7250 9525 6875 9525
+Text Label 6875 9525 0    50   ~ 0
 CS
 $Comp
 L OSM_env01:GND #PWR08
 U 1 1 60DF2DDC
-P 7900 9925
-F 0 "#PWR08" H 7900 9675 50  0001 C CNN
-F 1 "GND" H 7905 9752 50  0000 C CNN
-F 2 "" H 7900 9925 60  0000 C CNN
-F 3 "" H 7900 9925 60  0000 C CNN
-	1    7900 9925
-	-1   0    0    -1  
+P 7100 10125
+F 0 "#PWR08" H 7100 9875 50  0001 C CNN
+F 1 "GND" H 7105 9952 50  0000 C CNN
+F 2 "" H 7100 10125 60  0000 C CNN
+F 3 "" H 7100 10125 60  0000 C CNN
+	1    7100 10125
+	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7900 9925 7900 9825
-Wire Wire Line
-	7750 9825 7900 9825
 $Sheet
 S 13275 5600 925  1025
 U 60688D25
@@ -249,8 +243,8 @@ $EndSheet
 Text Notes 9725 4800 0    118  ~ 24
 Easy access gnd\npins for debug\n
 Wire Wire Line
-	7750 9525 8125 9525
-Text Label 8125 9525 2    50   ~ 0
+	7750 9425 8125 9425
+Text Label 8125 9425 2    50   ~ 0
 ADC+GPIO
 Text Label 4425 1600 2    50   ~ 0
 RS232_TX
@@ -375,15 +369,15 @@ Wire Wire Line
 	2875 7100 2875 7075
 Wire Wire Line
 	2875 7400 3325 7400
-Text Label 6875 9425 0    50   ~ 0
+Text Label 8125 9725 2    50   ~ 0
 STM_SCL
-Text Label 8125 9225 2    50   ~ 0
+Text Label 8125 9625 2    50   ~ 0
 STM_MOSI
-Text Label 8125 9325 2    50   ~ 0
+Text Label 6875 9725 0    50   ~ 0
 STM_SCK
-Text Label 6875 9825 0    50   ~ 0
+Text Label 8125 9825 2    50   ~ 0
 STM_MISO
-Text Label 6875 9525 0    50   ~ 0
+Text Label 8275 9525 2    50   ~ 0
 STM_SDA
 Text Label 3325 7400 2    50   ~ 0
 STM_SCL
@@ -487,13 +481,13 @@ Text Label 6575 3475 0    50   ~ 0
 MIC_WS
 Wire Wire Line
 	7150 3475 6575 3475
-Text Label 1275 3300 0    60   ~ 0
+Text Label 1275 5250 0    60   ~ 0
 HPM_EN
 Wire Wire Line
 	1875 3300 1275 3300
-Text Label 6875 9625 0    50   ~ 0
+Text Label 8125 9325 2    50   ~ 0
 STM1_TX
-Text Label 6875 9725 0    50   ~ 0
+Text Label 8275 9225 2    50   ~ 0
 STM1_RX
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
@@ -503,7 +497,7 @@ AR Path="/60688D25/608D87A6" Ref="TP?"  Part="1"
 AR Path="/608D87A6" Ref="TP72"  Part="1" 
 F 0 "TP72" V 6550 1775 50  0000 C CNN
 F 1 "Test_Point" V 6654 1572 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6750 1500 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6750 1500 50  0001 C CNN
 F 3 "~" H 6750 1500 50  0001 C CNN
 	1    6550 1500
 	0    -1   1    0   
@@ -581,9 +575,7 @@ Text Notes 12800 5200 0    118  ~ 24
 Power Supply and Battery\n
 Text Label 1125 2000 0    50   ~ 0
 CT+
-Text Label 2525 9775 0    50   ~ 0
-CAN_L
-Text Label 2525 9675 0    50   ~ 0
+Text Label 2525 9975 0    50   ~ 0
 CAN_H
 $Comp
 L OSM_env01-rescue:C-device-ESP32-EVB_Rev_D-rescue C76
@@ -631,33 +623,33 @@ F17 "GPIO1" I L 1875 3150 50
 F18 "GPIO2" I L 1875 3300 50 
 F19 "GPIO3" I L 1875 3450 50 
 F20 "GPIO4" I L 1875 3600 50 
-F21 "GPIO5" I L 1875 3750 50 
-F22 "GPIO6" I L 1875 3900 50 
-F23 "ADC1" I L 1875 1850 50 
-F24 "ADC2" I L 1875 2000 50 
-F25 "ADC3" I L 1875 2150 50 
-F26 "ADC4" I L 1875 2300 50 
-F27 "ADC5" I L 1875 2450 50 
-F28 "ADC6" I L 1875 2600 50 
-F29 "LPUART1_RX" I R 3350 2800 50 
-F30 "LPUART1_TX" I R 3350 2950 50 
-F31 "UART4_RX" I R 3350 2400 50 
-F32 "UART4_TX" I R 3350 2550 50 
-F33 "WKUP2" I L 1875 1500 50 
-F34 "SAI1_SCK_A" I R 3350 4700 50 
-F35 "SAI1_FS_A" I R 3350 5000 50 
-F36 "SAI1_SD_A" I R 3350 4850 50 
-F37 "GPIO7" I L 1875 4050 50 
-F38 "GPIO8" I L 1875 4200 50 
-F39 "GPIO9" I L 1875 4350 50 
-F40 "GPIO10" I L 1875 4500 50 
-F41 "GPIO11" I L 1875 4650 50 
-F42 "GPIO12" I L 1875 4800 50 
-F43 "GPIO13" I L 1875 4950 50 
-F44 "GPIO14" I L 1875 5100 50 
-F45 "GPIO15" I L 1875 5250 50 
-F46 "BOOT0" I L 1875 1350 50 
-F47 "ADC7" I L 1875 2750 50 
+F21 "GPIO6" I L 1875 3900 50 
+F22 "ADC1" I L 1875 1850 50 
+F23 "ADC2" I L 1875 2000 50 
+F24 "ADC3" I L 1875 2150 50 
+F25 "ADC4" I L 1875 2300 50 
+F26 "ADC5" I L 1875 2450 50 
+F27 "ADC6" I L 1875 2600 50 
+F28 "LPUART1_RX" I R 3350 2800 50 
+F29 "LPUART1_TX" I R 3350 2950 50 
+F30 "UART4_RX" I R 3350 2400 50 
+F31 "UART4_TX" I R 3350 2550 50 
+F32 "WKUP2" I L 1875 1500 50 
+F33 "SAI1_SCK_A" I R 3350 4700 50 
+F34 "SAI1_FS_A" I R 3350 5000 50 
+F35 "SAI1_SD_A" I R 3350 4850 50 
+F36 "GPIO7" I L 1875 4050 50 
+F37 "GPIO8" I L 1875 4200 50 
+F38 "GPIO9" I L 1875 4350 50 
+F39 "GPIO10" I L 1875 4500 50 
+F40 "GPIO11" I L 1875 4650 50 
+F41 "GPIO12" I L 1875 4800 50 
+F42 "GPIO13" I L 1875 4950 50 
+F43 "GPIO14" I L 1875 5100 50 
+F44 "GPIO15" I L 1875 5250 50 
+F45 "BOOT0" I L 1875 1350 50 
+F46 "ADC7" I L 1875 2750 50 
+F47 "ADC8" I L 1875 3750 50 
 $EndSheet
 Wire Wire Line
 	3350 3750 3950 3750
@@ -747,11 +739,11 @@ Text Label 9300 1650 2    50   ~ 0
 PULSE1_OUT
 Wire Wire Line
 	9300 1650 8700 1650
-Text Label 1275 3150 0    50   ~ 0
+Text Label 1275 4200 0    50   ~ 0
 PULSE2_OUT
 Wire Wire Line
 	1275 3150 1875 3150
-Text Label 1275 5250 0    50   ~ 0
+Text Label 1275 4350 0    50   ~ 0
 PULSE1_OUT
 Wire Wire Line
 	1275 5250 1875 5250
@@ -772,16 +764,16 @@ Wire Wire Line
 Wire Wire Line
 	3850 2150 4425 2150
 Wire Wire Line
-	3425 10375 3425 10425
+	3175 10375 3175 10425
 Text Label 7975 6600 2    50   ~ 0
 STM_WAKEUP
 Text Label 7925 7050 2    50   ~ 0
 STM_BOOT0
-Text Label 1275 4050 0    50   ~ 0
+Text Label 1275 3150 0    50   ~ 0
 GPIO_7
 Wire Wire Line
 	1275 4050 1875 4050
-Text Label 1275 4200 0    50   ~ 0
+Text Label 1275 3450 0    50   ~ 0
 GPIO_8
 Wire Wire Line
 	1275 4200 1875 4200
@@ -797,8 +789,6 @@ Wire Wire Line
 	1275 3750 1875 3750
 Wire Wire Line
 	1275 4800 1875 4800
-Wire Wire Line
-	1275 4950 1875 4950
 Wire Wire Line
 	1275 3450 1875 3450
 Wire Wire Line
@@ -1007,40 +997,40 @@ Wire Notes Line
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 61CAC82F
-P 1275 3450
+P 1275 3300
 AR Path="/60688D25/61CAC82F" Ref="TP?"  Part="1" 
 AR Path="/61CAC82F" Ref="TP17"  Part="1" 
-F 0 "TP17" V 1275 3725 50  0000 C CNN
-F 1 "Test_Point" V 1379 3522 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 3450 50  0001 C CNN
-F 3 "~" H 1475 3450 50  0001 C CNN
-	1    1275 3450
+F 0 "TP17" V 1275 3575 50  0000 C CNN
+F 1 "Test_Point" V 1379 3372 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 3300 50  0001 C CNN
+F 3 "~" H 1475 3300 50  0001 C CNN
+	1    1275 3300
 	0    -1   1    0   
 $EndComp
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 61CAC83B
-P 1275 4950
+P 1275 4800
 AR Path="/60688D25/61CAC83B" Ref="TP?"  Part="1" 
 AR Path="/61CAC83B" Ref="TP15"  Part="1" 
-F 0 "TP15" V 1275 5225 50  0000 C CNN
-F 1 "Test_Point" V 1379 5022 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 4950 50  0001 C CNN
-F 3 "~" H 1475 4950 50  0001 C CNN
-	1    1275 4950
+F 0 "TP15" V 1275 5075 50  0000 C CNN
+F 1 "Test_Point" V 1379 4872 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 4800 50  0001 C CNN
+F 3 "~" H 1475 4800 50  0001 C CNN
+	1    1275 4800
 	0    -1   1    0   
 $EndComp
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
 U 1 1 61CAC841
-P 1275 4800
+P 1275 4950
 AR Path="/60688D25/61CAC841" Ref="TP?"  Part="1" 
 AR Path="/61CAC841" Ref="TP10"  Part="1" 
-F 0 "TP10" V 1275 5075 50  0000 C CNN
-F 1 "Test_Point" V 1379 4872 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 4800 50  0001 C CNN
-F 3 "~" H 1475 4800 50  0001 C CNN
-	1    1275 4800
+F 0 "TP10" V 1275 5225 50  0000 C CNN
+F 1 "Test_Point" V 1379 5022 50  0001 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 1475 4950 50  0001 C CNN
+F 3 "~" H 1475 4950 50  0001 C CNN
+	1    1275 4950
 	0    -1   1    0   
 $EndComp
 $Comp
@@ -1136,20 +1126,12 @@ F 3 "~" H 7450 9525 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7750 9625 7900 9625
-Connection ~ 7900 9825
-Wire Wire Line
-	7900 9625 7900 9725
-Wire Wire Line
-	7750 9725 7900 9725
-Connection ~ 7900 9725
-Wire Wire Line
-	7900 9725 7900 9825
+	7250 9825 7100 9825
 Wire Wire Line
 	13450 3800 14050 3800
 Text Label 13450 3800 0    50   ~ 0
 RE_485
-Text Label 1275 4350 0    50   ~ 0
+Text Label 1275 4050 0    50   ~ 0
 RE_485
 $Comp
 L OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue TP?
@@ -1198,32 +1180,14 @@ LORA_RX
 $Comp
 L Connector:DB9_Female_MountingHoles J2
 U 1 1 614FFD41
-P 3425 9775
-F 0 "J2" H 3605 9777 50  0000 L CNN
-F 1 "DB9_Female_MountingHoles" H 3605 9686 50  0000 L CNN
-F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 3425 9775 50  0001 C CNN
-F 3 "" H 3425 9775 50  0001 C CNN
-	1    3425 9775
+P 3525 9775
+F 0 "J2" H 3705 9777 50  0000 L CNN
+F 1 "DB9_Female_MountingHoles" H 3705 9686 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm" H 3525 9775 50  0001 C CNN
+F 3 "" H 3525 9775 50  0001 C CNN
+	1    3525 9775
 	1    0    0    -1  
 $EndComp
-$Comp
-L OSM_env01-rescue:GND-ESP32-EVB_Rev_D #PWR0104
-U 1 1 61678C6A
-P 3025 10425
-F 0 "#PWR0104" H 3025 10175 50  0001 C CNN
-F 1 "GND" H 3030 10252 50  0000 C CNN
-F 2 "" H 3025 10425 60  0000 C CNN
-F 3 "" H 3025 10425 60  0000 C CNN
-	1    3025 10425
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3025 10175 3125 10175
-Wire Wire Line
-	3025 10075 3025 10175
-Connection ~ 3025 10175
-Wire Wire Line
-	3025 10075 3125 10075
 $Comp
 L device:R R49
 U 1 1 61718F6E
@@ -1269,47 +1233,23 @@ F 3 "" H 3025 8850 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	3125 9375 3025 9375
-Wire Wire Line
 	3025 9375 3025 9225
 Wire Wire Line
 	2775 8925 2775 8850
 Wire Wire Line
 	3025 8925 3025 8850
 Wire Wire Line
-	1950 10150 2525 10150
-Wire Wire Line
-	2525 10150 2525 9975
-Wire Wire Line
-	2250 9975 2450 9975
-Wire Wire Line
-	2450 9975 2450 9875
-Wire Wire Line
-	2450 9875 3125 9875
-Wire Wire Line
-	2275 9775 2275 9800
-Wire Wire Line
-	2275 9800 1950 9800
-Wire Wire Line
-	2275 9775 3125 9775
-Wire Wire Line
 	2250 9625 2350 9625
-Wire Wire Line
-	2350 9625 2350 9675
-Wire Wire Line
-	2350 9675 3125 9675
 Wire Wire Line
 	2400 9575 2400 9450
 Wire Wire Line
 	2400 9450 1950 9450
 Wire Wire Line
-	2400 9575 3125 9575
+	2400 9575 3100 9575
 Wire Wire Line
 	2450 9475 2450 9275
 Wire Wire Line
 	2250 9275 2450 9275
-Wire Wire Line
-	2450 9475 3125 9475
 $Comp
 L OSM_env01:GND #PWR0153
 U 1 1 619C119A
@@ -1350,8 +1290,6 @@ Wire Wire Line
 Connection ~ 1475 9450
 Wire Wire Line
 	1475 10150 1475 10450
-Wire Wire Line
-	3025 10175 3025 10425
 Connection ~ 3025 9225
 Wire Wire Line
 	2775 9225 3025 9225
@@ -1363,7 +1301,7 @@ AR Path="/60688D25/61B254BD" Ref="TP?"  Part="1"
 AR Path="/61B254BD" Ref="TP31"  Part="1" 
 F 0 "TP31" V 15800 2000 50  0000 C CNN
 F 1 "Test_Point" V 15904 1797 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 16000 1725 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 16000 1725 50  0001 C CNN
 F 3 "~" H 16000 1725 50  0001 C CNN
 	1    15800 1725
 	0    1    1    0   
@@ -1376,9 +1314,71 @@ AR Path="/60688D25/61B3B42E" Ref="TP?"  Part="1"
 AR Path="/61B3B42E" Ref="TP32"  Part="1" 
 F 0 "TP32" V 15800 2275 50  0000 C CNN
 F 1 "Test_Point" V 15904 2072 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 16000 2000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 16000 2000 50  0001 C CNN
 F 3 "~" H 16000 2000 50  0001 C CNN
 	1    15800 2000
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	7100 9825 7100 10125
+Wire Wire Line
+	7100 9825 7100 9625
+Wire Wire Line
+	7100 9625 7250 9625
+Connection ~ 7100 9825
+Wire Wire Line
+	7100 9625 7100 9425
+Wire Wire Line
+	7100 9425 7250 9425
+Connection ~ 7100 9625
+Wire Wire Line
+	1275 4950 1875 4950
+Wire Wire Line
+	3000 10150 3000 10175
+Wire Wire Line
+	1950 10150 3000 10150
+Wire Wire Line
+	2850 9975 2850 10075
+Wire Wire Line
+	2250 9975 2850 9975
+Text Label 2525 10150 0    50   ~ 0
+CAN_L
+Wire Wire Line
+	2950 9975 2950 9800
+Wire Wire Line
+	3025 9700 2350 9700
+Wire Wire Line
+	1950 9800 2950 9800
+Wire Wire Line
+	2350 9625 2350 9700
+Wire Wire Line
+	3025 9775 3025 9700
+Wire Wire Line
+	3100 9675 3100 9575
+Wire Wire Line
+	2950 9975 3225 9975
+Wire Wire Line
+	2850 10075 3225 10075
+Wire Wire Line
+	3000 10175 3225 10175
+Wire Wire Line
+	3025 9375 3225 9375
+Wire Wire Line
+	2450 9475 3225 9475
+Wire Wire Line
+	3100 9675 3225 9675
+Wire Wire Line
+	3025 9775 3225 9775
+Wire Wire Line
+	3225 9575 3175 9575
+Wire Wire Line
+	3175 9575 3175 9875
+Wire Wire Line
+	3175 9875 3225 9875
+Wire Wire Line
+	3175 9875 3175 10375
+Connection ~ 3175 9875
+Connection ~ 3175 10375
+Wire Wire Line
+	3175 10375 3525 10375
 $EndSCHEMATC

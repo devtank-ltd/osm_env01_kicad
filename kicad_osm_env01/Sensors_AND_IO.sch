@@ -928,7 +928,7 @@ U 1 1 6239ED76
 P 8750 5200
 F 0 "U11" H 8025 5875 60  0000 R CNN
 F 1 "HPP845E131R5" H 8550 5775 60  0000 R CNN
-F 2 "Devtank_PCB_lib:HDC2080D" H 8750 5140 60  0001 C CNN
+F 2 "Devtank_PCB_lib:HPP845E131R5_temperature_humidity_sensor" H 8750 5140 60  0001 C CNN
 F 3 "" H 8750 5200 60  0000 C CNN
 	1    8750 5200
 	1    0    0    -1  
@@ -989,7 +989,7 @@ AR Path="/61E27828" Ref="TP?"  Part="1"
 AR Path="/608F4675/61E27828" Ref="TP14"  Part="1" 
 F 0 "TP14" V 4975 2675 50  0000 C CNN
 F 1 "Test_Point" V 5050 2625 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5175 2400 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5175 2400 50  0001 C CNN
 F 3 "~" H 5175 2400 50  0001 C CNN
 	1    4975 2400
 	0    -1   1    0   
@@ -1003,7 +1003,7 @@ AR Path="/61E2D213" Ref="TP?"  Part="1"
 AR Path="/608F4675/61E2D213" Ref="TP13"  Part="1" 
 F 0 "TP13" V 4975 1875 50  0000 C CNN
 F 1 "Test_Point" V 5050 1825 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5175 1600 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 5175 1600 50  0001 C CNN
 F 3 "~" H 5175 1600 50  0001 C CNN
 	1    4975 1600
 	0    -1   1    0   
@@ -1017,7 +1017,7 @@ AR Path="/61E323FF" Ref="TP?"  Part="1"
 AR Path="/608F4675/61E323FF" Ref="TP49"  Part="1" 
 F 0 "TP49" V 6525 2150 50  0000 C CNN
 F 1 "Test_Point" V 6600 2100 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 6725 1875 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 6725 1875 50  0001 C CNN
 F 3 "~" H 6725 1875 50  0001 C CNN
 	1    6525 1875
 	0    1    1    0   

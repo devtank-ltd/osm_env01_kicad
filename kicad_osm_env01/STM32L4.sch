@@ -637,11 +637,11 @@ Text HLabel 1675 6500 0    50   Input ~ 0
 GPIO1
 Wire Wire Line
 	2150 6600 1675 6600
-Text HLabel 1675 6600 0    50   Input ~ 0
+Text HLabel 1675 6700 0    50   Input ~ 0
 GPIO2
 Wire Wire Line
 	2150 6700 1675 6700
-Text HLabel 1675 6700 0    50   Input ~ 0
+Text HLabel 14825 6100 2    50   Input ~ 0
 GPIO3
 Wire Wire Line
 	2150 6800 1675 6800
@@ -650,7 +650,7 @@ GPIO4
 Wire Wire Line
 	2150 6000 1675 6000
 Text HLabel 1675 6000 0    50   Input ~ 0
-GPIO5
+ADC8
 Wire Wire Line
 	14350 6200 14825 6200
 Text HLabel 14825 6200 2    50   Input ~ 0
@@ -825,7 +825,7 @@ Text HLabel 14825 5700 2    50   Input ~ 0
 GPIO10
 Wire Wire Line
 	14350 6100 14825 6100
-Text HLabel 14825 6100 2    50   Input ~ 0
+Text HLabel 1675 6600 0    50   Input ~ 0
 GPIO11
 Wire Wire Line
 	14350 6300 14825 6300

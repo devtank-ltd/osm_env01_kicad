@@ -1,4 +1,4 @@
--9206798005970108466
+-9206796373404904466
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -43140,6 +43140,13 @@ mounting hole 2.5mm no annular
 0
 0
 0
+Devtank_PCB_lib
+HPP845E131R5_temperature_humidity_sensor
+
+
+0
+7
+7
 Devtank_PCB_lib
 HTSSOP-16_4.4x5mm_Pitch0.65mm
 FE Package; 16-Lead Plastic TSSOP (4.4mm); Exposed Pad Variation BB; (see Linear Technology 1956f.pdf)
