@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 9
 Title "Open Smart Monitor"
-Date "2021-09-22"
+Date "2021-09-29"
 Rev "B"
 Comp "Devtank LTD"
-Comment1 ""
+Comment1 "Part No: 304-010"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -130,7 +130,6 @@ Wire Wire Line
 Connection ~ 5725 4850
 Wire Wire Line
 	5725 4850 5825 4850
-NoConn ~ 6675 3950
 NoConn ~ 6675 3825
 NoConn ~ 6675 3525
 NoConn ~ 6675 3400
@@ -370,4 +369,5 @@ Wire Wire Line
 	3250 2125 3250 2375
 Wire Wire Line
 	3775 2375 4125 2375
+NoConn ~ 6675 3950
 $EndSCHEMATC

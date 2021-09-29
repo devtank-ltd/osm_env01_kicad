@@ -5,10 +5,10 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 9
 Title "Open Smart Monitor"
-Date "2021-09-22"
+Date "2021-09-29"
 Rev "B"
 Comp "Devtank LTD"
-Comment1 "AB"
+Comment1 "Part No: 304-010"
 Comment2 ""
 Comment3 ""
 Comment4 ""

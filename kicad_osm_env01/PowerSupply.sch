@@ -5,10 +5,10 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 2 9
 Title "Open Smart Monitor"
-Date "2021-09-22"
+Date "2021-09-29"
 Rev "B"
 Comp "Devtank LTD"
-Comment1 "AB"
+Comment1 "Part No: 304-010"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -1367,7 +1367,7 @@ U 1 1 607F8B70
 P 5625 3525
 F 0 "BAT1" V 5575 3175 60  0000 L CNN
 F 1 "18650" V 5575 3625 51  0000 L CNN
-F 2 "Battery:BatteryHolder_Keystone_1042_1x18650" H 5625 3525 60  0001 C CNN
+F 2 "Devtank_PCB_lib:BatteryHolder_Keystone_1042_1x18650" H 5625 3525 60  0001 C CNN
 F 3 "" H 5625 3525 60  0000 C CNN
 F 4 "Value 1" H 5625 3525 60  0001 C CNN "Fieldname 1"
 F 5 "Value2" H 5625 3525 60  0001 C CNN "Fieldname2"

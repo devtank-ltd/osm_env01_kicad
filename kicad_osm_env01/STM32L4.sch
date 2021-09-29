@@ -5,10 +5,10 @@ $Descr A3 16535 11693
 encoding utf-8
 Sheet 6 9
 Title "Open Smart Monitor"
-Date "2021-09-22"
+Date "2021-09-29"
 Rev "B"
 Comp "Devtank LTD"
-Comment1 "AB"
+Comment1 "Part No: 304-010"
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -794,7 +794,7 @@ Connection ~ 11775 1675
 Wire Wire Line
 	2150 5700 1675 5700
 Text HLabel 1675 5700 0    50   Input ~ 0
-ADC1
+GPIO16
 Wire Wire Line
 	14350 5000 14825 5000
 Text HLabel 14825 5000 2    50   Input ~ 0

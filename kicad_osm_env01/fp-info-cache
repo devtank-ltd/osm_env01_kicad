@@ -1,4 +1,4 @@
--9206796373404904466
+-9206794739287825466
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -42930,6 +42930,13 @@ BGA_132_ice40
 0
 132
 132
+Devtank_PCB_lib
+BatteryHolder_Keystone_1042_1x18650
+Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
+18650 Keystone 1042 Li-ion
+0
+2
+2
 Devtank_PCB_lib
 BatteryHolder_Keystone_1061_1x20mm
 
