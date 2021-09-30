@@ -1,19 +1,19 @@
 Title,Open Smart Monitor
 Revision,B
-Date,2021-09-22
-Generated,Wed 22 Sep 2021 13:18:09 BST
+Date,2021-09-29
+Generated,Wed 29 Sep 2021 14:41:57 BST
 Company,Devtank LTD
-Comment 1,AB
+Comment 1,Part No: 304-010
 Comment 2,
 Comment 3,
 Comment 4,
-Total Parts,272
-Total Unique Parts,84
+Total Parts,279
+Total Unique Parts,85
 
 
 
 Ref,Qty,Value,Footprint,Datasheet,Current,Devtank,Field4,Field5,Field6,Field7,Field8,Fieldname 1,Fieldname2,Fieldname3,MANUFACTURER,Package,Voltage,
-BAT1 ,1,18650,Battery:BatteryHolder_Keystone_1042_1x18650,, , , , , , , ,Value 1,Value2,Value3, , , 
+BAT1 ,1,18650,Devtank_PCB_lib:BatteryHolder_Keystone_1042_1x18650,, , , , , , , ,Value 1,Value2,Value3, , , 
 C1 C12 ,2,18pF,Capacitor_SMD:C_0402_1005Metric,, , , , , , , , , , , , , 
 C2 ,1,10uF,Capacitor_SMD:C_0603_1608Metric,, , , , , , , , , , , , ,10V
 C3 C4 C9 C11 ,4,47uF,Capacitor_SMD:C_0805_2012Metric,, , , , , , , , , , , ,0805, 
@@ -29,29 +29,29 @@ C40 ,1,22uF,Capacitor_SMD:C_0805_2012Metric,, , , , , , , , , , , , ,
 C42 C49 C50 C61 ,4,10nF,Capacitor_SMD:C_0402_1005Metric,, , , , , , , , , , , , , 
 C46 ,1,DNF,Capacitor_SMD:CP_Elec_4x5.4,, , , , , , , , , , , , , 
 C71 ,1,10uF,Capacitor_SMD:CP_Elec_4x5.4,, , , , , , , , , , , , , 
-CHARGING1 ,1,YLW,Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm,, , , , , , , ,Value 1,Value2,Value3, , , 
-COMPLETE1 ,1,GRN,Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm,, , , , , , , ,Value 1,Value2,Value3, , , 
 D1 D2 D3 D4 D9 ,5,RB160M-40TR,Diode_SMD:D_SOD-123,, , , , , , , , , , , , , 
 D5 ,1,SMFE5-0A,Diode_SMD:D_SOD-123,https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode, , , , , , , , , , , , , 
 D6 D7 ,2,BAV99,Package_TO_SOT_SMD:SOT-23,www.nxp.com/documents/data_sheet/BAV99_SER.pdf, ,134-001, , , , , , , , , , , 
 D8 ,1,RED,Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm,~, , , , , , , , , , , , , 
 D10 ,1,DNF,Diode_SMD:D_SOD-123,, , , , , , , , , , , , , 
+D11 D15 ,2,RED,LED_SMD:LED_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
 D12 ,1,ESDCAN04-2BLY ,Package_TO_SOT_SMD:SOT-23,https://en.wikipedia.org/wiki/Transient-voltage-suppression_diode, , , , , , , , , , , , , 
+D13 ,1,GRN,Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm,, , , , , , , ,Value 1,Value2,Value3, , , 
+D14 ,1,YLW,Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm,, , , , , , , ,Value 1,Value2,Value3, , , 
 F1 F2 F3 F4 ,4,Fiducial,Fiducial:Fiducial_1mm_Mask2mm,, , , , , , , , , , , , , 
 J1 ,1,Conn_02x07_Counter_Clockwise,Connector_PinSocket_2.54mm:PinSocket_2x07_P2.54mm_Vertical,~, , , , , , , , , , , , , 
-J2 ,1,Conn_02x07_Counter_Clockwise,Devtank_PCB_lib:Milligrid_878311420_14way,~, , , , , , , , , , , , , 
+J2 ,1,DB9_Female_MountingHoles,Connector_Dsub:DSUB-9_Female_Horizontal_P2.77x2.84mm_EdgePinOffset7.70mm_Housed_MountingHolesOffset9.12mm,, , , , , , , , , , , , , 
 J3 ,1,USB_B_Micro,Devtank_PCB_lib:MOLEX_105017-0001_USB_B,~, , , , , , , , , , , , , 
 J4 ,1,Conn_01x08,Connector_Molex:Molex_PicoBlade_53047-0810_1x08_P1.25mm_Vertical,~, , , , , , , , , , , , , 
 J5 ,1,Conn_02x03_Odd_Even,Connector:Tag-Connect_TC2030-IDC-NL_2x03_P1.27mm_Vertical,~, , , , , , , , , , , , , 
 J8 ,1,STX-3000,Devtank_PCB_lib:STX-3000,, , , , , , , , , , , , , 
 L1 ,1,10uH,Inductor_SMD:L_1812_4532Metric,,1A, , , , , , , , , , , , 
 L2 L3 L4 L5 L6 ,5,2A/0.05DCR,Inductor_SMD:L_0402_1005Metric,, , , , , , , , , , , , , 
-PWRLED1 PWRLEDNaN ,2,RED,LED_SMD:LED_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
 Q1 ,1,SI2301BDS-T1-E3,Package_TO_SOT_SMD:SOT-23,https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf, , , , , , , , , , , , , 
 Q4 ,1,IRF7509TRPBF ,Package_SO:SO-8_3.9x4.9mm_P1.27mm,Mosfet Array N and P-Channel 30V 2W Surface Mount 8-SO, , ,Infineon Technologies,Unavailable,SO-8 Infineon,None,IRF7319TRPBF, , , , , , 
 R1 R2 ,2,4.7k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
-R3 R4 R8 R9 R10 R11 R12 R13 R14 R17 R20 R24 R25 R27 R29 R30 R32 R33 R34 R35 R37 R38 R39 R50 R51 R76 R77 R128 ,28,0R,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
-R5 R7 R15 R23 R28 R31 R36 R92 R94 R96 R100 R101 R119 R127 ,14,DNF,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
+R3 R4 R8 R9 R10 R11 R12 R13 R14 R17 R20 R24 R25 R27 R29 R30 R32 R33 R34 R35 R37 R38 R39 R49 R50 R51 R76 R77 R128 ,29,0R,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
+R5 R7 R15 R23 R28 R31 R36 R55 R92 R94 R96 R100 R101 R119 R127 ,15,DNF,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R6 ,1,1.3k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R16 R48 R56 R72 R91 R93 R123 ,7,10k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R18 R21 R58 ,3,1M,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
@@ -59,12 +59,13 @@ R19 R22 R64 R125 R126 ,5,470k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , ,
 R26 ,1,390R,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R40 R57 R68 R69 R97 R99 ,6,100k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R41 R53 ,2,2.2k,Resistor_SMD:R_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
-R42 R44 ,2,330R,Resistor_SMD:R_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
+R42 R44 ,2,1.6k,Resistor_SMD:R_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
 R43 R45 ,2,4.99k,Resistor_SMD:R_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
 R46 ,1,110k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R47 ,1,36k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R52 ,1,0R,Resistor_SMD:R_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
 R54 ,1,DNF,Resistor_SMD:R_0603_1608Metric,, , , , , , , ,Value 1,Value2,Value3, , , 
+R59 R60 R61 R62 ,4,0R,Resistor_SMD:R_0805_2012Metric,, , , , , , , , , , , , , 
 R67 ,1,300k,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R73 R75 ,2,470R,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
 R74 R87 ,2,120R,Resistor_SMD:R_0603_1608Metric,, , , , , , , , , , , , , 
@@ -77,20 +78,20 @@ S1 ,1,B3U-1100P,Button_Switch_SMD:SW_SPST_B3U-1100P,, , , , , , , , , , ,Omron, 
 SW3 ,1,SW_Push,Devtank_PCB_lib:SW_Tactile_SPST_Angled_PTS645Vx58-2LFS,, , , , , , , , , , , , , 
 TH2 ,1,10K,Resistor_SMD:R_1206_3216Metric,, , , , , , , , , , , , , 
 TH3 ,1,DNF,Resistor_THT:R_Axial_DIN0617_L17.0mm_D6.0mm_P5.08mm_Vertical,, , , , , , , , , , , , , 
-TP1 TP4 TP5 TP6 TP7 TP8 TP11 TP12 TP13 TP14 TP18 TP19 TP20 TP22 TP23 TP24 TP27 TP28 TP29 TP30 TP35 TP36 TP37 TP38 TP39 TP40 TP41 TP42 TP43 TP44 TP45 TP46 TP47 TP48 TP49 TP50 TP51 TP56 TP68 TP72 TP79 TP80 TP81 TP88 ,44,Test_Point,TestPoint:TestPoint_Pad_D1.5mm,~, , , , , , , , , , , , , 
+TP1 TP4 TP5 TP6 TP7 TP11 TP12 TP18 TP20 TP22 TP23 TP27 TP28 TP29 TP36 TP37 TP38 TP39 TP40 TP41 TP42 TP43 TP44 TP45 TP46 TP47 TP50 TP51 TP56 TP68 TP79 TP80 TP81 ,33,Test_Point,TestPoint:TestPoint_Pad_D1.5mm,~, , , , , , , , , , , , , 
 TP2 TP3 TP10 TP15 TP16 TP17 TP21 TP52 TP53 TP64 TP67 TP70 ,12,Test_Point,TestPoint:TestPoint_Pad_D1.0mm,~, , , , , , , , , , , , , 
+TP8 TP13 TP14 TP19 TP24 TP25 TP26 TP30 TP31 TP32 TP35 TP48 TP49 TP72 ,14,Test_Point,TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm,~, , , , , , , , , , , , , 
 TP9 ,1,Test_Point,TestPoint:TestPoint_THTPad_4.0x4.0mm_Drill2.0mm,~, , , , , , , , , , , , , 
-TP25 TP26 ,2,Test_Point,TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm,~, , , , , , , , , , , , , 
 U1 ,1,MIC2250-1YD5,Package_TO_SOT_SMD:SOT-23-5,http://ww1.microchip.com/downloads/en/DeviceDoc/mic2177.pdf, , , , , , , , , , , , , 
 U2 ,1,MCP73833,Package_SO:MSOP-10_3x3mm_P0.5mm,, , , , , , , ,Value 1,Value2,Value3, , , 
 U3 ,1,VEML7700-TT,Devtank_PCB_lib:VEML7700-TT,, , , , , , , , , , , , , 
-U4 ,1,MIC5219-3.3,TO_SOT_Packages_SMD:SOT-23-5,http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf, , , , , , , , , , , , , 
+U4 ,1,MIC5219-3.3,Package_TO_SOT_SMD:SOT-23-5,http://ww1.microchip.com/downloads/en/devicedoc/mic5219.pdf, , , , , , , , , , , , , 
 U5 ,1,SP3003-02JTG,Package_TO_SOT_SMD:SOT-353_SC-70-5,DOCUMENTATION, , , , , , , , , , , , , 
 U6 ,1,RAK4270,Devtank_PCB_lib:RAK4270_WisDuo_LPWAN_Module,, , , , , , , , , , , , , 
 U7 ,1,ST3485EBDR,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,http://www.intersil.com/content/dam/Intersil/documents/isl8/isl83483-85-88-90-91.pdf, , , , , , , , , , , , , 
 U8 ,1,SN65HVD230,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,http://www.ti.com/lit/ds/symlink/sn65hvd230.pdf, , , , , , , , , , , , , 
 U10 ,1,ICS-43434,Devtank_PCB_lib:ICS-43434,, , , , , , , , , , , , , 
-U11 ,1,HPP845E131R5,Devtank_PCB_lib:HDC2080D,, , , , , , , , , , , , , 
+U11 ,1,HPP845E131R5,Devtank_PCB_lib:HPP845E131R5_temperature_humidity_sensor,, , , , , , , , , , , , , 
 U12 ,1,MIC94073YC6,Package_TO_SOT_SMD:SOT-363_SC-70-6,, , , , , , , , , , , , , 
 U13 ,1,CP2102N-A01-GQFN24,Devtank_PCB_lib:CP2102_QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias_0.3mmdrill,http://www.silabs.com/support%20documents/technicaldocs/cp2102n-datasheet.pdf, ,118-007, , , , , , , , , , , 
 U14 ,1,STM32L451RCTx,Package_QFP:LQFP-64_10x10mm_P0.5mm,http://www.st.com/st-web-ui/static/active/en/resource/technical/document/datasheet/DM00108832.pdf, , , , , , , , , , , , , 
@@ -102,4 +103,4 @@ Y2 ,1,DNF,Crystal:Crystal_SMD_7050-4Pin_7.0x5.0mm,, , , , , , , , , , , , ,
 
 
 BOM made with KICAD_BOM_WIZARD (https://github.com/HashDefineElectronics/KiCad_BOM_Wizard.git)
-Generated Wed 22 Sep 2021 13:18:09 BST
+Generated Wed 29 Sep 2021 14:41:57 BST

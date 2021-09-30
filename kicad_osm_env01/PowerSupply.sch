@@ -1102,10 +1102,10 @@ F 6 "Value3" H 2575 2400 60  0001 C CNN "Fieldname3"
 	0    1    1    0   
 $EndComp
 $Comp
-L device:LED PWRLED1
+L device:LED D11
 U 1 1 607F8C16
 P 2575 1950
-F 0 "PWRLED1" H 2755 2070 50  0000 R CNN
+F 0 "D11" H 2650 2050 50  0000 R CNN
 F 1 "RED" H 2625 1850 39  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 2575 1950 60  0001 C CNN
 F 3 "" H 2575 1950 60  0000 C CNN
@@ -1171,11 +1171,11 @@ F 3 "" H 6500 3850 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:LED COMPLETE1
+L device:LED D13
 U 1 1 607F8BEF
 P 2950 1950
-F 0 "COMPLETE1" V 2981 1872 50  0000 R CNN
-F 1 "GRN" V 2904 1872 35  0000 R CNN
+F 0 "D13" H 3025 2050 50  0000 R CNN
+F 1 "GRN" H 3000 1850 35  0000 R CNN
 F 2 "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm" H 2950 1950 60  0001 C CNN
 F 3 "" H 2950 1950 60  0000 C CNN
 F 4 "Value 1" H 2950 1950 60  0001 C CNN "Fieldname 1"
@@ -1185,11 +1185,11 @@ F 6 "Value3" H 2950 1950 60  0001 C CNN "Fieldname3"
 	0    -1   -1   0   
 $EndComp
 $Comp
-L device:LED CHARGING1
+L device:LED D14
 U 1 1 607F8BE6
 P 3550 1950
-F 0 "CHARGING1" V 3596 1872 50  0000 R CNN
-F 1 "YLW" V 3505 1872 35  0000 R CNN
+F 0 "D14" H 3625 2050 50  0000 R CNN
+F 1 "YLW" H 3600 1850 35  0000 R CNN
 F 2 "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm" H 3550 1950 60  0001 C CNN
 F 3 "" H 3550 1950 60  0000 C CNN
 F 4 "Value 1" H 3550 1950 60  0001 C CNN "Fieldname 1"
@@ -1203,7 +1203,7 @@ L OSM_env01-rescue:R-ESP32-EVB_Rev_D R42
 U 1 1 607F8BDD
 P 2950 2400
 F 0 "R42" V 2860 2450 50  0000 L CNN
-F 1 "330R" V 2940 2450 50  0000 L CNN
+F 1 "1.6k" V 2940 2450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 2950 2330 30  0001 C CNN
 F 3 "" V 2950 2400 30  0000 C CNN
 F 4 "Value 1" H 2950 2400 60  0001 C CNN "Fieldname 1"
@@ -1217,7 +1217,7 @@ L OSM_env01-rescue:R-ESP32-EVB_Rev_D R44
 U 1 1 607F8BD4
 P 3550 2400
 F 0 "R44" V 3460 2450 50  0000 L CNN
-F 1 "330R" V 3540 2450 50  0000 L CNN
+F 1 "1.6k" V 3540 2450 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 3550 2330 30  0001 C CNN
 F 3 "" V 3550 2400 30  0000 C CNN
 F 4 "Value 1" H 3550 2400 60  0001 C CNN "Fieldname 1"
@@ -1308,10 +1308,10 @@ STAT2
 Text Notes 3250 4020 0    47   ~ 0
 Ich = 1000/Rp\n200mA->4.99k\n400mA->4.99k || 4.99k
 $Comp
-L device:LED PWR_GOOD1
+L device:LED D15
 U 1 1 607F8B92
 P 5550 1550
-F 0 "PWR_GOOD1" V 5590 2040 50  0000 R CNN
+F 0 "D15" V 5590 2040 50  0000 R CNN
 F 1 "RED" V 5500 2025 50  0000 R CNN
 F 2 "LED_SMD:LED_0603_1608Metric" H 5550 1550 60  0001 C CNN
 F 3 "" H 5550 1550 60  0000 C CNN
@@ -1694,8 +1694,6 @@ $EndComp
 Connection ~ 4950 6475
 Wire Wire Line
 	4950 6475 5350 6475
-Text Notes 5900 6475 0    50   ~ 0
-100pf used elsewhere\n
 $Comp
 L OSM_env01-rescue:D_Schottky-device-ESP32-EVB_Rev_D-rescue D9
 U 1 1 61835A37
@@ -1932,4 +1930,16 @@ $EndComp
 Connection ~ 850  6700
 Wire Wire Line
 	850  6700 1175 6700
+Text Notes 2975 2225 0    50   ~ 0
+Complete1\n
+Text Notes 3575 2225 0    50   ~ 0
+Charging1\n
+Text Notes 2575 2300 0    50   ~ 0
+PWRLED1\n\n
+Text Notes 5075 1750 0    50   ~ 0
+PWRGOOD1\n
+Text Notes 600  4425 0    50   ~ 0
+Led calcs\nd11 and d15 = ((5-0.5v schottky assumed)-2v assumed)/2200=1.13mA\nd11 and d15 = ((5-0.5v schottky assumed)-2v assumed)/1600=1.56mA
+Text Notes 4575 3625 0    50   ~ 0
+Recomended
 $EndSCHEMATC

@@ -951,7 +951,7 @@ Wire Wire Line
 	8575 5900 8575 5975
 NoConn ~ 8750 5900
 Text Notes 7775 6450 0    50   ~ 0
-Note: Can use HDC1080/2080. For HTU21D leave pad 3,4 and ep unconnected
+Note: Can use HDC1080/2080. For HTU21D leave pad 3,4. For all devices leave ep pin 7 unconnected
 Text Notes 8700 975  0    118  ~ 24
 Light Sensor\n\n
 $Comp
@@ -1249,7 +1249,7 @@ AR Path="/60A49311" Ref="TP?"  Part="1"
 AR Path="/608F4675/60A49311" Ref="TP48"  Part="1" 
 F 0 "TP48" H 4325 6250 50  0000 C CNN
 F 1 "Test_Point" V 4400 6250 50  0001 C CNN
-F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4525 6025 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" H 4525 6025 50  0001 C CNN
 F 3 "~" H 4525 6025 50  0001 C CNN
 	1    4325 6025
 	1    0    0    -1  
