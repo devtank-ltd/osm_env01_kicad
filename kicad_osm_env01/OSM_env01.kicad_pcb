@@ -836,7 +836,7 @@
     (pad "" np_thru_hole circle (at -18 -14.5 270) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at -18 14.5 270) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask))
     (pad "" np_thru_hole circle (at 18 0 270) (size 2.5 2.5) (drill 2.5) (layers *.Cu *.Mask))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/HPMA115S0-XXX.step
+    (model ../common/Devtank_models.3dshapes/HPMA115S0-XXX.step
       (offset (xyz -21.5 -18 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -876,7 +876,7 @@
       (net 1 GND))
     (pad 4 smd rect (at -1.55 -1.905) (size 1.6 0.7) (layers B.Cu B.Paste B.Mask)
       (net 34 /STM_SDA))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/VEML7700-TT.step
+    (model ../common/Devtank_models.3dshapes/VEML7700-TT.step
       (offset (xyz -0.5 0 1))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))
@@ -4600,7 +4600,7 @@
       (net 143 "Net-(D14-Pad1)"))
     (pad 2 thru_hole circle (at 0 0 270) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 101 "Net-(C3-Pad1)"))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/MARL_103_LED103.STEP
+    (model ../common/Devtank_models.3dshapes/MARL_103_LED103.STEP
       (offset (xyz 50.5 -2 -33.6))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -4649,7 +4649,7 @@
       (net 142 "Net-(D13-Pad1)"))
     (pad 2 thru_hole circle (at 0 0 270) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 101 "Net-(C3-Pad1)"))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/MARL_103_LED103.STEP
+    (model ../common/Devtank_models.3dshapes/MARL_103_LED103.STEP
       (offset (xyz 50.5 -2 -33.6))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -4698,7 +4698,7 @@
       (net 60 "Net-(D8-Pad1)"))
     (pad 2 thru_hole circle (at 0 0 270) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 2 +3V3))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/MARL_103_LED103.STEP
+    (model ../common/Devtank_models.3dshapes/MARL_103_LED103.STEP
       (offset (xyz 50.5 -2 -33.6))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -5589,7 +5589,7 @@
       (net 1 GND))
     (pad 6 thru_hole oval (at 3.5 0) (size 1.9 1.2) (drill oval 1.3 0.6) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/MOLEX_USB_Btype_1050170001.stp
+    (model ../common/Devtank_models.3dshapes/MOLEX_USB_Btype_1050170001.stp
       (offset (xyz 0 0.25 1.15))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -5764,7 +5764,7 @@
     (pad 6 smd rect (at 0 -1.361 90) (size 0.6 0.522) (layers F.Cu F.Mask)
       (net 49 /MIC_SD))
     (pad None np_thru_hole circle (at 0 0.713 90) (size 0.5 0.5) (drill 0.5) (layers *.Cu *.Mask))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/ICS-43434.step
+    (model ../common/Devtank_models.3dshapes/ICS-43434.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -6205,7 +6205,7 @@
       (net 27 "Net-(C71-Pad1)"))
     (pad 1 thru_hole oval (at 0 0 180) (size 2 1.5) (drill oval 1.5 1) (layers *.Cu *.Mask)
       (net 18 /CT+))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/STX-3000_rD3_3pole_3.5mm_jack.STEP
+    (model ../common/Devtank_models.3dshapes/STX-3000_rD3_3pole_3.5mm_jack.STEP
       (offset (xyz 5 6.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 90 -180 0))
@@ -6981,7 +6981,7 @@
     (pad 1 thru_hole circle (at 0 0 90) (size 1.75 1.75) (drill 1) (layers *.Cu *.Mask)
       (net 1 GND))
     (pad "" thru_hole circle (at -1.25 2.49 90) (size 2.1 2.1) (drill 1.3) (layers *.Cu *.Mask))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/PTS645VH58-2LFS.stp
+    (model ../common/Devtank_models.3dshapes/PTS645VH58-2LFS.stp
       (offset (xyz 2 -1 3))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 90 0))
@@ -10732,7 +10732,7 @@
       (net 1 GND))
     (pad 0 thru_hole circle (at 6.96 1.42 270) (size 4 4) (drill 3.2) (layers *.Cu *.Mask)
       (net 1 GND))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/dsub_9way_1734354-1.step
+    (model ../common/Devtank_models.3dshapes/dsub_9way_1734354-1.step
       (offset (xyz -5.5 -17 6))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
@@ -11092,7 +11092,7 @@
       (net 1 GND))
     (pad 1 smd roundrect (at -1.455 1 180) (size 0.8 0.42) (layers B.Cu B.Paste B.Mask) (roundrect_rratio 0.02)
       (net 34 /STM_SDA))
-    (model /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_models.3dshapes/HPP845E131R5_temperature_humidity_sensor.step
+    (model ../common/Devtank_models.3dshapes/HPP845E131R5_temperature_humidity_sensor.step
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 90))

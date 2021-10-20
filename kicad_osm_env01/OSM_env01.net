@@ -2683,7 +2683,7 @@
     (library (logical Connector)
       (uri /home/adil/Documents/kicad-library/library/Connector.lib))
     (library (logical Devtank)
-      (uri /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/common/Devtank_Schema_Lib/Devtank.lib))
+      (uri ../common/Devtank_Schema_Lib/Devtank.lib))
     (library (logical OSM_env01-rescue)
       (uri /home/adil/Documents/SmartFactory/KiCAD/kicad_osm_env01/kicad_osm_env01/OSM_env01-rescue.lib))
     (library (logical Switch)
