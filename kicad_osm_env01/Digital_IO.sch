@@ -41,7 +41,7 @@ F 0 "D7" H 4100 5175 50  0000 L CNN
 F 1 "BAV99" H 3825 5175 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4050 4925 50  0001 C CNN
 F 3 "www.nxp.com/documents/data_sheet/BAV99_SER.pdf" H 4050 5175 50  0001 C CNN
-F 4 "134-001" H 4050 5075 50  0001 C CNN "Devtank"
+F 4 "" H 4050 5075 50  0001 C CNN "Devtank"
 	1    4050 5075
 	0    1    1    0   
 $EndComp
@@ -57,7 +57,7 @@ F 0 "D7" H 4075 3375 50  0000 L CNN
 F 1 "BAV99" H 3775 3375 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 4000 3125 50  0001 C CNN
 F 3 "www.nxp.com/documents/data_sheet/BAV99_SER.pdf" H 4000 3375 50  0001 C CNN
-F 4 "134-001" H 4000 3275 50  0001 C CNN "Devtank"
+F 4 "" H 4000 3275 50  0001 C CNN "Devtank"
 	2    4000 3275
 	0    1    1    0   
 $EndComp
@@ -81,7 +81,7 @@ F 0 "D6" H 3875 3375 50  0000 L CNN
 F 1 "BAV99" H 3575 3375 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3800 3125 50  0001 C CNN
 F 3 "www.nxp.com/documents/data_sheet/BAV99_SER.pdf" H 3800 3375 50  0001 C CNN
-F 4 "134-001" H 3800 3275 50  0001 C CNN "Devtank"
+F 4 "" H 3800 3275 50  0001 C CNN "Devtank"
 	2    3800 3275
 	0    1    1    0   
 $EndComp
@@ -97,7 +97,7 @@ F 0 "D6" H 3900 5175 50  0000 L CNN
 F 1 "BAV99" H 3625 5175 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 3850 4925 50  0001 C CNN
 F 3 "www.nxp.com/documents/data_sheet/BAV99_SER.pdf" H 3850 5175 50  0001 C CNN
-F 4 "134-001" H 3850 5075 50  0001 C CNN "Devtank"
+F 4 "" H 3850 5075 50  0001 C CNN "Devtank"
 	1    3850 5075
 	0    1    1    0   
 $EndComp
