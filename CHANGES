@@ -1,24 +1,67 @@
 *********************************
-OpenSmartMonitor ENV-01 revA Mods
+Changes incorporated in Rev B:
 *********************************
 
 Schematic
-~DNF: Q5, R87-R90
-~Led THTx3 connections are opposite so cut tracks before fitting and reconnect.
-~Fit 100k to tp55 and other side to gnd.
-~Short cct pin 4-5 of u9.
-~Cut track between tp19 and c25.
-~add 20nf cap to tp37 and otherside to gnd.
-~add 20nf across r33.
-~swap r35 for 39k.
-~Swap Tx/RX on the Smog Sensor
-~Boot button fix (swap r70 for 0R) and remove c3.
-~Add USB GPIO support for boot lines
-~Replace anlogue switch for electric and particulate switching
-~add switch/gnd to gpio to measure microphone refernce
+(1) DNF: Q5, R87-R90
+
+(2) Led THTx3 connections are opposite so cut tracks before fitting and reconnect.
+
+(3) Fit 100k to tp55 and other side to gnd.
+
+(4) Short cct pin 4-5 of u9.
+
+(5) Cut track between tp19 and c25.
+
+(6) add 20nf cap to tp37 and otherside to gnd.
+
+(7) add 20nf across r33.
+
+(8) swap r35 for 39k.
+
+(9) Swap Tx/RX on the Smog Sensor
+
+(10) Boot button fix (swap r70 for 0R) and remove c3.
+
+(11) Add USB GPIO support for boot lines
+
+(12) Replace anlogue switch for electric and particulate switching
+
+(13) add switch/gnd to gpio to measure microphone refernce
 
 PCB
-~Check all chips have a ref for pin 1 add refernce for light chip also
-~Make 5V track to SP05BAHT chip smaller
-~Add ground pads for debug
-~Make test points slightly bigger
+(14) Check all chips have a ref for pin 1 add refernce for light chip also
+
+(15) Make 5V track to SP05BAHT chip smaller
+
+(16) Add ground pads for debug
+
+(17) Make test points slightly bigger
+
+
+*********************************
+Changes incorporated in Rev C:
+*********************************
+
+(1) Remove R91 and R93
+
+(2) Remove R30
+
+(3) remove r27
+
+(4) add r28 as 0R
+
+(5) Add R119 as 10k
+
+(6) Remove R77
+
+(7) Connect gpio2 on U13 to TP70
+
+(8) mod pulse input 1 (change C50 for 1nf and r105 for 100R)
+
+(9) mod pulse input 1 (change C49 for 1nf and r104 for 100R)
+
+(10) Connect lora reset line to stm, connect tp35 to tp17
+
+(11) add 1Mohm pulldown on tp79 bat_op
+
