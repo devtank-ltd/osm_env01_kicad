@@ -1,4 +1,8 @@
+Remove R91
+add r93 as 10k (may have been removed on some board needs to be refitted)
 Remove R30
+remove r27
+ad r28 as 0R
 Add R119 as 10k
 Remove R77
 Connect gpio2 on U13 to TP70
@@ -7,3 +11,4 @@ Clean light sensor U3 with ipa and cotton bud
 mod pulse input 1 (change C50 for 1nf and r105 for 100R)
 mod pulse input 1 (change C49 for 1nf and r104 for 100R)
 Connect lora reset line to stm, connect tp35 to tp17
+add 1Mohm pulldown to gnd on tp79 batt_op
