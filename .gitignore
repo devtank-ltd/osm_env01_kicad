@@ -1,7 +1,8 @@
 # export files for BOM
-    *.tsv
-    # backup files
-    *.bak
-    *.bck
-    *.kicad_pcb-bak
-    ~*
+*.tsv
+# backup files
+kicad_osm_env01/OSM_env01-backups
+*.bak
+*.bck
+*.kicad_pcb-bak
+~*

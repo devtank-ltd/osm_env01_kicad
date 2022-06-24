@@ -2929,6 +2929,10 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 77d882f7-b8ff-45d4-9bf7-0203e6fde7d7)
   )
+  (text "Mains/Battery OR-ed voltage to VBAT pin " (at 81.915 75.565 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid 7873f5e8-121e-4539-9c05-469de281f0b8)
+  )
   (text "Note: For comfirmation of pin functions refer to datasheet. Symbol may not be correct\n- wkup pins 2,14,16,25\n-pa13, pa15, pb4 avoid as after reset internal pull up and pull down activated"
     (at 340.995 166.37 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
