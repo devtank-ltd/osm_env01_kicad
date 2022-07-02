@@ -6,8 +6,8 @@
 
   (title_block
     (title "Open Smart Monitor")
-    (date "2021-09-29")
-    (rev "B")
+    (date "2022-07-01")
+    (rev "C")
     (company "Devtank LTD")
     (comment 1 "Part No: 304-010")
   )
@@ -1333,7 +1333,7 @@
   (symbol (lib_id "device:C") (at 185.42 101.6 270) (mirror x) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 388930d3-165e-44fe-91ed-dca0c057dce1)
-    (property "Reference" "C?" (id 0) (at 184.15 98.425 0)
+    (property "Reference" "C67" (id 0) (at 184.15 98.425 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "DNF" (id 1) (at 186.055 98.425 0)
@@ -1352,7 +1352,7 @@
   (symbol (lib_id "OSM_env01:GND") (at 189.865 104.14 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 3aebff98-c800-4bd0-930a-7e689641589a)
-    (property "Reference" "#PWR?" (id 0) (at 189.865 110.49 0)
+    (property "Reference" "#PWR078" (id 0) (at 189.865 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 189.992 108.5342 0))

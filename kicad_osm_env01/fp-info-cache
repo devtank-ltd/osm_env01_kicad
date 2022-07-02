@@ -1,4 +1,4 @@
-16577373433684373
+16587309851588942
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -42882,6 +42882,27 @@ Devtank_PCB_lib
 2
 2
 Devtank_PCB_lib
+78646-3001_6_pin_sim_connector
+
+
+0
+14
+9
+Devtank_PCB_lib
+679101002_mpcie_connector
+679101002-2
+Connector
+0
+54
+54
+Devtank_PCB_lib
+679101002_mpcie_connector_dual_form_factor
+679101002-2
+Connector
+0
+56
+53
+Devtank_PCB_lib
 AISG_1
 
 
@@ -43113,6 +43134,13 @@ Diode_DO214AC_SMA
 2
 2
 Devtank_PCB_lib
+FCI_7111S2015X02LF_6pin_simcard
+
+
+0
+6
+6
+Devtank_PCB_lib
 FCI_10029449-11RLF
 
 
@@ -43287,6 +43315,13 @@ MEANWELL_IRM-60
 0
 4
 4
+Devtank_PCB_lib
+MOLEX_48099-5701_mpcie_latch
+
+
+0
+6
+6
 Devtank_PCB_lib
 MOLEX_105017-0001_USB_B
 
@@ -43497,6 +43532,13 @@ THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
 0
 8
 8
+Devtank_PCB_lib
+SOT-323-5
+
+
+0
+5
+5
 Devtank_PCB_lib
 SOT95P284X122-5N
 
