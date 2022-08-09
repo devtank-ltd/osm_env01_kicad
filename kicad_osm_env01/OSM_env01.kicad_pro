@@ -525,8 +525,12 @@
       "LORA"
     ],
     [
-      "6b40af4e-d026-4915-af4a-2ddc3d666dc8",
-      "InputConditioning"
+      "80218249-cab8-4582-b384-0de5bead741e",
+      "ADC_Filtering"
+    ],
+    [
+      "b9a077bb-8b65-41fb-9650-f17f6dddad7c",
+      "RS232_comms"
     ]
   ],
   "text_variables": {}

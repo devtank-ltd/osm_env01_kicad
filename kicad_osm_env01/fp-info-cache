@@ -1,4 +1,4 @@
-16587309851588942
+16588966536637318
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -43378,6 +43378,13 @@ PCI EXPRESS CARD CONNECTOR ,64 PINS.
 0
 64
 64
+Devtank_PCB_lib
+PMDPB58UPE_115
+
+
+0
+8
+8
 Devtank_PCB_lib
 PQFP-64_7x7mm_P0.4mm_EP
 LQFP64: plastic low profile quad flat package; 64 leads; body 7 x 7 x 1.4 mm(see NXP sot414-1_po.pdf and sot414-1_fr.pdf)
