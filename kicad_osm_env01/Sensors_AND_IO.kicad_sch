@@ -13,7 +13,7 @@
   )
 
   (lib_symbols
-    (symbol "Connector:Conn_01x05" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
+    (symbol "Connector_Generic:Conn_01x05" (pin_names (offset 1.016) hide) (in_bom yes) (on_board yes)
       (property "Reference" "J" (id 0) (at 0 7.62 0)
         (effects (font (size 1.27 1.27)))
       )
@@ -29,10 +29,10 @@
       (property "ki_keywords" "connector" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Generic connector, single row, 01x05" (id 5) (at 0 0 0)
+      (property "ki_description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_fp_filters" "Connector*:*_??x*mm* Connector*:*1x??x*mm* Pin?Header?Straight?1X* Pin?Header?Angled?1X* Socket?Strip?Straight?1X* Socket?Strip?Angled?1X*" (id 6) (at 0 0 0)
+      (property "ki_fp_filters" "Connector*:*_1x??_*" (id 6) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "Conn_01x05_1_1"
@@ -3780,13 +3780,13 @@
     (pin "2" (uuid 8e671d1e-07ae-46e8-98f2-86393dace255))
   )
 
-  (symbol (lib_id "Connector:Conn_01x05") (at 288.925 186.055 0) (unit 1)
+  (symbol (lib_id "Connector_Generic:Conn_01x05") (at 288.925 186.055 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid d01ddcbe-c936-4ed9-81ba-164b6d1d0f8e)
     (property "Reference" "J7" (id 0) (at 290.957 185.2203 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "Conn_01x05" (id 1) (at 290.957 187.7572 0)
+    (property "Value" "" (id 1) (at 290.957 187.7572 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "" (id 2) (at 288.925 186.055 0)
