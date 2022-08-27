@@ -1,4 +1,4 @@
-16588966536637318
+16593950781276628
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -43134,6 +43134,13 @@ Diode_DO214AC_SMA
 2
 2
 Devtank_PCB_lib
+EG1247
+EG1247
+Switch
+0
+5
+5
+Devtank_PCB_lib
 FCI_7111S2015X02LF_6pin_simcard
 
 
@@ -43316,6 +43323,13 @@ MEANWELL_IRM-60
 4
 4
 Devtank_PCB_lib
+MIC2251YML-TR
+
+
+0
+9
+9
+Devtank_PCB_lib
 MOLEX_48099-5701_mpcie_latch
 
 
@@ -43427,6 +43441,13 @@ QFN 0.5
 0
 68
 65
+Devtank_PCB_lib
+RAK3172
+RAK3172
+
+0
+32
+32
 Devtank_PCB_lib
 RAK4270_WisDuo_LPWAN_Module
 
