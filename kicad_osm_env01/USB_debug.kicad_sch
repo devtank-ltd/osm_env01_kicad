@@ -2266,7 +2266,7 @@
     (property "Reference" "#PWR098" (id 0) (at 222.885 126.365 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "" (id 1) (at 222.885 118.9792 0))
+    (property "Value" "+3V3_CORE" (id 1) (at 222.885 118.9792 0))
     (property "Footprint" "" (id 2) (at 222.885 122.555 0))
     (property "Datasheet" "" (id 3) (at 222.885 122.555 0))
     (pin "1" (uuid 5cc21827-ed89-4e66-a349-4276656d6034))

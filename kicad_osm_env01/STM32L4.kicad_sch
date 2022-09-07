@@ -3536,7 +3536,7 @@
     (in_bom yes) (on_board yes)
     (uuid e26042d6-dc07-47f6-8c70-15d2afff3bce)
     (property "Reference" "J6" (id 0) (at 290.83 24.765 0))
-    (property "Value" "Conn_02x03_Odd_Even" (id 1) (at 290.83 24.7396 0)
+    (property "Value" "" (id 1) (at 290.83 24.7396 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Footprint" "" (id 2) (at 289.56 30.48 0)

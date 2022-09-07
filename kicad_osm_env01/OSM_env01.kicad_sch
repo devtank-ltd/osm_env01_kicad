@@ -5547,7 +5547,7 @@
       (reference "J4") (unit 1) (value "Conn_01x08") (footprint "Connector_Molex:Molex_PicoBlade_53047-0810_1x08_P1.25mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000060917dd5/e26042d6-dc07-47f6-8c70-15d2afff3bce"
-      (reference "J6") (unit 1) (value "Conn_02x03_Odd_Even") (footprint "")
+      (reference "J6") (unit 1) (value "Conn_02x03_Odd_Even") (footprint "Connector_PinHeader_1.27mm:PinHeader_2x03_P1.27mm_Vertical")
     )
     (path "/00000000-0000-0000-0000-000060688d25/651a6637-b8eb-400c-98e2-e30c05336858"
       (reference "JP19") (unit 1) (value "Jumper_2_Open") (footprint "Connector_PinHeader_1.27mm:PinHeader_1x02_P1.27mm_Vertical")
