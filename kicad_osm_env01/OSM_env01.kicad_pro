@@ -450,7 +450,7 @@
       "idf": "",
       "netlist": "OSM_env01.net",
       "specctra_dsn": "",
-      "step": "OSM_env01_revcv1.step",
+      "step": "OSM_env01_revcv2.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""

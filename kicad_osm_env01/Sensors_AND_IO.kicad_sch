@@ -6,7 +6,7 @@
 
   (title_block
     (title "Open Smart Monitor")
-    (date "2022-07-01")
+    (date "2022-09-16")
     (rev "C")
     (company "Devtank LTD")
     (comment 1 "Part No: 304-010")
@@ -865,7 +865,6 @@
       )
     )
   )
-
 
   (junction (at 101.6 85.09) (diameter 0) (color 0 0 0 0)
     (uuid 0588e431-d56d-4df4-9ffd-6cd4bba412cb)

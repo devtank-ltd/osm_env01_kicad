@@ -1,4 +1,4 @@
-16602266851132481
+16603930981593398
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -43092,13 +43092,6 @@ D DO-15 series Axial Horizontal pin pitch 10.16mm  length 7.6mm diameter 3.6mm
 2
 2
 Devtank_PCB_lib
-DevtankLogo_25mm
-
-
-0
-0
-0
-Devtank_PCB_lib
 Devtank_Large_Logo
 
 
@@ -43128,6 +43121,20 @@ Devtank_Rev2_Logo_Small
 0
 Devtank_PCB_lib
 Devtank_Small_Logo
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_logo_20mm_length
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_logo_25mm_length
 
 
 0

@@ -6,7 +6,7 @@
 
   (title_block
     (title "Open Smart Monitor")
-    (date "2022-07-01")
+    (date "2022-09-16")
     (rev "C")
     (company "Devtank LTD")
     (comment 1 "Part No: 304-010")
@@ -5499,7 +5499,7 @@
       (reference "D7") (unit 2) (value "BAV99") (footprint "Package_TO_SOT_SMD:SOT-23")
     )
     (path "/00000000-0000-0000-0000-000060917dd5/00000000-0000-0000-0000-0000614c4caa"
-      (reference "D8") (unit 1) (value "RED") (footprint "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm")
+      (reference "D8") (unit 1) (value "GREEN") (footprint "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm")
     )
     (path "/00000000-0000-0000-0000-000060688d25/00000000-0000-0000-0000-000061835a37"
       (reference "D9") (unit 1) (value "RB160M-40TR") (footprint "Diode_SMD:D_SOD-123")
@@ -5508,7 +5508,7 @@
       (reference "D10") (unit 1) (value "RB160M-40TR") (footprint "Diode_SMD:D_SOD-123")
     )
     (path "/00000000-0000-0000-0000-000060688d25/00000000-0000-0000-0000-0000607f8be6"
-      (reference "D14") (unit 1) (value "YLW") (footprint "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm")
+      (reference "D14") (unit 1) (value "YELLOW") (footprint "Devtank_PCB_lib:LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm")
     )
     (path "/00000000-0000-0000-0000-0000608f4675/e1988074-cc58-449a-a3a6-88a436a707cc"
       (reference "D19") (unit 1) (value "DNF") (footprint "Diode_SMD:D_SOD-123")
