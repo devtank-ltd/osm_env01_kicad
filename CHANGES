@@ -43,25 +43,45 @@ PCB
 Changes incorporated in Rev C:
 *********************************
 
-(1) Remove R91 and R93
+(1) Remove R30
 
-(2) Remove R30
+(2) mod pulse input 1 (change C50 for 1nf and r105 for 100R)
 
-(3) remove r27
+(3) Add R119 as 10k
 
-(4) add r28 as 0R
+(4) mod pulse input 1 (change C49 for 1nf and r104 for 100R)
 
-(5) Add R119 as 10k
+(5) Connect lora reset line to stm, connect tp35 to tp17
 
-(6) Remove R77
+(6) Added RS232 capability
 
-(7) Connect gpio2 on U13 to TP70
+(7) Lorawan module replaced with RAK3172
 
-(8) mod pulse input 1 (change C50 for 1nf and r105 for 100R)
+(8) STM32l451 replaced with STMl433
 
-(9) mod pulse input 1 (change C49 for 1nf and r104 for 100R)
+(9) Added RS232 signals to J2
 
-(10) Connect lora reset line to stm, connect tp35 to tp17
+(10) Added polyfuses to J2
 
-(11) add 1Mohm pulldown on tp79 bat_op
+(11) ESD diodes added to J2
+
+(12) Hardware added for 3 channels of ct. Able to support 3 phase custom board.
+
+(13) Special USB handshaking added
+
+(14) Battery and temperature monitors added
+
+(15) Power supply architecture chnaged. Replaced all battery and power supply ic's. There are now two 3v3 supplies. One for core and one for board.
+
+(16) Added battery undervoltage and overvoltage protection. 
+
+(17) Power button circuit updated where it now connects the battery in circuit or out of circuit
+
+(18) ADC filtering added
+
+(19) Double sided test points added
+
+(20) Mounting holes added
+
+(21) SWD connector updated
 
