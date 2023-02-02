@@ -85,3 +85,23 @@ Changes incorporated in Rev C:
 
 (21) SWD connector updated
 
+
+*********************************
+Changes incorporated in Rev D:
+*********************************
+
+(1) Replace R104 and R105 with 0R.
+
+(2) Fit R5 as 0R
+
+(3) DNF F5 AND F7
+
+(4) Remove U21 and U22
+
+(5) Remove R148, R149, R150, R151
+
+(6) Fit R147 as 1Mohm
+
+(7) Add R56 and R57 as 82R
+
+(8) Add R41 and R53 as 30R
