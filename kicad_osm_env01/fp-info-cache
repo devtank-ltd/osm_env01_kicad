@@ -1,4 +1,4 @@
-16603930981593398
+16650439214623901
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -42882,6 +42882,13 @@ Devtank_PCB_lib
 2
 2
 Devtank_PCB_lib
+48408-0003
+
+
+0
+11
+10
+Devtank_PCB_lib
 78646-3001_6_pin_sim_connector
 
 
@@ -42902,6 +42909,20 @@ Connector
 0
 56
 53
+Devtank_PCB_lib
+ABM3B-8.000MHZ-B2-T
+Abracon Miniature Ceramic Smd Crystal ABM3C http://www.abracon.com/Resonators/abm3c.pdf, 5.0x3.2mm^2 package
+SMD SMT crystal
+0
+4
+4
+Devtank_PCB_lib
+ABS25-32.768KHZ-6-T
+SMD Crystal SERIES SMD7050/4 https://www.foxonline.com/pdfs/FQ7050.pdf, 7.0x5.0mm^2 package
+SMD SMT crystal
+0
+4
+4
 Devtank_PCB_lib
 AISG_1
 
@@ -42925,6 +42946,13 @@ AISG_RET_FEMALE
 9
 Devtank_PCB_lib
 AISG_RET_MALE
+
+
+0
+9
+9
+Devtank_PCB_lib
+AP2152AFGEG-7
 
 
 0
@@ -43001,6 +43029,34 @@ VSONP 1.27
 13
 3
 Devtank_PCB_lib
+CUI_HD01-19-RA-TH
+
+
+0
+23
+23
+Devtank_PCB_lib
+CUI_TBL009-254-20BE-2BE
+
+
+0
+40
+20
+Devtank_PCB_lib
+CUI_TBL009-254-22BE-2BE
+
+
+0
+44
+44
+Devtank_PCB_lib
+CUI_TBL009-254-24BE-2BE
+
+
+0
+48
+48
+Devtank_PCB_lib
 Conn_TE-DDR2-SODIMM-0.6-200P-ComputeModule
 
 
@@ -43049,6 +43105,13 @@ DEVTANK_LOGO_SMALL
 0
 0
 0
+Devtank_PCB_lib
+DGH105Q5R5_1F_supercapacitor
+DGH_17x17x8.5 mm
+Capacitor Polarised
+0
+2
+2
 Devtank_PCB_lib
 DPAK
 ATPAK SMD package, http://www.onsemi.com/pub/Collateral/ENA2192-D.PDF
@@ -43169,6 +43232,13 @@ FCI_10029449-11RLF
 23
 20
 Devtank_PCB_lib
+Fuse_Bourns_MF-RHT200
+PTC Resettable Fuse, Ihold = 2.0A, Itrip=3.8A, http://www.bourns.com/docs/product-datasheets/mfrht.pdf
+ptc resettable fuse polyfuse THT
+0
+2
+2
+Devtank_PCB_lib
 GPIB_PCB_D_Conn_Male
 
 
@@ -43281,12 +43351,26 @@ common mode choke inductor smd
 4
 4
 Devtank_PCB_lib
+JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical
+JST SH series connector, BM04B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf), generated with kicad-footprint-generator
+connector JST SH side entry
+0
+6
+5
+Devtank_PCB_lib
 Jack_3.5mm_Ledino_KB3SPRS_Horizontal
 https://www.reichelt.de/index.html?ACTION=7&LA=3&OPEN=0&INDEX=0&FILENAME=C160%252FKB3SPRS.pdf
 jack stereo TRS
 0
 5
 5
+Devtank_PCB_lib
+KEYSTONE_1074
+1074-2
+Undefined or Miscellaneous
+0
+3
+2
 Devtank_PCB_lib
 LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm
 
@@ -43344,12 +43428,33 @@ MIC2251YML-TR
 9
 9
 Devtank_PCB_lib
+MIKROE-3901
+
+
+0
+16
+16
+Devtank_PCB_lib
+MIKROE_large_size_form_factor
+
+
+0
+16
+16
+Devtank_PCB_lib
 MOLEX_48099-5701_mpcie_latch
 
 
 0
 6
 6
+Devtank_PCB_lib
+MOLEX_78646-3001
+
+
+0
+14
+14
 Devtank_PCB_lib
 MOLEX_105017-0001_USB_B
 
@@ -43393,12 +43498,47 @@ Molex_8981
 8
 8
 Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-02A, example for new mpn: 39-28-x02x, 1 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+2
+2
+Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-04A, example for new mpn: 39-28-x04x, 2 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+4
+4
+Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-08A, example for new mpn: 39-28-x08x, 4 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+8
+8
+Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-24A, example for new mpn: 39-28-x24x, 12 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+24
+24
+Devtank_PCB_lib
 Omega_Logo
 
 
 0
 0
 0
+Devtank_PCB_lib
+Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm
+Miniature Crystal Clock Oscillator EuroQuartz XO32 series, http://cdn-reichelt.de/documents/datenblatt/B400/XO32.pdf, 3.2x2.5mm^2 package
+SMD SMT crystal oscillator
+0
+4
+4
 Devtank_PCB_lib
 PCIE-064-02-X-D-TH
 PCI EXPRESS CARD CONNECTOR ,64 PINS.
@@ -43505,6 +43645,13 @@ Through hole pin header THT 2x20 2.54mm double row
 40
 40
 Devtank_PCB_lib
+RPi_Hat_Mounting_Hole
+Mounting hole, Befestigungsbohrung, 2,7mm, No Annular, Kein Restring,
+Mounting hole, Befestigungsbohrung, 2,7mm, No Annular, Kein Restring,
+0
+0
+0
+Devtank_PCB_lib
 R_4527
 
 resistor 4527
@@ -43518,6 +43665,20 @@ resistor
 0
 2
 2
+Devtank_PCB_lib
+Raspberry-Pi-4-Compute-Module
+Raspberry Pi 4 Compute Module
+Raspberry Pi 4 Compute Module
+0
+200
+200
+Devtank_PCB_lib
+Raspberry-Pi-4-Compute-Module_w_conn_ref
+Raspberry Pi 4 Compute Module
+Raspberry Pi 4 Compute Module
+0
+200
+200
 Devtank_PCB_lib
 Relay_SPDT_HJR-4102
 IM Signal Relay SPDT HJR-4102
@@ -43582,6 +43743,13 @@ THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
 8
 8
 Devtank_PCB_lib
+SOT-25-5
+
+
+0
+5
+5
+Devtank_PCB_lib
 SOT-323-5
 
 
@@ -43609,6 +43777,13 @@ STX-3000
 0
 3
 3
+Devtank_PCB_lib
+SW_Push_1P1T_NO_CK_KMR2
+CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf
+tactile switch kmr2
+0
+4
+2
 Devtank_PCB_lib
 SW_Tactile_SPST_Angled_PTS645Vx58-2LFS
 tactile switch SPST right angle, PTS645VL58-2 LFS
@@ -43652,6 +43827,13 @@ pin header
 98
 98
 Devtank_PCB_lib
+Socket_DIN41612-CaseC1-full-Female-96Pin-3rows
+
+
+0
+98
+97
+Devtank_PCB_lib
 Socket_DIN41612-CaseC1-full-Male-96Pin-3rows_correct
 
 
@@ -43693,6 +43875,13 @@ TFLGA_3x3x1_16L
 0
 16
 16
+Devtank_PCB_lib
+TI_CSD18540Q5B
+
+
+0
+9
+3
 Devtank_PCB_lib
 TO-263AB
 TO-263 / D2PAK / DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-3-1/
