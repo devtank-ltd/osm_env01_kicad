@@ -5629,9 +5629,6 @@
     (path "/00000000-0000-0000-0000-000061fc623e"
       (reference "R4") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0402_1005Metric")
     )
-    (path "/00000000-0000-0000-0000-000060688d25/0b56839b-4a42-4d12-8da9-b8f954eb7dfd"
-      (reference "R5") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0805_2012Metric")
-    )
     (path "/00000000-0000-0000-0000-000060917dd5/00000000-0000-0000-0000-0000614c56b3"
       (reference "R6") (unit 1) (value "1.3k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
@@ -6056,7 +6053,7 @@
       (reference "R?") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/00000000-0000-0000-0000-000060688d25/d7ebdeb6-2864-4c05-b8ca-e2cc0362d388"
-      (reference "R?") (unit 1) (value "0R") (footprint "Resistor_SMD:R_0805_2012Metric")
+      (reference "R?") (unit 1) (value "DNF") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/00000000-0000-0000-0000-000060917dd5/00000000-0000-0000-0000-0000614e7caa"
       (reference "S1") (unit 1) (value "B3U-1100P") (footprint "Button_Switch_SMD:SW_SPST_B3U-1100P")

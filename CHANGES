@@ -122,6 +122,20 @@ Changes incorporated in Rev D:
 
 (16) Short pin 2 and 3 of Q3. 
 
-(17) Fit 74AUP1T87GWH xor gate to board. Connect pin 2 of chip to Q2(pin2), connect pin 4 of chip to Q2(pin3), pin 3 of chip connect to gnd, pin 5 of chip connect to VDD 3V3 (R125 pin1). Pin 1 of chip connect to USB_DEBUG_DTR(R86 pin2).  
+(17) Fit 74AUP1T87GWH xor gate to board. Connect pin 2 of chip to Q2(pin2), connect pin 4 of chip to Q2(pin3), pin 3 of chip connect to gnd, pin 5 of chip connect to VDD 3V3 (R125 pin1). Pin 1 of chip connect to USB_DEBUG_DTR(R86 pin2).
+
+(18) Unshort JP19
+
+(19) Cut bottom copper track for battery voltage from pin 2
+
+(20) Cut bottom copper track for battery voltage from pin 3
+
+(21) Short TP34 and TP18  
+
+(22) Remove R5
+
+(23) Connect pin 1 of R5 to pin 2 of switch
+
+(24) Connect pin 2 of r5 to pin 3 of switch
 
 
