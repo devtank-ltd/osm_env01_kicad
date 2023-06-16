@@ -90,6 +90,7 @@ Changes incorporated in Rev C:
 Changes incorporated in Rev D:
 *********************************
 
+V1
 (1) Replace R104 and R105 with 0R.
 
 (2) Fit R5 as 0R
@@ -114,15 +115,22 @@ Changes incorporated in Rev D:
 
 (12) R86 and R89 to be replaced with 1kohm.
 
+
+V1.1
 (13) Short JP19
 
 (14) Short pin LORA_RST to LORA_NRST. Do this by connecting R103 pin 1 to R123 pin 2.
 
 (15) Remove Q2 and Q3.
 
-(16) Short pin 2 and 3 of Q3. 
+(16) Short pin 2 and 3 of Q3.
 
-(17) Fit 74AUP1T87GWH xor gate to board. Connect pin 2 of chip to Q2(pin2), connect pin 4 of chip to Q2(pin3), pin 3 of chip connect to gnd, pin 5 of chip connect to VDD 3V3 (R125 pin1). Pin 1 of chip connect to USB_DEBUG_DTR(R86 pin2).
+(17) Fit 74AUP1T87GWH xor gate to board. Connect pin 2 of chip to Q2(pin2), connect pin 4 of chip to Q2(pin3), pin 3 of chip connect to gnd, pin 5 of chip connect to VDD of u13. Pin 1 of chip connect to USB_DEBUG_DTR(R86 pin2).
+
+
+v1.3
+
+(17.1) Disconnect xor gate pin 5 from vdd and connect to 3v3. 
 
 (18) Unshort JP19
 
