@@ -130,7 +130,7 @@ V1.1
 
 v1.2
 
-(17.1) Disconnect xnor gate pin 5 from vdd and connect to 3v3. 
+(17.1) Disconnect xnor gate pin 5 from vdd and connect to 3v3_core. 
 
 v1.3
 
