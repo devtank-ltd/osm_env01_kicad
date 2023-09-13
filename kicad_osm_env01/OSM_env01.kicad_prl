@@ -3,10 +3,12 @@
     "active_layer": 31,
     "active_layer_preset": "",
     "auto_track_width": false,
+    "hidden_netclasses": [],
     "hidden_nets": [],
     "high_contrast_mode": 0,
     "net_color_mode": 1,
     "opacity": {
+      "images": 0.6,
       "pads": 1.0,
       "tracks": 1.0,
       "vias": 1.0,
@@ -18,7 +20,7 @@
       "footprints": true,
       "graphics": true,
       "keepouts": true,
-      "lockedItems": false,
+      "lockedItems": true,
       "otherItems": true,
       "pads": true,
       "text": true,
@@ -36,6 +38,7 @@
       8,
       9,
       10,
+      11,
       12,
       13,
       14,
@@ -61,7 +64,7 @@
       35,
       36
     ],
-    "visible_layers": "000b030_80000000",
+    "visible_layers": "0006030_80000001",
     "zone_display_mode": 1
   },
   "meta": {

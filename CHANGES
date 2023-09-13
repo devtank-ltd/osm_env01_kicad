@@ -149,4 +149,6 @@ v1.3
 (24) Connect pin 2 of r5 to pin 3 of switch
 
 (25) Disconnect u12 pin 4 from 3v3. Connect pin 4 to 5V (R120 pin2).
+v1.4
+(26) Short pin 2 and 3 of U1.
 
