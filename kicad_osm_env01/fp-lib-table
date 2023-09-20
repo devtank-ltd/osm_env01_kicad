@@ -1,3 +1,5 @@
 (fp_lib_table
-  (lib (name Devtank_PCB_lib)(type KiCad)(uri ${KIPRJMOD}/../common/Devtank_PCB_Lib.pretty)(options "")(descr ""))
+  (version 7)
+  (lib (name "Devtank_PCB_lib")(type "KiCad")(uri "${KIPRJMOD}/../common/Devtank_PCB_Lib.pretty")(options "")(descr ""))
+  (lib (name "Footprints")(type "KiCad")(uri "${KIPRJMOD}/Footprints")(options "")(descr ""))
 )

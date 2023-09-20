@@ -3050,7 +3050,7 @@
   (symbol (lib_id "Device:LED") (at 228.6 31.115 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-0000614c4caa)
-    (property "Reference" "D8" (at 231.5718 30.1244 90)
+    (property "Reference" "D14" (at 231.5718 30.1244 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "GREEN" (at 231.5718 32.4358 90)
@@ -3067,7 +3067,7 @@
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-000060917dd5"
-          (reference "D8") (unit 1)
+          (reference "D14") (unit 1)
         )
       )
     )

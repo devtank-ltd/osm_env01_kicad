@@ -3463,7 +3463,7 @@
   (symbol (lib_id "power:+5V") (at 59.055 226.695 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 686c35de-e928-44ec-ac65-c461c67daef1)
-    (property "Reference" "#PWR?" (at 59.055 230.505 0)
+    (property "Reference" "#PWR0141" (at 59.055 230.505 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 59.436 222.3008 0)
@@ -3479,7 +3479,7 @@
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0141") (unit 1)
         )
       )
     )
