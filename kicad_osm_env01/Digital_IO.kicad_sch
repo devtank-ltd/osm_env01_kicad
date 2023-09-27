@@ -103,55 +103,6 @@
         )
       )
     )
-    (symbol "Devtank:+3V3_CORE" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
-      (property "Reference" "#PWR" (at 0 -3.81 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (property "Value" "+3V3_CORE" (at 0 3.556 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Footprint" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "Datasheet" "" (at 0 0 0)
-        (effects (font (size 1.27 1.27)))
-      )
-      (property "ki_keywords" "POWER, PWR" (at 0 0 0)
-        (effects (font (size 1.27 1.27)) hide)
-      )
-      (symbol "+3V3_CORE_0_1"
-        (polyline
-          (pts
-            (xy -0.762 1.27)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 0)
-            (xy 0 2.54)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-        (polyline
-          (pts
-            (xy 0 2.54)
-            (xy 0.762 1.27)
-          )
-          (stroke (width 0) (type default))
-          (fill (type none))
-        )
-      )
-      (symbol "+3V3_CORE_1_1"
-        (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+3V3_CORE" (effects (font (size 1.27 1.27))))
-          (number "1" (effects (font (size 1.27 1.27))))
-        )
-      )
-    )
     (symbol "Devtank:MIC94073YC6" (pin_names (offset 0.254)) (in_bom yes) (on_board yes)
       (property "Reference" "U" (at -6.35 14.605 0)
         (effects (font (size 1.524 1.524)))
@@ -302,6 +253,58 @@
         )
       )
     )
+    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3V3" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3V3_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3V3_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:GND" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -6.35 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -315,7 +318,7 @@
       (property "Datasheet" "" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_keywords" "power-flag" (at 0 0 0)
+      (property "ki_keywords" "global power" (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (property "ki_description" "Power symbol creates a global label with name \"GND\" , ground" (at 0 0 0)
@@ -756,9 +759,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3c48ef6f-ba0f-4976-b74d-154df08bbe5e))
-    (pin "3" (uuid c74d67bc-42d4-4498-a091-42145eaac0da))
+    (pin "3" (uuid c74d67bc-42d4-4498-a091-42145eaac0df))
     (pin "2" (uuid 02995309-b843-418e-9025-38e0c9a3bcb3))
-    (pin "3" (uuid c74d67bc-42d4-4498-a091-42145eaac0da))
+    (pin "3" (uuid c74d67bc-42d4-4498-a091-42145eaac0df))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -787,9 +790,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6fca8803-42c6-4c0b-bbe9-91f930cbc0cd))
-    (pin "3" (uuid a6a72cd8-21c7-4c15-9b98-e5a288bbaab9))
+    (pin "3" (uuid a6a72cd8-21c7-4c15-9b98-e5a288bbaabe))
     (pin "2" (uuid 3bb97f31-473c-42cf-8350-162c485ccb67))
-    (pin "3" (uuid a6a72cd8-21c7-4c15-9b98-e5a288bbaab9))
+    (pin "3" (uuid a6a72cd8-21c7-4c15-9b98-e5a288bbaabe))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -818,9 +821,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55aec6e8-9443-4619-9906-18423b70dd76))
-    (pin "3" (uuid 10150664-e17a-4220-9a88-d9025b060441))
+    (pin "3" (uuid 10150664-e17a-4220-9a88-d9025b060446))
     (pin "2" (uuid d4391522-cfad-43ac-9777-c34f8b824db3))
-    (pin "3" (uuid 10150664-e17a-4220-9a88-d9025b060441))
+    (pin "3" (uuid 10150664-e17a-4220-9a88-d9025b060446))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -849,9 +852,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f79faf6c-9e73-4d5a-a3b3-3abdd4a1611f))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d455f))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4564))
     (pin "2" (uuid 4717c16e-4caf-41db-976f-f247d2a86ecc))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d455f))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4564))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -964,6 +967,34 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 210.185 60.96 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 0cdebf43-a2ff-49d0-b0a0-93050a0d0959)
+    (property "Reference" "#PWR0142" (at 210.185 64.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 210.566 56.5658 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 210.185 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 210.185 60.96 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 452ca207-fe90-4c91-8553-48f531785838))
+    (instances
+      (project "OSM_env01"
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
+          (reference "#PWR0142") (unit 1)
+        )
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
+          (reference "#PWR052") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Device:R") (at 154.94 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1d4d3932-950b-46a2-b86c-70c9203ecc8e)
@@ -1067,6 +1098,34 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 74.295 110.49 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 25ee7147-3e96-4a39-b7ff-36a1f6e2492c)
+    (property "Reference" "#PWR0142" (at 74.295 114.3 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 74.676 106.0958 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 74.295 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 74.295 110.49 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 1bc14fd3-d358-44ec-9216-357ef0ee0164))
+    (instances
+      (project "OSM_env01"
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
+          (reference "#PWR0142") (unit 1)
+        )
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
+          (reference "#PWR08") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "Devtank:MIC94073YC6") (at 121.92 82.55 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3474b4a1-cc8f-49d2-ba73-853a94dd0999)
@@ -1122,26 +1181,29 @@
     )
   )
 
-  (symbol (lib_id "Devtank:+3V3_CORE") (at 154.94 99.695 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid 3fd1af4d-7374-4e0a-9498-80f5b92c5a69)
-    (property "Reference" "#PWR045" (at 154.94 103.505 0)
+  (symbol (lib_id "power:+3V3") (at 73.66 64.135 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 3b20d9ef-20b1-45fb-97b8-789ea73d3364)
+    (property "Reference" "#PWR0142" (at 73.66 67.945 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+3V3_CORE" (at 154.94 96.1192 0)
+    (property "Value" "+3V3" (at 74.041 59.7408 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 154.94 99.695 0)
-      (effects (font (size 1.27 1.27)))
+    (property "Footprint" "" (at 73.66 64.135 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 154.94 99.695 0)
-      (effects (font (size 1.27 1.27)))
+    (property "Datasheet" "" (at 73.66 64.135 0)
+      (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 7144171c-c021-47f8-a53d-e894bd673b4e))
+    (pin "1" (uuid 47134b56-1f22-46af-8b43-bb9a597b263f))
     (instances
       (project "OSM_env01"
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
+          (reference "#PWR0142") (unit 1)
+        )
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR06") (unit 1)
         )
       )
     )
@@ -1245,6 +1307,34 @@
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
           (reference "R137") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 154.94 51.435 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 521dd601-c90a-4cda-aa1a-be0482a2703d)
+    (property "Reference" "#PWR0142" (at 154.94 55.245 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 155.321 47.0408 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 154.94 51.435 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 154.94 51.435 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid f6ea7a1f-9059-4eb6-a223-901d12db56ba))
+    (instances
+      (project "OSM_env01"
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
+          (reference "#PWR0142") (unit 1)
+        )
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1382,6 +1472,34 @@
     )
   )
 
+  (symbol (lib_id "power:+3V3") (at 154.94 99.695 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 80411477-e9cc-4e6c-9904-54120cd2b3fd)
+    (property "Reference" "#PWR0142" (at 154.94 103.505 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 155.321 95.3008 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 154.94 99.695 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 154.94 99.695 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 65210139-421e-402e-a557-150e5c977979))
+    (instances
+      (project "OSM_env01"
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
+          (reference "#PWR0142") (unit 1)
+        )
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
+          (reference "#PWR045") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:GND") (at 97.79 94.615 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 83794e31-c2ee-4fad-a597-037ebbef8838)
@@ -1428,31 +1546,6 @@
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
           (reference "R94") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Devtank:+3V3_CORE") (at 154.94 51.435 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid a1aa43ac-a20d-4e7e-b6fd-43eb60eff1e4)
-    (property "Reference" "#PWR09" (at 154.94 55.245 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3_CORE" (at 154.94 47.8592 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 154.94 51.435 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Datasheet" "" (at 154.94 51.435 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 030d8ffa-a5e4-4d23-afde-deac1af15f51))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
-          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -1659,81 +1752,6 @@
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
           (reference "R138") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Devtank:+3V3_CORE") (at 73.66 64.135 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f1368d72-ec57-44b0-8f9b-627f0c410075)
-    (property "Reference" "#PWR06" (at 73.66 67.945 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3_CORE" (at 73.66 60.5592 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 73.66 64.135 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Datasheet" "" (at 73.66 64.135 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 534594c3-c598-486b-bd03-65c522d02710))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
-          (reference "#PWR06") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Devtank:+3V3_CORE") (at 210.185 60.96 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid f46a849c-98e4-4004-9ccc-2120624de598)
-    (property "Reference" "#PWR055" (at 210.185 64.77 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3_CORE" (at 210.185 57.3842 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 210.185 60.96 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Datasheet" "" (at 210.185 60.96 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 2a4a54e0-3edc-4aef-b0ce-c06c8b461d76))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
-          (reference "#PWR055") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Devtank:+3V3_CORE") (at 74.295 110.49 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid fd670dee-fa82-4832-b717-73eaf526dc60)
-    (property "Reference" "#PWR08" (at 74.295 114.3 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+3V3_CORE" (at 74.295 106.9142 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 74.295 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Datasheet" "" (at 74.295 110.49 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (pin "1" (uuid 8884e70f-e5f7-4a8a-b350-6a911e985324))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
-          (reference "#PWR08") (unit 1)
         )
       )
     )
