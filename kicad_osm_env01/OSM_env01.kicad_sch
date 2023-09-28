@@ -1956,7 +1956,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 10cfdaf4-40eb-46b3-a671-e1d00a899533)
   )
-  (text "todo\n\nLayout\n-add footprint for comms header \n-make sure usb connector is positioned correctly\n-design particle sensor mounting pads with holes"
+  (text "Layout\n-make sure usb connector is positioned correctly\n-make sure board mounting holes are correct size\n\n"
     (at 415.925 146.05 0)
     (effects (font (size 1.27 1.27) (color 255 6 0 1)) (justify left bottom))
     (uuid 176d335c-50e8-49e8-a379-47b39504339c)
