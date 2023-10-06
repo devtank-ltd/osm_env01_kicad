@@ -5206,7 +5206,7 @@
     (property "Value" "Conn_01x06" (at 139.192 248.674 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2" (at 137.16 246.38 0)
+    (property "Footprint" "Devtank_PCB_lib:CONN_BM06B-GHS-TBT_JST" (at 137.16 246.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 137.16 246.38 0)

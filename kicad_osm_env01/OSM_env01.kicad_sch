@@ -3606,31 +3606,6 @@
     )
   )
 
-  (symbol (lib_id "OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue") (at 228.6 139.065 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 244ea85b-1e02-4b68-9ffe-6a9d2f03540c)
-    (property "Reference" "TP26" (at 221.615 139.065 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Test_Point" (at 226.7712 141.7066 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 228.6 144.145 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 228.6 144.145 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid a5740dd0-de31-4dbc-9f2c-0f98f8d328a2))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
-          (reference "TP26") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 33.02 269.875 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 2b5eed71-9c7e-463a-989a-b59396e25a54)
@@ -4155,31 +4130,6 @@
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
           (reference "TP59") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue") (at 228.6 142.24 90) (mirror x) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 7c25c921-1913-4249-a20d-bca55790c517)
-    (property "Reference" "TP31" (at 221.615 142.24 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Test_Point" (at 226.7712 144.8816 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm" (at 228.6 147.32 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 228.6 147.32 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid c340a5f9-749b-437d-acde-93cd2b6dd87d))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
-          (reference "TP31") (unit 1)
         )
       )
     )
