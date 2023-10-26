@@ -1,4 +1,4 @@
-21203610606199304
+21207006035546087
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -50575,6 +50575,13 @@ Devtank_PCB_lib
 2
 2
 Devtank_PCB_lib
+218-12LP_CTS
+
+218-12LPST 
+0
+24
+24
+Devtank_PCB_lib
 48408-0003
 
 
@@ -53969,6 +53976,13 @@ MOLEX_216989-0001
 0
 18
 18
+Footprints
+XCVR_ME310G1WW03T040100
+
+
+0
+94
+94
 Footprints
 osm_comms_module
 RAK3172
