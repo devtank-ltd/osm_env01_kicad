@@ -1,4 +1,4 @@
-21207009815020430
+21207010078577064
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -51476,7 +51476,7 @@ SEN54-SDN-T
 
 0
 6
-1
+6
 Devtank_PCB_lib
 SK480_84_SA
 
@@ -51784,7 +51784,7 @@ comms_module_footprint
 
 0
 30
-23
+30
 Devtank_PCB_lib
 eRIC-LoRa_RF_Module
 eRIC-LoRa Long Range RF Transceiver Module
