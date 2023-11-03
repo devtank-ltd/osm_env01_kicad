@@ -5130,7 +5130,7 @@
     (property "Reference" "R59" (at 116.205 250.19 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100K" (at 127 250.19 90)
+    (property "Value" "0R" (at 127 250.19 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 121.285 253.238 90)
