@@ -2413,7 +2413,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 70c5863b-26f7-4518-848b-a1c41d1b2841)
   )
-  (label "STM_232_TX" (at 114.3 34.29 180) (fields_autoplaced)
+  (label "STM_232_TX" (at 114.935 34.29 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid 73d502c9-ce2e-4be7-af4f-8b02481af1ec)
   )
@@ -2557,7 +2557,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c512fed3-9770-476b-b048-e781b4f3cd72)
   )
-  (label "STM_232_RX" (at 114.3 30.48 180) (fields_autoplaced)
+  (label "STM_232_RX" (at 114.935 30.48 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid c6bd6050-454f-4cad-9946-69c90a5c3d1f)
   )
@@ -3337,31 +3337,6 @@
     )
   )
 
-  (symbol (lib_id "OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue") (at 114.935 34.29 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 10a4ccb8-3255-4e1e-8db4-8e6576181155)
-    (property "Reference" "TP16" (at 121.92 34.29 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Test_Point" (at 116.7638 36.9316 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 114.935 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 114.935 39.37 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid afb2e859-b1cb-4dca-90d1-8186e79ddeed))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
-          (reference "TP16") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 341.63 91.44 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 12fe36d9-7b93-4771-b621-3b4206b72e34)
@@ -3483,9 +3458,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55aec6e8-9443-4619-9906-18423b70dd76))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f73816e))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738170))
     (pin "2" (uuid f361c18a-6795-44c0-9f3a-3c04518a7b1f))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f73816e))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738170))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -3756,31 +3731,6 @@
     )
   )
 
-  (symbol (lib_id "OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue") (at 114.935 30.48 270) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 5998e166-511b-48aa-b38d-c8fbff0e5375)
-    (property "Reference" "TP15" (at 121.92 30.48 90)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Value" "Test_Point" (at 116.7638 33.1216 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 114.935 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 114.935 35.56 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid b92446f0-1e80-469d-9bf2-6ea971c3749c))
-    (instances
-      (project "OSM_env01"
-        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
-          (reference "TP15") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "Device:R") (at 238.125 215.9 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 5c5f43c0-dcf5-4fe2-855b-41797bbf7a98)
@@ -3852,9 +3802,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3593c55b-7bbf-4e6f-a469-39063a65402b))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4583))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4585))
     (pin "2" (uuid 4717c16e-4caf-41db-976f-f247d2a86ecc))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4583))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4585))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
