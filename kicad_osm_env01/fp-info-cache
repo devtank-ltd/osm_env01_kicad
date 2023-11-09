@@ -1,4 +1,4 @@
-21207012843020269
+21208713087346920
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -50567,6 +50567,13 @@ Devtank_PCB_lib
 0
 2
 2
+Devtank_PCB_lib
+3-way-header-1.27mm-M50-3530342
+Through hole straight pin header, 1x03, 1.27mm pitch, single row
+Through hole pin header THT 1x03 1.27mm single row
+0
+3
+3
 Devtank_PCB_lib
 5x20mm_PC_BOARD_FUSEHOLDER
 

@@ -3458,9 +3458,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55aec6e8-9443-4619-9906-18423b70dd76))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738171))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738172))
     (pin "2" (uuid f361c18a-6795-44c0-9f3a-3c04518a7b1f))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738171))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738172))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -3802,9 +3802,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3593c55b-7bbf-4e6f-a469-39063a65402b))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4586))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4587))
     (pin "2" (uuid 4717c16e-4caf-41db-976f-f247d2a86ecc))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4586))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4587))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -4209,7 +4209,7 @@
     (property "Value" "Jumper_3_Open" (at 33.2492 241.054 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" (at 31.115 240.03 0)
+    (property "Footprint" "Devtank_PCB_lib:3-way-header-1.27mm-M50-3530342" (at 31.115 240.03 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 31.115 240.03 0)
@@ -4236,7 +4236,7 @@
     (property "Value" "Jumper_3_Open" (at 33.2492 257.564 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" (at 31.115 256.54 0)
+    (property "Footprint" "Devtank_PCB_lib:3-way-header-1.27mm-M50-3530342" (at 31.115 256.54 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 31.115 256.54 0)
@@ -4671,7 +4671,7 @@
     (property "Value" "Jumper_3_Open" (at 33.2492 224.544 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" (at 31.115 223.52 0)
+    (property "Footprint" "Devtank_PCB_lib:3-way-header-1.27mm-M50-3530342" (at 31.115 223.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 31.115 223.52 0)
@@ -4950,7 +4950,7 @@
     (property "Value" "Jumper_3_Open" (at 33.2492 274.709 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical" (at 31.115 273.685 0)
+    (property "Footprint" "Devtank_PCB_lib:3-way-header-1.27mm-M50-3530342" (at 31.115 273.685 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 31.115 273.685 0)

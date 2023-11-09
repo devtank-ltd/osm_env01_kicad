@@ -536,7 +536,7 @@
       "idf": "",
       "netlist": "OSM_env01.net",
       "specctra_dsn": "",
-      "step": "OSM_env01_revcv2.step",
+      "step": "OSM_env01_revd_wcomms_board.step",
       "vrml": ""
     },
     "page_layout_descr_file": ""
