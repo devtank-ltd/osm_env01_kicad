@@ -3869,7 +3869,7 @@
     (property "Value" "ICS-43434" (at 206.375 59.69 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Devtank_PCB_lib:ICS-43434" (at 215.265 76.835 0)
+    (property "Footprint" "Devtank_PCB_lib:ICS-43434_kicad_v7" (at 215.265 76.835 0)
       (effects (font (size 1.27 1.27)) (justify left bottom) hide)
     )
     (property "Datasheet" "" (at 215.265 76.835 0)
