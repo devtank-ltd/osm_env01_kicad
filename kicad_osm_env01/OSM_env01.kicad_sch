@@ -3741,9 +3741,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55aec6e8-9443-4619-9906-18423b70dd76))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738178))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738179))
     (pin "2" (uuid f361c18a-6795-44c0-9f3a-3c04518a7b1f))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738178))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738179))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -4108,9 +4108,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3593c55b-7bbf-4e6f-a469-39063a65402b))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d458d))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d458e))
     (pin "2" (uuid 4717c16e-4caf-41db-976f-f247d2a86ecc))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d458d))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d458e))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
