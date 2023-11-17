@@ -1298,11 +1298,6 @@
     (effects (font (size 2.9972 2.9972) (thickness 0.5994) bold) (justify left bottom))
     (uuid 97bcf3aa-2b19-450e-9f76-a780efa9f78e)
   )
-  (text "5V 3A based on selected resistors\nJP1 may be useful for measuring\ncurrent in battery applications\n\n"
-    (at 13.97 26.035 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 9dc88582-4cb1-4472-b669-ef591bbfa307)
-  )
   (text "divider ratio=47/147=31.97\n5/1024=1adc=4.88mm\n(4.2/4.88m)*0.3197=275.15adc=fully charged and above\n\n"
     (at 15.24 195.58 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
