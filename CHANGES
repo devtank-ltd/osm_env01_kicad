@@ -152,3 +152,31 @@ v1.3
 v1.4
 (26) Short pin 2 and 3 of U1.
 
+Other schematic updates
+
+(27) Any battery related circuitry removed.
+
+(28) UART HPM particle sensor no longer supported. This has been replaced with SEN54-SDN-T header pin which uses i2c.
+
+(29) RS232 now has its own dedicated UART.
+
+(30) RS232 transciever replaced due to end of life.
+
+(31) LoraWan module removed.
+
+(32) OSM universal comms module socket added.
+
+(33) Micro usb connector replaced with USB-C.
+
+(34) Power supply circuitry updated, 5V regulator removed and 3V3 regulator replaced.
+
+(35) Onboard temperature sensor removed.
+
+(36) CT clamp ports added to board.
+
+(37) J2 pinouts updated.
+
+(38) Dedicated pin for onewire added to J2.
+
+(39) On board headers added to set hardware configuration.
+
