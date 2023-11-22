@@ -1150,6 +1150,9 @@
   (junction (at 96.52 210.82) (diameter 0) (color 0 0 0 0)
     (uuid ab2b6f1a-177c-4564-8c56-aaada27728ef)
   )
+  (junction (at 339.725 193.675) (diameter 0) (color 0 0 0 0)
+    (uuid b16769a0-0ae6-4a21-aab0-84f80ec43df6)
+  )
   (junction (at 106.68 240.03) (diameter 0) (color 0 0 0 0)
     (uuid b8a9d46d-24b9-4f9c-8be7-aaf0617a632d)
   )
@@ -1631,6 +1634,10 @@
     (uuid 7776d57e-325f-4fe0-9ab8-fc26b488e2aa)
   )
 
+  (wire (pts (xy 339.725 193.675) (xy 343.535 193.675))
+    (stroke (width 0) (type default))
+    (uuid 779d5009-b7c9-4c61-be79-56cf1542e240)
+  )
   (wire (pts (xy 228.6 148.59) (xy 250.825 148.59))
     (stroke (width 0) (type default))
     (uuid 77aa6db5-9b8d-4983-b88e-30fe5af25975)
@@ -2071,6 +2078,10 @@
   (wire (pts (xy 232.41 191.77) (xy 229.235 191.77))
     (stroke (width 0) (type default))
     (uuid eae90848-75d3-460e-aa42-244dca2c2be1)
+  )
+  (wire (pts (xy 343.535 193.675) (xy 343.535 191.77))
+    (stroke (width 0) (type default))
+    (uuid ecfc935d-9007-4460-b833-83fb0f12a2b7)
   )
   (wire (pts (xy 26.67 58.42) (xy 47.625 58.42))
     (stroke (width 0) (type default))
@@ -3870,9 +3881,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55aec6e8-9443-4619-9906-18423b70dd76))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738181))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738183))
     (pin "2" (uuid f361c18a-6795-44c0-9f3a-3c04518a7b1f))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738181))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738183))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -4275,9 +4286,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3593c55b-7bbf-4e6f-a469-39063a65402b))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4596))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4598))
     (pin "2" (uuid 4717c16e-4caf-41db-976f-f247d2a86ecc))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4596))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4598))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6/00000000-0000-0000-0000-0000608f4675/00000000-0000-0000-0000-000060920857"
@@ -5540,6 +5551,37 @@
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
           (reference "C11") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "OSM_env01-rescue:Test_Point-Connector-ESP32-EVB_Rev_D-rescue") (at 343.535 191.77 0) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid cf6bd534-ea82-4a51-ba15-c2ef85922555)
+    (property "Reference" "TP15" (at 344.805 186.69 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "Test_Point" (at 346.1766 189.9412 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm" (at 348.615 191.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 348.615 191.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Power Rating" "" (at 343.535 191.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Current Rating" "" (at 343.535 191.77 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 871b59ad-ebb6-4bc3-912d-60ff230af850))
+    (instances
+      (project "OSM_env01"
+        (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
+          (reference "TP15") (unit 1)
         )
       )
     )
