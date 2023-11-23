@@ -6,8 +6,8 @@
 
   (title_block
     (title "Open Smart Monitor")
-    (date "2023-09-29")
-    (rev "C.2")
+    (date "2023-11-23")
+    (rev "C.3")
     (company "Devtank LTD")
     (comment 1 "Part No: 304-010")
   )
@@ -3587,7 +3587,7 @@
   (symbol (lib_id "power:GND") (at 172.085 254.635 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 10a0b660-161b-4ac4-88bb-8e1d37f8006f)
-    (property "Reference" "#PWR075" (at 172.085 260.985 0)
+    (property "Reference" "#PWR069" (at 172.085 260.985 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 171.958 259.0292 0)
@@ -3844,7 +3844,7 @@
   (symbol (lib_id "OSM_env01-rescue:BAV99-Diode-ESP32-EVB_Rev_D-rescue") (at 173.355 219.71 90) (mirror x) (unit 2)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 316baf2d-10db-4b12-a8e0-00727d022356)
-    (property "Reference" "D6" (at 170.815 221.615 0)
+    (property "Reference" "D3" (at 170.815 221.615 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BAV99-TP " (at 170.815 213.995 0)
@@ -3875,9 +3875,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55aec6e8-9443-4619-9906-18423b70dd76))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738184))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738188))
     (pin "2" (uuid f361c18a-6795-44c0-9f3a-3c04518a7b1f))
-    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738184))
+    (pin "3" (uuid d4f9b910-a174-4b2d-9cfe-b3ba3f738188))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
@@ -4246,7 +4246,7 @@
   (symbol (lib_id "OSM_env01-rescue:BAV99-Diode-ESP32-EVB_Rev_D-rescue") (at 172.085 244.475 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 62f3f160-2c35-49ab-b419-325c8912656d)
-    (property "Reference" "D6" (at 169.545 245.745 0)
+    (property "Reference" "D3" (at 169.545 245.745 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "BAV99-TP " (at 169.545 238.76 0)
@@ -4277,9 +4277,9 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 3593c55b-7bbf-4e6f-a469-39063a65402b))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4599))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d459d))
     (pin "2" (uuid 4717c16e-4caf-41db-976f-f247d2a86ecc))
-    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d4599))
+    (pin "3" (uuid f428ac18-4e5f-446e-ac97-d31feb1d459d))
     (instances
       (project "OSM_env01"
         (path "/ab8b0540-9c9f-4195-88f5-7bed0b0a8ed6"
@@ -4891,7 +4891,7 @@
   (symbol (lib_id "Device:R") (at 181.61 229.87 90) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 95654ec9-a670-4cbf-9694-012a24ab11d0)
-    (property "Reference" "R104" (at 187.96 228.6 90)
+    (property "Reference" "R14" (at 187.96 228.6 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100R" (at 175.895 228.6 90)
