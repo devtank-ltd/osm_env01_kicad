@@ -1,400 +1,1331 @@
-95269388108851
-TestPoint
-TestPoint_2Pads_Pitch2.54mm_Drill0.8mm
-Test point with 2 pins, pitch 2.54mm, drill diameter 0.8mm
-CONN DEV
+313187639044178
+Devtank_PCB_lib
+691325110008
+<b>WR-TBL Serie 3251 - 3.50 mm Horizontal PCB Header with Flanges <br></b>Max Height = 7.2mm , Pitch 3.5mm , 8pins
+
+0
+8
+8
+Devtank_PCB_lib
+691325110012
+<b>WR-TBL Serie 3251 - 3.50 mm Horizontal PCB Header with Flanges <br></b>Max Height = 7.2mm , Pitch 3.5mm , 12pins
+
+0
+12
+12
+Devtank_PCB_lib
+2-SMD_J-LEAD_r3.5x2.9mm_d4.5-6.5mm
+
+
 0
 2
 2
-TestPoint
-TestPoint_2Pads_Pitch5.08mm_Drill1.3mm
-Test point with 2 pads, pitch 5.08mm, hole diameter 1.3mm, wire diameter 1.0mm
-CONN DEV
+Devtank_PCB_lib
+3-way-header-1.27mm-M50-3530342
+Through hole straight pin header, 1x03, 1.27mm pitch, single row
+Through hole pin header THT 1x03 1.27mm single row
+0
+3
+3
+Devtank_PCB_lib
+5x20mm_PC_BOARD_FUSEHOLDER
+
+
 0
 2
 2
-TestPoint
-TestPoint_Bridge_Pitch2.0mm_Drill0.7mm
-wire loop as test point, pitch 2.0mm, hole diameter 0.7mm, wire diameter 0.5mm
-test point wire loop
+Devtank_PCB_lib
+48408-0003
+
+
+0
+11
+10
+Devtank_PCB_lib
+78646-3001_6_pin_sim_connector
+
+
+0
+14
+9
+Devtank_PCB_lib
+216989-0001_MOL
+
+2169890001 
+0
+18
+15
+Devtank_PCB_lib
+679101002_mpcie_connector
+679101002-2
+Connector
+0
+54
+54
+Devtank_PCB_lib
+679101002_mpcie_connector_dual_form_factor
+679101002-2
+Connector
+0
+56
+53
+Devtank_PCB_lib
+ABM3B-8.000MHZ-B2-T
+Abracon Miniature Ceramic Smd Crystal ABM3C http://www.abracon.com/Resonators/abm3c.pdf, 5.0x3.2mm^2 package
+SMD SMT crystal
+0
+4
+4
+Devtank_PCB_lib
+ABS25-32.768KHZ-6-T
+SMD Crystal SERIES SMD7050/4 https://www.foxonline.com/pdfs/FQ7050.pdf, 7.0x5.0mm^2 package
+SMD SMT crystal
+0
+4
+4
+Devtank_PCB_lib
+AD4112BCPZ-RL7
+
+
+0
+41
+41
+Devtank_PCB_lib
+AISG_1
+
+
+0
+8
+8
+Devtank_PCB_lib
+AISG_RET
+
+
+0
+8
+8
+Devtank_PCB_lib
+AISG_RET_FEMALE
+
+
+0
+9
+9
+Devtank_PCB_lib
+AISG_RET_MALE
+
+
+0
+9
+9
+Devtank_PCB_lib
+AP2152AFGEG-7
+
+
+0
+9
+9
+Devtank_PCB_lib
+BGA-256_12mmx12mm_Layout_14mmx14mm_P0.8mm_R0.5mm
+
+
+0
+256
+256
+Devtank_PCB_lib
+BGA_132
+
+
+0
+132
+132
+Devtank_PCB_lib
+BGA_132_ice40
+
+
+0
+132
+132
+Devtank_PCB_lib
+BatteryHolder_Keystone_1042_1x18650
+Battery holder for 18650 cylindrical cells http://www.keyelco.com/product.cfm/product_id/918
+18650 Keystone 1042 Li-ion
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch2.54mm_Drill0.7mm
-wire loop as test point, pitch 2.0mm, hole diameter 0.7mm, wire diameter 0.5mm
-test point wire loop
+2
+Devtank_PCB_lib
+BatteryHolder_Keystone_1061_1x20mm
+
+Keystone type 1061 battery holder
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch2.54mm_Drill1.0mm
-wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm
-test point wire loop
+2
+Devtank_PCB_lib
+Battery_SD_V_SuperCap
+vertical SD-V PCB-mounted super cap
+vertical SD-V PCB-mounted super cap
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch2.54mm_Drill1.3mm
-wire loop as test point, pitch 2.54mm, hole diameter 1.3mm, wire diameter 1.0mm
-test point wire loop
+2
+Devtank_PCB_lib
+BoxHeader_2x06_P2.00mm_Vertical
+Through hole straight pin header, 2x06, 2.00mm pitch, double rows
+Through hole pin header THT 2x06 2.00mm double row
+0
+12
+12
+Devtank_PCB_lib
+CME_XXXX_S3C_PSU_MODULE
+Through hole straight pin header, 1x04, 2.54mm pitch, single row
+Through hole pin header THT 1x04 2.54mm single row
+0
+4
+4
+Devtank_PCB_lib
+CON-SMA-EDGE-S
+
+
+0
+5
+5
+Devtank_PCB_lib
+CONN_BM06B-GHS-TBT_JST
+
+BM06B-GHS-TBTLFSNN 
+0
+8
+8
+Devtank_PCB_lib
+CP2102_QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm_ThermalVias_0.3mmdrill
+QFN, 24 Pin (http://ww1.microchip.com/downloads/en/PackagingSpec/00000049BQ.pdf#page=278), generated with kicad-footprint-generator ipc_dfn_qfn_generator.py
+QFN DFN_QFN
+0
+39
+25
+Devtank_PCB_lib
+CSD18540Q5B
+SON, 8-Leads, Body 5x6x1mm, Pitch 1.27mm; (see Texas Instruments CSD18531Q5A http://www.ti.com/lit/ds/symlink/csd18531q5a.pdf)
+VSONP 1.27
+0
+13
+3
+Devtank_PCB_lib
+CUI_HD01-19-RA-TH
+
+
+0
+23
+23
+Devtank_PCB_lib
+CUI_TBL009-254-20BE-2BE
+
+
+0
+40
+20
+Devtank_PCB_lib
+CUI_TBL009-254-22BE-2BE
+
+
+0
+44
+44
+Devtank_PCB_lib
+CUI_TBL009-254-24BE-2BE
+
+
+0
+48
+48
+Devtank_PCB_lib
+Conn_TE-DDR2-SODIMM-0.6-200P-ComputeModule
+
+
+0
+202
+200
+Devtank_PCB_lib
+Crystal_SMD_11.5x4.2mm
+Crystal_SMD_11.5x4.2mm
+SMD SMT crystal
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch3.81mm_Drill1.3mm
-wire loop as test point, pitch 3.81mm, hole diameter 1.3mm, wire diameter 1.0mm
-test point wire loop
+2
+Devtank_PCB_lib
+DB50MD
+Connecteur DB50 male droit
+CONN DB50
+0
+52
+51
+Devtank_PCB_lib
+DEVTANK_LOGO
+
+
+0
+0
+0
+Devtank_PCB_lib
+DEVTANK_LOGO_LARGE
+
+
+0
+0
+0
+Devtank_PCB_lib
+DEVTANK_LOGO_MEDIUM
+
+
+0
+0
+0
+Devtank_PCB_lib
+DEVTANK_LOGO_SMALL
+
+
+0
+0
+0
+Devtank_PCB_lib
+DGH105Q5R5_1F_supercapacitor
+DGH_17x17x8.5 mm
+Capacitor Polarised
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch5.08mm_Drill0.7mm
-wire loop as test point, pitch 5.08mm, hole diameter 0.7mm, wire diameter 1.0mm
-test point wire loop
+2
+Devtank_PCB_lib
+DPAK
+ATPAK SMD package, http://www.onsemi.com/pub/Collateral/ENA2192-D.PDF
+ATPAK 
+0
+7
+3
+Devtank_PCB_lib
+DRV8704
+
+
+0
+63
+39
+Devtank_PCB_lib
+DSI_FCC15W_VERT
+
+
+0
+17
+16
+Devtank_PCB_lib
+DSI_SFW15R-2STE1LF
+
+
+0
+17
+16
+Devtank_PCB_lib
+DSI_TE_1-1734248-5
+
+
+0
+30
+15
+Devtank_PCB_lib
+D_DO-15_P10.16mm_Horizontal
+D, DO-15 series, Axial, Horizontal, pin pitch=10.16mm, , length*diameter=7.6*3.6mm^2, , http://www.diodes.com/_files/packages/DO-15.pdf
+D DO-15 series Axial Horizontal pin pitch 10.16mm  length 7.6mm diameter 3.6mm
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch5.08mm_Drill1.3mm
-wire loop as test point, pitch 5.08mm, hole diameter 1.3mm, wire diameter 1.0mm
-test point wire loop
+2
+Devtank_PCB_lib
+Devtank_Large_Logo
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_Medium_Logo
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_Rev2_Logo_Medium
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_Rev2_Logo_Small
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_Small_Logo
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_logo_20mm_length
+
+
+0
+0
+0
+Devtank_PCB_lib
+Devtank_logo_25mm_length
+
+
+0
+0
+0
+Devtank_PCB_lib
+Diode_DO214AC_SMA
+
+
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch6.35mm_Drill1.3mm
-wire loop as test point, pitch 6.35mm, hole diameter 1.3mm, wire diameter 1.0mm
-test point wire loop
+2
+Devtank_PCB_lib
+EG1247
+EG1247
+Switch
+0
+5
+5
+Devtank_PCB_lib
+ESP32-WROOM-32U_0.3mm_drill
+Single 2.4 GHz Wi-Fi and Bluetooth combo chip with U.FL connector, https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
+Single 2.4 GHz Wi-Fi and Bluetooth combo  chip
+0
+60
+39
+Devtank_PCB_lib
+FCI_7111S2015X02LF_6pin_simcard
+
+
+0
+6
+6
+Devtank_PCB_lib
+FCI_10029449-11RLF
+
+
+0
+23
+20
+Devtank_PCB_lib
+Fuse_Bourns_MF-RHT200
+PTC Resettable Fuse, Ihold = 2.0A, Itrip=3.8A, http://www.bourns.com/docs/product-datasheets/mfrht.pdf
+ptc resettable fuse polyfuse THT
 0
 2
-1
-TestPoint
-TestPoint_Bridge_Pitch7.62mm_Drill1.3mm
-wire loop as test point, pitch 7.62mm, hole diameter 1.3mm, wire diameter 1.0mm
-test point wire loop
+2
+Devtank_PCB_lib
+GPIB_PCB_D_Conn_Male
+
+
+0
+26
+24
+Devtank_PCB_lib
+HDC2080D
+
+
+0
+11
+8
+Devtank_PCB_lib
+HE700Series_DIP-14_W7.62mm
+
+HE700 Series DIP-14 W7.62mm
+0
+8
+8
+Devtank_PCB_lib
+HPMA115S0_Particulate_sensor
+Mounting Hole 2.5mm, no annular
+mounting hole 2.5mm no annular
+0
+0
+0
+Devtank_PCB_lib
+HPP845E131R5_temperature_humidity_sensor
+
+
+0
+7
+7
+Devtank_PCB_lib
+HTSSOP-16_4.4x5mm_Pitch0.65mm
+FE Package; 16-Lead Plastic TSSOP (4.4mm); Exposed Pad Variation BB; (see Linear Technology 1956f.pdf)
+SSOP 0.65
+0
+24
+16
+Devtank_PCB_lib
+ICS-43434
+
+
+0
+6
+6
+Devtank_PCB_lib
+ICS-43434_kicad_v7
+
+
+0
+6
+6
+Devtank_PCB_lib
+IDC-Header_2x12_P2.54mm_Vertical
+Through hole straight IDC box header, 2x12, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x12 2.54mm double row
+0
+24
+24
+Devtank_PCB_lib
+INMP411
+microphone
+microphone
+0
+6
+6
+Devtank_PCB_lib
+INMP411_LGA_CAV
+microphone
+microphone
+0
+6
+6
+Devtank_PCB_lib
+ITS40FV1ST_SW_LED
+tactile push button with LED
+tact sw push 
+0
+6
+4
+Devtank_PCB_lib
+Inductor_8x8
+Inductor, TDK 8.6mmx8.7mm
+inductor TDK SMD
 0
 2
-1
-TestPoint
-TestPoint_Keystone_5000-5004_Miniature
-Keystone Miniature THM Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309
-Through Hole Mount Test Points
+2
+Devtank_PCB_lib
+Inductor_13x13
+ Inductor, SMD, 13x13
+ Inductor, SMD, 13x13
 0
-1
-1
-TestPoint
-TestPoint_Keystone_5005-5009_Compact
-Keystone Miniature THM Test Point 5005-5009, http://www.keyelco.com/product-pdf.cfm?p=1314
-Through Hole Mount Test Points
+2
+2
+Devtank_PCB_lib
+Inductor_Coilcraft_SER2800
+Inductor
+inductor coilcraft ser2800 smd
 0
-1
-1
-TestPoint
-TestPoint_Keystone_5010-5014_Multipurpose
-Keystone Miniature THM Test Point 5010-5014, http://www.keyelco.com/product-pdf.cfm?p=1319
-Through Hole Mount Test Points
+2
+2
+Devtank_PCB_lib
+Inductor_MuRata_82103C
+Inductor, Taiyo Yuden, MD series, Taiyo-Yuden_MD-4040, 4.0mmx4.0mm
+inductor taiyo-yuden md smd
 0
-1
-1
-TestPoint
-TestPoint_Keystone_5015_Micro-Minature
-SMT Test Point- Micro Miniature 5015, http://www.keyelco.com/product-pdf.cfm?p=1353
-Test Point
+2
+2
+Devtank_PCB_lib
+Inductor_PE-1812ACCXXXSTS
+Choke, Common Mode, Inductor, Pulse Electronics, 3.4mmx5.9mm
+common mode choke inductor smd
 0
-1
-1
-TestPoint
-TestPoint_Keystone_5019_Minature
-SMT Test Point- Micro Miniature 5019, http://www.keyelco.com/product-pdf.cfm?p=1357
-Test Point
+4
+4
+Devtank_PCB_lib
+JST_SH_BM04B-SRSS-TB_1x04-1MP_P1.00mm_Vertical
+JST SH series connector, BM04B-SRSS-TB (http://www.jst-mfg.com/product/pdf/eng/eSH.pdf), generated with kicad-footprint-generator
+connector JST SH side entry
 0
-1
-1
-TestPoint
-TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded
-wire loop with bead as test point, loop diameter 1.8mm, hole diameter 1.0mm
-test point wire loop bead
+6
+5
+Devtank_PCB_lib
+Jack_3.5mm_Ledino_KB3SPRS_Horizontal
+https://www.reichelt.de/index.html?ACTION=7&LA=3&OPEN=0&INDEX=0&FILENAME=C160%252FKB3SPRS.pdf
+jack stereo TRS
 0
-1
-1
-TestPoint
-TestPoint_Loop_D2.50mm_Drill1.0mm
-wire loop as test point, loop diameter 2.5mm, hole diameter 1.0mm
-test point wire loop bead
+5
+5
+Devtank_PCB_lib
+KEYSTONE_1074
+1074-2
+Undefined or Miscellaneous
 0
-1
-1
-TestPoint
-TestPoint_Loop_D2.50mm_Drill1.0mm_LowProfile
-low profile wire loop as test point, loop diameter 2.5mm, hole diameter 1.0mm
-test point wire loop bead
+3
+2
+Devtank_PCB_lib
+LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm
+
+LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z3.0mm
 0
-1
-1
-TestPoint
-TestPoint_Loop_D2.50mm_Drill1.85mm
-wire loop as test point, loop diameter 2.5mm, hole diameter 1.85mm
-test point wire loop bead
+2
+2
+Devtank_PCB_lib
+LED_Rectangular_W4.5mm_H7.3mm_Horizontal_2.54mm_Z5.0mm
+LED_Rectangular, Rectangular,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm, 2 pins,  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm, 2 pins
+LED_Rectangular Rectangular  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 1.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 3.0mm 2 pins  Rectangular size 5.0x2.0mm^2 z-position of LED center 5.0mm 2 pins
 0
-1
-1
-TestPoint
-TestPoint_Loop_D2.54mm_Drill1.5mm_Beaded
-wire loop with bead as test point, loop diameter2.548mm, hole diameter 1.5mm
-test point wire loop bead
+2
+2
+Devtank_PCB_lib
+LGA16R180P4X4_933X933X390
+
+
 0
-1
-1
-TestPoint
-TestPoint_Loop_D2.60mm_Drill0.9mm_Beaded
-wire loop with bead as test point, loop diameter2.6mm, hole diameter 0.9mm
-test point wire loop bead
+16
+16
+Devtank_PCB_lib
+LOGO
+
+
 0
-1
-1
-TestPoint
-TestPoint_Loop_D2.60mm_Drill1.4mm_Beaded
-wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.4mm
-test point wire loop bead
 0
-1
-1
-TestPoint
-TestPoint_Loop_D2.60mm_Drill1.6mm_Beaded
-wire loop with bead as test point, loop diameter2.6mm, hole diameter 1.6mm
-test point wire loop bead
 0
-1
-1
-TestPoint
-TestPoint_Loop_D3.50mm_Drill0.9mm_Beaded
-wire loop with bead as test point, loop diameter2.6mm, hole diameter 0.9mm
-test point wire loop bead
+Devtank_PCB_lib
+L_Bourns-SRN8040
+
+
 0
-1
-1
-TestPoint
-TestPoint_Loop_D3.50mm_Drill1.4mm_Beaded
-wire loop with bead as test point, loop diameter 3.5mm, hole diameter 1.4mm
-test point wire loop bead
+2
+2
+Devtank_PCB_lib
+L_Vishay_IFSC-1515AH-01
+Inductor, Vishay, IHLP series, 3.8mmx3.8mm
+inductor vishay ihlp smd
 0
-1
-1
-TestPoint
-TestPoint_Loop_D3.80mm_Drill2.0mm
-wire loop as test point, loop diameter 3.8mm, hole diameter 2.0mm
-test point wire loop bead
+2
+2
+Devtank_PCB_lib
+MEANWELL_IRM-60
+
+
 0
-1
-1
-TestPoint
-TestPoint_Loop_D3.80mm_Drill2.5mm
-wire loop as test point, loop diameter 3.8mm, hole diameter 2.5mm
-test point wire loop bead
+4
+4
+Devtank_PCB_lib
+MIC2251YML-TR
+
+
 0
-1
-1
-TestPoint
-TestPoint_Loop_D3.80mm_Drill2.8mm
-wire loop as test point, loop diameter 3.8mm, hole diameter 2.8mm
-test point wire loop bead
+9
+9
+Devtank_PCB_lib
+MIKROE-3901
+
+
 0
-1
-1
-TestPoint
-TestPoint_Pad_1.0x1.0mm
-SMD rectangular pad as test Point, square 1.0mm side length
-test point SMD pad rectangle square
+16
+16
+Devtank_PCB_lib
+MIKROE_large_size_form_factor
+
+
 0
-1
-1
-TestPoint
-TestPoint_Pad_1.5x1.5mm
-SMD rectangular pad as test Point, square 1.5mm side length
-test point SMD pad rectangle square
+16
+16
+Devtank_PCB_lib
+MOLEX_48099-5701_mpcie_latch
+
+
 0
-1
-1
-TestPoint
-TestPoint_Pad_2.0x2.0mm
-SMD rectangular pad as test Point, square 2.0mm side length
-test point SMD pad rectangle square
+6
+6
+Devtank_PCB_lib
+MOLEX_78646-3001
+
+
 0
-1
-1
-TestPoint
-TestPoint_Pad_2.5x2.5mm
-SMD rectangular pad as test Point, square 2.5mm side length
-test point SMD pad rectangle square
+14
+14
+Devtank_PCB_lib
+MOLEX_105017-0001_USB_B
+
+
 0
-1
-1
-TestPoint
-TestPoint_Pad_3.0x3.0mm
-SMD rectangular pad as test Point, square 3.0mm side length
-test point SMD pad rectangle square
+13
+6
+Devtank_PCB_lib
+MOV_L10mm_D5mm_Vertical
+MOV_L10mm_D5mm_Vertical pin pitch=7.62mm, 1W, length*diameter=9.9*3.6mm^2
+MOV Length 10mm Depth 5mm Vertical
 0
-1
-1
-TestPoint
-TestPoint_Pad_4.0x4.0mm
-SMD rectangular pad as test Point, square 4.0mm side length
-test point SMD pad rectangle square
+2
+2
+Devtank_PCB_lib
+MULTIWATT-15H
+
+
 0
-1
-1
-TestPoint
-TestPoint_Pad_D1.0mm
-SMD pad as test Point, diameter 1.0mm
-test point SMD pad
+15
+15
+Devtank_PCB_lib
+MULTIWATT-15V
+
+
 0
-1
-1
-TestPoint
+15
+15
+Devtank_PCB_lib
+MULTIWATT15_VERTICAL_STM
+
+E-TDA7375V 
+0
+0
+0
+Devtank_PCB_lib
+Milligrid_878311220_12way
+
+
+0
+12
+12
+Devtank_PCB_lib
+Milligrid_878311420_14way
+
+
+0
+14
+14
+Devtank_PCB_lib
+Molex2x06
+
+
+0
+12
+12
+Devtank_PCB_lib
+Molex_8981
+
+
+0
+8
+8
+Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-02A_2x01_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-02A, example for new mpn: 39-28-x02x, 1 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+2
+2
+Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-04A_2x02_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-04A, example for new mpn: 39-28-x04x, 2 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+4
+4
+Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-08A_2x04_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-08A, example for new mpn: 39-28-x08x, 4 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+8
+8
+Devtank_PCB_lib
+Molex_Mini-Fit_Jr_5566-24A_2x12_P4.20mm_Vertical
+Molex Mini-Fit Jr. Power Connectors, old mpn/engineering number: 5566-24A, example for new mpn: 39-28-x24x, 12 Pins per row, Mounting:  (http://www.molex.com/pdm_docs/sd/039281043_sd.pdf), generated with kicad-footprint-generator
+connector Molex Mini-Fit_Jr side entry
+0
+24
+24
+Devtank_PCB_lib
+Omega_Logo
+
+
+0
+0
+0
+Devtank_PCB_lib
+Oscillator_SMD_EuroQuartz_XO32-4Pin_3.2x2.5mm
+Miniature Crystal Clock Oscillator EuroQuartz XO32 series, http://cdn-reichelt.de/documents/datenblatt/B400/XO32.pdf, 3.2x2.5mm^2 package
+SMD SMT crystal oscillator
+0
+4
+4
+Devtank_PCB_lib
+PCIE-064-02-X-D-TH
+PCI EXPRESS CARD CONNECTOR ,64 PINS.
+
+0
+64
+64
+Devtank_PCB_lib
+PMDPB58UPE_115
+
+
+0
+8
+8
+Devtank_PCB_lib
+PQFP-64_7x7mm_P0.4mm_EP
+LQFP64: plastic low profile quad flat package; 64 leads; body 7 x 7 x 1.4 mm(see NXP sot414-1_po.pdf and sot414-1_fr.pdf)
+QFP 0.4
+0
+68
+65
+Devtank_PCB_lib
+Phoenix_Contact_SPTAF_4_way_terminal_block
+
+
+0
+8
+4
+Devtank_PCB_lib
+PowerPAK_SO-8
+Power MOSFET package, TDSON-8-1, SuperS08, SON-8_5x6mm
+tdson 
+0
+13
+5
+Devtank_PCB_lib
+QFN-56_8x8mm_Pitch0.5mm
+56-Lead Plastic Ultra Thin Quad Flat, No Lead Package (MV) - 7x7x0.4 mm Body [UQFN]; (see Cypress Package Package Output Drawing 001-58740)
+QFN 0.4
+0
+72
+57
+Devtank_PCB_lib
+QFN-64-1EP_9x9mm_P0.5mm_EP4.7x4.7mm
+64-Lead Plastic Quad Flat No-Lead Package, 9x9mm Body (see Atmel Appnote 8826)
+QFN 0.5
+0
+74
+65
+Devtank_PCB_lib
+QFN-64-1EP_9x9mm_SmallPad_Pitch0.5mm
+64-Lead Plastic Quad Flat, No Lead Package (MR) - 9x9x0.9 mm Body [QFN]; (see Microchip Packaging Specification 00000049BS.pdf)
+QFN 0.5
+0
+68
+65
+Devtank_PCB_lib
+RAK3172
+RAK3172
+
+0
+32
+32
+Devtank_PCB_lib
+RAK4270_WisDuo_LPWAN_Module
+
+
+0
+20
+20
+Devtank_PCB_lib
+RJ45_9
+RJ45 connector, 8-pin
+RJ45
+0
+10
+9
+Devtank_PCB_lib
+RJ45_TRANSFO_STEWART
+
+RJ45
+0
+18
+17
+Devtank_PCB_lib
+RJ45_TRANSFO_VALCON
+
+RJ45
+0
+16
+14
+Devtank_PCB_lib
+RL7520W_3008
+Resistor SMD RL7520W, reflow soldering, Susumu
+resistor RL7520W
+0
+2
+2
+Devtank_PCB_lib
+RP2040
+
+
+0
+57
+57
+Devtank_PCB_lib
+RPi_Hat
+Through hole straight pin header, 2x20, 2.54mm pitch, double rows
+Through hole pin header THT 2x20 2.54mm double row
+0
+40
+40
+Devtank_PCB_lib
+RPi_Hat_Mounting_Hole
+Mounting hole, Befestigungsbohrung, 2,7mm, No Annular, Kein Restring,
+Mounting hole, Befestigungsbohrung, 2,7mm, No Annular, Kein Restring,
+0
+0
+0
+Devtank_PCB_lib
+R_4527
+
+resistor 4527
+0
+2
+2
+Devtank_PCB_lib
+R_BOURNS_PWR4318
+
+resistor
+0
+2
+2
+Devtank_PCB_lib
+Raspberry-Pi-4-Compute-Module
+Raspberry Pi 4 Compute Module
+Raspberry Pi 4 Compute Module
+0
+200
+200
+Devtank_PCB_lib
+Raspberry-Pi-4-Compute-Module_w_conn_ref
+Raspberry Pi 4 Compute Module
+Raspberry Pi 4 Compute Module
+0
+200
+200
+Devtank_PCB_lib
+Relay_SPDT_HJR-4102
+IM Signal Relay SPDT HJR-4102
+Relay SPDT IM-relay HJR-4102
+0
+6
+6
+Devtank_PCB_lib
+Relay_SPDT_HRS1KH-S
+Signal Relay SPDT HRS1KH-S
+Signal Relay SPDT HRS1KH-S
+0
+5
+5
+Devtank_PCB_lib
+Relay_SPST_TE_PCH
+Relay SPST-NO Omron Serie G5Q
+Relay SPST-NO Omron Serie G5Q
+0
+4
+4
+Devtank_PCB_lib
+SC-70-3
+
+
+0
+3
+3
+Devtank_PCB_lib
+SC-74-6
+
+
+0
+6
+6
+Devtank_PCB_lib
+SC70-5
+5-pin SOT23 package
+SC70-5
+0
+5
+5
+Devtank_PCB_lib
+SEN54-SDN-T
+
+
+0
+6
+6
+Devtank_PCB_lib
+SK480_84_SA
+
+
+0
+0
+0
+Devtank_PCB_lib
+SK487_84_SA
+
+
+0
+0
+0
+Devtank_PCB_lib
+SMini3-F2-B
+SMini3-F2-B, Standard
+SMini3-F2-B
+0
+3
+3
+Devtank_PCB_lib
+SOIC-8_5.23x5.23mm_P1.27mm
+SOIC, 8 Pin (http://www.winbond.com/resource-files/w25q32jv%20revg%2003272018%20plus.pdf#page=68), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+8
+8
+Devtank_PCB_lib
+SOIC-14_3.9x8.7mm_P1.27mm_PowerPad
+14-Lead Plastic Small Outline (SL) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+15
+15
+Devtank_PCB_lib
+SOP-8_W9.1mm_SMD
+8-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
+THT DIP DIL PDIP 2.54mm 8.89mm 350mil SMDSocket LongPads
+0
+8
+8
+Devtank_PCB_lib
+SOT-25-5
+
+
+0
+5
+5
+Devtank_PCB_lib
+SOT-323-5
+
+
+0
+5
+5
+Devtank_PCB_lib
+SOT95P284X122-5N
+
+
+0
+5
+5
+Devtank_PCB_lib
+SO_DIMM_200
+
+
+0
+200
+200
+Devtank_PCB_lib
+STX-3000
+
+
+0
+3
+3
+Devtank_PCB_lib
+SW_Push_1P1T_NO_CK_KMR2
+CK components KMR2 tactile switch http://www.ckswitches.com/media/1479/kmr2.pdf
+tactile switch kmr2
+0
+4
+2
+Devtank_PCB_lib
+SW_Tactile_SPST_Angled_PTS645Vx58-2LFS
+tactile switch SPST right angle, PTS645VL58-2 LFS
+tactile switch SPST angled PTS645VL58-2 LFS C&K Button
+0
+4
+2
+Devtank_PCB_lib
+Samtec_SQT-112-03-L-D_2x12_Pitch2.00mm
+Through hole straight pin header, 2x12, 2.00mm pitch, double rows
+Through hole pin header THT 2x12 2.00mm double row
+0
+24
+24
+Devtank_PCB_lib
+ScitekLogo_BlackandWhite_10mm
+
+
+0
+0
+0
+Devtank_PCB_lib
+ScitekLogo_BlackandWhite_15mm
+
+
+0
+0
+0
+Devtank_PCB_lib
+ScitekLogo_BlackandWhite_25mm
+
+
+0
+0
+0
+Devtank_PCB_lib
+Socket_BeagleBone_Black
+Through hole pin header
+pin header
+0
+98
+98
+Devtank_PCB_lib
+Socket_DIN41612-CaseC1-full-Female-96Pin-3rows
+
+
+0
+98
+97
+Devtank_PCB_lib
+Socket_DIN41612-CaseC1-full-Male-96Pin-3rows_correct
+
+
+0
+98
+97
+Devtank_PCB_lib
+SuperSOT-6
+6-pin SuperSOT package http://www.mouser.com/ds/2/149/FMB5551-889214.pdf
+SuperSOT-6 SSOT-6
+0
+6
+6
+Devtank_PCB_lib
+Symbol_HighVoltage_Type2_Silk_VerySmall
+Symbol, High Voltage, Type 2, Copper Top, Very Small,
+Symbol, High Voltage, Type 2, Copper Top, Very Small,
+0
+0
+0
+Devtank_PCB_lib
+TDK_Lambda_DcDc_CC6-xxxxxR-E
+
+
+0
+7
+7
+Devtank_PCB_lib
+TE_1-5145154-2_PCI_120
+
+
+0
+120
+120
+Devtank_PCB_lib
+TFLGA_3x3x1_16L
+
+
+0
+16
+16
+Devtank_PCB_lib
+TI_CSD18540Q5B
+
+
+0
+9
+3
+Devtank_PCB_lib
+TO-220F-15_P2.54x5.08mm_StaggerOdd_Lead5.08mm_Vertical
+TO-220F-15, Vertical, RM 1.27mm, MultiwattF-15, staggered type-1
+TO-220F-15 Vertical RM 1.27mm MultiwattF-15 staggered type-1
+0
+15
+15
+Devtank_PCB_lib
+TO-263AB
+TO-263 / D2PAK / DDPAK SMD package, http://www.infineon.com/cms/en/product/packages/PG-TO263/PG-TO263-3-1/
+D2PAK DDPAK TO-263 D2PAK-3 TO-263-3 SOT-404
+0
+7
+3
+Devtank_PCB_lib
+TSSOP-5
+
+
+0
+5
+5
+Devtank_PCB_lib
+TerminalBlock_1x02_P2.54mm_Horizontal
+
+THT Terminal Block 2.54mm size 5.54x6.2mm^2 drill 1.1mm pad 2.2mm
+0
+2
+2
+Devtank_PCB_lib
+TerminalBlock_2.54_1x03_P2.54mm_Horizontal
+
+Terminal Block 2.54 pitch 2.54mm size
+0
+3
+3
+Devtank_PCB_lib
 TestPoint_Pad_D1.5mm
 SMD pad as test Point, diameter 1.5mm
 test point SMD pad
 0
 1
 1
-TestPoint
-TestPoint_Pad_D2.0mm
-SMD pad as test Point, diameter 2.0mm
-test point SMD pad
+Devtank_PCB_lib
+USB2_B_Micro_SMT-RA
+
+
+0
+11
+6
+Devtank_PCB_lib
+USB3.0_Header_2x10_Pitch2.00mm
+Through hole straight pin header, 2x10, 2.00mm pitch, double rows
+Through hole pin header THT 2x10 2.00mm double row
+0
+19
+19
+Devtank_PCB_lib
+USB_A_Double_Lumberg_2410_03
+USB A vertical female connector, right angle
+USB_A_Vertical female connector angled 73725-0110BLF
+0
+12
+9
+Devtank_PCB_lib
+USB_A_Vertical_Lumberg_2410_01
+USB A vertical female connector, right angle
+USB_A_Vertical female connector angled 73725-0110BLF
+0
+6
+5
+Devtank_PCB_lib
+VEML7700-TT
+
+
+0
+4
+4
+Devtank_PCB_lib
+VTX-214-030-1xx
+
+
+0
+5
+5
+Devtank_PCB_lib
+Via-0.6mm
+
+
 0
 1
 1
-TestPoint
-TestPoint_Pad_D2.5mm
-SMD pad as test Point, diameter 2.5mm
-test point SMD pad
+Devtank_PCB_lib
+WEEE-Logo_14x20mm_SilkScreen_No_Ser
+Waste Electrical and Electronic Equipment Directive
+Logo WEEE
 0
-1
-1
-TestPoint
-TestPoint_Pad_D3.0mm
-SMD pad as test Point, diameter 3.0mm
-test point SMD pad
 0
-1
-1
-TestPoint
-TestPoint_Pad_D4.0mm
-SMD pad as test Point, diameter 4.0mm
-test point SMD pad
 0
-1
-1
-TestPoint
-TestPoint_Plated_Hole_D2.0mm
-Plated Hole as test Point, diameter 2.0mm
-test point plated hole
+Devtank_PCB_lib
+WURTH_632723100011_USB_C
+
+
 0
-1
-1
-TestPoint
-TestPoint_Plated_Hole_D3.0mm
-Plated Hole as test Point, diameter 3.0mm
-test point plated hole
+32
+32
+Devtank_PCB_lib
+XBP24CZ7SIT-004
+
+XBP24CZ7SIT-004 Zigbee Module
 0
-1
-1
-TestPoint
-TestPoint_Plated_Hole_D4.0mm
-Plated Hole as test Point, diameter 4.0mm
-test point plated hole
+20
+20
+Devtank_PCB_lib
+belfuse_0ZRS0200FF
+Fuse 0ZRE0025FF, BelFuse, Radial Leaded PTC,https://www.belfuse.com/resources/datasheets/circuitprotection/ds-cp-0zre-series.pdf
+0ZRE BelFuse radial PTC
 0
-1
-1
-TestPoint
-TestPoint_Plated_Hole_D5.0mm
-Plated Hole as test Point, diameter 5.0mm
-test point plated hole
+2
+2
+Devtank_PCB_lib
+c1.6H0.6_d5.08mm
+
+
 0
-1
-1
-TestPoint
-TestPoint_THTPad_1.0x1.0mm_Drill0.5mm
-THT rectangular pad as test Point, square 1.0mm side length, hole diameter 0.5mm
-test point THT pad rectangle square
+2
+2
+Devtank_PCB_lib
+c1.6H0.6_d15mm
+
+
 0
-1
-1
-TestPoint
-TestPoint_THTPad_1.5x1.5mm_Drill0.7mm
-THT rectangular pad as test Point, square 1.5mm side length, hole diameter 0.7mm
-test point THT pad rectangle square
+2
+2
+Devtank_PCB_lib
+comms_module_footprint
+
+
 0
-1
-1
-TestPoint
-TestPoint_THTPad_2.0x2.0mm_Drill1.0mm
-THT rectangular pad as test Point, square 2.0mm_Drill1.0mm  side length, hole diameter 1.0mm
-test point THT pad rectangle square
+30
+30
+Devtank_PCB_lib
+comms_module_footprint_board
+
+
 0
-1
-1
-TestPoint
-TestPoint_THTPad_2.5x2.5mm_Drill1.2mm
-THT rectangular pad as test Point, square 2.5mm side length, hole diameter 1.2mm
-test point THT pad rectangle square
+30
+30
+Devtank_PCB_lib
+eRIC-LoRa_RF_Module
+eRIC-LoRa Long Range RF Transceiver Module
+2.54mm RF Module LoRa
 0
-1
-1
-TestPoint
-TestPoint_THTPad_3.0x3.0mm_Drill1.5mm
-THT rectangular pad as test Point, square 3.0mm side length, hole diameter 1.5mm
-test point THT pad rectangle square
+25
+24
+Devtank_PCB_lib
+ice40HX8KDevBrd_Header_2.54mm
+Lattice ice40 dev board header
+Through hole ice40 pin header
 0
-1
-1
-TestPoint
-TestPoint_THTPad_4.0x4.0mm_Drill2.0mm
-THT rectangular pad as test Point, square 4.0mm  side length, hole diameter 2.0mm
-test point THT pad rectangle square
+164
+161
+Devtank_PCB_lib
+moto_board_4_pin_header
+Through hole straight pin header, 2x03, 2.54mm pitch, double rows
+Through hole pin header THT 2x03 2.54mm double row
 0
-1
-1
-TestPoint
-TestPoint_THTPad_D1.0mm_Drill0.5mm
-THT pad as test Point, diameter 1.0mm, hole diameter 0.5mm
-test point THT pad
+4
+4
+Devtank_PCB_lib
+osm_shield
+
+
 0
-1
-1
-TestPoint
-TestPoint_THTPad_D1.5mm_Drill0.7mm
-THT pad as test Point, diameter 1.5mm, hole diameter 0.7mm
-test point THT pad
+30
+30
+Devtank_PCB_lib
+test
+
+
 0
-1
-1
-TestPoint
-TestPoint_THTPad_D2.0mm_Drill1.0mm
-THT pad as test Point, diameter 2.0mm, hole diameter 1.0mm
-test point THT pad
 0
-1
-1
-TestPoint
-TestPoint_THTPad_D2.5mm_Drill1.2mm
-THT pad as test Point, diameter 2.5mm, hole diameter 1.2mm 
-test point THT pad
 0
-1
-1
-TestPoint
-TestPoint_THTPad_D3.0mm_Drill1.5mm
-THT pad as test Point, diameter 3.0mm, hole diameter 1.5mm
-test point THT pad
+Devtank_PCB_lib
+uSD_47219-2001
+
+
 0
-1
-1
-TestPoint
-TestPoint_THTPad_D4.0mm_Drill2.0mm
-THT pad as test Point, diameter 4.0mm, hole diameter 2.0mm
-test point THT pad
+12
+9
+Devtank_PCB_lib
+uSD_MSDC-PP03
+
+
 0
-1
-1
+12
+11
