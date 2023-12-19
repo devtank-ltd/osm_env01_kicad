@@ -6,7 +6,7 @@
 
   (title_block
     (title "Open Smart Monitor")
-    (date "2023-12-08")
+    (date "2023-12-19")
     (rev "D")
     (company "Devtank LTD")
     (comment 1 "Part No: 304-010")
@@ -5926,7 +5926,7 @@
     (property "Devtank" "" (at -36.195 16.51 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Power Rating" "200mW" (at 53.34 108.585 90)
+    (property "Power Rating" "" (at 53.34 108.585 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Tolerance" "1%" (at 53.34 104.14 0)
@@ -6169,7 +6169,7 @@
     (property "Devtank" "" (at -36.195 -35.56 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Power Rating" "200mW" (at 53.975 56.515 90)
+    (property "Power Rating" "" (at 53.975 56.515 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Tolerance" "1%" (at 53.34 52.07 0)

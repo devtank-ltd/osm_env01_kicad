@@ -6,7 +6,7 @@
 
   (title_block
     (title "Open Smart Monitor")
-    (date "2023-12-08")
+    (date "2023-12-19")
     (rev "D")
     (company "Devtank LTD")
     (comment 1 "Part No: 304-010")
@@ -1640,7 +1640,7 @@
     (property "Power Rating" "" (at 227.965 81.915 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Characteristics" "X5R" (at 227.965 81.915 0)
+    (property "Characteristics" "C0G/NP0" (at 227.965 81.915 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Current Rating" "" (at 227.965 81.915 0)
@@ -2595,7 +2595,7 @@
     (property "Power Rating" "" (at 196.215 81.915 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Characteristics" "X5R" (at 196.215 81.915 0)
+    (property "Characteristics" "C0G/NP0" (at 196.215 81.915 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Current Rating" "" (at 196.215 81.915 0)
