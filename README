@@ -1,10 +1,8 @@
-Copyright Devtank Ltd 2022.
+Copyright Devtank Ltd 2024.
 
 This documentation describes Open Hardware and is Licensed under CERN-OHL-W v2.
 
 You may redistribute and modify this documentation under the terms of the CERN-OHL-W v2 (https://cern.ch/cern-ohl). This documentation is distributed WITHOUT ANY EXPRESS OR IMPLIED WARRANTY, INCLUDING OF MERCHANTABILITY, SATISFACTORY QUALITY AND FITNESS FOR A PARTICULAR PURPOSE. Please see the CERN-OHL-W v2 for applicable conditions
-
-Source location: git@github.com:devtank-ltd/kicad_osm_env01.git 
 
 As per CERN-OHL-W v2 section 4.1, should You produce hardware based on these sources, You must maintain the   Source Location visible on the external case of the product you make using this documentation.
 
@@ -15,8 +13,8 @@ You will need Kicad to open hardware design files.
 Open Smart Monitor and other test and measurement products can be purchased directly from Devtank Ltd.
 
 Please contact:
-Tim Telford
-CTO - Devtank Ltd
+
+Devtank Ltd
 +44 (0)1332 650944
 
 

@@ -646,7 +646,7 @@
     ],
     [
       "00000000-0000-0000-0000-00006064bc1d",
-      "CanTransciever"
+      "CanTransceiver"
     ],
     [
       "00000000-0000-0000-0000-000060688d25",
@@ -662,7 +662,7 @@
     ],
     [
       "b9a077bb-8b65-41fb-9650-f17f6dddad7c",
-      "RS232_comms"
+      "RS232_Comms"
     ]
   ],
   "text_variables": {}
